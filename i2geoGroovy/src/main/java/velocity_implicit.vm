@@ -1,0 +1,8 @@
+#* @implicitly included *#
+#* @vtlvariable name="doc" type="com.xpn.xwiki.api.Document" *#
+#* @vtlvariable name="request" type="javax.servlet.http.HttpServletRequest" *#
+#* @vtlvariable name="response" type="javax.servlet.http.HttpServletResponse" *#
+#* @vtlvariable name="xwiki" type="com.xpn.xwiki.api.XWiki" *#
+#* @vtlvariable name="doc"   type="com.xpn.xwiki.api.Document" *#
+#* @vtlvariable name="context" type="com.xpn.xwiki.api.Context" *#
+#* @vtlvariable name="util" type="com.xpn.xwiki.api.Util" *#

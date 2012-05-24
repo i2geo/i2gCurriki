@@ -1,0 +1,62 @@
+<%
+
+
+if(!xwiki.hasAdminRights()) {
+  println "Please run this as an admin.";
+  return;
+}
+
+makeHTDigestFile("i2geo stats",'work/tmp/htpasswdAutoAttempt',["XWiki.EditorGroup","XWiki.AdminGroup"]);
+
+
+private void makeHTDigestFile(String realm, String fileName, List groupNames) {
+  def out = new OutputStreamWriter(new FileOutputStream(fileName));
+  def alreadyDone = new HashSet();
+  println("----");
+  println("Outputting to " + new File(fileName).getName());
+  for(groupName in groupNames) {
+    def g = xwiki.getDocument(groupName)
+    println("");
+    println("1 Outputting group [" + groupName + "]");
+    for(memberObj in g.getObjects("XWiki.XWikiGroups")) {
+      def userPage = memberObj.get('member')
+      def userDoc = xwiki.getDocument(userPage);
+      if(alreadyDone.contains(userPage)) continue;
+      alreadyDone.add(userPage);
+
+      def userName = userPage.substring(6);
+      def userObj = userDoc.getObject("XWiki.XWikiUsers");
+      if(userObj == null) continue;
+      def pass =userObj.getProperty("password").getValue();
+
+      def tmpFile = File.createTempFile("tmp","bit");
+      def hash = "";
+      try {
+        def tmpFileOut = new FileOutputStream(tmpFile)
+        tmpFileOut.write(pass.getBytes())
+        tmpFileOut.flush()
+        tmpFileOut.close()
+        def hashMaker = ("openssl passwd -in "+tmpFile).execute()
+        // read full output
+        def input=hashMaker.getInputStream()
+        StringBuffer buff = new StringBuffer();
+        def r = 0;
+        while ((r=input.read())!=-1) {
+          buff.append((char) r);
+        }
+        hash = buff.toString();
+      } finally {
+        tmpFile.delete();
+      };
+
+
+      out.write( userName + ':' + hash.trim() + "\n");
+      println('- [' + userPage + ']');
+    }
+  }
+  out.flush(); out.close();
+  println("... finished.");
+}
+
+
+%>

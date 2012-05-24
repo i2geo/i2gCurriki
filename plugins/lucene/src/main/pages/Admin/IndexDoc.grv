@@ -1,0 +1,80 @@
+// <%
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.Token;
+import com.xpn.xwiki.plugin.lucene.I2GResourceData;
+import org.curriki.xwiki.plugin.lucene.CurrikiAnalyzer
+import com.xpn.xwiki.plugin.lucene.I2GLuceneProfile
+import com.xpn.xwiki.plugin.lucene.LuceneIndexProfile
+import com.xpn.xwiki.plugin.lucene.IndexData
+import com.xpn.xwiki.plugin.lucene.ObjectData
+import com.xpn.xwiki.api.Attachment
+import com.xpn.xwiki.plugin.lucene.AttachmentData;
+
+println("<!-- this page should Admin.IndexDoc -->")
+
+
+println ("1 Indexed Data")
+println();
+println("This page allows you to choose a document and obtain its indexed data.")
+println();
+println('<form action="$doc.name" method="get">')
+println('    Document: (space.name):<br/>')
+println('    <input type="text" name="doc" size="30" value="$!request.doc"><input type="submit" value="show">')
+println('</form>')
+
+
+
+if(request.doc!=null  && xwiki.getUser().hasAdminRights()) {
+    com.xpn.xwiki.api.Document d = xwiki.getDocument(request.doc);
+    LuceneIndexProfile profile = new I2GLuceneProfile();
+    IndexData data = null;
+    if(d.getObject("CurrikiCode.AssetClass"))
+      data = new I2GResourceData(d.getDocument(),context.context, profile);
+    else
+      data = new ObjectData(d.getDocument(),context.context,profile); 
+
+    org.apache.lucene.document.Document luceneDoc = new org.apache.lucene.document.Document();
+    data.addDataToLuceneDocument(luceneDoc,d.getDocument(),context.context);
+
+    List attachments = d.attachmentList;
+    if(!(attachments.isEmpty())) {
+      for(attachment in attachments) {
+        new AttachmentData(d.getDocument(),attachment.getAttachment(),context.context,profile)
+            .addDataToLuceneDocument(luceneDoc,d.document,context.context,profile);
+      }
+    }
+    //luceneDoc.add(new Field("ft",data.getFullText(d.document,context.context),Field.Store.YES, Field.Index.UN_TOKENIZED));
+    println("1.1 Indexed Data of Document [" + request.doc + "]");
+    println();
+    println("<table cellpadding='4' border='1'><thead><tr><td>name</td><td>value</td></tr></thead><tbody>");
+    for(Field f : (List<Field>) luceneDoc.getFields()) {
+        print("<tr><td>");
+        print(f.name());
+        print("</td><td>");
+        if(profile.shouldTokenize(d.document,f.name,context.context)) {
+          java.io.Reader reader = f.readerValue();
+          if(reader==null) reader = new java.io.StringReader(f.stringValue());
+          TokenStream ts = new CurrikiAnalyzer(d.getDocument().getDefaultLanguage(),profile,context.context).tokenStream(f.name(), reader);
+          if(ts!=null) {
+            Token t = ts.next();
+            while( t!=null) {
+              print(xwiki.escapeText(t.termText())); print(' • ');
+              t = ts.next(t);
+            }
+          }
+        } else {
+          print("<i>"); print(xwiki.escapeText(f.stringValue())); println("</i>");
+        }
+        println("</td><td style='font-size:8pt'>")
+        if(f.isIndexed) print("indexed ")
+        if(f.isStored) print("stored ")
+        if(f.isTokenized) print("tokenized ")
+        println("</td></tr>");
+    }
+    println("</tbody></table>");
+} else {
+  println "No document received or no admin rights."
+}
+// %>

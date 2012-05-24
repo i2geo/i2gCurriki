@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Groovy" name="Groovy">
+      <configuration />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/qf-sources" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="xwiki-core" level="project" />
+    <orderEntry type="library" name="curriki" level="project" />
+    <orderEntry type="library" name="servlet-2.3" level="application" />
+    <orderEntry type="library" name="groovy" level="application" />
+    <orderEntry type="library" name="dom4j" level="application" />
+  </component>
+</module>
+

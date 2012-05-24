@@ -1,0 +1,14 @@
+##
+## currently this page is not translated, please request if it needs to be
+## (we shall move to phrases)
+##
+1 Interactive Geometry Softwares
+
+This space collects the interactive geometry softwares, also called dynamic geometry softwares.
+Pages all represent a software.
+
+#foreach ($item in $xwiki.searchDocuments("where doc.web='Softwares' and doc.name != 'WebHome' and doc.name != 'WebPreferences'"))
+ * [$item]
+#end
+
+Should you wish another software, please post a comment here or simply add a page in this space.

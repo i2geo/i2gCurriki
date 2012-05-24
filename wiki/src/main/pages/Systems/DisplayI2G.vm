@@ -1,0 +1,23 @@
+#set($assetDoc =$!xwiki.getDocument($!request.asset))
+#set ($baseurl = "http://$xwiki.getXWiki().Param('curriki.system.hostname', 'i2geo.net')")
+#if($request.asset)
+    #set($url=$assetDoc.getAttachmentURL($assetDoc.getAttachmentList().get(0).getFilename(),"download"))
+ #elseif($request.url)
+    #set($url="$request.url")
+#end
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/files/JSXgraph/jsxgraph.css" />
+        <script type="text/javascript" src="/files/JSXgraph/jsxgraphcore.js"></script>
+        <script type="text/javascript" src="/files/JSXgraph/IntergeoReader.js"></script>
+    </head>
+
+	<body>
+      <div id="box" class="jxgbox" style="width:700px; height:500px;"></div>
+        <script type="text/javascript">
+            var brd = JXG.JSXGraph.loadBoardFromFile('box', '$url', 'Intergeo');
+        </script>
+<p>Played by <a href="http://www.jsxgraph.org">JSXgraph</a>. More about the I2G format:
+    <a href="/xwiki/bin/view/I2GFormat/">read here</a>.</p>
+	</body>
+							</html>

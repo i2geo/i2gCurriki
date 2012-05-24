@@ -1,0 +1,72 @@
+#**
+ *  Comments entry point. It is called from view.vm
+ *  It calls commentsinline for non asset pages for compatibility
+ *#
+#curriki_breadcrumb()
+#set($asset = $doc)
+#set($resource=$asset.fullName)
+#if(!$asset.getObject("CurrikiCode.AssetClass"))
+#template("commentsinline.vm")
+#else
+#set($ok = $asset.use("CurrikiCode.AssetClass"))
+<div id="asset-wrapper" class="view-${asset.categoryClass} mode-$!viewer">
+    #asset_resourcefunctions($asset)
+    #asset_icontitle($asset)
+    #asset_attribution($asset)
+    #asset_rating($asset)
+    #asset_tabs($asset "comments")
+    <div id="asset-wrapper-inner">
+        #set($addedItems = false)
+        <ul id="asset-links">
+            #set($ok = $asset.use("CRS.CurrikiReviewStatusClass"))
+            #set($status = $asset.getValue("status"))
+            #if(!$status||($status!="200"))
+             #if($xwiki.hasAccessLevel("view", "CRS.Reviews"))
+             	     #set($addedItems = true)
+             #end
+            #end
+            #if($asset.hasAccessLevel("comment"))
+            #set($addedItems = true)
+            <li id="tab-review"><a onclick="window.location='/xwiki/bin/view/QF/CreateReview?resource=$resource'; return false;" title="$msg.get("rve.comments.review.review_rollover")" href="/xwiki/bin/view/QF/CreateReview?resource=$resource" target="_blank">$msg.get("QF.review-add")</a></li>
+            <li class="last-item"><a href="javascript:void(0)" onclick="showCommentBlock(); return false;" title="$msg.get("rve.comments.comment.addcomment_rollover")">$msg.get("rve.comments.comment_without_rating.addcomment_link")</a></li>
+<script type="text/javascript">
+/* <![CDATA[ */
+function showCommentBlock(){
+	document.getElementById('comment-submit-form').style.display = 'block';
+	clickAwayCounter++;
+	clickAwayActive = true;
+	location = '#comment-submit-form';
+	document.forms['comment-add']['XWiki.XWikiComments_comment'].focus();
+	if(Ext.get('XWiki.XWikiComments_rating')&&!Ext.get('XWiki.XWikiComments_rating').hasClass('x-hidden')){
+		var nr = new Curriki.ui.Rating({id:'XWikiComments_rating'});
+		nr.applyToMarkup('XWiki.XWikiComments_rating');
+	}else{
+		if(Ext.get('XWiki.XWikiComments_rating')&&Ext.get('XWiki.XWikiComments_rating').hasClass('x-form-rating-field')&&Ext.getCmp('XWikiComments_rating')){
+			Ext.getCmp('XWikiComments_rating').alignStars();
+		}
+	}
+}
+
+#if("$!request.addcomment" != "" && "$!request.addcomment" == "true") ##{
+Ext.onReady(function(){
+  showCommentBlock();
+});
+#end ##}
+/* ]]> */
+</script>
+#else
+             <li id="tab-review">
+                $msg.get("rve.comments.add_comment.empty.notloggedin_message")
+             </li>
+#end
+            #if($addedItems == false)
+            <li class="last-item"></li>
+            #end
+        </ul>
+        <div class="clear-right"></div>
+       ## #crs_display_reviews($asset)
+      	#displayQFReview($asset)
+        #asset_comments($asset)
+    </div> ##asset-wrapper-inner
+</div> ##asset-wrapper
+#end

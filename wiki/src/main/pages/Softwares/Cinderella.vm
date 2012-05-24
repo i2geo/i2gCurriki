@@ -1,0 +1,8 @@
+1 Cinderella
+
+Web site: http://cinderella.de/
+
+----
+
+#set($fileType = "cdy")
+#includeInContext("Search.AllResourcesForFileType")

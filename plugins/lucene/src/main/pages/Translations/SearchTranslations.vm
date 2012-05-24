@@ -1,0 +1,43 @@
+## this page is deduced from Admin>.SearchSpaceText
+##                  ===========================
+## this page is a utility for direct query to lucene
+#* @vtlvariable name="lucene" type="com.xpn.xwiki.plugin.lucene.LucenePluginApi" *#  ##
+#* @vtlvariable name="xwiki" type="com.xpn.xwiki.api.XWiki" *# ##
+#* @vtlvariable name="request" type="javax.servlet.http.HttpServletRequest" *# ##
+#* @vtlvariable name="result" type="com.xpn.xwiki.plugin.lucene.SearchResult" *# ##
+#* @vtlvariable name="cursor" type="org.curriki.xwiki.plugin.lucene.ResourcesSearchCursor" *#  ##
+#* @vtlvariable name="luQ" type="org.apache.lucene.search.BooleanQuery" *#
+##
+#set($space = $doc.web)
+#set($q = ${request.getParameter("q")})
+#set($query = "web:$space $q")
+#set($lucene = $xwiki.lucene)
+##
+#if($space)
+1 Search Translations
+##
+<form method="GET" action="$doc.name">
+  <input type="hidden" name="space" value="$space"/>
+  <input type="text" size="50" name="q" value="$q"/>
+</form>
+#set($results = $lucene.getSearchResults($query,$xwiki.getXWikiPreference("languages")))
+#set($from = $!request.from)#if(!$from)#set($from=0)#end
+#set($to = $!request.to)#if(!$to)#set($to=25+$from)#end
+(found $results.totalHitcount results within the pages of the space: [$space > ${space}.WebHome] for the query "$q"):
+#foreach($result in $results.getResults($from,$to))
+- <a href="../${result.web}/${result.name}?language=$result.language">$result.name</a> ($result.language)<br>##
+  <span style="font-size:70%">(last modified by $result.author on $result.date)</span>
+#end
+#else
+    please provide a space and query parameter.
+#end
+<hr>
+<center>
+#if($from>0)
+#set($f=$from-25)<a href="$doc.name?q=${q}&from=$f">back</a>
+#end
+        showing from $from to $to of $results.totalHitcount
+    #if($to<$results.totalHitcount)
+    #set($f=$from+25)<a href="$doc.name?q=${q}&from=$f">forward</a>
+    #end
+</center>

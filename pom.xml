@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+ *
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.xpn.xwiki.platform</groupId>
+    <artifactId>xwiki</artifactId>
+    <version>16</version>
+  </parent>
+  <groupId>org.curriki</groupId>
+  <artifactId>curriki-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>XWiki Products - Curriki - Parent POM</name>
+  <version>1.0</version>
+  <description>XWiki Products - Curriki - Parent POM</description>
+  <scm>
+    <connection>scm:svn:http://svn.xwiki.org/svnroot/xwiki/curriki/trunk</connection>
+    <developerConnection>scm:svn:https://svn.xwiki.org/svnroot/xwiki/curriki/trunk</developerConnection>
+    <url>http://svn.xwiki.org/svnroot/xwiki/curriki/trunk</url>
+  </scm>
+  <properties>
+    <!-- Versions of XWiki dependencies used in Curriki modules -->
+    <platform.tools.version>1.9-SNAPSHOT</platform.tools.version>
+    <platform.tools.xar-plugin.version>1.11</platform.tools.xar-plugin.version>
+    <platform.core.version>1.5-curriki4</platform.core.version>
+    <platform.web.version>1.5</platform.web.version>
+    <platform.plugins.invitationmanager.version>1.0.1</platform.plugins.invitationmanager.version>
+  </properties>
+  <profiles>
+    <profile>
+      <id>default</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>
+        <module>plugins</module>
+        <module>gwt</module>
+        <module>web</module>
+        <!--
+        <module>wiki</module>
+        <module>database</module>
+        <module>distribution</module>a
+        -->
+      </modules>
+    </profile>
+    <profile>
+      <id>curriki-nodb</id>
+      <modules>
+        <module>plugins</module>
+        <module>gwt</module>
+        <module>web</module>
+      </modules>
+    </profile>
+  </profiles>
+  <build>
+    <extensions>
+      <extension>
+        <groupId>com.xpn.xwiki.platform.tools</groupId>
+        <artifactId>xwiki-xar-handlers</artifactId>
+        <version>${platform.tools.version}</version>
+      </extension>
+    </extensions>
+    <plugins>
+      <plugin>
+        <groupId>com.xpn.xwiki.platform.tools</groupId>
+        <artifactId>xwiki-xar-plugin</artifactId>
+        <version>${platform.tools.xar-plugin.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

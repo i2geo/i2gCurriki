@@ -1,0 +1,10 @@
+#set($assetDoc=$!xwiki.getDocument($!request.asset))##
+<!-- assetDoc is $assetDoc -->##
+#set ($baseurl = "http://$xwiki.getXWiki().Param('curriki.system.hostname', 'i2geo.net')")##
+#set($attachmentName = $assetDoc.getAttachmentList().get(0).getFilename())##
+#set($url=$assetDoc.getAttachmentURL($attachmentName,"download"))##
+#set($title=$xwiki.getFormEncoded($assetDoc.getTitle()))##
+#set($resource_url="/xwiki/bin/view/$assetDoc.web/$assetDoc.name")##
+###if($resource_url.toString().endsWith("xpage=popup"))
+##    #set($resource_url = "$resourceURL.toString().substring(0,$resource_url.length()-11)")#end##
+<script language="javascript">document.title = '$title';</script>##

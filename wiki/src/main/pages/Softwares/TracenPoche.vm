@@ -1,0 +1,14 @@
+
+
+1 Software: TracenPoche
+
+See home page: http://tracenpoche.sesamath.net/
+
+ TracenPoche is a software written in Flash (c) Adobe by the Sésamath association and belongs to the MathenPoche software suite.
+
+ The common file format has been implemented in TracenPoche.
+----
+
+#set($fileType = "tep tracenpocheFile tracenpochefile" )
+#includeInContext("Search.AllResourcesForFileType")
+

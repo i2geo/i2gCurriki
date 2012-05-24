@@ -1,0 +1,25 @@
+#**
+  * Footer: this will display the footer of Curriki
+  * @author Curriki dev team
+  *#
+<div id="footerglobal">
+<div class="footer-left">
+## old, Curriki help page <a href="$xwiki.getURL("Coll_curriki.CurrikiHelp")">$msg.get("footer.help")</a> |
+<a href="/xwiki/bin/view/Coll_curriki/Tutorials">$msg.get("footer.help")</a> | 
+<a href="$xwiki.getURL("Main.Contact")">$msg.get("footer.contactus")</a> |
+<a href="$xwiki.getURL("Main.TOS")">$msg.get("footer.termsofuse")</a> |
+<a href="$xwiki.getURL("Main.PrivacyPolicy")">$msg.get("footer.privacypolicy")</a> |
+<a href="$xwiki.getURL("Main.Copyright")">$msg.get("footer.copyright")</a>
+</div>
+<div class="footer-right">
+<a href="/xwiki/bin/view/Main/WebRss?xpage=rdf"><img src="/xwiki/skins/curriki8/ico_rss.gif" alt="RSS"/></a>
+<!-- <a href="#"><img src="/xwiki/skins/curriki8/ico_xhtml_valid.gif" alt="XHTML Valid"/></a> -->
+<a href="http://www.curriki.org/"><img src="/xwiki/skins/curriki8/ico_curriki_powered.gif" alt="Curriki Valid"/></a>
+<a href="http://www.xwiki.org"><img src="/xwiki/skins/curriki8/ico_xwiki_powered.gif" alt="XWiki Powered"/></a>
+</div>
+## TODO: check if we need this
+## <span class="clr">&nbsp;aaa</span>
+</div>
+## Additionnal Curriki Staf Footer
+#template('staf.vm')
+

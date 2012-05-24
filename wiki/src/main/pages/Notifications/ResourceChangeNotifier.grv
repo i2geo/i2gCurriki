@@ -1,0 +1,252 @@
+/* Groovy Class #* */
+
+import com.xpn.xwiki.api.*;
+import com.xpn.xwiki.notify.*;
+import com.xpn.xwiki.*;
+import com.xpn.xwiki.doc.*;
+import com.xpn.xwiki.objects.BaseObject;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory
+import com.xpn.xwiki.web.XWikiMessageTool
+import com.xpn.xwiki.plugin.mailsender.MailSenderPluginApi
+import com.xpn.xwiki.plugin.mailsender.MailSenderPlugin
+import com.xpn.xwiki.criteria.impl.RevisionCriteria;
+
+
+public class ResourceChangeNotifier implements XWikiDocChangeNotificationInterface, XWikiActionNotificationInterface
+{
+
+  static Log LOG = LogFactory.getLog("groovypages.Notifications.ResourceChangeNotifier");
+  com.xpn.xwiki.XWiki xwiki;
+  DocChangeRule rule;
+  String baseURL = "http://i2geo.net/xwiki";
+  String sender = "updates@i2geo.net";
+
+  public ResourceChangeNotifier()
+  {
+    this.rule = new DocChangeRule(this);
+  }
+
+  public Set getCurrentlyAdjustedDocNames(XWikiContext context) {
+    def servletContext = context.getEngineContext().getServletContext();
+    def set = servletContext.getAttribute("CurrentlyAdjustedDocNames")
+    if(set==null) {
+      set = new HashSet();
+      servletContext.setAttribute("CurrentlyAdjustedDocNames",set);
+    }
+    if(LOG.isDebugEnabled()) LOG.debug("CurrentlyAdjustedDocNames: " + set);
+    return (Set) set;
+  }
+
+
+  public void init(com.xpn.xwiki.XWiki xwiki, blop)
+  {
+    init(xwiki);
+  }
+  public void init(com.xpn.xwiki.XWiki xwiki)
+  {
+    LOG.warn("ResourceChangeNotifier " + this + " starting.");
+    this.xwiki = xwiki;
+    xwiki.getNotificationManager().addGeneralRule(this.rule);
+    LOG.warn("ResourceChangeNotifier " + this + " started.");
+  }
+  public void stop()
+  {
+    xwiki.getNotificationManager().removeGeneralRule(this.rule);
+    LOG.warn("ResourceChangeNotifier " + this + " stopped.");
+  }
+
+  public void notify(XWikiNotificationRule rule, XWikiDocument doc, java.lang.String action, XWikiContext context) {
+  }
+
+
+  public void notify(XWikiNotificationRule rule, XWikiDocument newdoc, XWikiDocument olddoc,
+                     int event, XWikiContext context)
+  {
+
+    if(LOG.isDebugEnabled())("== Notification " + rule + " for newdoc " + newdoc);
+    XWikiMessageTool msg = context.getMessageTool();
+
+    // ignorable cases
+    String space = newdoc.web;
+    if("QFSummaries".equals(space) || "AssetTemp".equals(space)
+            || "Favorites".equals(newdoc.name)
+            || getCurrentlyAdjustedDocNames(context).contains(newdoc.fullName)) {
+      if(LOG.isDebugEnabled()) LOG.debug("notification ignored, document "+newdoc.fullName +"is being currentlyAdjusted.");
+      return;
+    }
+
+    // peel cases: commented, changed by same author, changed by someone else, reviewed
+    // new? nothing to do
+
+    // crazy case
+    if(newdoc == null && olddoc == null) return;
+
+    if(olddoc==null) {
+      LOG.info("Document created " + newdoc + ".");
+    }
+
+    // find the "document under focus": either the resource being reviewed, or the modified document
+    def doc = newdoc;
+    def reviewDoc = null;
+    if(doc==null || doc instanceof DeletedDocument) doc = olddoc;
+
+    boolean isReview = "QR".equals(space);
+
+    if(isReview) {
+      reviewDoc = doc;
+      String rsrc = doc.getObject("QF.ReviewClass").getStringValue("resource");
+      doc = xwiki.getDocument(rsrc,context);
+      if(doc==null) {
+        LOG.warn("Review " + newdoc + " is updated but its resource " + rsrc + " is missing.");
+        return;
+      }
+    }
+    // find the original contributor and the actor
+    String creator = doc.getCreator(),
+      actor = newdoc.getAuthor();
+
+    // find the recipients
+    List recipients = new ArrayList();
+
+    // add all committers of that resource (includes commenters)
+    List revisions = doc.getRevisions(new RevisionCriteria(), context);
+    for(String version in revisions) {
+      recipients.add(doc.getRevisionInfo(version,context).author);
+    }
+
+    if(isReview) {
+      // add all reviewers (only last author)
+      def hql = "select doc.fullName from XWikiDocument doc, BaseObject obj, StringProperty prop where doc.web = 'QR' and obj.name=doc.fullName and obj.className='QF.ReviewClass' and obj.id=prop.id.id and prop.name='resource' and prop.value='"+doc.fullName+"' ";
+      List docNames = xwiki.search(hql, 50, 0, context);
+      for(String docName in docNames) {
+        String reviewAuthor = xwiki.getDocument(docName,context).author;
+        recipients.add(reviewAuthor);
+      }
+    }
+
+    // add everyone having it in one of his collections (includes Favorites)
+    def hql2="select doc.fullName from XWikiDocument doc, BaseObject obj, StringProperty prop where obj.className = 'CurrikiCode.SubAssetClass' and prop.name='assetpage' and prop.value='"+doc.fullName+"' and  obj.id=prop.id.id and obj.name=doc.fullName "
+    List collNames = xwiki.search(hql2, 50, 0, context);
+    for(String collName in collNames) {
+      //println "- collname " + collName
+      if(collName!=null && collName.startsWith("Coll_") && collName.contains(".")) {
+        String author = collName.substring("Coll_".length(),collName.indexOf('.'));
+        String owner = "XWiki."+ author;
+        recipients.add(owner);
+      }
+    }
+
+    // but not the one who did it
+    recipients.remove(actor);
+
+    // convert list of recipients to email-list, excluding those who do not wish
+    Set recipientsEmails = new HashSet(recipients.size())
+    for(String u in recipients) {
+      BaseObject obj = xwiki.getDocument(u,context).getObject("XWiki.XWikiUsers");
+      if(obj==null) continue;
+      String optOut = obj.getStringValue("opt_out");
+      String options = obj.getStringValue("email_options");
+      //println("- " + u + ": " + optOut + " " + options + " " + options.contains("reviews"))
+
+      if("0".equals(optOut) ||
+              "2".equals(optOut) && options!=null && options.contains("reviews")) {
+        String authorEmail = xwiki.getUser(u,context).email;
+        recipientsEmails.add(authorEmail);
+      }
+    }
+
+
+    if(recipientsEmails.isEmpty()) {
+      LOG.info("No recipients to notify.");
+      return;
+    }
+
+
+    // now pre-compute the display fields
+    String resourceTitle = doc.getTitle();
+    String resourceURL = baseURL + "/bin/view/" + doc.getWeb() + "/" + doc.getName();
+    BaseObject userObj = xwiki.getDocument(actor, context).getObject("XWiki.XWikiUsers");
+    String actorName = userObj==null? "null" : (userObj.getStringValue("first_name") + " " + userObj.getStringValue("last_name"));
+    MailSenderPluginApi mailsender = new MailSenderPluginApi((MailSenderPlugin) xwiki.getPlugin("mailsender",context),context);
+
+
+    // find the type... changed comments or a review?
+    if(isReview) {
+      BaseObject review = reviewDoc.getObject("QF.ReviewClass");
+      // compute stars
+      int ranking = Integer.parseInt(review.getStringValue("overallRanking"));
+      String stars = "";
+      for(int i in 1..ranking) {stars = stars + "★"; }
+      for(int i in ranking..3) { stars = stars + "☆"; }
+      String reviewTitle = review.getStringValue("reviewSummary");
+      String reviewURL = baseURL + "/bin/view/QR/" + reviewDoc.name
+      if(Boolean.parseBoolean(review.getStringValue("anonymous")))
+        actorName = msg.get("notifications.anonymousName");
+
+      for(String recipient in recipientsEmails) {
+        LOG.info("Notifying \""+recipient+"\": that user "+ actor +" filed review" +reviewDoc + " of resource " + doc + " with ranking " +
+              ranking + " with title \"" + review.getStringValue("reviewSummary") + "\".");
+        mailsender.sendTextMessage("notify@i2geo.net", recipient,
+                msg.get("notifications.reviewFiledEmailSubject",[stars, reviewTitle, resourceTitle]),
+                msg.get("notifications.reviewFiledEmail",
+                        [stars, reviewTitle, resourceTitle, actorName, reviewURL, resourceURL])+
+                        "\n\n-----------------------------------------------------------------------\n" + msg.get("notifications.disclaimer") + "\n\n");
+      }
+    } else if(space.startsWith("Coll_") && doc.comments!=null && doc.comments.size()>0 &&
+          (olddoc.comments == null || olddoc.comments.size() < doc.comments.size())) {
+      String commentText = doc.comments[doc.comments.size()-1].getStringValue("comment");
+      if(commentText==null) commentText = "";
+      commentText = commentText.trim();
+      String commentShort = commentText;
+      if("Finished creating sub asset of category document".equals(commentText)) return;
+      if(commentShort!=null && commentShort.length()>50) {
+        int p = commentShort.indexOf("\n");
+        if(p<50) commentShort = commentShort.substring(0,p) + "..."
+        else {
+          p = commentShort.indexOf(" ",20);
+          if(p<50) commentShort = commentShort.substring(0,p) + "..."
+          else {
+            commentShort = commentShort.substring(0,20) + "...";
+          }
+        }
+      }
+      String resourceURLAtComment = resourceURL + "?viewer=comments#comment" + (doc.comments.size()-1);
+      for(String recipient in recipientsEmails) {
+        LOG.info("Notifying \"" + recipient + "\" that user "+actor+" commented on " + doc + " saying: \"" +
+                commentText + "\".");
+        mailsender.sendTextMessage("notify@i2geo.net", recipient,
+                msg.get("notifications.resourceCommentedEmailSubject",[resourceTitle, commentShort]),
+                      msg.get("notifications.resourceCommentedEmail",
+                              [actorName, resourceTitle, commentText, resourceURLAtComment])+
+                      "\n-----------------------------------------------------------------------\n" + msg.get("notifications.disclaimer") + "\n\n");
+      }
+    } else if(space.startsWith("Coll_")) {
+      String commentText = doc.getRevisionInfo(doc.getRecentRevisions(1,context)[0],context).comment;
+      if(commentText==null) commentText = "";
+      if(commentText.startsWith("---msg---"))
+        commentText = msg.get(commentText.substring("---msg---".length()));
+      LOG.info("comment text is " + commentText + " and starts with? " + (commentText.startsWith("---msg---")))
+      for(String recipient in recipientsEmails) {
+        LOG.info("Notifying \"" + recipient + "\" that user "+actor+" has updated " + doc + " with revision comment \"" + commentText);
+        mailsender.sendTextMessage("notify@i2geo.net", recipient,
+                msg.get("notifications.resourceUpdatedSubject",[actorName, resourceTitle]),
+                msg.get("notifications.resourceUpdated",
+                                [actorName, resourceTitle, commentText, resourceURL])+
+                        "\n\n-----------------------------------------------------------------------\n" + msg.get("notifications.disclaimer") + "\n\n");
+      }
+    } else {
+      LOG.warn("Ignoring update for doc " + doc);
+    }
+    // TODO: vignette shoot (needs special something into the file-names... don't want to do that now)
+  }
+  
+
+
+}
+
+
+/* *# */
+
+
+

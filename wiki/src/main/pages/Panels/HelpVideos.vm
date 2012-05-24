@@ -1,0 +1,81 @@
+<div class="shadow-outer">
+<div class="shadow-middle">
+<div class="shadow-inner">
+<div class="headerbar violet">$msg.get("panel.video-panels.title")</div>
+<div class="frame-content"> 
+{pre}
+<script src="/xwiki/js/AC_QuickTime.js" language="javascript" type="text/javascript"> </script>
+    <SCRIPT LANGUAGE="Javascript" type="text/javascript">
+      var haveqt = false;
+    </SCRIPT>
+    <SCRIPT LANGUAGE="VBScript">
+      On Error Resume Next
+      Set theObject =
+      CreateObject("QuickTimeCheckObject.QuickTimeCheck.1")
+      On Error goto 0
+      If IsObject(theObject) Then
+        If theObject.IsQuickTimeAvailable(0) Then
+          haveqt = true
+        End If
+      End If
+    </SCRIPT>
+    <SCRIPT LANGUAGE="Javascript" type="text/javascript">
+	if (navigator.plugins) {
+      for (i=0; i < navigator.plugins.length; i++ ) {
+        if (navigator.plugins[i].name.indexOf("QuickTime") >= 0) { 
+          haveqt = true; 
+		}
+      }
+ 	  isplugin = navigator.plugins["Quicktime"];
+	  if (isplugin) {
+	    haveqt = true;
+	  }
+    }
+    if (    (navigator.appVersion.indexOf("Mac") > 0)
+         && (navigator.appName.substring(0,9) == "Microsoft")
+         && (parseInt(navigator.appVersion) < 5) )            { 
+		    haveqt = true; 
+	}
+    var newwindow;
+    function activateMovie(name) {
+      if(haveqt) {
+          if (newwindow && !newwindow.closed) {
+              newwindow.focus(); newwindow.document.clear()
+          } else {
+              newwindow=window.open('','','width=800,height=600,resizable=1')
+          }
+          newwindow.document.writeln('<> <head> <title>' + name+ '<\/title> <\/head> <body bgcolor=\"black\">');
+          newwindow.document.writeln(QT_GenerateOBJECTText(name + '.mov', '100%', '95%', '', 'AUTOPLAY', 'True', 'SCALE', 'Aspect'));
+          newwindow.document.writeln('<\/html>');
+          newwindow.document.close();
+      } else {
+          alert("Sorry, need quicktime thus far.");
+	  }
+    }
+    </SCRIPT>
+{/pre}
+<table width="100%" cellspacing="20" cellpadding="20"><tr><td>
+  <a href='${msg.get("panel.video-panels.video1.movie")}.mov'>
+  <img src="$msg.get("panel.video-panels.video1.image")" alt="$msg.get("panel.video-panels.clicktostartmovie")" onclick="activateMovie('$msg.get("panel.video-panels.video1.movie")');return false;">
+  <br/>
+  $msg.get("panel.video-panels.video1.footer")</a>
+</td></tr><tr><td>
+  <a href='${msg.get("panel.video-panels.video2.movie")}.mov'>
+  <img src="$msg.get("panel.video-panels.video2.image")" alt="$msg.get("panel.video-panels.clicktostartmovie")" onclick="activateMovie('$msg.get("panel.video-panels.video2.movie")');return false;">
+  <br/>
+  $msg.get("panel.video-panels.video2.footer")</a>
+</td></tr>
+<tr>
+<td>
+<a href="${msg.get('panel.video-panels.video3.movie')}.mov">
+<img src="${msg.get('panel.video-panels.video3.image')}" alt="${msg.get('panel.video-panels.clicktostartmovie')}" 
+onclick="activateMovie('${msg.get('panel.video-panels.video3.movie')}');return false;"><br/> 
+$msg.get('panel.video-panels.video3.footer')</a>
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,146 @@
+
+#set($action = $context.action)
+#if($request.getParameter("template"))
+  #set($review=$xwiki.getDocument($request.getParameter("template")))
+  #set($resourcedoc = $!xwiki.getDocument($request.getParameter("QF.ReviewClass_0_resource")))
+#else
+  #set($review=$doc.getObject("QF.ReviewClass"))
+  #set($resourcedoc = $!xwiki.getDocument($!review.getProperty("resource").value))
+#end
+
+
+
+<style type="text/css">
+td.collapsed {background: url("/xwiki/bin/skin/skins/curriki8/menu-collapsed.gif") no-repeat scroll 3px 1px;  }
+td.expanded {background: url("/xwiki/bin/skin/skins/curriki8/menu-expanded.gif") no-repeat scroll 2px 4px;  }
+</style>
+
+<div class="asset-tabs">
+<a class="asset-tab" href="$!resourcedoc.getURL("view", "bc=$!request.bc")">$msg.get("caption.view")</a>
+<a class="asset-tab"  href="$!resourcedoc.getURL("view", "bc=$!request.bc&viewer=comments")">Comments ($!resourcedoc.comments.size())</a>
+<a class="asset-tab-selected" href="/xwiki/bin/view/QF/ListReviews?resource=$!resourcedoc.fullName">Reviews</a>
+</div>
+## <div id="wizzard" class="asset-page">
+#set($obj = $!resourcedoc.getObject("XWiki.AssetClass", true))
+## <div class="asset-links">
+## <div class="righttext">#displaylinks($resourcedoc)</div>
+## </div>
+<div class="asset-contents ">
+  <div class="asset-metadatas">
+  <div class="titlebar titlebar_red">
+    <h3>Review $!review.getProperty("reviewNumber").value for $!resourcedoc.displayTitle</h3>
+  </div>
+
+### thinkme: action saveAndView also done?
+### thinkme: action saveAndContinue also done?
+
+
+
+#### =--------------------- DEFAULT DISPLAY METHOD ----------------------------
+### (encompasses all activities)
+
+#set($class = $doc.getObject("QF.ReviewClass").xWikiClass)
+
+#if($action=='view')
+<b>$doc.display("reviewSummary")</b>
+#else
+<b>$doc.display("reviewSummary")</b>
+#end
+
+<div style="text-align:center; width=100%">
+<p align="left"></p>
+<p align="center">
+#if($action=='view')
+<div style="text-align:left; width:80%; border-style:solid; border-thickness:1pt; border-color:orange"
+        >$doc.display("globalComment")
+#else
+    $doc.display("globalComment")
+#end
+</div></p></div>
+
+<div style="background:rgb(246, 248, 201)">
+    #set($v = $!review.getProperty("overallRanking").value)
+#if($action=='view')<table width="99%"><tr>
+  <td>$msg.get("QF.ReviewFiledAt",[$xwiki.formatDate($doc.date),"[$doc.author]"])</td>
+  #if($doc.author==$context.getUser())<td><a href="$doc.getURL("inline")">modify it</a></td>#end
+  <td align="right">
+      #if($v == '1') <img src="/xwiki/skins/albatross/icons/search/star.png"/>
+      #elseif($v == '2') <img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/>
+      #elseif($v == '3') <img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/>
+      #elseif($v == '4') <img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/>
+      #elseif($v == '5') <img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/>
+      #elseif($v == '6') <img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/><img src="/xwiki/skins/albatross/icons/search/star.png"/>
+      #else (-)
+      #end
+  </td>
+</tr></table>
+#else
+<table width="99%" id="rankingOverall"><tr>
+  <td>Overall ranking</td>
+  <td align="right">
+      <span id="overallRanking">
+         <input name="QF.ReviewClass_0_overallRanking" value="1" type="radio" #if($v=='1')checked="checked"#end onclick="return false;"
+        ><input name="QF.ReviewClass_0_overallRanking" value="2" type="radio" #if($v=='2')checked="checked"#end onclick="return false;"
+        ><input name="QF.ReviewClass_0_overallRanking" value="3" type="radio" #if($v=='3')checked="checked"#end onclick="return false;"
+        ><input name="QF.ReviewClass_0_overallRanking" value="4" type="radio" #if($v=='4')checked="checked"#end onclick="return false;"
+        ><input name="QF.ReviewClass_0_overallRanking" value="5" type="radio" #if($v=='5')checked="checked"#end onclick="return false;"
+        ><input name="QF.ReviewClass_0_overallRanking" value="6" type="radio" #if($v=='6')checked="checked"#end  onclick="return false;">
+      </span>
+  </td>
+</tr></table>
+#end
+
+$msg.get("QF.EduLevelTitle")
+#if($action=='view')
+## #skbListHere("eduLevelFine_pane" $!review.getProperty("eduLevelFine").value)
+ #set($value=$!review.getProperty("eduLevelFine").value)
+ #set($divName="eduLevelFine_pane")
+  #if($value)
+   #set($accLang=$request.getHeader('Accept-Language'))
+   #set($intLang=$context.language)
+   #set($docLang=$doc.language)
+   #set($langs=$util.encodeURI("${docLang}},${intLang}, ${accLang}, en"))
+   <!--
+     langs = $langs
+   -->
+   #set($url="#skbURL()../render?uri=${util.encodeURI($value)}&lang=$langs")
+   <div id="$divName">
+       $xwiki.getURLContent($url)
+   </div>
+ #else	<div id="$divName"></div>#end
+
+    #else
+    <div id="eduLevelsOfReview"></div>
+    <input name="QF.ReviewClass_0_eduLevelFine" id="eduLevelFine" value="$!review.getProperty("eduLevelFine").value" type="hidden"/>
+    <script type="text/javascript">
+      window.skbPleaseReplaceMeActive =
+        window.skbPleaseReplaceMeActive +";eduLevelsOfReview|eduLevelFine| level |false";
+    </script>
+#end
+</div>
+
+<input type="hidden" name="QF.ReviewClass_0_resource" value="$!review.getProperty("resource").value"/>
+<input type="hidden" name="QF.ReviewClass_0_reviewNumber" value="$!review.getProperty("reviewNumber").value"/>
+
+<!-- <input type="hidden" name="xvalidate" value="1" />
+<input type="hidden" name="xvalidation" value="QF.ReviewValidation" /> -->
+<input type="hidden" id="comment" name="commentField" value="review"/>
+
+## ---------------------------------- groovy rendering for questions ------------------
+<script type="text/javascript" src="/xwiki/js/QF-foldingScripts.js"></script>
+#if($xwiki.hasAccessLevel("programming"))<!-- has programming level -->#else<!-- misses programming level -->#end
+#set($rt = $xwiki.parseGroovyFromPage("QF.ReviewToolGroovy"))
+$rt.setMsg($msg)
+<!-- doc is " + $doc + " of class "+ $doc.getClass() +"-->
+$rt.setAction($context.action)
+$rt.setReviewDoc($doc)
+<!-- rt is $rt -->
+{pre}
+$rt.renderJSassignmentSectionHeadNames()
+#foreach($sec in $rt.listSectionNames())
+      $rt.renderReviewSections($sec)
+#end
+{/pre}
+
+
+</div></div><!-- end of review class sheet -->

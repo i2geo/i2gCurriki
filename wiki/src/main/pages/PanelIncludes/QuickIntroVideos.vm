@@ -1,0 +1,190 @@
+<div id="sponsors" class="shadow-outer">
+<div class="shadow-middle">
+ <div class="shadow-inner">
+ <div class="headerbar violet">$msg.get("panel.video-panels.title")</div>
+ <div class="frame-content">
+##
+##
+<script src="/xwiki/js/AC_QuickTime.js" language="javascript" type="text/javascript"> </script>
+                <SCRIPT LANGUAGE="Javascript" type="text/javascript">
+                    var haveqt = true;
+                    var newwindow;
+                    function activateMovie(name) {
+                        if(Ext.isIE) return true;
+                        if(haveqt) {
+                            if (newwindow && !newwindow.closed){
+                                newwindow.focus(); newwindow.document.clear()
+                            } else {
+                                newwindow=window.open('','','width=800,height=600,resizable=1')
+                            }
+                            newwindow.document.writeln('<> <head> <title>' + name+ '<\/title> <\/head> <body bgcolor=\"black\">');
+                            newwindow.document.writeln(QT_GenerateOBJECTText(name + '.mov', '100%', '95%', '', 'AUTOPLAY', 'True', 'SCALE', 'Aspect'));
+                            newwindow.document.writeln('<\/html>');
+                            newwindow.document.close();
+                        } else {
+                            alert("Sorry, need quicktime thus far.");
+                        }
+                        return false;
+                    }
+                </SCRIPT>
+##
+## Below follows the panel content, separately for each language. Please add new languages alphabetically according to the country code ("en","de",...)
+##
+#if ( $context.language == "de" )
+##
+<table border=0 width=100%  cellspacing="20" cellpadding="20"><tr>
+<tr>
+<td>
+<span class="nobr">
+<a href="/files/movies/first-geogebra-upload-de.mov">
+<img src="/files/movies/first-geogebra-upload.png" alt="klicken Sie um das Video zu starten"
+ onclick="return activateMovie('/files/movies/first-geogebra-upload-de');" style="cursor:pointer;"><br/> Material mit GeoGebra erstellen (25Mb)
+</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/filing-a-review-en.mov">
+<img src="/files/movies/filing-a-review-en.png" alt="klicken Sie um das Video zu starten"  onclick="return activateMovie('/files/movies/filing-a-review-en');" style="cursor:pointer;"><br/>
+Eine Bewertung einreichen
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/find-resources-de.mov">
+<img src="/files/movies/find-resources-en.png" alt="klicken Sie um das Video zu starten"  onclick="return activateMovie('/files/movies/find-resources-de');" style="cursor:pointer;"><br/>
+Material finden
+</a>
+</td>
+</tr>
+</table>
+##
+#elseif ( $context.language == "en" )
+##
+<table border=0 width=100%  cellspacing="20" cellpadding="20"><tr>
+<tr>
+<td>
+<span class="nobr">
+<a href="/files/movies/first-geogebra-upload.mov">
+<img src="/files/movies/first-geogebra-upload.png" alt="click to start movie"
+ onclick="return activateMovie('/files/movies/first-geogebra-upload');" style="cursor:pointer;"><br/> Create A Simple <br> GeoGebra Resource (25Mb)
+</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/filing-a-review-en.mov">
+<img src="/files/movies/filing-a-review-en.png" alt="click to start movie"  onclick="return activateMovie('/files/movies/filing-a-review-en');" style="cursor:pointer;"><br/>
+Filing a review
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/find-resources-en.mov">
+<img src="/files/movies/find-resources-en.png" alt="click to start movie"  onclick="return activateMovie('/files/movies/find-resources-en');" style="cursor:pointer;"><br/>
+Find a Resource
+</a>
+</td>
+</tr>
+</table>
+##
+#elseif ( $context.language == "es" )
+##
+<table border=0 width=100%  cellspacing="20" cellpadding="20"><tr>
+<tr>
+<td>
+<span class="nobr">
+<a href="/files/movies/first-geogebra-upload.mov">
+<img src="/files/movies/first-geogebra-upload.png" alt="haga clic aquí para iniciar el video"
+ onclick="return activateMovie('/files/movies/first-geogebra-upload');" style="cursor:pointer;"><br/>Cómo crear un recurso simple en GeoGebra (25Mb)
+</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/filing-a-review-es.mov">
+<img src="/files/movies/filing-a-review-es.png" alt="haga clic aquí para iniciar el video"  onclick="return activateMovie('/files/movies/filing-a-review-es.mov');" style="cursor:pointer;"><br/>
+Cómo completar evaluaciones
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/find-resources-es.mov">
+<img src="/files/movies/find-resources-en.png" alt="haga clic aquí para iniciar el video"  onclick="return activateMovie('http://i2geo.net/files/movies/find-resources-en.png');" style="cursor:pointer;"><br/>
+Cómo buscar recursos
+</a>
+</td>
+</tr>
+</table>
+##
+#elseif ( $context.language == "fr" )
+##
+<table border=0 width=100%  cellspacing="20" cellpadding="20"><tr>
+<tr>
+<td>
+<span class="nobr">
+<a href="/files/movies/first-geogebra-upload.mov">
+<img src="/files/movies/first-geogebra-upload.png" alt="cliquez pour afficher la vidéo"
+ onclick="return activateMovie('/files/movies/first-geogebra-upload');" style="cursor:pointer;"><br/> Créer une resource GeoGebra simple (25Mb)
+</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/filing-a-review-fr.mov">
+<img src="/files/movies/filing-a-review-fr.png" alt="cliquez pour afficher la vidéo"  onclick="return activateMovie('/files/movies/filing-a-review-fr');" style="cursor:pointer;"><br/>
+Soumettre une revue
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/find-resources-en.mov">
+<img src="/files/movies/find-resources-en.png" alt="cliquez pour afficher la vidéo"  onclick="return activateMovie('/files/movies/find-resources-en');" style="cursor:pointer;"><br/>
+Chercher une ressource
+</a>
+</td>
+</tr>
+</table>
+##
+#elseif ( $context.language == "nl" )
+##
+<table border=0 width=100%  cellspacing="20" cellpadding="20"><tr>
+<tr>
+<td>
+<span class="nobr">
+<a href="/files/movies/first-geogebra-upload.mov">
+<img src="/files/movies/first-geogebra-upload.png" alt="click to start movie"
+ onclick="return activateMovie('/files/movies/first-geogebra-upload');" style="cursor:pointer;"><br/> Een eenvoudige GeoGebra Resource aanmaken (25Mb)
+</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/filing-a-review-en.mov">
+<img src="/files/movies/filing-a-review-en.png" alt="click to start movie"  onclick="return activateMovie('/files/movies/filing-a-review-en');" style="cursor:pointer;"><br/>
+Een recensie indienen
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/files/movies/find-resources-en.mov">
+<img src="/files/movies/find-resources-en.png" alt="click to start movie"  onclick="return activateMovie('/files/movies/find-resources-en');" style="cursor:pointer;"><br/>
+Een Resource vinden
+</a>
+</td>
+</tr>
+</table>
+##
+#end
+##
+</div>
+</div>
+</div>
+</div>
+
+

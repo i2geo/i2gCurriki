@@ -1,0 +1,249 @@
+#**
+   * Join Curriki Page
+   * @programming
+   *#
+#macro(formfield $fieldname $text $mandatory)
+<div class="register_block" id="register_block_$fieldname">
+<div class="register_title">
+#if($mandatory==true)#asterix()#end
+$msg.get("joincurriki.fields.$fieldname")
+</div>
+#if($text!="")
+<div class="register_help">$text</div>
+#end
+<div class="register_field">
+#if($mandatory)<script type="text/javascript">addMandatoryValueField("register_block_$fieldname",
+#if($fieldname == "xwikiname")
+ "xwikiname"
+#elseif($fieldname=="password2")
+ "2XWiki.XWikiUsers_0_password"
+#else
+ "XWiki.XWikiUsers_0_$fieldname"
+#end
+);</script>#end
+#if($fieldname=="xwikiname")
+<input name="xwikiname" id="xwikiname" type="text" size="20" value="$!request.xwikiname" />
+#elseif($fieldname=="password2") ## if is xwikiname
+$userdoc.display("password", "edit", "2") ## $userdoc.displayTooltip("password")
+#else ## if is xwikiname elseif
+#if($fieldname=="topics")
+#skbListHereEditable( "XWiki.XWikiUsers_0_eduLevelFine" "eduLevelFine" "level" "$!userdoc.eduLevelFine")
+#else
+$userdoc.display($fieldname, "edit") ## $userdoc.displayTooltip($fieldname)
+#end
+#end ## if is xwikiname else
+</div> ## register_field
+</div> ## register_block
+#end ## macro fromfield
+## End Macros
+##
+##
+## First check if this is a submission
+#if($request.xwikiname)
+#set($reg = $xwiki.parseGroovyFromPage("Registration.RegisterGroovy"))
+#set($junk = $reg.setObjects($xwiki, $context, $msg))
+#set($result = $reg.createAccount($request))
+#else
+#set($result = false)
+#end
+## Either submission failed, or no submission
+#if(!$result||($result==false))
+{pre}
+<script type="text/javascript">
+function showpopup(url) {
+  window.open(url, "popup", "width=720,height=700,top=100,left=100,toolbar=no,menubar=yes,location=no, resizable=yes,scrollbars=yes,status=no");
+}
+var mandatoryValueField = new Array();
+function addMandatoryValueField(blockID, fieldID){
+  var pos = mandatoryValueField.length;
+  mandatoryValueField[pos] = new Array();
+  mandatoryValueField[pos][0] = fieldID;
+  mandatoryValueField[pos][1] = blockID;
+}
+
+function validateRegisterForm(){
+  var hasError =  false;
+  var errorMissing = false;
+
+  $$('.register_block.highlight').invoke('removeClassName', 'highlight');
+
+  if ($F('xwikiname').replace(/[A-Za-z0-9]/g, "") != ""){
+      hasError = true;
+      hightLightEl("register_block_xwikiname");
+      alert("$msg.get("joincurriki.xwikiname.badchars")");
+  }
+
+  if (!($('register').elements["XWiki.XWikiUsers_0_show_contact"][0].checked
+        ||$('register').elements["XWiki.XWikiUsers_0_show_contact"][1].checked)
+     ){
+    errorMissing = true;
+    hightLightEl("register_block_show_contact");
+  }
+
+  if (!$('XWiki.XWikiUsers_0_i_agree').checked){
+    errorMissing = true;
+    hightLightEl("register_block_i_agree");
+  }
+
+  if($('register')['XWiki.XWikiUsers_0_password'].value.indexOf(" ") >= 0){
+    hasError = true;
+    alert("$msg.get("joincurriki.password.noSpaces")");
+  }
+
+  if ($('register')['XWiki.XWikiUsers_0_password'].value.length < 5) {
+    hasError = true;
+    alert("$msg.get("joincurriki.password.tooShort")");
+  } else {
+    if ($('register')['2XWiki.XWikiUsers_0_password'].value != $('register')['XWiki.XWikiUsers_0_password'].value){
+      hasError = true;
+      alert("$msg.get("joincurriki.password.noMatch")");
+    }
+  }
+  
+  var emailStr = $('XWiki.XWikiUsers_0_email').value;
+  var atIndex = emailStr.indexOf("@");
+  if ((atIndex < 1) || (emailStr.lastIndexOf(".") <= (atIndex+1)) || (emailStr.length <= (emailStr.lastIndexOf(".") + 1)) || (emailStr.lastIndexOf("@") != atIndex) || (emailStr.replace(/^[a-zA-Z0-9_+=\.-]+@([a-zA-Z0-9-]+[\.])+([a-zA-Z]){2,4}$/, "") != "")) {
+    hasError = true;
+    hightLightEl('XWiki.XWikiUsers_0_email');
+    alert("$msg.get("joincurriki.email.invalidFormat")");
+  }
+
+  for (var i = 0; i < mandatoryValueField.length; i++){
+      if (!mandatoryValueField[i])
+         continue;
+      if (testValueError(mandatoryValueField[i][0])){
+        errorMissing = true;
+        hightLightEl(mandatoryValueField[i][1]);
+      }
+  }
+
+  if (errorMissing) {
+    hasError = true;
+    alert("$msg.get("joincurriki.someDataMissing")");
+  } else if (!hasError) {
+    checkEmail();
+  }
+  return false;
+}
+
+function testValueError(fieldName){
+  var el = $(fieldName);
+  if(!el)
+    return false;
+  var elValue = el.value;
+  if (elValue.length == 0){   
+    return true;
+  }
+  return false;
+}
+
+function hightLightEl(elName){
+  $(elName).addClassName('highlight');
+}
+
+function checkEmail(){
+  var url= "$xwiki.getURL("XWiki.CheckAccountCreation");//.replaceAll("http:","https:")";
+  var pars = 'xpage=plain&email=' + $F("XWiki.XWikiUsers_0_email") + '&login=' + $F("xwikiname");
+  var myAjax = new Ajax.Request( url, { method: 'get', parameters: pars, onComplete: checkEmailResponse });
+}
+
+function checkEmailResponse(originalRequest){
+  var text = originalRequest.responseText;
+  var res = eval('[' + text + '][0]');
+  if(!res.email){
+    alert("$msg.get("joincurriki.email.alreadyUsed")");
+    return;
+  }  
+  if(!res.login){
+    alert("$msg.get("joincurriki.login.alreadyUsed")");
+    return;
+  } 
+  $('register').onSubmit = "";
+  $('register').submit();
+}
+</script>
+<style type="text/css">
+  .highlight {
+    border: 2px solid #FF0000;
+  }
+</style>
+{/pre}
+1 $msg.get("joincurriki.registerToJoinCurriki")
+
+$msg.get("joincurriki.infos")
+
+#titlebar($msg.get("joincurriki.letsKnowWhoYouAre") "" "" "purple")
+#set($message = $reg.getMessage())
+#if($message && $message!="")
+<div class="errormessage">
+$message
+<br/>
+#if($reg.getMessageCode()=="validation_failed")
+#foreach($error in $context.validationStatus.errors)
+$!error
+<br/>
+#end
+#end
+</div>
+#end
+
+#set($userdoc = $xwiki.getDocument("XWiki.XWikiUserTemplate"))
+#set($ok = $userdoc.addObjectFromRequest("XWiki.XWikiUsers"))
+$userdoc.use("XWiki.XWikiUsers")
+#if(!$userdoc.show_contact || $userdoc.show_contact == "")
+#set($junk = ($userdoc.set('show_contact', '1')))
+#end
+
+$msg.get("joincurriki.enterRequestedInfo")
+
+<form id="register" name="register" action="" method="post"  onsubmit="return validateRegisterForm();">
+<input type="hidden" name="xredirect" value="$xwiki.getFormEncoded($!request.xredirect)" />
+
+#formfield("xwikiname" $msg.get("joincurriki.chooseYourCommunityName") true)
+#formfield("first_name" $msg.get("joincurriki.first_name.text") true)
+#formfield("last_name" $msg.get("joincurriki.last_name.text") true)
+#formfield("password" $msg.get("joincurriki.enterPassword") true)
+#formfield("password2" $msg.get("joincurriki.enterPasswordConfirm") true)
+#formfield("email" $msg.get("joincurriki.enterValidEmail") true)
+#formfield("opt_out" "" false)
+#formfield("member_type" "" false)
+#formfield("topics" $msg.get("joincurriki.topics") false)
+#formfield("country" "" false)
+#formfield("state" "" false)
+#formfield("city" "" false)
+#formfield("affiliation" $msg.get("joincurriki.ifApplicable") false)
+#formfield("show_contact" $msg.get("joincurriki.showContact") true)
+
+<div class="register_block" id="register_block_notminor">
+<div class="register_field">
+<input type="hidden" name="XWiki.XWikiUsers_0_notminor" id="XWiki.XWikiUsers_0_notminor" value="1" />
+</div>
+</div>
+
+#set($ppurl = $xwiki.getURL("Main.PrivacyPolicy"))
+#set($TOS = $xwiki.getURL("Main.TOS"))
+<div class="register_block" id="register_block_i_agree">
+<div class="register_title">
+#asterix() $msg.get("joincurriki.privacyAndTOS"):
+</div>
+<div class="register_help">
+$msg.get("joincurriki.privacyAndTOS.read.part1") #showpopup($ppurl "Privacy Policy") $msg.get("joincurriki.privacyAndTOS.read.part2") #showpopup($TOS "Terms of Use Agreement").
+</div>
+<div class="register_field">
+<input type="checkbox" name="XWiki.XWikiUsers_0_i_agree" id="XWiki.XWikiUsers_0_i_agree" value="1" /> $msg.get("joincurriki.iAgree")
+</div>
+</div>
+
+<center>
+<div>
+$msg.get("joincurriki.emailWillBeSent")
+</div>
+<div class="registration-button">
+#button($msg.get("joincurriki.saveMyInfoAndRegister") "red" "submit" "" "")
+</div>
+</center>
+</form>
+## $xwiki.addTooltipJS()
+#else  ## Submission succeeded -- Go to email sent page
+$response.sendRedirect($xwiki.getURL('Registration.EmailSent'))
+#end

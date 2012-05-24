@@ -1,0 +1,69 @@
+
+//<%
+println "1.1 SearchI2G Plugin"
+//
+ println "Plugin is " + xwiki.searchi2g;
+
+try {
+  xwiki.searchi2g.makeSureServiceIsInitted(request);
+  for(serv in xwiki.searchi2g.listServices().entrySet()) {
+    println("- " + serv.key + " : " + serv.getValue());
+  }
+} catch(Exception ex) {
+  ex.printStackTrace();
+  println("Sorry an exception occurred : " + ex);
+}
+
+println ""
+println ""
+println "1.1 Review Summary Updater Monitor"
+println ""
+
+def servletContext = context.getContext().getEngineContext().getServletContext();
+def updater =  servletContext.getAttribute("ReviewSummaryUpdater");
+if(updater==null) {
+    updater = xwiki.parseGroovyFromPage("QF.ReviewSummaryUpdater");
+    updater.init(xwiki.getXWiki())
+    servletContext.setAttribute("ReviewSummaryUpdater",updater)
+    println("Review-Summary-Updater " + updater + " is started.");
+    if(xwiki.hasAdminRights()) println("\n[shut it down > "+doc.name+"?shutdown=true]");
+} else if("true".equals(request.getParameter("shutdown"))) {
+    if(xwiki.hasAdminRights()) {
+      updater.stop();
+      servletContext.removeAttribute("ReviewSummaryUpdater");
+      println("\n[wake it up >"+ doc.name+"]");
+      println("Review Summary Updater shutdown.");
+    } else {
+      println("Sorry you need administrative rights to stop the summary-updater.");
+    }
+} else {
+    println("Review Summary Updater " + updater + " is already started.");
+    if(xwiki.hasAdminRights()) println("\n[shut it down > "+doc.name+"?shutdown=true]");
+}
+
+//
+// -------------------------------------------------
+println "-----------"
+println "1.1 Resource Change Notifier"
+
+def notifier =  servletContext.getAttribute("ResourceChangeNotifier");
+if(notifier==null) {
+    notifier = xwiki.parseGroovyFromPage("Notifications.ResourceChangeNotifier");
+    notifier.init(xwiki.getXWiki());
+    servletContext.setAttribute("ResourceChangeNotifier",notifier)
+    println("ResourceChangeNotifier " + notifier + " is started.");
+    if(xwiki.hasAdminRights()) println("\n[shut it down > "+doc.name+"?shutdown=true]");
+} else if("true".equals(request.getParameter("shutdown"))) {
+    if(xwiki.hasAdminRights()) {
+      notifier.stop();
+      servletContext.removeAttribute("ResourceChangeNotifier");
+      println("\n[wake it up >"+doc.name+"]");
+      println("Resource Update Notifier shutdown.");
+    } else {
+      println("Sorry you need administrative rights to stop daemons.");
+    }
+} else {
+    println("Resource update notifier " + notifier + " is already started.");
+    if(xwiki.hasAdminRights()) println("\n[shut it down > "+doc.name+"?shutdown=true]");
+}
+//%>

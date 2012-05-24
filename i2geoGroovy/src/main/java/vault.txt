@@ -1,0 +1,94 @@
+
+        //ExternalAsset assetDocWrapper =
+        //        (ExternalAsset) xwiki.getDocument(tamedName);
+        //Document assetDocWrapper = xwiki.getDocument(tamedName);
+        //new ExternalAsset(baseDoc,context.getContext());
+        //assetDocWrapper.init()
+        baseDoc = assetDocWrapper.getDocument();
+        assetDocWrapper.setTitle(title);
+        System.out.println("assetDocWrapper is "+ assetDocWrapper + " of class " + assetDocWrapper.getClass());
+
+        //System.out.println("BaseDoc is same as assetDocWrapper.doc?" +
+        //        (baseDoc==assetDocWrapper.getDocument()));
+        assetDocWrapper.setTitle(title);
+        System.out.println("title set to " + assetDocWrapper.getTitle());;
+
+
+        // clear comments
+        assetDocWrapper.removeObjects("XWiki.XWikiComments");
+
+        com.xpn.xwiki.api.Object assetObj = assetDocWrapper.getObject(Constants.ASSET_CLASS);
+        if (assetObj == null) {
+            assetObj = assetDocWrapper.newObject(Constants.ASSET_CLASS);
+            System.out.println("creating assetObj");
+        } else System.out.println("assetObj found");
+
+        assetObj.set("title",title);
+        String link = traceObj.getProperty("url").getValue().toString();
+        com.xpn.xwiki.api.Object externalAssetObj = assetDocWrapper.getObject(Constants.EXTERNAL_ASSET_CLASS);
+        if(externalAssetObj==null) externalAssetObj = assetDocWrapper.newObject(
+                Constants.EXTERNAL_ASSET_CLASS);
+        externalAssetObj.set(Constants.EXTERNAL_ASSET_LINK, link);
+        assetObj.set(Constants.ASSET_CLASS_CATEGORY, Constants.CATEGORY_LINK);
+        System.out.println("Document is " + baseDoc);
+
+
+        //assetDocWrapper.setLink(traceObj.getProperty("url").getValue()+"");
+        assetObj.set ("title",title);
+        assetObj.set(Constants.ASSET_CLASS_KEYWORDS, "|" + traceObj.getProperty("theme").getValue()+ "|");
+        assetObj.set(Constants.ASSET_CLASS_INSTRUCTIONAL_COMPONENT,"activity_lab");
+
+        assetObj.set(Constants.ASSET_CLASS_LANGUAGE, language);
+        StringBuffer description = new StringBuffer(traceObj.getProperty("shortDescription").getValue().toString());
+        description.append("description here!");
+        assetObj.set(Constants.ASSET_CLASS_DESCRIPTION, description.toString());
+
+
+        /*
+assetObj.set(Constants.ASSET_CLASS_LANGUAGE, language);
+StringBuffer description = new StringBuffer(traceObj.getProperty("shortDescription").getValue().toString());
+
+// TODO: internationalization
+description.append("\n\n");
+description.append("1.1.1 This Resource is Copied from a First-Steps' Trace\n")
+description.append("Coming from trace [").append(traceDoc.getFullName())
+  .append("] which mentionned ");
+description.append(traceObj.getProperty("amount").value).append(" constructions.<br/>");
+description.append("Geometry system: [Softwares." )
+        .append(traceObj.getProperty("dgSystem").value).append("].<br/>");
+description.append("Jurisdiction: ").append(
+        traceObj.getProperty("LicCountry").value).append("<br/>");
+description.append("Educational level: ").append(
+        traceObj.getProperty("eduLevel").value).append("<br/>");
+description.append("Main topic: ").append(
+        traceObj.getProperty("topic").value).append("<br/>");
+// TODO: map main topics
+description.append("Other topics: ").append(
+        traceObj.getProperty("theme").value).append("<br/>");
+
+assetObj.set(Constants.ASSET_CLASS_DESCRIPTION, description.toString());
+
+
+// create rights
+assetDocWrapper.applyRightsPolicy("public");
+
+// create license
+com.xpn.xwiki.api.Object  licenseObj = assetDocWrapper.getObject(Constants.ASSET_LICENCE_CLASS);
+if(licenseObj==null)
+  licenseObj = assetDocWrapper.newObject(Constants.ASSET_LICENCE_CLASS);
+licenseObj.set(Constants.ASSET_LICENCE_ITEM_LICENCE_TYPE,
+        traceObj.getProperty("license").getValue().toString());
+licenseObj.set("jurisdiction",
+        traceObj.getProperty("LicCountry").getValue().toString());
+// TODO: create field
+licenseObj.set(Constants.ASSET_LICENCE_ITEM_RIGHTS_HOLDER,
+        traceObj.getProperty("CopyrightHolder").getValue().toString());
+        */
+
+        //baseDoc.setContentDirty(true);
+        //xwiki.getXWiki().saveDocument(assetDocWrapper.getDocument(),context.getContext());
+        assetDocWrapper.save();
+
+        //baseDoc.setObject(Constants.ASSET_CLASS, assetObj.getBaseObject());
+        //System.out.println("asset is " + baseDoc.getObject(Constants.ASSET_CLASS));
+        //assetDocWrapper.save();

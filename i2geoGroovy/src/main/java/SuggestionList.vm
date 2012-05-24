@@ -1,0 +1,57 @@
+## this page should Suggest.SuggestionList
+##                  ===========================
+## this page presents a search form and the search results
+#* @vtlvariable name="lucene" type="com.xpn.xwiki.plugin.lucene.LucenePluginApi" *# ##
+#* @vtlvariable name="xwiki" type="com.xpn.xwiki.api.XWiki" *# ##
+#* @vtlvariable name="request" type="javax.servlet.http.HttpServletRequest" *# ##
+#* @vtlvariable name="cursor" type="org.curriki.xwiki.plugin.lucene.ResourcesSearchCursor" *#  ##
+
+
+#set ($hql = " where doc.web='$doc.web' and doc.name!='WebPreferences' and doc.name!='WebHome' order by doc.date desc")
+#set($docs=$xwiki.searchDocuments($hql,50,0))
+
+## do actions
+
+#if($request.getParameter("rejectSuggestion"))
+    #set($sugg = $request.getParameter("rejectSuggestion"))
+    $xwiki.renamePage($xwiki.getDocument("Suggestions.$sugg"),
+        "SuggestionsReject.$sugg")
+    ## TODO: add log of rejection
+    $request.getSession().setAttribute("suggestion-list-messages", "Page [SuggestionsReject.$sugg] moved to rejects.")
+    #set($d = $xwiki.getDocument("SuggestionsReject.$sugg"))
+    $d.setContent("$d.getContent()$xwiki.getNl()$xwiki.getNl() <hr>Rejected by [$xwiki.getUser().getUser().getUser()] on $xwiki.getCurrentDate().")
+    $d.setParent("SuggestionsReject.WebHome")
+    $d.save()
+    $response.sendRedirect($xwiki.getURL($doc.fullName))
+#elseif($request.getParameter("acceptSuggestion"))
+    #set($sugg = $request.getParameter("acceptSuggestion"))
+    $xwiki.renamePage($xwiki.getDocument("Suggestions.$sugg"),
+        "SuggestionsAccept.$sugg")
+    ## TODO: add log of acceptance
+    $request.getSession().setAttribute("suggestion-list-messages", "Page [SuggestionsAccept.$sugg] moved to accepts.")
+    #set($d = $xwiki.getDocument("SuggestionsAccept.$sugg"))
+    $d.setContent("$d.getContent()$xwiki.getNl()$xwiki.getNl() <hr>Accepted by [$xwiki.getUser().getUser().getUser()] on $xwiki.getCurrentDate().")
+    $d.setParent("SuggestionsAccept.WebHome")
+    $d.save()
+    $response.sendRedirect($xwiki.getURL($doc.fullName))
+#elseif($request.getSession().getAttribute("suggestion-list-messages"))
+    #info($request.getSession().getAttribute("suggestion-list-messages"))
+    #set($junk=$request.getSession().removeAttribute("suggestion-list-messages"))
+#end
+
+
+
+{pre}<ul>
+#foreach($docName in $docs)<!-- $docName -->
+#set($d = $xwiki.getDocument($docName))##
+#set($auth = $xwiki.getURL($d.getContentAuthor()))
+<li style="margin-top:1em"> <big><a href="../Suggestions/$d.name">$!d.getDefaultLanguage():
+    <em>$d.title</em></big></a>
+<br/> <small>
+        (<a href="${xwiki.getURL($doc.fullName)}?rejectSuggestion=$d.name">reject</a>,
+        <a href="${xwiki.getURL($doc.fullName)}?acceptSuggestion=$d.name">accept</a>,
+        <a href="/xwiki/bin/view/Suggestions/$d.name?viewer=history">history</a>)
+        (<a href="$auth">$d.getContentAuthor()</a>: $d.date)</small><br/>
+<table><tr><td><small>$d.getContent()</small></td></tr></table></li>
+#end
+</ul>{/pre}

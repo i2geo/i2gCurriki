@@ -1,0 +1,23 @@
+#includeInContext('Systems.PlayerHead')##
+<div style="position:absolute; width:95%; height:2em; top:0"><h1 align="center"><a href="$baseurl$resource_url">$title</a></h1></div>
+<div style="position:absolute; width:95%; height:95%; padding:1em; top:2em; center">
+		<applet CODE="Main.class"   ARCHIVE="/files/CaRMetal/CaRMetal-3.6.2.jar" MAYSCRIPT="true"  width="97%" height="90%" name="main-player" ALIGN="CENTER">
+		<param NAME="file" VALUE="$baseurl$url">
+</div>
+<div style="position:absolute; bottom:0; width:95%; height:3em;">
+    <table style="width:99%;"><tr><td align="left">
+    <a href="$resource_url">i2geo resource</a>
+</td>
+<td align="center"><a href="http://db-maths.nuxit.net/CaRMetal/" target="CaRMetal">CaRMetal</a></td>
+<td align="right">
+    <applet width="20" height="20" name="vignette-camera"
+            archive="/files/vignettes.jar"
+            code="net.i2geo.vignettes.VignetteCamera">
+        <param name="otherApplet" value="main-player"/>
+        <param name="resourceName" value="$assetDoc.name"/>
+        <param name="tooltip" value="$msg.get('vignettes.camera.tooltip')"/>
+        <param name="web" value="$assetDoc.web"/>
+    </applet>
+</td>
+</tr>
+</table></div>

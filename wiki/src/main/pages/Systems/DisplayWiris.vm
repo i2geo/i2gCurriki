@@ -1,0 +1,26 @@
+#set($assetDoc =$!xwiki.getDocument($!request.asset))
+#set ($baseurl = "http://$xwiki.getXWiki().Param('curriki.system.hostname', 'i2geo.net')")
+#set($url=$assetDoc.getAttachmentURL($assetDoc.getAttachmentList().get(0).getFilename(),"download"))
+
+<html>
+	<body>
+	
+   <APPLET code="WirisApplet_helsinki_en.class" height="500" archive="/files/wrs_helsinki_en.jar" width="600" >
+	<PARAM NAME="version" VALUE="1.0">
+	<PARAM NAME="requestFirstEvaluation" VALUE="true">
+	<PARAM NAME="font" VALUE="SansSerif">
+	<PARAM NAME="fontStyle" VALUE="1">
+	<PARAM NAME="fontSize" VALUE="16">
+	<PARAM NAME="leftMargin" VALUE="10">
+	<PARAM NAME="topMargin" VALUE="10">
+	<PARAM NAME="command" VALUE="false">
+	<PARAM NAME="commands" VALUE="false">
+	<PARAM NAME="interface" VALUE="false">
+	<PARAM NAME="initialText" VALUE="$url">
+</APPLET> 
+<br><p><pre>
+	<a href="$baseurl$url">Download</a> &mdash; $msg.get('rve.content.playConstruction.description.instruction_title.single_file') <a href="http://www.wiris.com" target="Wiris">Wiris</a>
+</pre></p>				
+			</body>
+			</html>
+

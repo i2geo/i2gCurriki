@@ -1,0 +1,19 @@
+#set($traceParam = $request.getParameter('trace'))
+#if($isguest)
+  $response.sendRedirect("/xwiki/bin/loginsubmit/XWiki/XWikiLogin")
+#elseif($traceParam)
+#set($converter = $xwiki.parseGroovyFromPage('Tracelang.ConvertTrace'))
+#set($traceDoc = $xwiki.getDocument($traceParam))
+$converter.setTraceDoc($traceDoc)
+$converter.setMsg($msg)
+$converter.setUserName($context.getLocalUser())
+#set($assetDoc = $converter.doConversion($xwiki,$context))
+##$response.sendRedirect("/xwiki/bin/view/GWT/Editor?xpage=plain&page=${converter.getEscapedFullDocName()}&mode=edit")
+$response.sendRedirect($xwiki.getURL($assetDoc.getFullName()))
+#else
+  <form action="" method="GET">
+    Trace URL: <input type="text" name="trace">
+   <input type="submit" value="ok">
+  </form>
+#end
+

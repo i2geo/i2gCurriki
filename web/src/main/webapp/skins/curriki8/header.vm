@@ -1,0 +1,259 @@
+### Language switcher stuff
+<!-- user is $!user -->
+<script language="JavaScript">
+<!-- // hide from old browsers
+  function changeLanguage(lang) {
+    if (lang=="") lang="en";
+    var h = location.href;
+    if(h.indexOf('?')<0) l = h + "?language=" + lang;
+    else {
+        var p = h.indexOf('language=');
+        if(p>=0) {
+            l = h.substring(0,p + 9) + lang;
+            if(p+11<h.length) l = l+h.substring(p+11);
+        } else {
+            l = h + "&language=" + lang;
+        }
+    }
+    location.replace(l);
+  }
+//-->
+</script>
+
+## #set($lib=$xwiki.parseGroovyFromPage('XWiki.libProxyki'))
+## #set($con=$lib.load("XObj"))
+## $con.connect($xwiki,$context)
+#set($langs=$xwiki.getXWikiPreference("languages").split(","))
+#set($debugTables="0")
+
+#**
+  * Displays the Curriki Header
+  * @author Curriki dev team
+  *#
+<!-- header -->
+<!-- div id="header" --> ##{
+
+<table width=100% border=$debugTables style="border-bottom:1px solid #909090;">
+<tr>
+
+
+
+
+<!-- logo -->
+## TODO: Add translation for title and alt
+#set($altinfo = $msg.get("header.altinfo"))
+<td rowspan=2>
+<div id="header-logo"> ##{
+  <a href="$xwiki.getURL("Main.WebHome", "view")" title="$altinfo">
+    <img src="$xwiki.getSkinFile("logo_i2g.png")" title="$altinfo" alt="$altinfo" width="150"/>
+  </a>
+</div> ##}
+
+</td><td colspan=2>
+
+  <div id="slogan">
+    <!-- old: img src="/xwiki/skins/curriki8/i2g_slogan.png" width=605 height=36 alt="Interoperable interactive geometry for Europe" -->
+    <!-- original size: 1929 x 112 -->
+    <img src="$msg.get("header.slogan.png")" width=605 height=36 alt="$msg.get("header.slogan.alt")">
+  </div>
+
+</td></tr>
+<tr><td align="center" valign="top">
+
+<!-- member area -->
+<div> ##{
+#if($isguest) <!-- logredir is fiddled here from $logredir -->##{
+  #if ($request.xredirect) ##{
+   #set($logredir = $request.xredirect)
+  #elseif($doc.web == "Registration") ##}{
+   #set($logredir = $xwiki.getURL("MyCurriki.Profile"))
+  #elseif($doc.fullName == "Main.WebHome") ##}{
+   #set($logredir = $xwiki.getURL("MyCurriki.Profile"))
+  #elseif($doc.fullName == "Main.JoinCurriki") ##}{
+   #set($logredir = $xwiki.getURL("MyCurriki.Profile"))
+  #elseif($logredir.contains("/login")) ##}{
+   #set($logredir = "")
+  #end ##}
+  #if("$!logredir"!="") ##{
+    #set($logredir = "xredirect=$util.encodeURI($logredir)")
+  #elseif($request.srid) ##}{
+    #set($logredir = "srid=$request.srid")
+  #end ##}
+<!-- login area -->
+<table border=$debugTables width="100%" style="border-left:1px solid #909090;"><tr><td align="center" style="padding:5px;">
+<form action="/xwiki/bin/loginsubmit/XWiki/XWikiLogin?$logredir")" method="post"> ##{
+  <table border=$debugTables><tr><td colspan=2>
+  <input type="hidden" name="srid" value="$!request.srid" />
+  <input class="input" id="j_loginname" tabindex="1" type="text" name="j_username" value="$msg.get("header.login_username")" onfocus="if (this.value==&quot;$msg.get("header.login_username")&quot;){this.value=''} else {this.select()};" onblur="if (this.value==''){this.value='$msg.get("header.login_username")';}"/>
+  </td></tr><tr>
+  <td>
+  <table border=$debugTables><tr><td>
+  <input class="input password" id="j_loginpwd" tabindex="2" type="password" name="j_password" onfocus="if(window.ActiveXObject || this.type == 'password'){this.select();} else {this.type='password'; this.value=''; this.focus();}" onblur="if ((!window.ActiveXObject) && this.value==''){this.value='$msg.get("header.login_password")'; this.type='text';}"/>
+
+  </td><td>
+  <script type="text/javascript">
+    // In IE we can't change the type of a password input (we can't toggle between text and password type) so we have to
+    // use a place holder in order to display the password label when the password field is empty.
+    function showLoginPasswordInput() {
+      // Hide the place holder.
+      this.style.display = 'none';
+      // Show the password input.
+      var pwd = Ext.get('j_loginpwd');
+      pwd.style.display = '';
+      pwd.focus();
+    }
+    function hideLoginPasswordInput() {
+      // Hide the password input if it's empty.
+      if (this.value == '') {
+        this.style.display = 'none';
+        // Show the place holder.
+        var placeHolder = Ext.get('j_loginpwd_placeholder');
+        placeHolder.style.display = '';
+      }
+    }
+  </script>
+  
+  <button type="submit" id="loginbtn" tabindex="4" style="width:50px">$msg.get("header.login_go")</button>
+  </td></tr></table>
+
+  </td></tr></table>
+
+  <!-- remember me -->
+  <fieldset>
+    <label><input tabindex="3" type="checkbox" class="checkbox" name="j_rememberme" value="true"/>$msg.get("header.login_rememberme")</label>
+    <a href="$xwiki.getURL("Registration.ForgotLogin")" title="">$msg.get("header.login_forgot")</a>
+  </fieldset>
+  <!-- end of remember me -->
+
+</form>
+</td><td align=center>
+  
+  <!-- registration -->
+  #set($regurl = $xwiki.getURL("Main.JoinCurriki"))
+  <a href="$regurl"><span style="font-size:13pt;"><b>$msg.get("header.becomemember_part1")</b><br>$msg.get("header.becomemember_part2")</span></a>
+  <br><br>
+  <select name="languageSelect" onChange="changeLanguage(this.options[this.selectedIndex].value)">
+  #set($officialLanguages=",en,fr,de,es,cs,nl,")
+  #set($officialLanguages=$officialLanguages.toString())
+#foreach($lang in $langs)
+  #set($langName = $msg.get("languages2_3.${lang}"))
+  #set($langName = $msg.get("languages3.label_$langName"))
+  #if($officialLanguages.contains($lang))#else#set($langName="$langName (partial)")#end
+  <option value="$lang" #if ($context.language==$lang) selected #end>$langName</option>
+#end
+  </select>
+  <!-- end of registration -->
+
+</td></tr></table>
+
+  
+##}
+<!-- end of login area -->
+
+#else ## }{ ## is logged in
+  ## crtUserDoc is set in fudocs.vm
+<table><tr><td>
+  #set($fname = $crtUserDoc.display("first_name","view"))
+  ## IG-262: recursive include on lack of activation.. now receives a better warning
+  #if("$!fname" == "")<script type="application/javascript">
+        function alertAboutNonValidated() {
+            if(typeof(window.alerted)=="undefined") {
+                window.alerted = "alerted";
+                window.alert("$util.escapeText($msg.get("registration.account-validation-alert"))");
+                // could propose to resend the mail?
+            }
+            return false;
+        }
+        window.setInterval(alertAboutNonValidated,200);
+  </script>(user not validated yet!)#else
+  <span class="welcome"><a href='$crtUserDoc.getURL()'>$msg.get("header.welcome", ["$fname"])</a></span>
+##  <span class="welcome" style="font-size:13pt; color:blue;"><a href='$crtUserDoc.getURL()'>$msg.get("header.welcome", ["${crtUserDoc.first_name}"])</a></span>
+  <br><br>
+  #if($hasGlobalAdmin)
+    <a href="$xwiki.getURL("Admin.WebHome","view")" style="color:red;">$msg.get("header.admin")</a> #sep()
+  #end
+  #if(""==$!logredir)#set($logredir = "/xwiki/bin/view/Main/WebHome")#end
+  #if($doc.web=="MyCurriki")#set($logredir="/xwiki/bin/view/Main/WebHome"))#end
+  #if($logredir.startsWith("http://i2geo.net"))#set($logredir = $logredir.substring(16))#end
+  #if($logredir.startsWith("http://draft.i2geo.net"))#set($logredir = $logredir.substring(22))#end
+  #set($logouturl = "/xwiki/bin/logout/XWiki/XWikiLogout?xredirect=$util.encodeURI($logredir)")
+  <a href="$logouturl" class="logout" style="color:red;">$msg.get("header.logout")</a>
+  &nbsp; &nbsp;#end
+  </td><td>
+  Language
+  <select style="margin-top:5px;" name="languageSelect" onChange="JavaScript:changeLanguage(this.options[this.selectedIndex].value)">
+  #set($officialLanguages=",en,fr,de,es,cs,nl,")
+  #set($officialLanguages=$officialLanguages.toString())
+#foreach($lang in $langs)
+  #set($langName = $msg.get("languages2_3.${lang}"))
+  #set($langName = $msg.get("languages3.label_$langName"))
+  #if($officialLanguages.contains($lang))#else#set($langName="$langName (partial)")#end
+  <option value="$lang" #if ($context.language==$lang) selected #end>$langName</option>
+#end
+  </select>
+  </td></tr>
+  </table>
+  
+#end ##}
+
+
+
+</div> ##} ##header-member
+<!-- end of member area -->
+
+</td><td>
+
+
+<!-- search -->
+
+<script type="text/javascript">
+    window.choose= function choose(uri) {
+        window.top.focus();
+        console.log("choosing " + uri);
+        var form = document.forms["simpleSearchForm"];
+        form.termsInput.value = uri;
+        form.submit();
+    }
+    window.initSKBSearch = function initSKBSearch() {
+        clearInterval(window.initter);
+        ##document.getElementById("originalSearchField").style.display = "none";
+        if(typeof skbDoSearch == "undefined")
+            window.initter = window.setInterval('initSKBSearch()',200)
+        else 
+           skbDoSearch("searchField|topic,competency,level|choose|true");
+    }
+    window.initter = window.setInterval('initSKBSearch()',200);
+</script>
+
+#set($defaultsearchtext = $msg.get("header.defaultsearchtext"))
+<div id="header-search"><table align=center><tr><td style="width:300px">
+ ##{
+    <div class="search-box">
+    <div id="searchField"></div>
+    </div>
+
+  <form id="simpleSearchForm" name="simpleSearchForm"  action="$xwiki.getURL("Search.Simple")"> ##{
+    ##<<div id="originalSearchField"><input type="text" id="curriki-searchbox" name="terms"
+    ##       class="input" onfocus="if (this.value=='$defaultsearchtext') this.value=''; else this.select()" onblur="if (this.value=='') this.value='$defaultsearchtext'" />
+    ##    <button type="submit" id="searchbtn" name="btn">$msg.get("header.search_go")</button>
+    ##</div>
+    <input id="termsInput" type="hidden" name="terms"
+        #if($request.terms)value="$request.terms"#end />
+  </form> ##}
+    </td></tr><tr><td align=center>
+  <p> ##{
+    <a href="/xwiki/bin/view/Main/CurriculumTexts?xpage=popup" ## "$xwiki.getURL("Main.CurriculumTexts")"
+      onclick='window.open("/xwiki/bin/view/Main/CurriculumTexts?xpage=popup", "competencyBrowsing","width=600,height=700,screenX=20,scrollbars=yes,status=no,toolbar=no,menubar=no,location=no,resizable=yes"); return false;'
+      >$msg.get("header.browse_curriculum_texts")</a>&nbsp;&nbsp;
+    ##<a href="$xwiki.getURL("Search.WebHome")" onclick="this.href='/xwiki/bin/view/Search/#o%3As%3Ds%253Aresource%5Ea%3Do%253Aresource%253Do%25253Aa%25253Db%2525253A1%5Ef%3Do%253Aresource%253Do%25253Aterms%25253Ds%2525253A'+escape(escape(escape(escape($('curriki-searchbox').value.replace(/^$defaultsearchtext/, ''))))); return true;">$msg.get("header.advanced_search")</a> ## |
+      <a href="$xwiki.getURL("AdvancedSearch.Resources")" >$msg.get("header.advanced_search")</a>
+    ##<a href="$xwiki.getURL("Main.Browse")">$msg.get("header.browse_subjects")</a>
+  </p> ##}
+</td></tr></table>
+</div> ##} ##member-search
+<!-- end of advanced search -->  
+
+</td></tr>
+</table>
+<!-- /div --> ##} ##header
+<!-- end of header -->

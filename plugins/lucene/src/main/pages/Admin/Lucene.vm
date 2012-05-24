@@ -1,0 +1,115 @@
+## this page should Admin.Lucene
+##                  ===========================
+## this page is a utility for direct query to lucene
+#* @vtlvariable name="lucene" type="com.xpn.xwiki.plugin.lucene.LucenePluginApi" *#
+ ##
+#* @vtlvariable name="xwiki" type="com.xpn.xwiki.api.XWiki" *# ##
+#* @vtlvariable name="request" type="javax.servlet.http.HttpServletRequest" *# ##
+#* @vtlvariable name="cursor" type="org.curriki.xwiki.plugin.lucene.ResourcesSearchCursor" *#  ##
+#* @vtlvariable name="luQ" type="org.apache.lucene.search.BooleanQuery" *#
+
+
+1 Lucene Search
+
+#set($lucene = $xwiki.getPlugin("lucene"))
+#set($itemsPerPage = "100")
+#set($doRebuild = $request.getParameter("rebuild"))
+#if($doRebuild=="yes")
+#if($lucene)
+#set($documentCount = $lucene.rebuildIndex($xwiki, $context))
+#if(${documentCount}>=0)
+Started index refresh with $documentCount documents. Will take some time depending on the number of pages/attachments.
+#else
+Index refresh failed.
+#end
+#end
+#else
+#if($xwiki.hasAdminRights())
+[Refresh Index>${doc.web}.${doc.name}?rebuild=yes] - $lucene.getPreIndexQueueSize() documents in pre-queue - $lucene.getQueueSize() documents in queue - $lucene.getActiveQueueSize() documents in active queue - $lucene.getLuceneDocCount() documents in indexer queue
+#end
+#end
+
+#set($query = $request.getParameter("text"))
+#if(!$query)#set($query = "")#end
+#set($countsOnly = $request.getParameter("countsOnly"))
+{pre}
+<form action="$doc.name" method="get">
+<label><input type="checkbox" name="countsOnly" value="countsOnly" #if($countsOnly)checked="checked" #end/>counts only</label>
+<br><input type="text" name="text" value="$xwiki.getXMLEncoded($query)" />
+<input type="submit" value="$msg.get("tosearch")"/>
+</form>
+{/pre}
+#if($query != "")
+#set($lucene = $xwiki.getPlugin("lucene"))
+#if($lucene)
+#set($wikinames = "xwiki")
+#set($languages = "")
+#set($firstIndex = $request.getParameter("firstIndex"))
+#if(!$firstIndex)
+#set($firstIndex = "1")
+#end
+
+#set($count=$lucene.count($query,$context.context))
+(query gave $count results)
+
+
+#if(!$countsOnly)
+#set($searchresults = $lucene.getSearchResults($query, $wikinames, $languages, $xwiki))
+#set($results = $searchresults.getResults($firstIndex,$itemsPerPage))
+  #if($results.size()>0)
+#if($xwiki.isVirtual())
+#macro(resultlink $xwiki $web $name)
+   * [${result.wiki}:${result.web}.${result.name}] by $msg.get("lastauthor") [$result.author]
+#end
+#else
+#macro(resultlink $xwiki $web $name)
+ #set($resDoc = $xwiki.getDocument("${result.web}.${result.name}"))
+ #if ($resDoc.displayTitle)
+  #set($title = $resDoc.displayTitle)
+ #else
+  #set($title = $result.name)
+ #end
+   * [$result.name: $title>${result.web}.${result.name}] by [$result.author]
+#end
+#end
+#set($lastIndex=$searchresults.getEndIndex($firstIndex, $itemsPerPage))
+#if($searchresults.hitcount==1)
+{pre} $msg.get("oneresult"):{/pre}
+#else
+{pre}$msg.get("results") $firstIndex - $lastIndex $msg.get("of") ${searchresults.hitcount}:{/pre}
+
+#if($searchresults.hasPrevious($firstIndex))
+<a href="/xwiki/bin/view/${doc.web}/${doc.name}?text=$util.encodeURI($query)&firstIndex=$searchresults.getPreviousIndex($firstIndex,$itemsPerPage)">$msg.get("previous")</a>
+#else
+$msg.get("previous")
+#end
+ |
+#if($searchresults.hasNext($firstIndex,$itemsPerPage))
+<a href="/xwiki/bin/view/${doc.web}/${doc.name}?text=$util.encodeURI($query)&firstIndex=$searchresults.getNextIndex($firstIndex,$itemsPerPage)">$msg.get("next")</a>
+#else
+$msg.get("next")
+#end
+#end
+{pre}
+<ul>#foreach($result in $results)
+#if($result.type=='wikipage')
+#resultlink(${result.wiki} ${result.web} ${result.name})
+#elseif($result.type=='attachment')
+<li> <a href="$xwiki.getURL("${result.web}.${result.name}")">${result.filename}</a> : Attachment on [${result.web}.${result.name}] by [$result.author]</li>
+#else
+<li><a href="$xwiki.getURL("${result.web}.${result.name}")">${result.name}</a> (<a href="/xwiki/bin/view/Admin/IndexDoc?doc=${result.web}.${result.name}">indexed</a>)</li>
+#end
+#end
+</ul>
+{/pre}
+
+
+#else
+$msg.get("noresults")
+#end
+#end
+
+#else
+lucene plugin not found
+#end
+#end

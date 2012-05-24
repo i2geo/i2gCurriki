@@ -1,0 +1,10 @@
+
+1 Software: WIRIS
+
+See home page: http://www.wiris.com/
+
+
+----
+
+#set($fileType = "wiris wirishtml")
+#includeInContext("Search.AllResourcesForFileType")

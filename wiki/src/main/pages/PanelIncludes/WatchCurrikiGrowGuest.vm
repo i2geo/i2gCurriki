@@ -1,0 +1,52 @@
+#if($doc.fullName=="Main.WebHome" || $doc.web=="Panels" || $doc.web=="PanelIncludes")
+<div id="watch-curriki-grow" class="shadow-outer"> ##{
+  <div class="shadow-middle"> ##{
+    <div class="shadow-inner information"> ##{
+      <div class="headerbar">$msg.get("panel.watchgrow.title")</div>
+         <div class="frame-content"> ##{
+   	   	<table class="stats">
+   	   	 <tbody>
+   	   	  <tr>
+  	   	   <td><a href="$xwiki.getURL("Main.Browse")">$msg.get("panel.watchgrow.resources")</a></td>
+  	   	   <td><a href="$xwiki.getURL("Main.Browse")">
+#set($lucene = $xwiki.getPlugin("lucene"))
+#if(!$lucene)
+ #error("Error loading Lucene search")
+#end
+#set($luceneQuery = "object:CurrikiCode.AssetClass AND NOT CurrikiCode.TextAssetClass.type:2 AND NOT name:WebHome AND NOT name:WebPreferences AND NOT name:MyCollections AND NOT name:SpaceIndex AND NOT web:AssetTemp")
+$lucene.count($luceneQuery,$context.context)
+</a></td>
+  	   	  </tr>
+   	   	  <tr>
+                   <!-- old link: <a href="$searchUserLink"> -->
+   	   	   <td><a href="/xwiki/bin/view/Search/AllMembers">$msg.get("panel.watchgrow.members")</a></td>
+                   <td><a href="/xwiki/bin/view/Search/AllMembers">$lucene.count("object:XWiki.XWikiUsers",$context.context)</a>
+                   </td>
+   	   	  </tr>
+##
+##
+   	   	  <tr>
+   	   	   <td><a href="/xwiki/bin/view/Groups/BrowseGroupsbySubject?subject=all">$msg.get("panel.watchgrow.groups")</a></td>
+   	   	   <td>
+                     <a href="/xwiki/bin/view/Groups/BrowseGroupsbySubject?subject=all">$lucene.count("object:XWiki.CurrikiSpaceClass",$context.context)</a>
+                   </td>
+   	   	  </tr>
+##
+##
+   	   	  <tr>
+   	   	   <td><a href="/xwiki/bin/view/Main/ReviewedResources">$msg.get("panel.watchgrow.reviews")</a></td>
+   	   	   <td>
+                     <a href="/xwiki/bin/view/Main/ReviewedResources">$lucene.count("object:QF.ReviewClass",$context.context)</a>
+                   </td>
+   	   	  </tr>
+   	   	 </tbody>
+##
+   	   	</table>
+                #if($context.user=="XWiki.XWikiGuest")
+   	   	<p class="links"><a href="$xwiki.getURL("Main.JoinCurriki")">$msg.get("panel.watchgrow.join")</a>#else</p>
+                #end
+      </div> ##}
+    </div> ##}
+  </div>##}
+</div> ##}
+#end

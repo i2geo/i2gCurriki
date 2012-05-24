@@ -1,0 +1,13 @@
+
+1 Software: GeoPlan / GeoSpace
+
+Geoplan/Geospace is a software written in Delphi for windows. Geospace is a 3D version of Geoplan. A java version has been in development for quite a while...
+
+We haven't worked on the integration of the common file format on the windows version but a java translator is almost there.
+
+See home page: http://www.aid-creem.org/
+
+----
+
+#set($fileType = "g2w g3w")
+#includeInContext("Search.AllResourcesForFileType")

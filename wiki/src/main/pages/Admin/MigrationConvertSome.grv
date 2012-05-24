@@ -1,0 +1,136 @@
+1 Convert
+
+<%
+import com.xpn.xwiki.*
+import org.curriki.xwiki.plugin.asset.Asset;
+
+def econtext = context.context.getEngineContext()
+def migrunning =  econtext.getAttribute("migration_isrunning")
+
+// We check if a migration is already running
+if ((migrunning!=null) && (migrunning.equals("1"))) {
+ println "A migration is already running"
+} else {
+try {
+
+ // mark the migration running
+ econtext.setAttribute("migration_isrunning", "1")
+
+ // setting some status data
+ faillist = new ArrayList()
+ econtext.setAttribute("migration_faillist", faillist)
+ econtext.setAttribute("migration_enddate", "")
+ econtext.setAttribute("migration_startdate", new Date())
+ econtext.setAttribute("migration_cancel", "")
+
+ nb = 0
+cancel = false
+  restrictClause = "and doc.web in ('Coll_Pech')";
+totalnb = xwiki.search("select count(*) from XWikiDocument as doc,BaseObject as obj where doc.fullName=obj.name and (obj.className='XWiki.AssetClass' or obj.className='XWiki.ExternalAssetClass') and doc.web not in ('AssetTemp') " + restrictClause).get(0)
+
+econtext.setAttribute("migration_totalnb", totalnb)
+
+println "${totalnb} docs to convert"
+System.out.println("<strong>${totalnb} docs to convert</strong> <br /><br />")
+
+for(item in xwiki.searchDocuments(",BaseObject as obj where doc.fullName=obj.name and (obj.className='XWiki.AssetClass' or obj.className='XWiki.ExternalAssetClass') and doc.web not in ('AssetTemp') " + restrictClause)) {
+if (!cancel) {
+ nb = nb + 1
+
+ if (request.test && request.test == "1") {
+  try {
+   Thread.sleep(15000);
+  } catch (Throwable e) {
+  }
+ }
+
+def migcancel =  econtext.getAttribute("migration_cancel")
+if ((migcancel!=null)&&(migcancel=="1")) {
+   // we should stop the migration
+   econtext.setAttribute("migration_enddate", new Date())
+   cancel = true;
+   break;
+}
+
+
+econtext.setAttribute("migration_nb", nb)
+
+Asset itemdoc;
+def customclass = "no custom class found"
+
+System.out.println("CONVERT: ${nb} ${item}")
+if (request.prepare=="1" || request.confirm=="1")  {
+ def url = ""
+ def isNew = "";
+ try {
+  itemdoc = xwiki.getDocument(item)
+  url = itemdoc.getExternalURL()
+  isNew = itemdoc.isNew();
+  customclass = itemdoc.document.getCustomClass()
+ } catch (Exception e) {
+  url = "cannot load document"
+  e.printStackTrace()
+  println "Exception while reading document ${e.message}"
+ }
+
+ itemname = xwiki.escapeText(item)
+
+ println "<br />Doc number ${nb}: <ul><li>${itemname}<li>${url}<li>${isNew}  <li>Custom class: ${customclass}</ul>"
+ } else {
+ itemname = xwiki.escapeText(item)
+ println "<br />Doc number ${nb}: ${itemname}"
+ }
+
+ // check the custom class if it is not set properly
+ if (request.confirm) {
+  // we need to force the custom class to the right class otherwise
+  // we cannot call convert
+  if (itemdoc!=null && customclass != "org.curriki.xwiki.plugin.asset.Asset") {
+     itemdoc.setCustomClass("org.curriki.xwiki.plugin.asset.Asset");
+     itemdoc.saveWithProgrammingRights();
+  }
+
+   // run the real conversion
+   try {
+     println "<br /><ul><li>Converting</li></ul>"
+     Asset toconvertdoc = xwiki.getDocument(item)
+     println toconvertdoc
+     println toconvertdoc.convert()
+   } catch (XWikiException e) {
+    System.out.println("CONVERT FAIL: ${nb} ${item}")
+    faillist.add(item)
+    e.printStackTrace()
+     println "Exception while converting ${e.fullMessage}"
+   } catch (Exception e) {
+    System.out.println("CONVERT FAIL: ${nb} ${item}")
+    faillist.add(item)
+    e.printStackTrace()
+    println "Exception while converting ${e.message}"
+   } // end real conversion
+  } // end is confirm
+ } // end is cancelled
+} // end for
+
+if (cancel) {
+ println "<br /><br />Migration was cancelled by an administrator<br />"
+}
+
+// set the end date in the migration status
+econtext.setAttribute("migration_enddate", new Date())
+
+if(!request.confirm) {
+ println "<br /><br />"
+ println "[Confirm conversion>${doc.fullName}?confirm=1]"
+ println "[View details>${doc.fullName}?prepare=1] (warning: don't use this if there are more than 200 documents to convert)"
+}
+
+} catch (Throwable e) {
+ throw e;
+} finally {
+ econtext.setAttribute("migration_isrunning", "")
+}
+
+} // end is running
+
+%>
+

@@ -1,0 +1,10 @@
+1 Cabri
+
+Web site: http://www.cabri.com/
+
+Includes Cabri3D and Cabri 2+.
+
+----
+
+#set($fileType = "cabri2plusfile cabri2plusFile cabri2File cabri2file fig")
+#includeInContext("Search.AllResourcesForFileType")

@@ -1,0 +1,190 @@
+## <meta name='gwt:module' content='${gwtsitepath}=org.curriki.gwt.Main'>
+## <meta name="gwt:property" content="translation=XWiki.CurrikiCourseEditorTranslation">
+## <link rel="stylesheet" href="/xwiki/bin/view/XWiki/style?xpage=plain" type="text/css" />
+## <link rel="stylesheet" href="/xwiki/yui/treeview/assets/tree.css" type="text/css">
+## <script type="text/javascript" src="/xwiki/yui/yahoo/yahoo-min.js" ></script>
+## <script type="text/javascript" src="/xwiki/yui/treeview/treeview-min.js" ></script>
+## <script type="text/javascript" src="/xwiki/yui/treeview/checknode.js"></script>
+## <script language="javascript" src="/xwiki/gwt2.js"></script>
+## <script language="JavaScript">
+##  function tourpop()
+##  {
+##    tourwindow = window.open ("http://www.curriki.org/xwiki/bin/download/Coll_curriki/GuidedTourofCurriki_1/currikitourMay08.zip/currikitourMay08/index.html","tourwindow","menubar=0,resizable=0,width=740,height=540");}
+##  </SCRIPT>
+##
+## <iframe src="javascript:''" id="__gwt_historyFrame" style="width:0;height:0;border:0"></iframe>
+<div id="treeviewtemp" style="display: none;"></div>
+##
+## the default expandation state for categories
+#set($defstate=false)
+##
+#beginNavigationPanel($msg.get("panel.navigation.home.rollover"))
+##
+##
+##
+##FIND
+##
+## removed entries:
+##   [$msg.get('panel.navigation.find.about'), "Main.AboutFindingCollecting"],
+##   [$msg.get('panel.navigation.advanced_search'), $advsearchurl],
+##   [$msg.get('panel.navigation.reviewed_resources'), $topreviewedsearchurl]
+#set($searchurl = $xwiki.getURL("Main.GWTSearch"))
+#set($advsearchurl = "${searchurl}#__advShow=1")
+#set($topreviewedsearchurl = "${searchurl}#__crs=topreviewed&__go=1")
+#set($partnersearchurl = "${searchurl}#__crs=partners&__go=1")
+#set($rot = $msg.get("panel.navigation.find.rollover"))
+#navigationCategory($msg.get('panel.navigation.find'), $rot, "",  $defstate,
+  [
+    [$msg.get('panel.navigation.featured_resources'), "Main.FeaturedContent"],
+    [$msg.get('panel.navigation.recent_resources'), "http://i2geo.net/xwiki/bin/view/Search/AllResources?sort=updated&terms=expert-query"],
+    [$msg.get('search.results.all-resources.title'), "Search.AllResources"],
+    [$msg.get('header.browse_curriculum_texts'), "javascript:window.open('/xwiki/bin/view/Main/CurriculumTexts?xpage=popup', 'competencyBrowsing','width=400,height=500,screenX=20,scrollbars=yes,status=no,toolbar=no,menubar=no,location=no,resizable=yes')"],
+    [$msg.get('panel.navigation.browse_by_subject'), "Subjects.WebHome"],
+    [$msg.get('panel.navigation.browse_by_software'), "Softwares.WebHome"],
+    [$msg.get('panel.navigation.reviewed_resources'), "/xwiki/bin/view/Main/ReviewedResources"],
+    [$msg.get('panel.navigation.find.about'), "Main.AboutFindingCollecting"]
+  ]
+)
+##   [$msg.get('panel.navigation.browse_by_subject'), "Main.Browse"]
+
+##
+##CONTRIBUTE
+##
+##   removed: [$msg.get('panel.navigation.crs'), "/xwiki/bin/view/Coll_curriki/CurrikiReviewSystem--Overview?bc=;Coll_curriki.CurrikiHelp;Coll_curriki.TheRepository"]
+##   replaced temporarily for "http://www.curriki.org/xwiki/bin/view/Main/AboutCurrikiReviewSystem", the Curriki page
+##   maybe it should be "Main.AboutCurrikiReviewSystem"
+#set($rot = $msg.get("panel.navigation.contribute.rollover"))
+#if($context.user=="XWiki.XWikiGuest")
+#navigationCategory($msg.get('panel.navigation.contribute'), $rot,"",  $defstate,
+  [
+    [$msg.get('panel.navigation.addresource'), "/xwiki/bin/login/XWiki/XWikiLogin", $msg.get("panel.navigation.addresource.rollover.visitor")],
+    [$msg.get('panel.navigation.crs'), "/xwiki/bin/view/About/Quality"],
+    [$msg.get('panel.navigation.contribute.about'), "Main.AboutContributing"]
+  ]
+)
+#else
+#navigationCategory($msg.get('panel.navigation.contribute'),  $rot,"", $defstate,
+  [
+    [$msg.get('panel.navigation.addresource'), "javascript:Curriki.module.addpath.startPath('B');", $msg.get("panel.navigation.addresource.rollover.member")],
+    [$msg.get('panel.navigation.crs'), "/xwiki/bin/view/About/Quality"],
+    [$msg.get('panel.navigation.contribute.about'), "Main.AboutContributing"]
+  ]
+)
+#end
+##
+##OLD
+##if($context.user!="XWiki.XWikiGuest")
+##navigationCategory($msg.get('panel.navigation.contributeresources'), "", $defstate,
+##  [
+##   [$msg.get('panel.navigation.add_learning_resource'), "javascript:addFile2();"],
+##   [$msg.get('panel.navigation.create_learning_resource'), "javascript:addFromTemplate2();"],
+##   [$msg.get('panel.navigation.build_collection'), "javascript:addCollection2();"]
+##  ]
+##)
+##end
+##
+##
+##CONNECT
+##
+## ##   [$msg.get('panel.navigation.browseGroups'), "http://i2geo.net/xwiki/bin/view/Groups/BrowseGroupsbySubject?subject=all"],
+#set($rot=$msg.get("panel.navigation.connect.rollover"))
+#navigationCategory($msg.get('panel.navigation.connect'), $rot,"", $defstate,
+  [
+   [$msg.get('panel.navigation.viewAllGroups'), "http://i2geo.net/xwiki/bin/view/Groups/BrowseGroupsbySubject?subject=all&bc=;Main.WebHome"],
+   [$msg.get('panel.navigation.featuredGroups'), "Main.FeaturedGroups"],
+   [$msg.get('panel.navigation.createGroup'),"Groups.CreateNewGroup"],
+   [$msg.get('panel.navigation.usersMailingList'), "http://i2geo.net/xwiki/bin/view/Main/UsersMailingList"],
+   [$msg.get('panel.navigation.chatroom'), "Main.chatroom"],
+   [$msg.get('panel.navigation.blogs'), "http://i2geo.net/xwiki/bin/view/Search/#o%3As%3Ds%253Ablog%5Ef%3Do%253Aresource%253Do%25253Asubjectparent%25253Ds%2525253A%25255Esubject%25253Ds%2525253A%25255Ereview%25253Ds%2525253A%25255Elevel%25253Ds%2525253A%25255Elanguage%25253Ds%2525253A%25255Especial%25253Ds%2525253A%25255Eictprfx%25253Ds%2525253A%25255Eict%25253Ds%2525253A%255Egroup%253Do%25253Asubjectparent%25253Ds%2525253A%25255Esubject%25253Ds%2525253A%25255Elevel%25253Ds%2525253A%25255Elanguage%25253Ds%2525253A%25255Epolicy%25253Ds%2525253A%255Emember%253Do%25253Asubjectparent%25253Ds%2525253A%25255Esubject%25253Ds%2525253A%25255Emember_type%25253Ds%2525253A%25255Ecountry%25253Ds%2525253A%255Eblog%253Do%25253A%255Ecurriki%253Do%25253A%5Ep%3Do%253Aresource%253Do%25253Ac%25253Dn%2525253A0%25255Es%25253Dn%2525253A25%255Egroup%253Do%25253Ac%25253Dn%2525253A0%25255Es%25253Dn%2525253A25%255Emember%253Do%25253Ac%25253Dn%2525253A0%25255Es%25253Dn%2525253A25%255Eblog%253Do%25253Ac%25253Dn%2525253A0%25255Es%25253Dn%2525253A25%255Ecurriki%253Do%25253Ac%25253Dn%2525253A0%25255Es%25253Dn%2525253A25%5Et%3Ds%253Asearch-blog-tab%5Ea%3Do%253Aresource%253Do%25253Aa%25253Db%2525253A1%255Egroup%253Do%25253Aa%25253Db%2525253A1%255Emember%253Do%25253Aa%25253Db%2525253A1"],
+   [$msg.get('panel.navigation.connect.about'), "Main.AboutConnecting"]
+  ]
+)
+##
+##MY CURRIKI
+##OLD   [$msg.get('panel.navigation.myprofile'), "$context.user"],
+#set($rot=$msg.get("panel.navigation.mycurriki.rollover"))
+#set($suser = $context.user.replaceAll("XWiki.",""))
+#if(!$isguest)
+#navigationCategory($msg.get('panel.navigation.mycurriki'), $rot,"", $defstate,
+  [
+   [$msg.get('panel.navigation.myprofile'), "MyCurriki.Profile"],
+   [$msg.get('panel.navigation.myfavorites'), "MyCurriki.Favorites"],
+   [$msg.get('panel.navigation.mycontributors'),"MyCurriki.Contributions"],
+   [$msg.get('panel.navigation.mycollection'), "MyCurriki.Collections"],
+   [$msg.get('panel.navigation.myblogs'), "MyCurriki.Blog"],
+   [$msg.get('panel.navigation.mygroups'), "MyCurriki.Groups"],
+   [$msg.get('panel.navigation.myreviews'), "MyCurriki.Reviews"]
+  ]
+)
+#end
+##
+##
+##PARTNERS & SPONSORS
+## Santiago Dec 2008: The only thing we have adapted is the partner's
+## resources... but not even that is not working too well, because the search
+## page doesn't get loaded.
+##
+##set($rot = $msg.get("panel.navigation.partners_sponsers.rollover"))
+##navigationCategory($msg.get('panel.navigation.partners_sponsers'), $rot,"", $defstate,
+##  [
+##   [$msg.get('panel.navigation.partners'), "Main.Partners"],
+##   [$msg.get('panel.navigation.sponsors'), "Main.Sponsors"],
+##   [$msg.get('panel.navigation.featured_partners'), "Main.FeaturedPartners"],
+##   [$msg.get('panel.navigation.partner_content'), $partnersearchurl]
+##  ]
+##)
+##
+##HELP
+## Santiago Dec 2008: The help collection is not working.
+##   [$msg.get('panel.navigation.help_collection'), "Coll_curriki.CurrikiHelp"],
+#set($rot=$msg.get("panel.navigation.help.rollover"))
+#navigationCategory($msg.get('panel.navigation.help'), $rot,"", $defstate,
+  [
+   [$msg.get('panel.navigation.tutorials'), "Coll_curriki.Tutorials"],
+   [$msg.get('panel.navigation.contact_us'), "Main.Contact"]
+  ]
+)
+##
+##
+##ABOUT CURRIKI
+##Santiago Dec 2008: Users may find this too much
+##   ["more to come","http://jira.activemath.org/browse/IG-17"]
+#set($rot=$msg.get("panel.navigation.about_curriki.rollover"))
+#navigationCategory($msg.get('panel.navigation.about_curriki'), $rot,"", $defstate,
+   [
+   [$msg.get('panel.navigation.i2gactions'), "Main.I2G-Actions"],
+   [$msg.get('panel.navigation.DGSsoftwares'),"Softwares.WebHome"],
+   [$msg.get('panel.navigation.partners'), "Main.Partners"],
+   [$msg.get('panel.navigation.publication'), "Main.Publication"],
+   [$msg.get('panel.navigation.workpackages'), "Main.Workpackages"],
+   [$msg.get('panel.navigation.conferences'), "Main.Conferences"],
+   [$msg.get('panel.navigation.interconnections'), "Main.Interconnections"],
+   [$msg.get('panel.navigation.i2g_contact'), "Main.I2G_Contact"],
+   [$msg.get('panel.navigation.guided_overview'), "Main.About"]
+  ]
+)
+
+##  [$msg.get('panel.navigation.guided_tour'), "javascript:tourpop();"],
+##   [$msg.get('panel.navigation.news'), "News.WebHome"],
+##   [$msg.get('panel.navigation.faqs'), "Main.FAQ"],
+##   [$msg.get('panel.navigation.board'), "Main.Board"],
+##   [$msg.get('panel.navigation.leadership_team'), "Main.Leadership"],
+##   [$msg.get('panel.navigation.volunteer'), "Main.Volunteer"],
+##   [$msg.get('panel.navigation.donate'), "Main.Donate"]
+
+
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+#endNavigationPanel()
+
+<p><a href="/xwiki/bin/view/ReportABug/" onclick='window.open("/xwiki/bin/view/ReportABug/?xpage=popup", "report-a-bug","width=400,height=400,screenX=20,scrollbars=yes,status=no,toolbar=no,menubar=no,location=no,resizable=yes"); return false;'>$msg.get('panel.navigation.reportabug')</a></p><br>

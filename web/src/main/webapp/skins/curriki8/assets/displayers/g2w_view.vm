@@ -1,0 +1,84 @@
+#**
+  * Asset Geogebra Displayer in View mode
+  *
+  *#
+#asset_displaycontentheader("text-align:center;")
+<div class="asset-display-media">
+<div class="asset-display-media-inner">
+    #set($caption = "")
+    #set($ok = $asset.use("CurrikiCode.AttachmentAssetClass"))
+    #set($caption = $!asset.caption_text)	##liefert Title der Ressource
+    #set($ok = $asset.use("CurrikiCode.AssetClass"))
+    #if($!caption == "")
+    #set($caption = $!asset.description)
+    #end
+<div class="asset-display-download">
+ <div class="asset-display-download-inner">
+<table border=0 width=90%  cellspacing="20" cellpadding="20"><tr>
+	<tr><td align="left">
+		<img width="70px" height="70px"src="/files/geoplan.jpg" >
+		</td>
+	<td>
+	 <img width="20px" height="20px"src="/files/blank.gif" >
+	</td>
+	<td align="left">
+
+## -------------------------------
+	
+	#if($asset.getAttachmentList().size()==1)
+	#set($msgtext = $msg.get("rve.content.view.download.instruction_title.single_file"))
+	#elseif($asset.getAttachmentList().size()>1)
+	#set($msgtext = $msg.get("rve.content.view.download.instruction_title.multiple_files"))
+	#end
+	#if($msgtext)
+	<p><strong>$msgtext</strong>
+	    <span title="$msg.get("rve.content.view.download.instruction_tooltip")" ><img class="tooltip" src="$xwiki.getSkinFile("images/px.gif")" border="0" height="16" width="16"></span>
+	</p>
+	#end      
+	#foreach($attachment in $asset.getAttachmentList())
+	#set($assetAttachmentFilename = $asset.attachmentList.get(0).filename)
+	#set($assetAttachmentURL = $asset.getAttachmentURL("$assetAttachmentFilename"))
+	
+	      #if($attachment.filesize)
+	     #set($filesize = $attachment.filesize / 1024)
+	     ##set($filesize = $attachment.filesize)
+	     #else
+	     #set($filesize = 0)
+	     #end
+	<table align="left" border=0>
+	<tr><td>
+	 <button class="button-link button-link-download" ext:qtip="$msg.get("rve.content.view.download.download_button")" onclick="Curriki.logView('/Download/attachment/${asset.space}/${asset.name}/${assetAttachmentFilename}'); location = '${assetAttachmentURL}?force%2Ddownload=1'; return false;">$msg.get("rve.content.view.download.download_button")</button>
+	</td><td>
+	 <img width="10px" height="10px"src="/files/blank.gif" >
+	</td><td>
+		<blockquote>
+	     <a href="$assetAttachmentURL">$assetAttachmentFilename</a> (${filesize}kb)
+		</blockquote> 
+	 </td></tr></table>
+	#end
+	</td>
+<td align="left">
+## -------------------------------
+	
+	#set($msgtext1 = $msg.get("rve.content.playConstruction.instruction_title.single_file"))
+	#if($msgtext1)
+	<p><strong>$msgtext1</strong><span title=  "$msg.get("rve.content.view.play.instruction_tooltip")"><img class="tooltip" src="$xwiki.getSkinFile("images/px.gif")" border="0" height="16" width="16"></span></p>
+	#end      
+	<table align="left" border=0>
+	<tr><td>
+	 <button class="button-link button-link-download" 
+	  onclick="window.open('/xwiki/bin/view/Systems/DisplayGeoPlane?asset=${asset}&amp;xpage=popup','','width=800,height=600,resizable=1'); return false;">$msg.get("rve.content.play")</button>
+		</td><td>
+	 		<img width="10px" height="10px"src="/files/blank.gif" >
+		</td><td>
+		<blockquote>
+	    <a href="/xwiki/bin/view/Systems/DisplayGeoPlane?asset=${asset}&amp;xpage=popup" onClick="window.open('/xwiki/bin/view/Systems/DisplayGeoPlane?asset=${asset}&amp;xpage=popup','','width=800,height=600,resizable=1'); return false;">$msg.get("rve.content.playGeoPlan.description.instruction_title.single_file")</a>
+		</blockquote> 
+	</td></tr></table>
+	</td></tr>	
+</table>
+</div></div><!-- vignette -->
+    #assetVignetteIfPresent($asset)
+    #addVignetteUploaderButtonIfAllowed($asset)
+</div></div>
+#asset_displaycontentfooter()

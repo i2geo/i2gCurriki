@@ -1,0 +1,10 @@
+
+This is the software page about Z.u.L.-C.a.R
+
+See http://www.z-u-l.de
+
+
+----
+
+#set($fileType = "zir")
+#includeInContext("Search.AllResourcesForFileType")

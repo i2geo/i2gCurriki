@@ -1,0 +1,13 @@
+
+#set($assetDoc =$!xwiki.getDocument($!request.asset))
+#set ($baseurl = "http://$xwiki.getXWiki().Param('curriki.system.hostname', 'i2geo.net')")
+#set($url=$assetDoc.getAttachmentURL($assetDoc.getAttachmentList().get(0).getFilename(),"download"))
+<html>
+	<body>
+		<p><pre>
+<object classid="clsid:E29016D7-8E99-11D2-8454-004005195FED" id="GP0Ctl1" height="600" width="600">
+<param name="TexteDeLaFigure" value="{pre}$assetDoc.getAttachmentList().get(0).getContentAsString('iso-8859-1'){/pre}">
+</object>
+	</pre>	</p>
+			</body>
+			</html>

@@ -1,0 +1,7 @@
+08 * * * * /home/ilo/intergeoNFS/statistics-processing/bin/update-static-statistic.sh >& /dev/null
+18 * * * * /home/ilo/intergeoNFS/statistics-processing/bin/update-static-statistic.sh >& /dev/null
+28 * * * * /home/ilo/intergeoNFS/statistics-processing/bin/update-static-statistic.sh >& /dev/null
+38 * * * * /home/ilo/intergeoNFS/statistics-processing/bin/update-static-statistic.sh >& /dev/null
+48 * * * * /home/ilo/intergeoNFS/statistics-processing/bin/update-static-statistic.sh >& /dev/null
+58 * * * * /home/ilo/intergeoNFS/statistics-processing/bin/update-static-statistic.sh >& /dev/null
+

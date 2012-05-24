@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# This script copies all files from src/main/pages to target, first diffing them,
+# then uploads them to the host provided as AUTHHOST environment variable
+
+mkdir -p target/wikipages
+rsync -ac --exclude="*~" --exclude=.svn  src/main/pages/ target/wikipages/
+
+if [ ! -e target/last-wikipages-upload ] ; then
+  touch -t 197001010000 target/last-wikipages-upload
+fi
+
+find target/wikipages -newer target/last-wikipages-upload -type f \
+-exec ./puts-to-wiki {} \;
+
+touch target/last-wikipages-upload
+

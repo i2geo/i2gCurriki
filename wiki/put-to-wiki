@@ -1,0 +1,18 @@
+#!/bin/sh
+
+## This script takes one parameter: the file-name
+## and one environment variable: AUTHHOST in the form of http://host/xwiki
+## It saves the document name at the page with its same name (less the extensions)
+## within a space of the directory it contains.
+
+pagename=`basename "$1" | sed 's/\(.*\)\.[a-z]*/\1/'`
+spacename=`dirname "$1"`
+spacename=`cd $spacename && pwd`
+spacename=`basename $spacename`
+
+echo Uploading to $spacename/$pagename...
+
+cat "$1" |
+  curl  -F comment="cli-upload." -F content="<-" "$AUTHHOST/xwiki/bin/save/$spacename/$pagename"
+
+

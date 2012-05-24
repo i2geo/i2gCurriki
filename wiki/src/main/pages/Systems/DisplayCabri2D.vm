@@ -1,0 +1,15 @@
+#set($assetDoc =$!xwiki.getDocument($!request.asset))
+#set ($baseurl = "http://$xwiki.getXWiki().Param('curriki.system.hostname', 'i2geo.net')")
+#set($url=$assetDoc.getAttachmentURL($assetDoc.getAttachmentList().get(0).getFilename(),"download"))
+<html>
+	<body>
+		<object type="application/cabri II Plus" data=$baseurl$url width="700" height="500">
+		<param name="src" value=$baseurl$url />
+</object>
+<p><pre>
+<a href="http://www.cabri.com/direct/cabri2plus-plugin" target="_blank">
+<b>$msg.get("rve.displayer.description.Cabri2D")</b>
+</a>
+	</pre>	</p>				
+	</body>
+							</html>

@@ -1,0 +1,311 @@
+#* @vtlvariable name="lucene" type="com.xpn.xwiki.plugin.lucene.LucenePluginApi" *#
+## vim: ts=4:sw=4
+{pre}
+## start=0&limit=25&sort=title&dir=ASC
+## terms=&subject=&filetype=&level=&language=&ict=&special=
+## return  root: results, totalProperty: totalCount
+##   pagename, title, ict, contributor, contributorName, review
+#set($lucene = $xwiki.getPlugin("lucene"))
+#if(!$lucene) ##{
+	{'resultCount':'0', 'rows':[]}
+#else ## }{
+	##
+	## Set start and limit for result list
+	##
+	#set($Integer = 0)
+	#set($maxResults = $Integer.parseInt($msg.get('search.results.max')))
+	#set($start = 0)
+	#if("$!request.start" != "") ##{
+		#set($start = $Integer.parseInt($request.start))
+	#end ##}
+	#set($start = 1 + $start)
+	#set($start = "$start")
+	#set($limit = "25")
+	#if("$!request.limit" != "") ##{
+		#set($limit = $request.limit)
+	#end ##}
+	##
+	## Set sort field
+	##
+	#set($sortField1 = 'XWiki.AssetClass.title.untokenized')
+	#set($sortField2 = 'XWiki.AssetClass.instructional_component2.key.untokenized')
+	#if($!request.sort != "") ##{
+		#if($request.sort == "title") ##{
+			#set($sortField1 = 'XWiki.AssetClass.title.untokenized')
+			#set($sortField2 = 'XWiki.AssetClass.instructional_component2.key.untokenized')
+		#end ##}
+		#if($request.sort == "ictText") ##{
+			#set($sortField1 = 'XWiki.AssetClass.instructional_component2.key.untokenized')
+			#set($sortField2 = 'XWiki.AssetClass.title.untokenized')
+		#end ##}
+		#if($request.sort == "contributor") ##{
+			#set($sortField1 = 'creator.untokenized')
+			#set($sortField2 = 'XWiki.AssetClass.title.untokenized')
+		#end ##}
+		#if($request.sort == "rating") ##{
+			#set($sortField1 = '-CRS.CurrikiReviewStatusClass.status.untokenized')
+			#set($sortField2 = 'XWiki.AssetClass.title.untokenized')
+		#end ##}
+		#if($request.sort == "updated") ##{
+			#set($sortField1 = 'date')
+			#set($sortField2 = 'XWiki.AssetClass.title.untokenized')
+		#end ##}
+	#end ##}
+	#if($!request.dir == "DESC") ##{
+		#set($sortField1 = "-${sortField1}")
+		#if($request.sort == "rating") ##{
+			#set($sortField1 = 'CRS.CurrikiReviewStatusClass.status.untokenized')
+		#end ##}
+	#end ##}
+	#set($sortFields = "${sortField1},${sortField2}")
+	#set($sortFields = $sortFields.split(","))
+	##
+	## Create query
+	##
+	#set($q = $xwiki.arrayList)
+	##
+	## Terms
+	#if($!request.terms != "") ##{
+		#set($junk = $q.add("${request.terms}"))
+	#end ##}
+	##
+	## Subject
+	#if($!request.subject != "") ##{
+		#if($!request.subject != "UNCATEGORIZED") ##{
+			#set($junk = $q.add("XWiki.AssetClass.fw_items:${request.subject}"))
+		#else ##} {
+			#set($ucqry = "where doc.web='FW_masterFramework' and doc.parent='FW_masterFramework.WebHome' order by doc.title")
+			#set($topics = $xwiki.searchDocuments($ucqry))
+			#foreach($topic in $topics)##{
+				#set($junk = $q.add("-XWiki.AssetClass.fw_items:${topic}"))
+			#end ##}
+		#end ##}
+	#end ##}
+	##
+	## FileType
+	#if($!request.filetype != "") ##{
+		#set($junk = $q.add("XWiki.AssetClass.category:${request.filetype}"))
+	#end ##}
+	##
+	## Level
+	#if($!request.level != "") ##{
+		#set($junk = $q.add("XWiki.AssetClass.educational_level2.key:${request.level}"))
+	#end ##}
+	##
+	## Language
+	#if($!request.language != "") ##{
+		#set($junk = $q.add("XWiki.AssetClass.language:${request.language}"))
+	#end ##}
+	##
+	## ICT
+	#if($!request.ict != "") ##{
+		#set($junk = $q.add("XWiki.AssetClass.instructional_component2.key:${request.ict}"))
+	#end ##}
+	##
+	## Other
+	#if($!request.other != "") ##{
+		#set($junk = $q.add("(${request.other})"))
+	#end ##}
+	##
+	## Review
+	## partners, highest_rated
+	#if($!request.review != "") ##{
+		#if($request.review == "partners")##{
+			#set($junk = $q.add("CRS.CurrikiReviewStatusClass.status:200"))
+		#end ##}
+		#if($request.review == "highest_rated")##{
+			#set($junk = $q.add("CRS.CurrikiReviewStatusClass.status:(800 OR 700)"))
+		#end ##}
+	#end ##}
+	##
+	## Special
+	## contributions, collections, resources, updated
+	#if($!request.special != "") ##{
+		#if($request.special == "mine")##{
+			#set($junk = $q.add("creator:${context.user}")) ## This is the full USERNAME, not realname
+		#end ##}
+		#if($request.special == "collections")##{
+			#set($junk = $q.add("XWiki.CompositeAssetClass.type:collection"))
+		#end ##}
+		#if($request.special == "reviewed")##{
+			#set($junk = $q.add("CRS.CurrikiReviewStatusClass.status:(200 OR 300 OR 400 OR 500 OR 600 OR 700 OR 800)"))
+		#end ##}
+		#if($request.special == "updated")##{
+			#set($dt = $xwiki.curriki.formatDate($xwiki.curriki.getDateMinusDays($msg.get('search.resource.special.selector.updated.days')), "yyyyMMdd"))
+			#set($upq = "date:[$dt TO 29991231]")
+			#set($junk = $q.add($upq))
+		#end ##}
+		#if($request.special == "groups")##{
+			#set($junk = $q.add("web:Group_Coll_*"))
+		#end ##}
+	#end ##}
+	##
+	## Put together query conditions
+	#set($conditions = "")
+	#foreach($condition in $q) ##{
+		#set($conditions = "$conditions AND $condition")
+	#end ##}
+    #if($!request.getAttribute('luceneQueryText'))
+        #set($conditions = "$conditions AND $request.getAttribute('luceneQueryText')")
+    #end
+	##
+	## General query information
+	#set($wikinames = "xwiki")
+	#set($languages = "default,en")
+	#set($include = "object:XWiki.AssetClass")
+	##"XWiki.AssetClass.fw_items:FW_masterFramework.WebHome") ## 	#set($include = " wiki:xwiki ")
+	#set($exclude = "AND NOT XWiki.TextAssetClass.type:2 AND NOT web:AssetTemp AND NOT web:Coll_Templates AND NOT name:WebHome AND NOT name:WebPreferences AND NOT name:MyCollections AND NOT name:SpaceIndex AND NOT XWiki.AssetClass.hidden_from_search:1")
+	#set($luceneQuery = "$include $conditions $exclude")
+	##
+	## Do query
+	##
+	#set($searchResults = $lucene.getSearchResults($luceneQuery, $sortFields, $languages))
+	#set($results = $searchResults.getResults($start, $limit))
+	#set($resultCount = $searchResults.totalHitcount)
+	#set($modifiedCount = $resultCount)
+	#if($modifiedCount > $maxResults) ##{
+	#set($modifiedCount = $maxResults)
+	#end ##}
+
+	##
+	## List out results
+	##
+	#if("$!resultCount" == "") ##{
+		#set($resultCount = 0)
+	#end ##}
+{
+'rows':[
+	#set($first = true)
+	#foreach($result in $results) ##{
+		##
+		## Get each result
+        ###if($!xwiki.getDocument("${result.web}.${result.name}").getDocument().getCustomClass().contains("Asset"))
+		#set($d = $xwiki.curriki.fetchAsset("${result.web}.${result.name}"))
+		##
+		## Get Title
+		#findCurrikiTitle($d)
+		#set($title = $currikiTitle)
+		#if(!$title || $title.length() == 0) ## {
+			#set($title = $msg.get("caption.untitled"))
+		#end ## }
+		#set($title = $title.replace("'", "&#39;"))
+		##
+		## Get ICT
+		#set($ict = "")
+		#set($ict = $!d.getObject("XWiki.AssetClass").getProperty("instructional_component2").getValue())
+		#if($ict == "" || $ict.size() == 0) ## {
+			## No ICT set -- nothing to do
+			#set($ictIcon = "")
+			#set($ictRaw = "")
+			#set($ictText = "")
+		#else ## } {
+			#if($ict.size() > 1) ## {
+				##Multiple
+				#set($ictIcon = $xwiki.getSkinFile("icons/ICTIcon-Multiple.gif"))
+				#set($text = $msg.get('search.results.col.ict.multiple'))
+				#set($ictRaw = "multiple")
+				#set($ictText = "search.selector.ict.${ictRaw}")
+				#set($ictText = $msg.get($ictText))
+			#else ## } {
+				##Single
+				#set($ict = $ict.get(0))
+				#set($ictRaw = $ict)
+				#set($ictIcon = "${ict.substring(0,1).toUpperCase()}${ict.substring(1)}")
+				#set($ictIcon = $ictIcon.replaceFirst("_.*", ""))
+				#set($ictIcon = $xwiki.getSkinFile("icons/ICTIcon-${ictIcon}.gif"))
+				#set($ictText = $ict.replaceFirst("_", "."))
+				#set($ictText = "search.selector.ict.${ictText}")
+				#set($ictText = $msg.get($ictText))
+			#end ## if not multiple ## }
+		#end ## if not empty ## }
+		##
+		## Get Review
+		#set($review = "")
+		#set($review = $!d.getObject("CRS.CurrikiReviewStatusClass").getProperty("status").getValue())
+		##
+		## Get Asset Type
+		#set($meta = $d.getMetadata())
+		#foreach($prop in $meta) ##{
+			#if($prop.getName() == 'assetType') ##{
+				#set($assetType = $prop.getValue())
+			#end ##}
+		#end ##}
+		##
+		## Get Description
+		#set($desc = "")
+		#set($desc = $!d.getObject("XWiki.AssetClass").getProperty("description").getValue())
+		#set($desc = $desc.replace("'", "&#39;"))
+		#set($desc = $desc.replaceAll("[\n|\r]+", "<br />"))
+		##
+		## Get Contributor Name
+		#set($cname = "")
+		#set($cname = $xwiki.getUserName($d.creator, false))
+		#set($cname = $cname.replace("'", "&#39;"))
+		#set($cname = $cname.replaceAll("[\n|\r]+", "<br />"))
+		##
+		## Get Expanded Info
+		## TODO:  Get the proper expanded info here
+		#set($info = "")
+		#set($isComposite = $!d.getObject("XWiki.CompositeAssetClass"))
+		#if($!isComposite) ##{
+			#set($sql = ", BaseObject as composite, BaseObject as subasset, StringProperty as cprops, StringProperty as sprops where doc.name != 'Favorites' and doc.name != 'WebHome' and composite.name=doc.fullName and composite.className='XWiki.CompositeAssetClass' and composite.id=cprops.id.id and cprops.id.name='type' and (cprops.value='collection' or cprops.value='curriki_document') and subasset.name=doc.fullName and subasset.id=sprops.id.id and subasset.className='XWiki.SubAssetClass' and sprops.id.name='assetpage' and sprops.value='${d.fullName}' order by doc.name")
+			#set($parentList = $xwiki.searchDocuments($sql))
+			#if($parentList.size() > 0) ##{
+				#set($info = "")
+				#foreach($parentPage in $parentList) ##{
+					#set($parentAsset = $xwiki.getDocument($parentPage))
+					#findCurrikiTitle($parentAsset)
+					#set($parentTitle = $currikiTitle)
+					#if(!$parentTitle || $parentTitle.length() == 0) ## {
+						#set($parentTitle = $msg.get("caption.untitled"))
+					#end ## }
+					## Get Parent Description
+					#set($parentDesc = "")
+					#set($parentUrl = "")
+					#set($parentDesc = $!parentAsset.getObject("XWiki.AssetClass").getProperty("description").getValue())
+					#set($parentDesc = $parentDesc.replace('"', "&quot;"))
+					#set($parentUrl = $xwiki.getURL($parentPage))
+					#set($parentType = $!parentAsset.getObject("XWiki.CompositeAssetClass").getProperty("type").getValue())
+					#set($parentTypeClass="resource-FolderComposite")
+					#if($parentType == "collection") ##{
+						#set($parentTypeClass="resource-CollectionComposite")
+					#end ##}
+					#set($pinfo = '<a href="'+$parentUrl+'" ext:qtitle="Description" ext:qtip="'+$parentDesc+'">'+$parentTitle+'</a>')
+					#set($info = $info+'<li class="'+$parentTypeClass+'">'+$pinfo+'</li>')
+				#end ##}
+				#if($info != "") ##{
+					#set($info = $msg.get('search.resource.resource.expanded.title')+'<ul>'+$info+'</ul>')
+				#end ##}
+			#end ##}
+			#set($info = $info.replace("'", "&#39;"))
+			#set($info = $info.replaceAll("[\n|\r]+", "<br />"))
+		#end ##}
+		##
+		##
+		#if($first) ##{
+			#set($first = false)
+		#else ##} {
+,
+		#end ##}
+{
+'page':'${d.fullName}'
+,'title':'${title}'
+,'assetType':'${assetType}'
+,'ict':'${ictRaw}'
+,'ictText':'${ictText}'
+,'ictIcon':'${ictIcon}'
+,'contributor':'${d.creator}'
+,'contributorName':'${cname}'
+,'review':'${review}'
+,'description':'${desc}'
+,'info':'${info}'
+,'updated':'${d.date}'
+}
+	###end ##}
+    #end ##}
+]
+,'resultCount':'${modifiedCount}'
+,'totalResults':'${resultCount}'
+}
+#end ## }
+{/pre}

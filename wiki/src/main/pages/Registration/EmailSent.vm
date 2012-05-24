@@ -1,0 +1,28 @@
+
+##set($from = $msg.get('registration.email'))
+#set($from = $xwiki.getXWikiPreference("admin_email"))
+The first step in becoming a Curriki member is now complete.
+
+To complete your registration, check your email inbox for message from $from.  
+
+If you do not see the email, it may be because of a SPAM filter. Check your SPAM folder and be sure to add Curriki $from to your "safe senders" list or address book. 
+
+*If you have not received an email within 10 minutes, please contact Curriki by using the [Email Not Received>EmailNotReceived] form.*
+
+<!-- Google Code for Registration Email Sent Conversion Page -->
+<script language="JavaScript" type="text/javascript">
+<!--
+var google_conversion_id = 1066533164;
+var google_conversion_language = "en_US";
+var google_conversion_format = "1";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "uQs3CMK_ShCsgsj8Aw";
+//-->
+</script>
+<script language="JavaScript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<img height="1" width="1" border="0" src="http://www.googleadservices.com/pagead/conversion/1066533164/?label=uQs3CMK_ShCsgsj8Aw&amp;script=0"/>
+</noscript>
+
+<img src="https://cts.vresp.com/s.gif?h=d6487b16dd" height="1" width="1"/>

@@ -1,0 +1,1766 @@
+## vim: ts=4:sw=4
+#**
+  *
+  * My Curriki Macros
+  *
+  * The my curriki module is the personal pages of each user
+  *
+  * The following sections are available in MyCurriki:
+  *
+  * - Profile 
+  * - Favorites
+  * - Contributions
+  * - Groups
+  * - Blog (see blog/blogmacros.vm)
+  *
+  * These macros are used in the pages of the Wiki MyCurriki space
+  *
+  *#
+
+##
+## My Curriki General Macros
+##
+##
+
+
+#**
+  * Adding a dash instead of an empty text
+  *
+  * @param $text Text to test
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_dashifempty $text)
+#if($!text == "")
+$msg.get("profile.emptyField")
+#else
+$text
+#end
+#end
+
+
+#**
+  * Display the my curriki tabs for the top of the page
+  *
+  * @param $curtab Current active tab
+  * @param $whofor Name of the user to evaluate the links
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_tabs $curtab $whofor) ## {
+  #set($tabs = ["profile","favorites","contributions","collections","blog","groups","reviews"])
+  <ul id="mycurriki-tabs" class="tabs">
+  #foreach($tab in $tabs) ## {
+    #if("$!whofor" == "" || $whofor == $context.user) ## {
+      #set($url=$xwiki.getURL($msg.get("mycurriki.tab.${tab}.page"), "view"))
+    #else ## } {
+      #set($url=$xwiki.getURL($msg.get("mycurriki.tab.${tab}.page"), "view", "user=${whofor}"))
+    #end ## }
+    <li#if($curtab==$tab) class="current"#end><a href="$url">$msg.get("mycurriki.tab.${tab}.label")</a></li>
+  #end ## foreach ## }
+  </ul>
+#end ## macro ## }
+
+#**
+  * Display the MyCurriki header
+  *
+  * @param $userobj User object to display the form for
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_header $userobj $userdoc) ## {
+<div id="mycurriki-img">
+	<a href="$userdoc.getURL('view')" title="$userobj.first_name $userobj.last_name" class="mycurriki-avatar">
+#if($userdoc.attachmentList.size()==0) ##{
+	<img src="$xwiki.getSkinFile("noavatar.png")" />
+#else ##}{
+	#foreach ($attach in $userdoc.attachmentList) ## {
+		<img src="$userdoc.getAttachmentURL($attach.filename,"download")" />
+	#end ##}
+#end ##}
+	</a>
+</div>
+<h2>$userobj.first_name $userobj.last_name</h2>
+#end ## macro ## }
+
+
+#**
+  * My Curriki Main Page Generation
+  * This macro is called by every my curriki page and uses callbacks defined as macro in the wiki page
+  *
+  * @param $pageref Page Name to use in call back
+  * @param $whofor User to display the page for
+  * $param $hasbutton True if the page uses buttons
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_pagefull $pageref $whofor $hasbutton) ## {
+## Determine whofor
+#if("$!whofor" == "") ## {
+#if("$!request.user" != "") ## {
+#set($whofor = $request.user)
+#else ## } {
+#if($doc.web.startsWith("Blog_")) ## {
+#set($whofor = $doc.web.substring(5))
+#else ## } {
+#if("$!whofor" == "") ## {
+#set($whofor = $context.user)
+#end ## }
+#end ## }
+#end ## }
+#end ## }
+#if(!$whofor.startsWith("XWiki.")) ## {
+#set($whofor = "XWiki.$whofor")
+#end ## }
+## Now know whofor
+#set($userdoc = $xwiki.getDocument($whofor))
+#set($userobj = $userdoc.getObject("XWiki.XWikiUsers"))
+#set($g_userdoc = $userdoc)
+#set($g_userobj = $userobj)
+<div id="mycurriki-$pageref" class="mycurriki mycurriki-$pageref">
+#mycurriki_header($userobj $userdoc)
+#mycurriki_tabs($pageref $whofor)
+	<div id="mycurriki-main" class="form-wrp tab-container">
+		<div id="mycurriki-main-header">
+#if($hasbutton == 1) ## {
+## This is a call back to the local macro of the page including this macro
+#mycurriki_pagebutton($userobj)
+#end ## }
+#if("$!pageref" == "blog") ## {
+#set($hasBlog=$xwiki.exists("Blog_${shortname}.WebHome"))
+#if(!$hasBlog) ## {
+#set($subtitle = $msg.get("mycurriki.tab.${pageref}.noblog.subtitle", ["$userobj.first_name $userobj.last_name"]))
+#else ## }{
+#set($subtitle = $msg.get("mycurriki.tab.${pageref}.subtitle", ["$userobj.first_name $userobj.last_name"]))
+#end ## }
+#else ## } {
+#set($subtitle = $msg.get("mycurriki.tab.${pageref}.subtitle"))
+#end ## }
+#if($subtitle != "" && $subtitle != "mycurriki.tab.${pageref}.subtitle") ## {
+			<div id="mycurriki-main-header-left">
+				<div id="mycurriki-main-header-subtitle" class="tab-deck">$subtitle</div>
+			</div>
+#end ## }
+			<div class="clearfloats"></div>
+		</div>
+		<div id="mycurriki-main-content"
+#if($pageref == "favorites" || $pageref == "contributions" || $pageref == "collections" || $pageref == "blog" || $pageref == "groups") ## {
+			class="frame"
+#end ## }
+		>
+## This is a call back to the local macro of the page including this macro
+#mycurriki_pagecontent($userdoc $userobj)
+		</div>
+	</div>
+</div>
+#end ##macro ## }
+##
+
+#**
+  * My Curriki callback function
+  *
+  * @param $pageref Page Name to use in call back
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_page $pageref) ## {
+## This is a call back to the local macro of the page including this macro
+#mycurriki_pagefull($pageref "" 0)
+#end ##macro ## }
+
+#**
+  * My Curriki callback function with a button
+  *
+  * @param $pageref Page Name to use in call back
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_pagewithbutton $pageref) ## {
+## This is a call back to the local macro of the page including this macro
+#mycurriki_pagefull($pageref "" 1)
+#end ##macro ## }
+
+#**
+  * Display the title of an Asset
+  *
+  * @param $asset Asset to display the title for
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_assettitle $asset) ## {
+#asset_findtitle($asset)
+#set($title = $currikiTitle)
+#if(!$title || $title.length() == 0) ## {
+ #set($title = $msg.get("caption.untitled"))
+#end ## }
+<a class="curriki-link" href="$asset.getURL("view")">{pre}$title{/pre}</a>
+#end ## macro ## }
+
+#**
+  * Display the title of an Asset with a mouserover description
+  *
+  * @param $asset Asset to display the title for
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_assettitlewithmodesc $asset) ## {
+#if("$!descnb" == "") ##{
+#set($descnb=0)
+#end ##}
+#set($descnb = $descnb + 1)
+#asset_findtitle($asset)
+#set($title = $currikiTitle)
+#if(!$title || $title.length() == 0) ## {
+#set($title = $msg.get("caption.untitled"))
+#end ## }
+<a class="curriki-link" href="$asset.getURL("view")" onmouseover="$('mycurriki-description-${descnb}').show();" onmouseout="$('mycurriki-description-${descnb}').hide();">{pre}$title{/pre}</a>
+#asset_info_rollover($asset $descnb)
+<div id="mycurriki-description-${descnb}" class="popup" style="display: none; height:15em">#asset_info_rollover($asset $descnb)
+## ?? useful <a id="mycurriki-title-${descnb}" class="curriki-link" href="$asset.getURL("view")">{pre}$title{/pre}</a>
+{pre}
+<script type="text/javascript">
+/* <![CDATA[ */
+#if("$!descpopupjs" == "") ##{
+#set($descpopupjs=1)
+Ext.ns('Curriki.mycurriki.util.title');
+Curriki.mycurriki.util.title.popup = function(title_id, attr){
+	if ('string' === Ext.type(attr.description)
+	    && 'array' === Ext.type(attr.fwItems)
+	    && 'array' === Ext.type(attr.levels)
+	    && 'array' === Ext.type(attr.ict)
+	) {
+		var desc = attr.description||'';
+		desc = Ext.util.Format.ellipsis(desc, 256);
+		desc = Ext.util.Format.htmlEncode(desc);
+
+		var fw = Curriki.data.fw_item.getRolloverDisplay(attr.fwItems||[]);
+		var lvl = Curriki.data.el.getRolloverDisplay(attr.levels||[]);
+		var ict = Curriki.data.ict.getRolloverDisplay(attr.ict||[]);
+		
+		var qtip = String.format("{1}<br />{0}<br /><br />{3}<br />{2}<br />{5}<br />{4}<br />{7}<br />{6}"
+			,desc,_('global.title.popup.description')
+			,fw,_('global.title.popup.subject')
+			,lvl,_('global.title.popup.educationlevel')
+			,ict,_('global.title.popup.ict')
+		);
+
+		Ext.QuickTips.getQuickTip().register({
+			target:title_id
+			,text:qtip
+		});
+	}
+};
+#end ##}
+##
+## maybe replace here?
+## #skbListHere("tTC-$!asset.fullName" $!asset.trainedTopicsAndCompetencies)
+## #skbListHere("eLF-$!asset.fullName" $!asset.eduLevelFine)
+## 
+
+Ext.onReady(function(){
+## Get description
+#set($curDesc = $!asset.getDescription().replaceAll('\\', '\\\\').replace("'", "\'").replaceAll("[\r\n]", ' '))
+## Get Framework items
+#set($curFW = "")
+#set($subj = $!asset.getValue('trainedTopicsAndCompetencies'))
+#set($isFirst = true)
+#foreach($item in $subj) ## {
+#if($item != "FW_masterFramework.WebHome") ## {
+#if($isFirst) ##{
+#set($isFirst = false)
+#else ##}{
+#set($curFW = "$curFW, ")
+#end ## }
+#set($curFW = "$curFW'$item'")
+#end ## }
+#end ## }
+#set($curFW = "[ $curFW ]")
+## Get educational levels
+#set($curLvl = "")
+#set($levl = $!asset.getValue('eduLevelFine'))
+#set($isFirst = true)
+#foreach($item in $levl) ## {
+#if($isFirst) ##{
+#set($isFirst = false)
+#else ##}{
+#set($curLvl = "$curLvl, ")
+#end ## }
+#set($curLvl = "$curLvl'$item'")
+#end ## }
+#set($curLvl = "[ $curLvl ]")
+## Get icts
+#set($curICT = "")
+#set($ict = $!asset.getValue('instructional_component'))
+#set($isFirst = true)
+#foreach($item in $ict) ## {
+#if($isFirst) ##{
+#set($isFirst = false)
+#else ##}{
+#set($curICT = "$curICT, ")
+#end ## }
+#set($curICT = "$curICT'$item'")
+#end ## }
+#set($curICT = "[ $curICT ]")
+Curriki.mycurriki.util.title.popup("mycurriki-title-${descnb}", {'description':'$curDesc' , 'fwItems':$curFW , 'levels':$curLvl , 'ict':$curICT});
+});
+/* ]]> */
+</script>
+{/pre}
+#end ## macro ## }
+
+#**
+  * Display Rights status of an Asset
+  *
+  * @param $asset Asset
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_access $asset) ## {
+#set($access = $!asset.getObject("CurrikiCode.AssetClass").getProperty("rights").getValue())
+$msg.get("mycurriki.macro.access.${access}")
+#end ## macro ## }
+
+
+#macro(mycurriki_ict_str $ict)
+    #if($ict == "" || $ict.size() == 0) ## {
+    ## No ICT set -- nothing to do
+    #else ## } {
+    #if($ict.size() > 1) ## {
+    ##Multiple
+    #set($icon = $xwiki.getSkinFile("icons/ICTIcon-Multiple.gif"))
+    #set($text = $msg.get('CurrikiCode.AssetClass_instructional_component_multiple'))
+    #else ## } {
+    ##Single
+    #set($ict = $ict.get(0))
+    #set($icon = "${ict.substring(0,1).toUpperCase()}${ict.substring(1)}")
+    #set($icon = $icon.replaceFirst("_.*", ""))
+    #set($icon = $xwiki.getSkinFile("icons/ICTIcon-${icon}.gif"))
+    #set($text = "CurrikiCode.AssetClass_instructional_component_${ict}")
+    #set($text = $msg.get($text))
+    #end ## if not multiple ## }
+    <span title="${text}"><img src="${icon}" /></span>
+    #end ## if not empty ## }
+#end
+
+#**
+  * Display the ict of an Asset
+  *
+  * @param $asset Asset
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_ict $asset) ## {
+#set($ict = "")
+#set($ict = $!asset.getObject("CurrikiCode.AssetClass").getProperty("instructional_component").getValue())
+#mycurriki_ict_str($ict)
+#end ## Macro ## }
+
+
+#macro(mycurriki_filetype_str $assetType $attachmentType)
+#if("Text" == $!assetType)
+    #set($text = $msg.get("mycurriki.macro.filetype.currikulum"))
+    {pre}<img src="/xwiki/skins/curriki8/images/www.gif" alt="[${text}]" title="[${text}]"/>{/pre}
+#elseif("External" == $!assetType)
+    #set($text = $msg.get("mycurriki.macro.filetype.URL"))
+    {pre}<img src="/xwiki/skins/curriki8/images/www.gif")" alt="[${text}]" title="[${text}]"/>{/pre}
+#elseif("Archive" == $!assetType)
+    #if($attachmentType=="rar" || $attachmentType=="zip")
+        #set($text=$msg.get("rve.filetype.icon.${attachmentType}"))
+    {pre}<img src="$xwiki.getSkinFile("mimetypes/${attachmentType.toUpperCase()}.gif")" alt="[${text}]" title="[${text}]"/>{/pre}
+    #else
+        #set($text = $msg.get("mycurriki.macro.filetype.unknown"))        
+    {pre}<img src="$xwiki.getSkinFile("mimetypes/Unknown.gif")" alt="[${text}]" title="[${text}]"/>{/pre}
+    #end
+#elseif("CollectionComposite" == $!assetType)
+    #set($text = $msg.get("search.resource.icon.CollectionComposite.rollover"))
+    {pre}<img src="/xwiki/skins/curriki8/images/collectionmedium.gif" alt="[${text}]" title="[${text}]"/>{/pre}
+#elseif("Attachment" == $!assetType || "Document" == $!assetType)
+    #if($attachmentType=="cdy")#set($text=$msg.get("rve.filetype.icon.Cinderella"))
+    #elseif($attachmentType=="g2w")#set($text=$msg.get("rve.filetype.icon.GeoPlan"))
+    #elseif($attachmentType=="cabri2File")#set($text=$msg.get("rve.filetype.icon.Cabri2"))
+    #elseif($attachmentType=="ggb")#set($text=$msg.get("rve.filetype.icon.GeoGebra"))
+    #elseif($attachmentType=="zir")#set($text=$msg.get("rve.filetype.icon.ZUL"))
+    #elseif($attachmentType=="wiris")#set($text=$msg.get("rve.filetype.icon.Wiris"))
+    #elseif($attachmentType=="wirishtml")#set($text=$msg.get("rve.filetype.icon.Wiris"))
+    #elseif($attachmentType=="gxt")#set($text=$msg.get("rve.filetype.icon.GeoNext"))
+    #elseif($attachmentType=="g3w")#set($text=$msg.get("rve.filetype.icon.Geospace"))
+    #elseif($attachmentType=="cg2")#set($text=$msg.get("rve.filetype.icon.Cabri2plus"))
+    #elseif($attachmentType=="cg3")#set($text=$msg.get("rve.filetype.icon.Cabri3D"))
+    #elseif($attachmentType=="tracenpocheFile")#set($text=$msg.get("rve.filetype.icon.TracenPoche"))
+        ## Cabri 3D ?
+    #elseif($!attachmentType.length()>0)#set($text=$msg.get("rve.filetype.icon.${attachmentType}"))
+    #else#set($text="")
+    #end
+    #if($!text=="")#set($text = $msg.get("mycurriki.macro.filetype.unknown"))
+    {pre}<img src="$xwiki.getSkinFile("mimetypes/Unknown.gif")" alt="[${text}]" title="[${text}]"/>{/pre}
+    #else
+    {pre}<img height="31" src="/xwiki/skins/curriki8/mimetypes/${attachmentType.toUpperCase()}.gif" alt="[${text}]" title="[${text}]"/>{/pre}        
+    #end
+#end
+#end
+
+#**
+  * Display the file type of an Asset
+  *
+  * @param $asset Asset
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_filetype $asset) ## {
+#if($asset.attachmentList.size() == 0) ## {
+  #set($mime = "")
+  #set($rowType="currikulum")
+#else ## } {
+  #mimeicon($asset.attachmentList.get(0).getFilename())
+  #set($filetype_description=$m_fileExt)
+  #set($mime = $asset.attachmentList.get(0).mimeType)
+  #set($rowType="mime")
+#end ## }
+#if($asset.getObject("XWiki.TextAssetClass")) ## {
+  #set($rowType="currikulum")
+#else ## } {
+#if($asset.getObject("XWiki.ExternalAssetClass")) ## {
+  #set($rowType="URL")
+#end ## }
+#end ## }
+#if($rowType == "URL") ## {
+#set($text = $msg.get("mycurriki.macro.filetype.URL"))
+{pre}<img src="$xwiki.getSkinFile("mimetypes/HTM.gif")" alt="[${text}]" title="[${text}]"/>{/pre}
+#end ## }
+#if($rowType == "mime") ## {
+#if(!$m_fileExt || $m_fileExt == "Unknown") ## {
+  #set($text = $msg.get("mycurriki.macro.filetype.unknown"))
+  #set($filetype_description=$text)
+#else ## } {
+  #set($text = $m_fileExt)
+  #if($m_fileExt=="CDY")#set($filetype_description=$msg.get("rve.filetype.icon.Cinderella"))#end
+  #if($m_fileExt=="G2W")#set($filetype_description=$msg.get("rve.filetype.icon.GeoPlan"))#end
+  #if($m_fileExt=="FIG")#set($filetype_description=$msg.get("rve.filetype.icon.Cabri2"))#end
+  #if($m_fileExt=="GGB")#set($filetype_description=$msg.get("rve.filetype.icon.GeoGebra"))#end
+  #if($m_fileExt=="ZIR")#set($filetype_description=$msg.get("rve.filetype.icon.ZUL"))#end
+  #if($m_fileExt=="WIRIS")#set($filetype_description=$msg.get("rve.filetype.icon.Wirirs"))#end
+  #if($m_fileExt=="GXT")#set($filetype_description=$msg.get("rve.filetype.icon.GeoNext"))#end	
+  #if($m_fileExt=="G3W")#set($filetype_description=$msg.get("rve.filetype.icon.Geospace"))#end
+  #if($m_fileExt=="CG2")#set($filetype_description=$msg.get("rve.filetype.icon.Cabri2plus"))#end
+  #if($m_fileExt=="CG3")#set($filetype_description=$msg.get("rve.filetype.icon.Cabri3D"))#end
+  #if($m_fileExt=="RAR")#set($filetype_description=$msg.get("rve.filetype.icon.rar"))#end
+  #if($m_fileExt=="ZIP")#set($filetype_description=$msg.get("rve.filetype.icon.zip"))#end
+  #if($m_fileExt=="ODT")#set($filetype_description=$msg.get("rve.filetype.icon.odt"))#end
+  #if($m_fileExt=="DOC")#set($filetype_description=$msg.get("rve.filetype.icon.doc"))#end
+  #if($m_fileExt=="PDF")#set($filetype_description=$msg.get("rve.filetype.icon.pdf"))#end
+  #if($m_fileExt=="PNG")#set($filetype_description=$msg.get("rve.filetype.icon.png"))#end
+  #if($m_fileExt=="JPG")#set($filetype_description=$msg.get("rve.filetype.icon.jpg"))#end
+  #if($m_fileExt=="MOV")#set($filetype_description=$msg.get("rve.filetype.icon.mov"))#end
+  #if($m_fileExt=="AVI")#set($filetype_description=$msg.get("rve.filetype.icon.avi"))#end
+  #if($m_fileExt=="MP3")#set($filetype_description=$msg.get("rve.filetype.icon.mp3"))#end
+  #if($m_fileExt=="GIF")#set($filetype_description=$msg.get("rve.filetype.icon.gif"))#end
+  #if($m_fileExt=="SWF")#set($filetype_description=$msg.get("rve.filetype.icon.swf"))#end
+  #if($m_fileExt=="ODB")#set($filetype_description=$msg.get("rve.filetype.icon.odb"))#end
+  #if($m_fileExt=="ODF")#set($filetype_description=$msg.get("rve.filetype.icon.odf"))#end
+  #if($m_fileExt=="ODG")#set($filetype_description=$msg.get("rve.filetype.icon.odg"))#end
+  #if($m_fileExt=="ODP")#set($filetype_description=$msg.get("rve.filetype.icon.odp"))#end
+  #if($m_fileExt=="ODS")#set($filetype_description=$msg.get("rve.filetype.icon.ods"))#end
+  #if($m_fileExt=="WAV")#set($filetype_description=$msg.get("rve.filetype.icon.wav"))#end
+  #if($m_fileExt=="XLS")#set($filetype_description=$msg.get("rve.filetype.icon.xls"))#end
+  #if($m_fileExt=="XLSX")#set($filetype_description=$msg.get("rve.filetype.icon.xlsx"))#end
+  
+#end ## if ext ## }
+#set($tracenpoche="TracenPoche-File")
+#if($m_fileExt=="TXT")
+	#set($string=$asset.attachmentList.get(0).getContentAsString("utf8"))
+	#if($string.indexOf("@options") == -1)
+		{pre}<img src="$macro_iconUrl" height=31 alt="[TXT]" title="[TXT]"/>{/pre}
+	#else
+		{pre}<img src="/xwiki/skins/curriki8/mimetypes/tracenpoche.gif" height=31 alt="[${tracenpoche}]" title="[${tracenpoche}]"/>{/pre}
+	#end
+#else
+{pre}<img src="$macro_iconUrl" height=31 alt="[${filetype_description}]" title="[${filetype_description}]"/>{/pre}
+#end
+#end ## if mime ## }
+#if($rowType == "curriki-link") ## {
+#set($text = "[URL]")
+{pre}<img src="/xwiki/skins/curriki8/images/www.gif" alt="[${text}]" title="[${text}]"/>{/pre}
+#end ## }
+#if($rowType == "currikulum") ## {
+#set($text = $msg.get("mycurriki.macro.filetype.currikulum"))
+{pre}<img src="/xwiki/skins/curriki8/images/www.gif" alt="[${text}]" title="[${text}]"/>{/pre}
+#end ## }
+#end ## Macro ## }
+
+#**
+  * Display the last update date of an Asset
+  *
+  * @param $asset Asset
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_lastupdate $asset) ## {
+$!xwiki.formatDate($asset.contentUpdateDate, $msg.get("mycurriki.dateFormat"))
+#end ## macro ## }
+
+#**
+  * Display the contributor of an Asset
+  *
+  * @param $asset Asset
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_contributor $asset) ## {
+$xwiki.getUserName($asset.creator)
+#end ## macro ## }
+
+
+#**
+  * Display the description of a collection
+  *
+  * @param $asset Asset
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_collectiondescription $asset) ## {
+#set($desc = $!asset.getObject("CurrikiCode.AssetClass").getProperty("description").getValue())
+$!desc
+#end ## macro ## }
+
+
+#**
+  * Display profile editing box
+  *
+  * @param $userdoc Document of the user
+  * @param $userobj Object of the user
+  * @author dward@curriki.org
+  *#
+#macro(mycurriki_editprofilebox $userdoc $userobj) ##{
+	<!-- Profile Box -->
+	#includeMacros("Registration.FormMacros")
+	#tryprofileupdate()
+	#registrationinit('edit_profile')
+	#startregistrationform()
+	#profilechange_photo()
+	#registrationaccountinfo()
+	#registrationprivacysettings()
+	#registrationinterests()
+	#endregistrationform()
+#end ##}
+
+#**
+  * Displays the edit profile button for the user
+  *
+  * @param $userdoc Document of the user
+  *#
+#macro(mycurriki_editprofilebutton $userdoc) ##{
+	#if($context.action == "view" && ($context.user==$userdoc.fullName || $xwiki.hasAdminRights())) ##{
+		<div class="button-right">
+		#if("$!request.mode"=="") ##{
+			<a class="button button-orange" href="$xwiki.getURL("MyCurriki.Profile", "view", "mode=public")" title="$msg.get("view_profile.intro.public_button")">$msg.get("view_profile.intro.public_button")</a></span>
+		#elseif("$!request.mode"=="public") ##}{
+			<a class="button button-orange" href="$xwiki.getURL("MyCurriki.Profile", "view")" title="$msg.get("view_profile.intro.return_button")">$msg.get("view_profile.intro.return_button")</a></span>
+		#end ##}
+		#if("$!request.mode"=="") ##{
+			<!-- My Curriki edit profile button -->
+			<a class="button button-orange" href="$xwiki.getURL("MyCurriki.EditProfile", "view", "user=${userdoc.fullName}")" title="$msg.get("view_profile.intro.edit_button")">$msg.get("view_profile.intro.edit_button")</a></span>
+		#end ##}
+		</div>
+		#if("$!request.mode"=="") ##{
+## Calculate %complete
+#set($c = 3) ## login name, password, email address have to exist
+##
+#set($x = "")#set($x = $!userobj.getProperty('first_name').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('last_name').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('show_contact').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('show_email').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('opt_out').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('member_type').value)
+#if("$x" != "" && "$x" != '---' && "$x" != '0')#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('affiliation').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")
+#set($x = $!userobj.getProperty("trainedTopicsAndCompetencies").getValue())
+#if("$x" != "" && $x.size() > 1)#set($c = 1 + $c)#end
+#set($x = "")
+#set($x = $!userobj.getProperty("eduLevelFine").getValue())
+#if("$x" != "" && $x.size() > 0)#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('country').value)
+#if("$x" != "" && "$x" != '---')#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('state').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('city').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('language').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('comment').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('contact').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#set($x = "")#set($x = $!userobj.getProperty('websites').value)
+#if("$x" != "")#set($c = 1 + $c)#end
+##
+#if($userdoc.attachmentList.size()>0)#set($c = 1 + $c)#end
+##
+#set($c = 100 * $c)
+#set($c = $c / 20)
+#set($c = "${c}%")
+##
+			<div class="profile-push">$msg.get('view_profile.intro.percent_complete', [$c])</div>
+			#set($highlights = $xwiki.getDocument("MyCurriki.ProfileHighlight"))
+			#if($!highlights) ##{
+			<div class="clearfloats"></div>
+			<div id="profile-highlighted">
+			$highlights.getTranslatedDocument().getRenderedContent()
+			</div>
+			#end ##}
+		#end ##}
+	#end ##}
+  <!-- End My Curriki edit profile button -->
+#end ## } end macro
+
+
+#**
+  * Displays the photo of the user
+  *
+  * @param $userdoc Document of the user
+  *#
+#macro(mycurriki_viewphoto $userdoc) ##{
+<!-- My Curriki View Photo -->
+<div class="userpic">
+    #if($userdoc.attachmentList.size()==0) ##{
+      <img src="$xwiki.getSkinFile("noavatar.png")"/>
+      #if($context.action=="view" && ($userdoc.fullName == $context.user || $hasGlobalAdmin)) ##{
+	<a class="curriki-link" onclick='document.getElementById("attachdiv").attributes{pre}[{/pre}"class"].value="visible"; {pre}$("attachdiv").scrollTo();{/pre} return false;' href="$userdoc.getURL("attach")">$msg.get('profile.changeMyPhoto')</a>
+      #end ## }
+    #else  ## }{ attachmentList.size must be > 0
+      #foreach ($attach in $userdoc.attachmentList) ## {
+	<a class="curriki-link" href="$userdoc.getAttachmentURL($attach.filename,"download")" >
+	<img src="$userdoc.getAttachmentURL($attach.filename,"download")"  /></a>
+	#if ($context.action=="inline") ##{
+	  #set($deleteredir = $userdoc.getURL("inline"))
+	  <a class="curriki-link" href="$userdoc.getAttachmentURL("${attach.filename}", "delattachment", "xredirect=${deleteredir}")" onclick="return confirm('$msg.get("profile.removePhoto.confirmation")');" title="$msg.get("profile.removeYourPhoto")">$msg.get("profile.removePhoto")</a>
+	#end  ## } if inline
+      #end  ## } foreach attach in list
+      #if ($context.action!="inline") ##{
+	#set($i = $context.user.indexOf(":")+1)
+	#set($attach = $userdoc.attachmentList.get(0))
+	#if ($context.user.substring($i) == $userdoc.fullName || $hasGlobalAdmin) ## {
+	  #set($deleteredir = $userdoc.getURL("view"))
+	  <a class="curriki-link" href="$userdoc.getAttachmentURL("${attach.filename}", "delattachment", "xredirect=${deleteredir}")" onclick="return confirm('You need to remove your picture first. Do you want to do that ?');" >$msg.get("profile.modifyYourPhoto")</a>
+	#end  ## } is same user
+      #end  ## } is inline
+   #end ##}
+</div>
+<!-- End My Curriki View Photo -->
+#end ##}
+
+#**
+  * Edit the profile email
+  *
+  *#
+#macro(mycurriki_editprofileemail)
+## A user changed their email address
+## Force them to validate first
+#if($context.user == "XWiki.XWikiGuest") ## {
+## Not a real user -- Just bounce to home
+## TODO: Is this an issue if both email and password change at the same time?
+$response.sendRedirect($xwiki.getURL("Main.WebHome"))
+#end ## }
+##
+#if($xwiki.hasAdminRights()) ## {
+## Is an admin, so don't bother with verification
+#if("$!request.user" != "") ## {
+#set($userarg = "user=${request.user}")
+#else ## }{
+#set($userarg = "")
+#end ## }
+$response.sendRedirect($xwiki.getURL("MyCurriki.Profile", "view", "$userarg"))
+#else ## } {
+##
+## Logout the user and redirect to Email Verification page
+#set($username = $context.user.replace("XWiki.", ""))
+#set($userDoc = $xwiki.getDocument("XWiki.${username}"))
+#set($userObj = $!userDoc.getObject("XWiki.XWikiUsers"))
+#set($junk = $userObj.set("active", 0))
+#set($junk = $userObj.set("email_undeliverable", 1))
+#set($junk = $userDoc.saveWithProgrammingRights())
+#set($session = $request.getSession(true))
+#set($xredirect = $xwiki.getURL("Registration.EmailVerification", "view", "username=${username}"))
+$response.sendRedirect($xwiki.getURL("XWiki.XWikiLogout", "logout", "xredirect=${xredirect}"))
+#end ## }
+#end
+
+#**
+  * Displays the profile of the user
+  *
+  * @param $userdoc Document of the user
+  * @param $userobj Object of the user
+  *#
+#macro(mycurriki_viewprofile $userdoc $userobj) ##{
+<!-- Curriki View Profile -->
+<fieldset>
+<h3>$msg.get('view_profile.account_info.header')</h3>
+<div class="fields-wrp">
+<ul>
+	##Do not show in all PUBLIC views
+	#if(!$public_profile) ##{
+		#set($first_name = "")
+		#set($first_name = $!userobj.getProperty("first_name").getValue())
+		#if($first_name != "") ##{
+			<li>
+				*$msg.get("view_profile.account_info.name1.title")*
+				#mycurriki_dashifempty($userdoc.display("first_name", $userobj))
+			</li>
+		#end ##}
+		#set($last_name = "")
+		#set($last_name = $!userobj.getProperty("last_name").getValue())
+		#if($last_name != "") ##{
+			<li>
+				*$msg.get("view_profile.account_info.name2.title")*
+				#mycurriki_dashifempty($userdoc.display("last_name", $userobj))
+			</li>
+		#end ##}
+		<li>
+			*$msg.get("view_profile.account_info.login.title")*
+			#mycurriki_dashifempty($userdoc.name)
+		</li>
+	#end ##}
+	## Only show if the member has allowed email to be shared, or is a private profile viewing
+	#set($show_email = 0)
+	#set($show_email = $!userobj.getProperty('show_email').value)
+	#if(!$public_profile||($show_email == 1)||(($show_email == 2) && ($context.user != 'XWiki.XWikiGuest'))) ##{
+		<li>
+			*$msg.get("view_profile.account_info.email.title")*
+			#mycurriki_dashifempty($userdoc.display("email", $userobj))
+		</li>
+	#end ##}
+	<li>
+		*$msg.get("view_profile.account_info.member_since")*
+		$xwiki.formatDate($userdoc.creationDate,$msg.get("mycurriki.dateFormat"))
+	</li>
+</ul>
+</div>
+</fieldset>
+
+##Only show when not a public profile
+#if(!$public_profile) ##{
+<fieldset>
+<h3>$msg.get('view_profile.privacy.header')</h3>
+<div class="fields-wrp">
+<ul>
+	<li>
+		*$msg.get("view_profile.privacy.show_profile.title")*
+		#set($show_profile = "")
+		#set($show_profile = $!userobj.getProperty('show_contact').value)
+		#if($show_profile == "1") ##{
+			$msg.get("view_profile.privacy.show_profile.everyone")
+		#elseif($show_profile == "0") ##}{
+			$msg.get("view_profile.privacy.show_profile.noone")
+		#elseif($show_profile == "2") ##}{
+			$msg.get("view_profile.privacy.show_profile.members")
+		#end ##}
+	</li>
+	<li>
+		*$msg.get("view_profile.privacy.show_email.title")*
+		#set($show_email = "")
+		#set($show_email = $!userobj.getProperty('show_email').value)
+		#if($show_email == 1) ##{
+			$msg.get("view_profile.privacy.show_email.everyone")
+		#elseif($show_email == 0) ##}{
+			$msg.get("view_profile.privacy.show_email.noone")
+		#elseif($show_email == 2) ##}{
+			$msg.get("view_profile.privacy.show_email.members")
+		#else ##}{
+			$msg.get("view_profile.privacy.show_email.noone")
+		#end ##}
+	</li>
+	<li>
+		*$msg.get("view_profile.privacy.email_options.title")*
+		#set($opt_out = "")
+		#set($opt_out = $!userobj.getProperty('opt_out').value)
+		#if($opt_out == 0) ##{
+			$msg.get("view_profile.privacy.email_options.all")
+		#elseif($opt_out == 1) ##}{
+			$msg.get("view_profile.privacy.email_options.none")
+		#elseif($opt_out == 2) ##}{
+			$msg.get("view_profile.privacy.email_options.some")
+			#set($show_options = "")
+			#set($show_options = $!userobj.getProperty('email_options').value)
+			<ul class="pad-5" sytle="list-style-type: disc; list-style-position: inside;">
+				#foreach($option in $show_options) ##{
+					<li>$msg.get("view_profile.privacy.email_options.${option}")</li>
+				#end ##}
+			</ul>
+		#end ##}
+	</li>
+</ul>
+</div>
+</fieldset>
+#end ##}
+
+#set($member_type = "")
+#set($member_type = $!userobj.getProperty("member_type").getValue())
+#if($member_type == '---' || $member_type == '0') ##{
+#set($member_type = "")
+#end ##}
+#set($affiliation = "")
+#set($affiliation = $!userobj.getProperty("affiliation").getValue())
+#set($city = "")
+#set($city = $!userobj.getProperty("city").getValue())
+#set($state = "")
+#set($state = $!userobj.getProperty("state").getValue())
+#set($country = "")
+#set($country = $!userobj.getProperty("country").getValue())
+#if($country == '---') ##{
+#set($country = "")
+#end ##}
+#set($language = "")
+#set($language = $!userobj.getProperty("language").getValue())
+#set($comment = "")
+#set($comment = $!userobj.getProperty("comment").getValue())
+#set($contact = "")
+#set($contact = $!userobj.getProperty("contact").getValue())
+#set($websites = "")
+#set($websites = $!userobj.getProperty("websites").getValue())
+#set($litems = "")
+#set($titems = "")
+#set($titems = $!userobj.getProperty("topics").getValue())
+#set($eitems = "")
+#set($eitems = $!userobj.getProperty("educational_level").getValue())
+#if(("$titems" != "" && $titems.size() > 1) || ("$eitems" != "" && $eitems.size() > 0)) ##{
+#set($litems = "YES")
+#end ##}
+#set($all = "${member_type}${affiliation}${city}${state}${country}${language}${comment}${contact}${websites}${litems}")
+#if("$all" == "") ##{
+	#if(!$public_profile) ##{
+		<fieldset>
+		<h3>$msg.get('view_profile.interests.header')</h3>
+		<div class="fields-wrp">
+			$msg.get('view_profile.interests.no_info')
+		</div>
+		</fieldset>
+	#end ##}
+#else ##}{
+<fieldset>
+<h3>$msg.get('view_profile.interests.header')</h3>
+<div class="fields-wrp">
+<ul>
+#if($member_type != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.member_type.title")*
+		#mycurriki_dashifempty($userdoc.display("member_type", $userobj))
+	</li>
+#end ##}
+#if($affiliation != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.affiliation.title")*
+		#mycurriki_dashifempty($userdoc.display("affiliation", $userobj))
+	</li>
+#end ##}
+#if(("$titems" != "" && $titems.size() > 1) || ("$eitems" != "" && $eitems.size() > 0)) ##{
+	<li id="item-interest-areas">
+		<table>
+		<tbody>
+		<tr>
+			<th class="item-interest-areas-th">*$msg.get("view_profile.interests.subject.title")*</th>
+			<th class="item-interest-areas-th">*$msg.get("view_profile.interests.ed_level.title")*</th>
+		</tr>
+		<tr>
+		<td class="item-interest-areas-td">
+					#skbListHere("" $!userobj.trainedTopicsAndCompetencies)	</td>
+		<td class="item-interest-areas-td">
+					#skbListHere("" $!userobj.eduLevelFine)</td>
+		</tr>
+		</tbody>
+		</table>
+	</li>
+#end ##}
+#if($city != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.city.title")*
+		#mycurriki_dashifempty($userdoc.display("city", $userobj))
+	</li>
+#end ##}
+#if($state != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.state.title")*
+		#mycurriki_dashifempty($userdoc.display("state", $userobj))
+	</li>
+#end ##}
+#if($country != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.country.title")*
+		#mycurriki_dashifempty($userdoc.display("country", $userobj))
+	</li>
+#end ##}
+#if($language != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.language.title")*
+		#mycurriki_dashifempty($userdoc.display("language", $userobj))
+	</li>
+#end ##}
+#if($comment != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.bio.title")*
+		#mycurriki_dashifempty($userdoc.display("comment", $userobj))
+	</li>
+#end ##}
+#if($contact != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.contact.title")*
+		#mycurriki_dashifempty($userdoc.display("contact", $userobj))
+	</li>
+#end ##}
+#if($websites != "") ##{
+	<li>
+		*$msg.get("view_profile.interests.websites.title")*
+		#mycurriki_dashifempty($userdoc.display("websites", $userobj))
+	</li>
+#end ##}
+</ul>
+</div>
+</fieldset>
+#end ##}
+<!-- End Curriki View Profile -->
+#end ##} end macro
+
+
+#**
+  * Displays the profile of the user with a title bar
+  *
+  * @param $userdoc Document of the user
+  * @param $userobj Object of the user
+  *#
+#macro(mycurriki_viewprofilebox $userdoc $userobj) ##{
+<!-- View Profile Box -->
+## 4 states
+## 1. Private Profile -- Member looking at own profile or Admin
+## 2. Member Public Profile -- Member (or Admin) viewing their "public" profile
+## 3. Shared Public Profile -- Viewing another member's Shared Public profile
+## 4. Un-Shared Public Profile -- A user viewing another member's unshared profile
+	## Bounce guest to login page if trying to view "own" profile
+	#if(("$!request.user"=="") && ($context.user=="XWiki.XWikiGuest")) ##{
+		#set($logredir = $doc.getURL("view"))
+		#set($loginurl = $xwiki.getURL("XWiki.XWikiLogin", "login", "xredirect=$logredir"))
+		$response.sendRedirect($loginurl)
+	#end ## }
+
+	#set($public_profile = true)
+	#if(($context.user==$userdoc.fullName)||($xwiki.hasAdminRights())) ##{
+	## User or Admin
+		#if("$!request.mode"=="") ##{
+			#set($public_profile = false)
+		#end ##}
+		#mycurriki_viewprofile($userdoc $userobj)
+	#else ##}{
+	## Member or Guest
+		#set($showcontact=$userobj.getProperty("show_contact").getValue())
+		#if($showcontact=="0") ##{
+			$msg.get("view_profile.not_shared_with_anyone")
+		#elseif(($showcontact=="2") && ($context.user=="XWiki.XWikiGuest")) ##}{
+			$msg.get("view_profile.not_shared_with_visitors")
+		#else ##}{
+			#mycurriki_viewprofile($userdoc $userobj)
+		#end ##}
+	#end ##}
+<!-- End View Profile Box -->
+#end ##} end macro
+
+##
+## My Curriki Favorites
+##
+##
+
+
+#**
+  * Displays the favorites header
+  *
+  * @param $allcols True if we show the action column of the favorites
+  *#
+#macro(mycurriki_favoritesheader $allcols)
+<!-- MyCurriki Favorites Header -->
+<tr>
+  <th class="table-header table-col-title">$msg.get('mycurriki.favorites.table.title')</th>
+  <th class="table-header table-col-contributor">$msg.get('mycurriki.favorites.table.contributor')</th>
+  <th class="table-header table-col-ict">$msg.get('mycurriki.favorites.table.ict')</th>
+  <th class="table-header table-col-filetype">$msg.get('mycurriki.favorites.table.filetype')</th>
+  #if($allcols) ## {
+    <th class="table-header table-header-fixed table-col-action">$msg.get('mycurriki.favorites.table.action')</th>
+  #end ## if allcols ## }
+</tr>
+<!-- End MyCurriki Favorites Header -->
+#end ##} end macro mycurrikifavoritesheader
+
+
+#**
+  * Displays the a favorite item
+  *
+  * @param $asset Asset to display
+  * @param $allcols True if we show the action column of the favorites
+  *#
+#macro(mycurriki_favoritesasset $asset $allcols)
+  <!-- MyCurriki Favorites Asset -->
+  #if(!$g_rowCount) ## {
+    #set($g_rowCount = 0)
+  #end ## }
+  #set($g_rowCount = $g_rowCount + 1)
+  <tr class="table-row#if(($g_rowCount % 2) == 0) table-odds#end">
+    <td class="table-col-title">#mycurriki_assettitlewithmodesc($asset)</td>
+    <td class="table-col-contributor">#mycurriki_contributor($asset)</td>
+    <td class="table-col-ict">#mycurriki_ict($asset)</td>
+    <td class="table-col-filetype">#mycurriki_filetype($asset)</td>
+    #if($allcols) ## {
+      <td class="table-col-action">
+        <div class="button-links">
+          #set($g_actionFirst = true)
+          #mycurriki_action_add($asset 'H')
+          #mycurriki_action_remove($asset)
+        </div>
+      </td>
+    #end ## if allcols ## }
+  </tr>
+  <!-- End MyCurriki Favorites Asset -->
+#end ##end macro mycurriki_favoritesasset
+
+#**
+  * Displays the pagination footer for the favorites section
+  *
+  * @param $startIndex start index of the pagination
+  * @param $nbToDisplay number of elements shown in a page
+  * @param $assetList asset list that is displayed
+  *#
+#macro(mycurriki_favoritespagination $startIndex $nbToDisplay $assetList) ##{
+  <!-- MyCurriki Favorites Pagination -->
+  #curriki_paginator($msg.get("mycurriki.tab.favorites.label") $startIndex $nbToDisplay $assetList.size())
+  <!-- End MyCurriki Favorites Pagination -->
+#end ## } end macro mycurriki_favoritespagination
+
+
+#**
+  * Displays the favorites button of the user
+  *
+  * @param $userobj Object of the user
+  *#
+#macro(mycurriki_favoritesbutton $userobj)
+  <!-- MyCurriki Favorites Button -->
+  #if($context.user==$userdoc.fullName) ## {
+    #set($shortname = $userdoc.fullName)
+    #set($breadcrumb="MyCurriki.WebHome")
+    #if($shortname.startsWith("XWiki.")) ## {
+      #set($shortname = $shortname.substring(6))
+    #end ## }
+    #set($favPage = "Coll_${shortname}.Favorites")
+    #if($xwiki.exists($favPage)) ## {
+      #set($favDoc = $xwiki.getDocument("Coll_${shortname}.Favorites"))
+      #set($assetList = $favDoc.getObjects('CurrikiCode.SubAssetClass'))
+      #if($assetList.size() > 0) ## {
+        #if("$!breadcrumb" == "") ## {
+          #set($breadcrumb=$userdoc.fullName)
+        #end ## }
+        <a class="button button-orange" href="$xwiki.getURL("${favPage}", "view", "bc=${breadcrumb}")" title="$msg.get("mycurriki.favorites.viewButton")">$msg.get("mycurriki.favorites.viewButton")</a></span>
+      #end ## }
+    #end ## }
+  #end ## }
+  <!-- End MyCurriki Favorites Button -->
+#end
+
+#**
+  * Displays the favorites box
+  *
+  * @param $userdoc Document of the user
+  * @param $userobj Object of the user
+  *#
+#macro(mycurriki_favoritesbox $userdoc $userobj) ##{
+  <!-- MyCurriki Favorites Box -->
+  #set($allcols = false)
+  #if($context.user=="XWiki.XWikiGuest") ## {
+    ## Settings for guests here
+  #end ## }
+  #if($hasGlobalAdmin) ## {
+    ## Settings for admins here
+    #set($allcols = true)
+  #end ## }
+  #if($context.user==$userdoc.fullName) ## {
+    ## Settings for owner here
+    #set($allcols = true)
+  #end ## }
+  #set($shortname = $userdoc.fullName)
+  #if($shortname.startsWith("XWiki.")) ## {
+    #set($shortname = $shortname.substring(6))
+  #end ## }
+  ## Do query for favorites
+  #set($favDoc = $xwiki.getDocument("Coll_${shortname}.Favorites"))
+  #set($assetList = $favDoc.getObjects('CurrikiCode.SubAssetClass'))
+  #set($nbToDisplay = 20)
+  #set($startIndex = 0)
+  #set($Integer = 0)
+  #if($request.startIndex) ## {
+    #set($startIndex = $Integer.parseInt($request.getParameter("startIndex")))
+  #end ## }
+  #if($startIndex > ($assetList.size() - 1)) ## {
+    #set($startIndex = $assetList.size() - 1)
+  #end ## }
+  #set($endIndex = $startIndex - 1 + $nbToDisplay)
+  #if($endIndex > ($assetList.size() - 1)) ## {
+    #set($endIndex = $assetList.size() - 1)
+  #end ## }
+  ## Display favorites in table using pagination
+  <table id="mycurriki-favorites-table" class="table table-favorites">
+    #mycurriki_favoritesheader($allcols)
+    ## row per item -- number of rows configurable
+    #set($descnb = 0)
+    #set($showcount = 0)
+    #foreach($assetPointer in $assetList) ## {
+      #set($assetPage = $assetPointer.get('assetpage'))
+      #if($xwiki.hasAccessLevel("view", $context.user, $assetPage)) ## {
+        #set($asset = $xwiki.getDocument($assetPage))
+        #set($type = $!asset.getValue("type", $asset.getObject("CurrikiCode.TextAssetClass")))
+        #if("$type"!="2") ## {
+          #set($showcount = 1 + $showcount)
+          #if(($showcount > $startIndex) && ($showcount < ($endIndex + 2))) ## {
+            #mycurriki_favoritesasset($asset $allcols)
+          #end ## showcount > startIndex && showcount < endIndex ## }
+        #end  ## type != 2 ## }
+      #end  ## if has view access ## }
+    #end ## foreach assetPage in list ## }
+    #if($showcount == 0) ## {
+      <tr><td colspan="6">$msg.get("mycurriki.favorites.noresults")</td></tr>
+    #end ## }
+  </table>
+  ## Pagination here
+  #mycurriki_favoritespagination( $startIndex $nbToDisplay $assetList )
+  <!-- End MyCurriki Favorites Box -->
+#end ##} end macro mycurrikifavoritesbox
+
+
+#**
+  * MyCurriki Favorites
+  * Remove a favorite
+  * @param $requestdocName Doc name to remove from favorite
+  *#
+#macro(mycurriki_removefavorite)
+#if($request.docName) ## {
+ #if("1" == $request.confirm) ## {
+  #set($shortname = $context.user)
+  #if($shortname.startsWith("XWiki.")) ## {
+   #set($shortname = $shortname.substring(6))
+  #end ## }
+  #set($favPage = "Coll_${shortname}.Favorites")
+  #set($done = false)
+  #if($xwiki.exists($favPage)) ## {
+   #set($favDoc = $xwiki.getDocument("Coll_${shortname}.Favorites"))
+   #set($assetList = $favDoc.getObjects('CurrikiCode.SubAssetClass'))
+   #foreach($assetPointer in $assetList) ## {
+    #if($request.docName == $assetPointer.get('assetpage')) ## {
+     #set($junk = $favDoc.removeObject($assetPointer))
+     #set($junk = $favDoc.save($msg.get("mycurriki.favorites.removed.comment", [$request.docName])))
+     #set($done = true)
+    #end ## if }
+   #end ## foreach }
+  #end ## if }
+ #end ## if confirm }
+ #if ($request.sourceDoc) ## {
+ $response.sendRedirect($request.sourceDoc)
+ #else ## } {
+  #if($message) ## {
+<div id="xwikimessage">
+$message
+</div>
+  #end ## }
+<div id="xwikicontent">
+<br />
+$msg.get("deleted")
+<br />
+<br />
+<br />
+</div>
+ #end ## }
+#else ## } {
+ #if ($request.sourceDoc) ## {
+ $response.sendRedirect($request.sourceDoc)
+ #else ## } {
+ $response.sendRedirect($xwiki.getURL("MyCurriki.Favorites"))
+ #end ## }
+#end ## }
+#end ## }
+
+##
+## My Curriki Contributions
+##
+##
+
+
+#**
+  * Displays the contributions header
+  *
+  * @param $sortBy Sorting column
+  * @param $sortDir Sorting direction
+  * $param $headersArgs Arguments added to the url
+  * @param $allcols true if the actions columns are added
+  *#
+#macro(mycurriki_contributionsheader $sortBy $sortDir $headerArgs $allcols) ##{
+  <!-- MyCurriki Contributions Header -->
+  <tr>
+      #if($sortBy=="title" && $sortDir == "asc") ## {
+        #set($url = $xwiki.getURL($doc.fullName, "view", "${headerArgs}sortBy=title&sortDir=desc"))
+      #else ## } {
+        #set($url = $xwiki.getURL($doc.fullName, "view", "${headerArgs}sortBy=title"))
+      #end ## }
+      <th class="table-header#if($sortBy=="title") table-header-sorted#end table-col-title"><a href="$url">$msg.get('mycurriki.contributions.table.title')</a></th>
+      <th class="table-header table-header-fixed table-col-ict">$msg.get('mycurriki.contributions.table.ict')</th>
+      #if($sortBy=="date" && $sortDir == "desc") ## {
+        #set($url = $xwiki.getURL($doc.fullName, "view", "${headerArgs}sortDir=asc"))
+      #else ## } {
+        #set($url = $xwiki.getURL($doc.fullName, "view", "${headerArgs}"))
+      #end ## }
+      <th class="table-header#if($sortBy=="date") table-header-sorted#end table-col-lastupdated"><a href="$url">$msg.get('mycurriki.contributions.table.lastupdated')</a></th>
+      #if($allcols)
+        #if($sortBy=="access" && $sortDir == "asc") ## {
+          #set($url = $xwiki.getURL($doc.fullName, "view", "${headerArgs}sortBy=access&sortDir=desc"))
+        #else ## } {
+          #set($url = $xwiki.getURL($doc.fullName, "view", "${headerArgs}sortBy=access"))
+        #end ## }
+        <th class="table-header#if($sortBy=="access") table-header-sorted#end table-col-access"><a href="$url">$msg.get('mycurriki.contributions.table.access')</a></th>
+      #end ## if allcols
+      <th class="table-header table-header-fixed table-col-filetype">$msg.get('mycurriki.contributions.table.filetype')</th>
+      #if($allcols)
+        <th class="table-header table-header-fixed table-col-action">$msg.get('mycurriki.contributions.table.action')</th>
+      #end ## if allcols
+    </tr>
+    <!-- End MyCurriki Contributions Header -->
+#end ##} end macro mycurrikicontributionsheader
+
+
+
+#**
+  * Determine if the user is in the group owning the resource
+  *
+  * @param $asset Asset
+  * @returns $ret_assetGroupAdmin
+  *#
+#macro(assets_userIsGroupAdmin $asset) ##{
+#set($sm = $xwiki.csm)
+#set($ret_assetGroupAdmin = false)
+#if($asset.creator == $context.user || $sm.isAdmin($asset.web.replaceFirst('Coll_', ''), $context.user) || $hasGlobalAdmin) ##{
+	#set($ret_assetGroupAdmin = true)
+#end ##}
+#end ##}
+
+#**
+  * Determine if the user is in the group owning the resource
+  *
+  * @param $asset Asset
+  * @returns $ret_assetGroupMember
+  *#
+#macro(assets_userInGroup $asset) ##{
+#set($sm = $xwiki.csm)
+#set($ret_userInAssetGroup = false)
+#if($asset.creator == $context.user || $sm.isMember($asset.web.replaceFirst('Coll_', ''), $context.user) || $hasGlobalAdmin) ##{
+	#set($ret_assetGroupMember = true)
+#end ##}
+#end ##}
+
+#**
+  * Displays the "Add" action if available
+  *
+  * @param $asset Asset
+  * @param $addpath Add path to follow
+  * @param $g_userHasCollections Impl param True if the user has collections
+  *#
+#macro(mycurriki_action_add $asset $addpath) ##{
+	## Not available on "Favorites" page except for owner/admin
+	#checkForCollections()
+	#if($g_userHasCollections) ##{
+		#escapeForJS($asset.fullName)
+		#set($escapedFullName = $ret_escaped)
+		#asset_findtitle($asset)
+		#escapeForJS($currikiTitle)
+		#set($escapedTitle = $ret_escaped)
+		#if($asset.creator == $context.user || $hasGlobalAdmin || $doc.name != 'Favorites' || ($g_userdoc.fullName == $context.user && $doc.name == 'Favorites'))##{
+		{pre}<a class="button-link#if($g_actionFirst) first-item#set($g_actionFirst = false)#end" href="#" onclick="Curriki.module.addpath.startPath('${addpath}', {assetName:'$escapedFullName', assetTitle:'$escapedTitle'}); return false;" ext:qtip="$msg.get('mycurriki.link.add.tooltip')">$msg.get('mycurriki.link.add')</a>{/pre}
+		#end##}
+	#end##}
+#end ##}
+
+#**
+  * Displays the "Remove" action if available
+  *
+  * @param $asset Asset
+  *#
+#macro(mycurriki_action_remove $asset) ##{
+	## ONLY on Favorites page (removes from Favorites list)
+	## ONLY for owner + admin
+	#if($doc.name == 'Favorites' && ($g_userdoc.fullName == $context.user || $hasGlobalAdmin)) ##{
+		#set($removeMsg = $msg.get('mycurriki.favorites.table.action.remove.confirm'))
+		#set($deleteUrl = $xwiki.getURL("MyCurriki.RemoveFavorite", "view", "confirm=1&docName=${asset.fullName}&sourceDoc=$doc.getURL('view')"))
+		<a class="button-link#if($g_actionFirst) first-item#set($g_actionFirst = false)#end" onclick="return confirm('$removeMsg')" href="$deleteUrl" ext:qtip="$msg.get('mycurriki.favorites.table.action.remove_tooltip')">$msg.get("mycurriki.favorites.table.action.remove")</a>
+	#end ##}
+#end ##}
+
+#**
+  * Displays the "Delete" action if available
+  *
+  * @param $asset Asset
+  *#
+#macro(mycurriki_action_delete $asset) ##{
+	## ONLY for owner + admin
+	#assets_userIsGroupAdmin($asset)
+	#if($ret_assetGroupAdmin || $hasGlobalAdmin) ##{
+		#set($deleteMsg = $msg.get('mycurriki.link.delete.confirm'))
+		#set($deleteUrl = $xwiki.getURL("XWiki.DeleteDocument", "view", "confirm=1&docName=${asset.fullName}&sourceDoc=$doc.getURL('view')"))
+		{pre}<a class="button-link#if($g_actionFirst) first-item#set($g_actionFirst = false)#end" onclick="return confirm('$deleteMsg')" href="$deleteUrl" ext:qtip="$msg.get('mycurriki.link.delete.tooltip')">$msg.get("mycurriki.link.delete")</a>{/pre}
+	#end ##}
+#end ##}
+
+#**
+  * Displays the "Copy" action if available
+  *
+  * @param $asset Asset
+  * @param $addpath Add path to follow
+  * @param $g_userHasCollections Impl param True if the user has collections
+  *#
+#macro(mycurriki_action_copy $asset $addpath) ##{
+	## Not available on "Favorites" page
+	## File Resources only (not Collections/Folders)
+	#checkForCollections()
+	#if($asset.getCategory() != 'collection') ##{
+		#escapeForJS($asset.fullName)
+		#set($escapedFullName = $ret_escaped)
+		#if($doc.name != 'Favorites' && ($asset.creator == $context.user || $hasGlobalAdmin))##{
+		{pre}<a class="button-link#if($g_actionFirst) first-item#set($g_actionFirst = false)#end" href="#" onclick="Curriki.module.addpath.startPath('${addpath}', {copyOf:'${escapedFullName}'}); return false;" ext:qtip="$msg.get('mycurriki.link.copy.tooltip')">$msg.get('mycurriki.link.copy')</a>{/pre}
+		#end##}
+	#end##}
+#end ##}
+
+#**
+  * Displays the "Edit Content" action if available
+  *
+  * @param $asset Asset
+  *#
+#macro(mycurriki_action_editcontent $asset) ##{
+	## ONLY for owner + admin
+	## ONLY for File Resources (not Collections)
+	#assets_userIsGroupAdmin($asset)
+	#if($asset.getCategory() != 'collection' && ($ret_assetGroupAdmin || $hasGlobalAdmin)) ##{
+		#set($editUrl = $asset.getURL('view', 'viewer=assetedit'))
+		{pre}<a class="button-link#if($g_actionFirst) first-item#set($g_actionFirst = false)#end" href="$editUrl" ext:qtip="$msg.get('mycurriki.link.editcontent.tooltip')">$msg.get("mycurriki.link.editcontent")</a>{/pre}
+	#end ##}
+#end ##}
+
+#**
+  * Displays the "Edit Info" action if available
+  *
+  * @param $asset Asset
+  *#
+#macro(mycurriki_action_editinfo $asset) ##{
+	## ONLY for owner + admin
+	#assets_userIsGroupAdmin($asset)
+	#if($ret_assetGroupAdmin || $hasGlobalAdmin) ##{
+		#set($editUrl = $asset.getURL('view', 'viewer=infoedit'))
+		{pre}<a class="button-link#if($g_actionFirst) first-item#set($g_actionFirst = false)#end" href="$editUrl" ext:qtip="$msg.get('mycurriki.link.editinfo.tooltip')">$msg.get("mycurriki.link.editinfo")</a>{/pre}
+	#end ##}
+#end ##}
+
+#**
+  * Displays the "Build Up" action if available
+  *
+  * @param $asset Asset
+  * @param $addpath Add path to follow
+  *#
+#macro(mycurriki_action_buildup $asset $addpath) ##{
+	## Not available on "Favorites" page
+	## ONLY for owner + admin
+	## ONLY Collections
+	#if($asset.getCategory() == 'collection') ##{
+		#escapeForJS($asset.fullName)
+		#set($escapedFullName = $ret_escaped)
+		#asset_findtitle($asset)
+		#escapeForJS($currikiTitle)
+		#set($escapedTitle = $ret_escaped)
+		#assets_userInGroup($asset)
+		#if($doc.name != 'Favorites' && ($ret_assetGroupMember || $hasGlobalAdmin))##{
+		{pre}<a class="button-link#if($g_actionFirst) first-item#set($g_actionFirst = false)#end" href="#" onclick="Curriki.module.addpath.startPath('${addpath}', {parentAsset:'$escapedFullName', parentTitle:'$escapedTitle'}); return false;" ext:qtip="$msg.get('mycurriki.link.buildup.tooltip')">$msg.get('mycurriki.link.buildup')</a>{/pre}
+		#end##}
+	#end##}
+#end ##}
+
+#**
+  * Displays the "Organize" action if available
+  *
+  * @param $asset Asset
+  *#
+#macro(mycurriki_action_organize $asset) ##{
+	## Not available on "Favorites" page
+	## ONLY for owner + admin
+	## ONLY Collections
+	#if($asset.getCategory() == 'collection') ##{
+		#escapeForJS($asset.fullName)
+		#set($escapedFullName = $ret_escaped)
+		#asset_findtitle($asset)
+		#escapeForJS($currikiTitle)
+		#set($escapedTitle = $ret_escaped)
+		#escapeForJS(${xwiki.getUserName($asset.creator, false)})
+		#set($escapedCreatorName = $ret_escaped)
+		#if($doc.name != 'Favorites' && ($asset.creator == $context.user || $hasGlobalAdmin))##{
+			#set($cnt = $asset.as($xwiki.null).getSubassetList().size())
+			#if($cnt > 0) ##{
+			{pre}<a class="button-link#if($g_actionFirst) first-item#set($g_actionFirst = false)#end" href="#" onclick="Curriki.module.organize.start({assetPage:'$escapedFullName', title:'$escapedTitle', creator:'${asset.creator}', creatorName:'${escapedCreatorName}'}); return false;" ext:qtip="$msg.get('mycurriki.link.organize.tooltip')">$msg.get('mycurriki.link.organize')</a>{/pre}
+			#end##}
+		#end##}
+	#end##}
+#end ##}
+
+
+
+#**
+  * Displays a contributions asset
+  *
+  * @param $asset Asset to display
+  * @param $allcols true if the actions columns are added
+  *#
+#macro(mycurriki_contributionsasset $asset $allcols)
+  <!-- MyCurriki Contributions Asset -->
+  #if(!$g_rowCount) ## {
+    #set($g_rowCount = 0)
+  #end ## }
+  #set($g_rowCount = $g_rowCount + 1)
+  <tr class="table-row#if(($g_rowCount % 2) == 0) table-odds#end">
+    <td class="table-col-title">#mycurriki_assettitlewithmodesc($asset)</td>
+    <td class="table-col-ict">#mycurriki_ict($asset)</td>
+    <td class="table-col-updated">#mycurriki_lastupdate($asset)</td>
+    #if($allcols)
+      <td class="table-col-access">#mycurriki_access($asset)</td>
+    #end ## if allcols
+    <td class="table-col-filetype">#mycurriki_filetype($asset)</td>
+    #if($allcols)
+      <td class="table-col-action">
+        <div class="button-links">
+          #set($g_actionFirst = true)
+          #mycurriki_action_add($asset 'J')
+          #mycurriki_action_copy($asset 'Copy')
+          #mycurriki_action_buildup($asset 'L')
+          #mycurriki_action_editcontent($asset)
+          #mycurriki_action_editinfo($asset)
+          #mycurriki_action_organize($asset)
+          #mycurriki_action_delete($asset)
+        </div>
+      </td>
+    #end ## if allcols
+  </tr>
+  <!-- End MyCurriki Contributions Asset -->
+#end
+
+
+#**
+  * Displays the pagination footer for the contributions section
+  *
+  * @param $startIndex start index of the pagination
+  * @param $nbToDisplay number of elements shown in a page
+  * @param $showcount If we should show a count of the number of contributions
+  * @param $sortArgs The sort arguments for the url
+  *#
+#macro(mycurriki_contributionspagination $startIndex $nbToDisplay $showcount $sortArgs) ##{
+  <!-- MyCurriki Contributions Pagination -->
+  #curriki_paginatorargs($msg.get("mycurriki.tab.contributions.label") $startIndex $nbToDisplay $showcount $sortArgs)
+  <!-- End MyCurriki Contributions Pagination -->
+#end ##} end macro
+
+
+#**
+  * Displays the contributions button of the user
+  *
+  * @param $userobj Object of the user
+  *#
+#macro(mycurriki_contributionsbutton $userdoc $userobj )
+  <!-- MyCurriki Contributions Buttons -->
+  #if($context.action == "view" && ($context.user==$userdoc.fullName || $hasGlobalAdmin))##{
+    {pre}
+    <a class="button button-orange" onclick="Curriki.module.addpath.startPath('I', {});" title="$msg.get('mycurriki.contributions.addButton_tooltip')">$msg.get('mycurriki.contributions.addButton')</a>
+    {/pre}
+  #end ##}
+  <!-- End MyCurriki Contributions Buttons -->
+#end ##} end macro
+
+
+#**
+  * Displays the contributions box
+  *
+  * @param $userdoc Document of the user
+  * @param $userobj Object of the user
+  *#
+#macro(mycurriki_contributionsbox $userdoc $userobj) ##{
+  <!-- MyCurriki Contributions Box -->
+  #set($headerArgs="user=${userdoc.fullName}&")
+  #set($allcols = false)
+  #if($context.user=="XWiki.XWikiGuest")
+    ## Settings for guests here
+  #end
+  #if($hasGlobalAdmin) ##{
+    ## Settings for admins here
+    #set($allcols = true)
+  #end ##}
+  #if($context.user==$userdoc.fullName)
+## Settings for owner here
+    #set($allcols = true)
+    #set($headerArgs="")
+  #end
+  #set($shortname = $userdoc.fullName)
+  #if($shortname.startsWith("XWiki."))
+    #set($shortname = $shortname.substring(6))
+  #end
+  #set($descnb = 0)
+  ## Do query for contributions
+  #if("$!request.sortBy"=="") ## {
+    #set($sortBy = "date")
+    #set($sortDir = 'desc')
+  #elseif($request.sortBy=="date") ## } {
+    #set($sortBy = "date")
+    #set($sortDir = 'desc')
+  #elseif($request.sortBy=="title") ## } {
+    #set($sortBy = "title")
+    #set($sortDir = 'asc')
+  #elseif($request.sortBy=="access" && $allcols) ## } {
+    #set($sortBy = "access")
+    #set($sortDir = 'asc')
+  #else ## } {
+    #set($sortBy = "date")
+    #set($sortDir = 'desc')
+  #end ## }
+  ##
+  #if("$!request.sortDir"=="") ## {
+  #elseif($request.sortDir=="asc") ## } {
+    #set($sortDir = 'asc')
+  #elseif($request.sortDir=="desc") ## } {
+    #set($sortDir = 'desc')
+  #end ## }
+  ##
+  #set($sortArgs = "")
+  #if($sortBy == "date") ## {
+    #if($sortDir == "asc") ## {
+      #set($sortArgs = "sortDir=asc")
+    #end ## }
+  #elseif ($sortBy == "title") ## } {
+    #set($sortArgs = "sortBy=title")
+    #if($sortDir == "desc") ## {
+      #set($sortArgs = "${sortArgs}&sortDir=desc")
+    #end ## }
+  #elseif ($sortBy == "access") ## } {
+    #set($sortArgs = "sortBy=access")
+    #if($sortDir == "desc") ## {
+      #set($sortArgs = "${sortArgs}&sortDir=desc")
+    #end ## }
+  #end ## }
+  ##
+  ## Order by reverse last updated
+  #set($baseWhere = "where doc.fullName=obj.name AND obj.className='CurrikiCode.AssetClass' AND doc.creator='${userdoc.fullName}' AND doc.web != 'AssetTemp' AND doc.name != 'Favorites' AND doc.name != 'WebHome' AND doc.fullName NOT IN (SELECT cbobj.name FROM BaseObject as cbobj, IntegerProperty as cbprop WHERE cbobj.className='CurrikiCode.TextAssetClass' AND cbobj.name = doc.fullName AND cbobj.id=cbprop.id.id AND cbprop.id.name='type' AND cbprop.value=2)")
+  #set($globalView = " 0=1 ")
+  #if($!hasGlobalAdmin)
+    #set($globalView = " 1=1 ")
+  #end
+  #set($rightsWhere = " AND (${globalView} OR '${userdoc.fullName}'='${context.user}' OR doc.fullName NOT IN (SELECT robj.name FROM BaseObject as robj, StringProperty as rprop WHERE robj.className='CurrikiCode.AssetClass' AND robj.name = doc.fullName AND robj.id=rprop.id.id AND rprop.id.name='rights' AND rprop.value = 'private')) ")
+  #set($baseWhere = "${baseWhere} ${rightsWhere}")
+  #if($sortBy=="title") ## {
+    #set($sql = ", BaseObject as obj ${baseWhere} order by doc.title $sortDir")
+  #elseif($sortBy=="access") ## Default sort by rights ## } {
+    #set($sql = ", BaseObject as obj, StringProperty as prop1 ${baseWhere} and obj.id=prop1.id.id and prop1.id.name='rights' order by prop1.value $sortDir, doc.title asc")
+  #else ## Default sort by date ## } {
+    #set($sql = ", BaseObject as obj ${baseWhere} order by doc.date $sortDir")
+  #end ## }
+  ## Order by property ascending
+  ## How can we sort by
+  ## filetype (determined in a macro)
+  ## instructional_component (if not exists how do we act as blank)
+  ##doesnt work #set($sql = ", BaseObject as obj left outer join StringProperty as prop1 on obj.id=prop1.id.id and prop1.id.name='instructional_component' where doc.fullName=obj.name and obj.className='CurrikiCode.AssetClass' and doc.creator='${userdoc.fullName}' and doc.web != 'AssetTemp' and doc.name != 'Favorites' order by prop1.value $sortDir")
+  ##
+  ##
+  #set($assetList = $xwiki.searchDocuments($sql))
+  #set($nbToDisplay = 20)
+  #set($startIndex = 0)
+  #set($Integer = 0)
+  #if($request.startIndex)
+    #set($startIndex = $Integer.parseInt($request.getParameter("startIndex")))
+  #end
+  #if($startIndex > ($assetList.size() - 1))
+    #set($startIndex = $assetList.size() - 1)
+  #end
+  #set($endIndex = $startIndex - 1 + $nbToDisplay)
+  #if($endIndex > ($assetList.size() - 1))
+    #set($endIndex = $assetList.size() - 1)
+  #end
+  ## Display contributions in table using pagination
+  <table id="mycurriki-contributions-table" class="table table-contributions">
+    #mycurriki_contributionsheader($sortBy $sortDir $headerArgs $allcols)
+    ## row per item -- number of rows configurable
+    #set($showcount = 0)
+    #foreach($assetPage in $assetList)
+      #set($showcount = 1 + $showcount)
+      #if(($showcount > $startIndex) && ($showcount < ($endIndex + 2)))
+        #set($asset = $xwiki.getDocument($assetPage))
+        #mycurriki_contributionsasset($asset $allcols)
+      #end ## showcount > startIndex && showcount < endIndex
+    #end ## foreach assetPage in list
+    #if($showcount == 0)
+      <tr><td colspan="6">$msg.get("mycurriki.contributions.noresults")</td></tr>
+    #end
+  </table>
+  ## Pagination here
+  #mycurriki_contributionspagination( $startIndex $nbToDisplay $showcount $sortArgs )
+  <!-- End MyCurriki Contributions Box -->
+#end ##} end macro
+
+##
+##
+##
+## Collections Macros
+##
+##
+#**
+  *  My Curriki Collection Actions
+  *
+  *  @param $asset Asset to display actions for
+  *#
+#macro(mycurriki_collectionactions $asset)
+#set($g_actionFirst = true)
+#mycurriki_action_add($asset 'J')
+#mycurriki_action_buildup($asset 'L')
+#mycurriki_action_editinfo($asset)
+#mycurriki_action_organize($asset)
+#mycurriki_action_delete($asset)
+#end
+##
+##
+#**
+  *  My Curriki Collection Display
+  *
+  *  @param $asset Asset to display
+  *#
+#macro(mycurriki_collection $asset)
+#if(!$g_rowCount) ## {
+#set($g_rowCount = 0)
+#end ## }
+#set($g_rowCount = $g_rowCount + 1)
+<div class="frame-inset#if(($g_rowCount % 2) == 0) table-odds#end">
+<div>
+<div class="button-links">
+#mycurriki_collectionactions($asset)
+</div>
+<div class="frame-inset-ict">
+#mycurriki_ict($asset)
+</div>
+<div class="frame-inset-title">
+#mycurriki_assettitlewithmodesc($asset)
+</div>
+</div>
+<div class="frame-inset-description mycurriki-collections-row-description">
+#mycurriki_collectiondescription($asset)
+</div>
+</div>
+</div>
+#end
+
+#**
+  * MyCurriki Collections Page Content Call Back function
+  * @param $userdoc Document of the user
+  * @param $userobj Object of the user
+  *#
+#macro(mycurriki_collections $userdoc $userobj)
+#if($context.user=="XWiki.XWikiGuest")
+## Settings for guests here
+#end
+#if($context.user==$userdoc.fullName)
+## Settings for owner here
+#end
+#set($shortname = $userdoc.fullName)
+#if($shortname.startsWith("XWiki."))
+ #set($shortname = $shortname.substring(6))
+#end
+#if(($userdoc.fullName == $context.user || $hasGlobalAdmin)) ##{
+#set($cnt = $xwiki.search("select count(*) from XWikiDocument as doc, BaseObject as obj, StringProperty as props where obj.id=props.id.id and doc.fullName=obj.name and obj.className='CurrikiCode.CompositeAssetClass' and doc.web='Coll_${shortname}' and doc.name != 'WebHome' and doc.name != 'Favorites' and props.id.name='type' and props.value='collection'").get(0))
+#set($multiple = ($cnt > 1))
+#if($multiple) ##{
+#set($reorder = $xwiki.search("select count(*) from XWikiDocument as doc, BaseObject as obj, IntegerProperty as props where obj.id=props.id.id and doc.fullName=obj.name and obj.className='CurrikiCode.CollectionReorderedClass' and doc.fullName='Coll_${shortname}.WebHome' and props.id.name='reordered' and props.value=1").get(0))
+#set($reordered = ($reorder > 0))
+{pre}
+<script type="text/javascript">
+/* <![CDATA[ */
+Curriki.data.reorder = {
+	place:'users'
+	,which:'${userdoc.fullName}'
+	,reordered:${reordered}
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/xwiki/js/curriki-module-reorder.js"></script>
+{/pre}
+#end ##}
+#end ##}
+## Get collections
+#set($assetList = $xwiki.getPlugin("curriki").fetchCollectionsList($shortname))
+#set($nbToDisplay = 20)
+#set($startIndex = 0)
+#set($Integer = 0)
+#if($request.startIndex)
+ #set($startIndex = $Integer.parseInt($request.getParameter("startIndex")))
+#end
+#if($startIndex > ($assetList.size() - 1))
+ #set($startIndex = $assetList.size() - 1)
+#end
+#set($endIndex = $startIndex - 1 + $nbToDisplay)
+#if($endIndex > ($assetList.size() - 1))
+ #set($endIndex = $assetList.size() - 1)
+#end
+##
+{pre}
+<script type="text/javascript">
+var $hidden = false;
+function toggle_desc(){
+  var $action;
+  var $titl;
+  if ($hidden){
+    $hidden = false;
+    $action = 'show';
+    $titl = "$msg.get('mycurriki.collections.titlebarbutton')";
+  } else {
+    $hidden = true;
+    $action = 'hide';
+    $titl = "$msg.get('mycurriki.collections.titlebarbuttonalt')";
+  }
+  $$('.mycurriki-collections-row-description').invoke($action);
+  $('hider-link').title=$titl;
+  $('hider-link').innerHTML=$titl+"  &raquo;";
+  return false;
+}
+</script>
+{/pre}
+#curriki_fulltitlebar($msg.get("mycurriki.collections.titlebar") $msg.get("mycurriki.collections.titlebarbutton") "" "return toggle_desc();" "red" "hider")
+## row per item -- number of rows configurable
+#set($showcount = 0)
+#foreach($assetPage in $assetList)
+#if($xwiki.hasAccessLevel("view", $context.user, $assetPage))
+#set($showcount = 1 + $showcount)
+#if(($showcount > $startIndex) && ($showcount < ($endIndex + 2)))
+#set($asset = $xwiki.getDocument($assetPage))
+#mycurriki_collection($asset)
+#end ## showcount > startIndex && showcount < endIndex
+#end  ## if has view access
+#end ## foreach assetPage in list
+#if($showcount == 0)
+<div class="centertext">$msg.get("mycurriki.collections.noresults")</div>
+#end ## showcount
+#curriki_paginator($msg.get("mycurriki.tab.collections.label") $startIndex $nbToDisplay $assetList.size())
+#end ## content macro
+
+#**
+  * MyCurriki Collections Page Button Call Back function
+  * @param $userobj Object of the user
+  *#
+#macro(mycurriki_collectionbutton $userobj)
+#if($context.action == "view" && ($context.user==$userdoc.fullName || $hasGlobalAdmin))
+{pre}
+<a class="button button-orange" onclick="Curriki.module.addpath.startPath('K', {});" alt="$msg.get("mycurriki.collections.addButton")" title="$msg.get("mycurriki.collections.addButton_tooltip")">$msg.get("mycurriki.collections.addButton")</a>
+{/pre}
+#end
+#end ## buttonmacro
+
+## End of MyCurriki Macros 

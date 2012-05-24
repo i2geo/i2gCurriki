@@ -1,0 +1,19 @@
+
+<%
+
+import org.apache.lucene.search.Query
+import org.apache.lucene.queryParser.QueryParser
+import org.curriki.xwiki.plugin.lucene.CurrikiAnalyzer
+import com.xpn.xwiki.plugin.lucene.LucenePluginApi
+
+
+println("1 Try Lucene Queries ");
+
+Query q = new QueryParser("ft",new CurrikiAnalyzer(doc.document,context.context))
+        .parse("CurrikiCode.AssetClass.trainedTopicsAndCompetencies:#InterceptTheorem");
+LucenePluginApi luc = xwiki.lucene;
+println("Parsed query: " + q);
+println("Obtained " + luc.count(q,context.context));
+
+
+%>

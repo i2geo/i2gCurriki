@@ -1,0 +1,33 @@
+
+1 Software: GEONExT
+
+The free dynamic mathematics software GEONExT is the successor of the software GEONET, which was developed by Dr. Alfred Wassermann and improved in coorporation with Dr. Matthias Ehmann and Dr. Carsten Miller.
+
+The current version is written in Java and though runs independently of the used operating system, as long as the JRE (Java run time environment) is available for the platform.
+
+Here are some screenshots:
+
+<a href="http://geonext.uni-bayreuth.de/data/images/screenshots/s1.png"><img src="http://geonext.uni-bayreuth.de/data/images/screenshots/small/s1.png">
+</a>
+<a href="http://geonext.uni-bayreuth.de/data/images/screenshots/s3.png"><img src="http://geonext.uni-bayreuth.de/data/images/screenshots/small/s3.png">
+</a>
+<a href="http://geonext.uni-bayreuth.de/data/images/screenshots/s5.png"><img src="http://geonext.uni-bayreuth.de/data/images/screenshots/small/s5.png">
+</a>
+<a href="http://geonext.uni-bayreuth.de/data/images/screenshots/s6.png"><img src="http://geonext.uni-bayreuth.de/data/images/screenshots/small/s6.png">
+</a>
+
+See the home page for more details: http://geonext.uni-bayreuth.de/
+<br><br>
+
+The newest project of the GEONExT team is JSXGraph, the first browser-independent, interactive geometry library which is completely implemented in JavaScript.
+ 
+The open source software JSXGraph will support the Intergeo file format and its small footprint of 50 kB enables its usage in countries with less developed internet access infrastructure.
+
+Further information can be found on: http://jsxgraph.org/
+
+
+----
+
+#set($fileType = "gxt")
+#includeInContext("Search.AllResourcesForFileType")
+

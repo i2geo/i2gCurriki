@@ -1,0 +1,19 @@
+
+#set($assetDoc =$!xwiki.getDocument($!request.asset))
+#set ($baseurl = "http://$xwiki.getXWiki().Param('curriki.system.hostname', 'i2geo.net')")
+#set($url=$assetDoc.getAttachmentURL($assetDoc.getAttachmentList().get(0).getFilename(),"download"))
+<html>
+	<body>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="tracenpoche" align="middle" width="778" height="495">
+<param name = "allowScriptAccess" value = "always" />
+<param name="movie" value="/files/TeP/tracenpoche.swf?script=$baseurl$url" />
+<param name="loop" value="false" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#99cccc" />
+<embed src="/files/TeP/tracenpoche.swf?script=$baseurl$url" loop="false" quality="high" bgcolor="#99cccc" id="tracenpoche" name="tracenpoche" width="778" height="495" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object>
+<p><pre><center>
+<a href="$baseurl$url">Download</a> &mdash; $msg.get('rve.content.playConstruction.description.instruction_title.single_file') &copy <a href="http://tracenpoche.sesamath.net/" target="TracenPoche">TracenPoche</a>
+</center></pre></p>
+</body>
+</html>
+

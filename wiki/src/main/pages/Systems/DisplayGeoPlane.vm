@@ -1,0 +1,18 @@
+
+#set($assetDoc =$!xwiki.getDocument($!request.asset))
+#set ($baseurl = "http://$xwiki.getXWiki().Param('curriki.system.hostname', 'i2geo.net')")
+#set($url=$assetDoc.getAttachmentURL($assetDoc.getAttachmentList().get(0).getFilename(),"download"))
+<html>
+	<body>
+		<p><pre>
+<object classid="clsid:DA6462AC-9024-11D2-8454-004005195FED" id="GP0Ctl1" border="0" width="600" height="660">
+<param name="TexteDeLaFigure" value= "{pre}$assetDoc.getAttachmentList().get(0).getContentAsString('iso-8859-1'){/pre}">
+   Your activeX version is probably not installed, here you can install Géoplan/Géspace<br>
+<a href="http://www.aid-creem.org/chargement/installer_geoplan-geospace.exe">file_for_installation.html</a>
+</object>
+		</pre>	</p>
+			</body>
+			</html>
+
+
+

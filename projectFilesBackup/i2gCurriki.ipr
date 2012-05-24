@@ -1,0 +1,2633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project relativePaths="true" version="4">
+  <component name="AntConfiguration">
+    <defaultAnt bundledAnt="true" />
+  </component>
+  <component name="BuildJarProjectSettings">
+    <option name="BUILD_JARS_ON_MAKE" value="false" />
+  </component>
+  <component name="CodeStyleProjectProfileManger">
+    <option name="PROJECT_PROFILE" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+  </component>
+  <component name="CodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS" />
+    <option name="USE_PER_PROJECT_SETTINGS" value="false" />
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <option name="DEPLOY_AFTER_MAKE" value="0" />
+    <resourceExtensions>
+      <entry name=".+\.(properties|xml|html|dtd|tld)" />
+      <entry name=".+\.(gif|png|jpeg|jpg)" />
+    </resourceExtensions>
+    <wildcardResourcePatterns>
+      <entry name="?*.properties" />
+      <entry name="?*.xml" />
+      <entry name="?*.gif" />
+      <entry name="?*.png" />
+      <entry name="?*.jpeg" />
+      <entry name="?*.jpg" />
+      <entry name="?*.html" />
+      <entry name="?*.dtd" />
+      <entry name="?*.tld" />
+    </wildcardResourcePatterns>
+  </component>
+  <component name="CopyrightManager" default="">
+    <module2copyright />
+  </component>
+  <component name="DependenciesAnalyzeManager">
+    <option name="myForwardDirection" value="false" />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="DynamicElementsStorage">
+    <option name="containingClasses">
+      <map>
+        <entry key="ExportAllButPageList2">
+          <value>
+            <DClassElement>
+              <option name="name" value="ExportAllButPageList2" />
+              <option name="myName" value="ExportAllButPageList2" />
+              <option name="myNamesToProperties">
+                <map>
+                  <entry key="context">
+                    <value>
+                      <DPropertyElement>
+                        <option name="name" value="context" />
+                        <option name="type" value="com.xpn.xwiki.api.Context" />
+                        <option name="myType" value="com.xpn.xwiki.api.Context" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="context" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                  <entry key="xwiki">
+                    <value>
+                      <DPropertyElement>
+                        <option name="name" value="xwiki" />
+                        <option name="type" value="com.xpn.xwiki.api.XWiki" />
+                        <option name="myType" value="com.xpn.xwiki.api.XWiki" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="xwiki" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </DClassElement>
+          </value>
+        </entry>
+        <entry key="ReviewSummaryUpdaterMonitor">
+          <value>
+            <DClassElement>
+              <option name="name" value="ReviewSummaryUpdaterMonitor" />
+              <option name="myName" value="ReviewSummaryUpdaterMonitor" />
+              <option name="myNamesToProperties">
+                <map>
+                  <entry key="context">
+                    <value>
+                      <DPropertyElement>
+                        <option name="hightlightedText" value="" />
+                        <option name="name" value="context" />
+                        <option name="type" value="com.xpn.xwiki.api.Context" />
+                        <option name="myType" value="com.xpn.xwiki.api.Context" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="context" />
+                        <option name="myHightlightedText" value="" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                  <entry key="xwiki">
+                    <value>
+                      <DPropertyElement>
+                        <option name="hightlightedText" value="" />
+                        <option name="name" value="xwiki" />
+                        <option name="type" value="com.xpn.xwiki.api.XWiki" />
+                        <option name="myType" value="com.xpn.xwiki.api.XWiki" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="xwiki" />
+                        <option name="myHightlightedText" value="" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="myMethods">
+                <set>
+                  <DMethodElement>
+                    <option name="hightlightedText" value="" />
+                    <option name="name" value="println" />
+                    <option name="type" value="void" />
+                    <option name="myPairs">
+                      <list>
+                        <MyPair>
+                          <option name="first" value="s" />
+                          <option name="second" value="java.lang.String" />
+                        </MyPair>
+                      </list>
+                    </option>
+                    <option name="myType" value="void" />
+                    <option name="myStatic" value="true" />
+                    <option name="myName" value="println" />
+                    <option name="myHightlightedText" value="" />
+                  </DMethodElement>
+                </set>
+              </option>
+            </DClassElement>
+          </value>
+        </entry>
+        <entry key="com.xpn.xwiki.web.XWikiEngineContext">
+          <value>
+            <DClassElement>
+              <option name="name" value="com.xpn.xwiki.web.XWikiEngineContext" />
+              <option name="myName" value="com.xpn.xwiki.web.XWikiEngineContext" />
+              <option name="myMethods">
+                <set>
+                  <DMethodElement>
+                    <option name="hightlightedText" value="" />
+                    <option name="name" value="getServletContext" />
+                    <option name="type" value="javax.servlet.ServletContext" />
+                    <option name="myType" value="javax.servlet.ServletContext" />
+                    <option name="myStatic" value="false" />
+                    <option name="myName" value="getServletContext" />
+                    <option name="myHightlightedText" value="" />
+                  </DMethodElement>
+                </set>
+              </option>
+            </DClassElement>
+          </value>
+        </entry>
+        <entry key="groovy.lang.GroovyObjectSupport">
+          <value>
+            <DClassElement>
+              <option name="name" value="groovy.lang.GroovyObjectSupport" />
+              <option name="myName" value="groovy.lang.GroovyObjectSupport" />
+              <option name="myNamesToProperties">
+                <map>
+                  <entry key="context">
+                    <value>
+                      <DPropertyElement>
+                        <option name="name" value="context" />
+                        <option name="type" value="com.xpn.xwiki.api.Context" />
+                        <option name="myType" value="com.xpn.xwiki.api.Context" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="context" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                  <entry key="doc">
+                    <value>
+                      <DPropertyElement>
+                        <option name="name" value="doc" />
+                        <option name="type" value="com.xpn.xwiki.api.Document" />
+                        <option name="myType" value="com.xpn.xwiki.api.Document" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="doc" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                  <entry key="request">
+                    <value>
+                      <DPropertyElement>
+                        <option name="name" value="request" />
+                        <option name="type" value="javax.servlet.http.HttpServletRequest" />
+                        <option name="myType" value="javax.servlet.http.HttpServletRequest" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="request" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                  <entry key="response">
+                    <value>
+                      <DPropertyElement>
+                        <option name="name" value="response" />
+                        <option name="type" value="javax.servlet.http.HttpServletResponse" />
+                        <option name="myType" value="javax.servlet.http.HttpServletResponse" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="response" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                  <entry key="util">
+                    <value>
+                      <DPropertyElement>
+                        <option name="name" value="util" />
+                        <option name="type" value="com.xpn.xwiki.api.Util" />
+                        <option name="myType" value="com.xpn.xwiki.api.Util" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="util" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                  <entry key="xwiki">
+                    <value>
+                      <DPropertyElement>
+                        <option name="name" value="xwiki" />
+                        <option name="type" value="com.xpn.xwiki.api.XWiki" />
+                        <option name="myType" value="com.xpn.xwiki.api.XWiki" />
+                        <option name="myStatic" value="false" />
+                        <option name="myName" value="xwiki" />
+                      </DPropertyElement>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </DClassElement>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="DynamicManagerImpl">
+    <option name="containingClasses">
+      <map />
+    </option>
+  </component>
+  <component name="EclipseCompilerSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="DEPRECATION" value="false" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="EclipseEmbeddedCompilerSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="DEPRECATION" value="false" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="UTF-8" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FacetAutodetectingManager">
+    <autodetection-disabled>
+      <facet-type id="gwt">
+        <modules>
+          <module name="Main">
+            <files>
+              <file url="file://$PROJECT_DIR$/gwt/src/main/java/org/curriki/gwt/Main.gwt.xml" />
+            </files>
+          </module>
+          <module name="curriki-web">
+            <directories>
+              <directory url="file://$PROJECT_DIR$/web/overlays" />
+            </directories>
+          </module>
+          <module name="curriki-gwt" />
+        </modules>
+      </facet-type>
+      <facet-type id="Groovy">
+        <modules>
+          <module name="Proxyki">
+            <files>
+              <file url="file://$PROJECT_DIR$/../Proxyki/WebRss.groovy" />
+              <file url="file://$PROJECT_DIR$/../Proxyki/XObj.groovy" />
+              <file url="file://$PROJECT_DIR$/../Proxyki/src/tests/queryTest1.groovy" />
+            </files>
+          </module>
+          <module name="wiki">
+            <files>
+              <file url="file://$PROJECT_DIR$/wiki/src/main/pages/Admin/ExportAllButPageList2.groovy" />
+            </files>
+          </module>
+          <module name="curriki-wiki">
+            <files>
+              <file url="file://$PROJECT_DIR$/../Proxyki/WebRss.groovy" />
+              <file url="file://$PROJECT_DIR$/../Proxyki/XObj.groovy" />
+              <file url="file://$PROJECT_DIR$/../Proxyki/src/tests/queryTest1.groovy" />
+              <file url="file://$PROJECT_DIR$/wiki/src/main/pages/Admin/ExportAllButPageList2.groovy" />
+            </files>
+          </module>
+          <module name="curriki-web">
+            <directories>
+              <directory url="file://$PROJECT_DIR$/web/overlays" />
+            </directories>
+          </module>
+        </modules>
+      </facet-type>
+      <facet-type id="web">
+        <modules>
+          <module name="curriki-web" />
+          <module name="curriki-gwt" />
+        </modules>
+      </facet-type>
+      <facet-type id="ejb">
+        <modules>
+          <module name="curriki-web">
+            <directories>
+              <directory url="file://$PROJECT_DIR$/web/overlays" />
+            </directories>
+          </module>
+        </modules>
+      </facet-type>
+      <facet-type id="jpa">
+        <modules>
+          <module name="curriki-web">
+            <directories>
+              <directory url="file://$PROJECT_DIR$/web/overlays" />
+            </directories>
+          </module>
+        </modules>
+      </facet-type>
+      <facet-type id="Gant_Groovy">
+        <modules>
+          <module name="curriki-web">
+            <directories>
+              <directory url="file://$PROJECT_DIR$/web/overlays" />
+            </directories>
+          </module>
+        </modules>
+      </facet-type>
+      <facet-type id="Grails">
+        <modules>
+          <module name="curriki-web">
+            <directories>
+              <directory url="file://$PROJECT_DIR$/web/overlays" />
+            </directories>
+          </module>
+        </modules>
+      </facet-type>
+      <facet-type id="javaeeApplication">
+        <modules>
+          <module name="curriki-web">
+            <directories>
+              <directory url="file://$PROJECT_DIR$/web/overlays" />
+            </directories>
+          </module>
+        </modules>
+      </facet-type>
+      <facet-type id="Gant_Grails">
+        <modules>
+          <module name="curriki-web">
+            <directories>
+              <directory url="file://$PROJECT_DIR$/web/overlays" />
+            </directories>
+          </module>
+        </modules>
+      </facet-type>
+    </autodetection-disabled>
+  </component>
+  <component name="IdProvider" IDEtalkID="CD85AD2B107B6592E3B4E6D18CC6DC51" />
+  <component name="InspectionProjectProfileManager">
+    <option name="PROJECT_PROFILE" value="Project Default" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+    <scopes />
+    <profiles>
+      <profile version="1.0" is_locked="false">
+        <option name="myName" value="Project Default" />
+        <option name="myLocal" value="false" />
+      </profile>
+    </profiles>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="SERVER PROBLEM" />
+      <item index="1" class="java.lang.String" itemvalue="INFO" />
+      <item index="2" class="java.lang.String" itemvalue="WARNING" />
+      <item index="3" class="java.lang.String" itemvalue="ERROR" />
+    </list>
+  </component>
+  <component name="JavacSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="DEPRECATION" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-target 1.5" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="JikesSettings">
+    <option name="JIKES_PATH" value="" />
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="DEPRECATION" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="IS_EMACS_ERRORS_MODE" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
+  <component name="ProjectDetails">
+    <option name="projectName" value="i2gCurriki" />
+  </component>
+  <component name="ProjectFileVersion" converted="true" />
+  <component name="ProjectKey">
+    <option name="state" value="project:///Users/paul/data/projects/intergeo/Platform/i2gCurriki/i2gCurriki.ipr" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gwt/src/main/Main.iml" filepath="$PROJECT_DIR$/gwt/src/main/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/servlet/src/main/Main1.iml" filepath="$PROJECT_DIR$/plugins/servlet/src/main/Main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Proxyki/Proxyki.iml" filepath="$PROJECT_DIR$/../Proxyki/Proxyki.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../QualityFramework/QualityFramework.iml" filepath="$PROJECT_DIR$/../QualityFramework/QualityFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clitools/clitools.iml" filepath="$PROJECT_DIR$/clitools/clitools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gwt/curriki-gwt.iml" filepath="$PROJECT_DIR$/gwt/curriki-gwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/curriki-parent.iml" filepath="$PROJECT_DIR$/curriki-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/curriki-web.iml" filepath="$PROJECT_DIR$/web/curriki-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wiki/curriki-wiki.iml" filepath="$PROJECT_DIR$/wiki/curriki-wiki.iml" />
+      <module fileurl="file://$PROJECT_DIR$/i2geoGroovy/i2geoGroovy.iml" filepath="$PROJECT_DIR$/i2geoGroovy/i2geoGroovy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../QualityFramework/updaters/quality-framework.iml" filepath="$PROJECT_DIR$/../QualityFramework/updaters/quality-framework.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ResourceManagerContainer">
+    <option name="myResourceBundles">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </component>
+  <component name="RmicSettings">
+    <option name="IS_EANABLED" value="false" />
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="GENERATE_IIOP_STUBS" value="false" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$/../Proxyki">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="http://svn.activemath.org/intergeo/Platform/Proxyki" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="http://svn.activemath.org/intergeo/Platform/i2gCurriki" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="myVersion" value="124" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="svn" />
+  </component>
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
+  <component name="libraryTable">
+    <library name="xwiki-core">
+      <CLASSES>
+        <root url="jar:///mavenRepo2/org/xwiki/platform/xwiki-core-velocity/1.5/xwiki-core-velocity-1.5.jar!/" />
+        <root url="jar:///mavenRepo2/org/xwiki/platform/xwiki-core-container-api/1.5/xwiki-core-container-api-1.5.jar!/" />
+        <root url="jar:///mavenRepo2/org/xwiki/platform/xwiki-core-context/1.5/xwiki-core-context-1.5.jar!/" />
+        <root url="jar:///mavenRepo2/com/xpn/xwiki/platform/xwiki-core/1.5-curriki4/xwiki-core-1.5-curriki4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="http://platform.xwiki.org/xwiki/bin/download/DevGuide/API/xwiki%2Dcore%2D1.5.2%2Djavadoc.zip/index.html" />
+      </JAVADOC>
+      <SOURCES />
+    </library>
+    <library name="curriki">
+      <CLASSES>
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-metadata/1.0-SNAPSHOT/curriki-plugin-metadata-1.0-SNAPSHOT.jar!/" />
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-activitystream/1.0-SNAPSHOT/curriki-plugin-activitystream-1.0-SNAPSHOT.jar!/" />
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-spacemanager/1.0-SNAPSHOT/curriki-plugin-spacemanager-1.0-SNAPSHOT.jar!/" />
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-framework/1.0-SNAPSHOT/curriki-plugin-framework-1.0-SNAPSHOT.jar!/" />
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-mimetype/1.0-SNAPSHOT/curriki-plugin-mimetype-1.0-SNAPSHOT.jar!/" />
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-servlet/1.0-SNAPSHOT/curriki-plugin-servlet-1.0-SNAPSHOT.jar!/" />
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-curriki/1.0-SNAPSHOT/curriki-plugin-curriki-1.0-SNAPSHOT.jar!/" />
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-licence/1.0-SNAPSHOT/curriki-plugin-licence-1.0-SNAPSHOT.jar!/" />
+        <root url="jar://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/asset/target/curriki-plugin-asset-1.0-SNAPSHOT.jar!/" />
+        <root url="jar:///mavenRepo2/org/curriki/curriki-plugin-lucene/1.0-SNAPSHOT/curriki-plugin-lucene-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/metadata/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/currikiactivitystream/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/licence/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/framework/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/mimetype/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/servlet/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/lucene/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/currikispacemanager/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/asset/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../../../../../projects/curriki-dev/plugins/curriki/src/main/java" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google:googleapi:xwiki:UNKNOWN">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/googleapi/UNKNOWN/googleapi-UNKNOWN-xwiki-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.swizzle:swizzle-confluence:xwiki:1.2-20080419">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/swizzle/swizzle-confluence/1.2-20080419/swizzle-confluence-1.2-20080419-xwiki-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.sf.json-lib:json-lib:jdk15:2.2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.2.1/json-lib-2.2.1-jdk15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform:xwiki-web-standard:war:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5.war!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-standard/1.5/xwiki-web-standard-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-gwt:war:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-gwt/1.0-SNAPSHOT/curriki-gwt-1.0-SNAPSHOT.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-gwt/1.0-SNAPSHOT/curriki-gwt-1.0-SNAPSHOT.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-gwt/1.0-SNAPSHOT/curriki-gwt-1.0-SNAPSHOT.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-gwt/1.0-SNAPSHOT/curriki-gwt-1.0-SNAPSHOT.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-gwt/1.0-SNAPSHOT/curriki-gwt-1.0-SNAPSHOT.war!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-gwt/1.0-SNAPSHOT/curriki-gwt-1.0-SNAPSHOT.war!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-gwt/1.0-SNAPSHOT/curriki-gwt-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-gwt/1.0-SNAPSHOT/curriki-gwt-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: dom4j:dom4j:1.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jdom:jdom:1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jdom/jdom/1.0/jdom-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jdom/jdom/1.0/jdom-1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jdom/jdom/1.0/jdom-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xerces:xmlParserAPIs:2.6.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.gwt:gwt-servlet:1.4.61">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-servlet/1.4.61/gwt-servlet-1.4.61.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-servlet/1.4.61/gwt-servlet-1.4.61-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-servlet/1.4.61/gwt-servlet-1.4.61-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.gwt:gwt-user:1.4.61">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-user/1.4.61/gwt-user-1.4.61.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-user/1.4.61/gwt-user-1.4.61-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/gwt/gwt-user/1.4.61/gwt-user-1.4.61-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: gwttk:gwttk:0.2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/gwttk/gwttk/0.2.2/gwttk-0.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/gwttk/gwttk/0.2.2/gwttk-0.2.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/gwttk/gwttk/0.2.2/gwttk-0.2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: gwt-widgets:gwt-widgets:0.1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/gwt-widgets/gwt-widgets/0.1.3/gwt-widgets-0.1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/gwt-widgets/gwt-widgets/0.1.3/gwt-widgets-0.1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/gwt-widgets/gwt-widgets/0.1.3/gwt-widgets-0.1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jpavel:editor:0.1.2-preview">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jpavel/editor/0.1.2-preview/editor-0.1.2-preview.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jpavel/editor/0.1.2-preview/editor-0.1.2-preview-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jpavel/editor/0.1.2-preview/editor-0.1.2-preview-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform:xwiki-web-gwt:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform:xwiki-web-gwt:sources:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-web-gwt/1.5/xwiki-web-gwt-1.5-sources-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform:xwiki-core:1.5-curriki4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-core/1.5-curriki4/xwiki-core-1.5-curriki4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-core/1.5-curriki4/xwiki-core-1.5-curriki4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/xwiki-core/1.5-curriki4/xwiki-core-1.5-curriki4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: exo-platform:exo-platform.container:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.container/2.0/exo-platform.container-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.container/2.0/exo-platform.container-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.container/2.0/exo-platform.container-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: exo-platform:exo-platform.commons:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.commons/2.0/exo-platform.commons-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.commons/2.0/exo-platform.commons-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.commons/2.0/exo-platform.commons-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: exo-platform:exo-platform.service.organization.api:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.organization.api/2.0/exo-platform.service.organization.api-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.organization.api/2.0/exo-platform.service.organization.api-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.organization.api/2.0/exo-platform.service.organization.api-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: exo-platform:exo-platform.service.security.api:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.security.api/2.0/exo-platform.service.security.api-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.security.api/2.0/exo-platform.service.security.api-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.security.api/2.0/exo-platform.service.security.api-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: exo-platform:exo-platform.service.database.api:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.database.api/2.0/exo-platform.service.database.api-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.database.api/2.0/exo-platform.service.database.api-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/exo-platform/exo-platform.service.database.api/2.0/exo-platform.service.database.api-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.suigeneris:jrcs.diff:0.4.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/suigeneris/jrcs.diff/0.4.2/jrcs.diff-0.4.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/suigeneris/jrcs.diff/0.4.2/jrcs.diff-0.4.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/suigeneris/jrcs.diff/0.4.2/jrcs.diff-0.4.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.suigeneris:jrcs.rcs:0.4.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/suigeneris/jrcs.rcs/0.4.2/jrcs.rcs-0.4.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/suigeneris/jrcs.rcs/0.4.2/jrcs.rcs-0.4.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/suigeneris/jrcs.rcs/0.4.2/jrcs.rcs-0.4.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.jackrabbit:jackrabbit-core:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jackrabbit/jackrabbit-core/1.1/jackrabbit-core-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jackrabbit/jackrabbit-core/1.1/jackrabbit-core-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jackrabbit/jackrabbit-core/1.1/jackrabbit-core-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.portals:graffito-jcr-mapping:1.0-a1-amelentev-dev">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/portals/graffito-jcr-mapping/1.0-a1-amelentev-dev/graffito-jcr-mapping-1.0-a1-amelentev-dev.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/portals/graffito-jcr-mapping/1.0-a1-amelentev-dev/graffito-jcr-mapping-1.0-a1-amelentev-dev-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/portals/graffito-jcr-mapping/1.0-a1-amelentev-dev/graffito-jcr-mapping-1.0-a1-amelentev-dev-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.transaction:jta:1.0.1B">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.0.1B/jta-1.0.1B.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.0.1B/jta-1.0.1B-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/jta/1.0.1B/jta-1.0.1B-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: flickrj:flickrapi:1.0a7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/flickrj/flickrapi/1.0a7/flickrapi-1.0a7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/flickrj/flickrapi/1.0a7/flickrapi-1.0a7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/flickrj/flickrapi/1.0a7/flickrapi-1.0a7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: rome:rome-fetcher:0.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/rome/rome-fetcher/0.7/rome-fetcher-0.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/rome/rome-fetcher/0.7/rome-fetcher-0.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/rome/rome-fetcher/0.7/rome-fetcher-0.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jcaptcha:jcaptcha-all:1.0-RC3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jcaptcha/jcaptcha-all/1.0-RC3/jcaptcha-all-1.0-RC3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jcaptcha/jcaptcha-all/1.0-RC3/jcaptcha-all-1.0-RC3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jcaptcha/jcaptcha-all/1.0-RC3/jcaptcha-all-1.0-RC3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.novell:ldap:UNKNOWN">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/novell/ldap/UNKNOWN/ldap-UNKNOWN.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/novell/ldap/UNKNOWN/ldap-UNKNOWN-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/novell/ldap/UNKNOWN/ldap-UNKNOWN-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jfree:jfreechart:1.0.0-rc1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jfree/jfreechart/1.0.0-rc1/jfreechart-1.0.0-rc1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jfree/jfreechart/1.0.0-rc1/jfreechart-1.0.0-rc1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jfree/jfreechart/1.0.0-rc1/jfreechart-1.0.0-rc1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jfree:jcommon:1.0.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jfree/jcommon/1.0.5/jcommon-1.0.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jfree/jcommon/1.0.5/jcommon-1.0.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jfree/jcommon/1.0.5/jcommon-1.0.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.jcr:jcr:1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jcr/jcr/1.0/jcr-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jcr/jcr/1.0/jcr-1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/jcr/jcr/1.0/jcr-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: info.informatica:css4j:0.4.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/info/informatica/css4j/0.4.0/css4j-0.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/info/informatica/css4j/0.4.0/css4j-0.4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/info/informatica/css4j/0.4.0/css4j-0.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: info.informatica:jclf:2.3.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/info/informatica/jclf/2.3.0/jclf-2.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/info/informatica/jclf/2.3.0/jclf-2.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/info/informatica/jclf/2.3.0/jclf-2.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jtidy:jtidy:8.0-20060801.131059-3-dev">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jtidy/jtidy/8.0-20060801.131059-3-dev/jtidy-8.0-20060801.131059-3-dev.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jtidy/jtidy/8.0-20060801.131059-3-dev/jtidy-8.0-20060801.131059-3-dev-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jtidy/jtidy/8.0-20060801.131059-3-dev/jtidy-8.0-20060801.131059-3-dev-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xmlrpc:xmlrpc-client:3.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xmlrpc/xmlrpc-client/3.0/xmlrpc-client-3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xmlrpc/xmlrpc-client/3.0/xmlrpc-client-3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xmlrpc/xmlrpc-client/3.0/xmlrpc-client-3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlrpc:xmlrpc-common:3.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlrpc/xmlrpc-common/3.0/xmlrpc-common-3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlrpc/xmlrpc-common/3.0/xmlrpc-common-3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlrpc/xmlrpc-common/3.0/xmlrpc-common-3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.ws.commons:ws-commons-util:1.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ws/commons/ws-commons-util/1.0.1/ws-commons-util-1.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ws/commons/ws-commons-util/1.0.1/ws-commons-util-1.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ws/commons/ws-commons-util/1.0.1/ws-commons-util-1.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xml-apis:xml-apis:1.3.04">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-logging:commons-logging:1.1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-lang:commons-lang:2.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.4/commons-lang-2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.4/commons-lang-2.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.4/commons-lang-2.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-collections:commons-collections:3.2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-io:commons-io:1.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.4/commons-io-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.4/commons-io-1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.4/commons-io-1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-net:commons-net:1.4.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/1.4.1/commons-net-1.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/1.4.1/commons-net-1.4.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/1.4.1/commons-net-1.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: oro:oro:2.0.8">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-httpclient:commons-httpclient:3.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-codec:commons-codec:1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.3/commons-codec-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.3/commons-codec-1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.3/commons-codec-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-dbcp:commons-dbcp:1.2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.2.1/commons-dbcp-1.2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.2.1/commons-dbcp-1.2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.2.1/commons-dbcp-1.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-pool:commons-pool:1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.2/commons-pool-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.2/commons-pool-1.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.2/commons-pool-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xerces:xercesImpl:2.8.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.8.1/xercesImpl-2.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-fileupload:commons-fileupload:1.2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-beanutils:commons-beanutils:1.7.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: log4j:log4j:1.2.13">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.13/log4j-1.2.13.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.13/log4j-1.2.13-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.13/log4j-1.2.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: portlet-api:portlet-api:1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/portlet-api/portlet-api/1.0/portlet-api-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/portlet-api/portlet-api/1.0/portlet-api-1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/portlet-api/portlet-api/1.0/portlet-api-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: struts:struts:1.2.9">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/struts/struts/1.2.9/struts-1.2.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/struts/struts/1.2.9/struts-1.2.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/struts/struts/1.2.9/struts-1.2.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-digester:commons-digester:1.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-digester/commons-digester/1.6/commons-digester-1.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-digester/commons-digester/1.6/commons-digester-1.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-digester/commons-digester/1.6/commons-digester-1.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-validator:commons-validator:1.1.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-validator/commons-validator/1.1.4/commons-validator-1.1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: antlr:antlr:2.7.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.2/antlr-2.7.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.2/antlr-2.7.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.2/antlr-2.7.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xalan:xalan:2.5.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.5.1/xalan-2.5.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.5.1/xalan-2.5.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.5.1/xalan-2.5.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: groovy:groovy-all-1.0-jsr:06">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/groovy/groovy-all-1.0-jsr/06/groovy-all-1.0-jsr-06.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/groovy/groovy-all-1.0-jsr/06/groovy-all-1.0-jsr-06-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/groovy/groovy-all-1.0-jsr/06/groovy-all-1.0-jsr-06-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: radeox:radeox:1.0-b2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/radeox/radeox/1.0-b2/radeox-1.0-b2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/radeox/radeox/1.0-b2/radeox-1.0-b2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/radeox/radeox/1.0-b2/radeox-1.0-b2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate:3.2.5.ga">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.sf.ehcache:ehcache:1.2.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: asm:asm-attrs:1.5.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm-attrs/1.5.3/asm-attrs-1.5.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm-attrs/1.5.3/asm-attrs-1.5.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: cglib:cglib:2.1_3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.1_3/cglib-2.1_3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.1_3/cglib-2.1_3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.1_3/cglib-2.1_3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: asm:asm:1.5.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/1.5.3/asm-1.5.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/1.5.3/asm-1.5.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/1.5.3/asm-1.5.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: securityfilter:securityfilter:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/securityfilter/securityfilter/2.0/securityfilter-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/securityfilter/securityfilter/2.0/securityfilter-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/securityfilter/securityfilter/2.0/securityfilter-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xml-apis:xmlParserAPIs:2.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xmlParserAPIs/2.0.2/xmlParserAPIs-2.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xmlParserAPIs/2.0.2/xmlParserAPIs-2.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xmlParserAPIs/2.0.2/xmlParserAPIs-2.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xpp3:xpp3:1.1.3.4-RC8">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3/1.1.3.4-RC8/xpp3-1.1.3.4-RC8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3/1.1.3.4-RC8/xpp3-1.1.3.4-RC8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3/1.1.3.4-RC8/xpp3-1.1.3.4-RC8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: ecs:ecs:1.4.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/ecs/ecs/1.4.2/ecs-1.4.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/ecs/ecs/1.4.2/ecs-1.4.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/ecs/ecs/1.4.2/ecs-1.4.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.xml:jaxrpc-api:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/xml/jaxrpc-api/1.1/jaxrpc-api-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/xml/jaxrpc-api/1.1/jaxrpc-api-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/xml/jaxrpc-api/1.1/jaxrpc-api-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xmlrpc:xmlrpc-server:3.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xmlrpc/xmlrpc-server/3.0/xmlrpc-server-3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xmlrpc/xmlrpc-server/3.0/xmlrpc-server-3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xmlrpc/xmlrpc-server/3.0/xmlrpc-server-3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:fop:0.95beta-1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/fop/0.95beta-1/fop-0.95beta-1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/fop/0.95beta-1/fop-0.95beta-1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/fop/0.95beta-1/fop-0.95beta-1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:xmlgraphics-commons:1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/1.3/xmlgraphics-commons-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/1.3/xmlgraphics-commons-1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/1.3/xmlgraphics-commons-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-svg-dom:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-svg-dom/1.7/batik-svg-dom-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-svg-dom/1.7/batik-svg-dom-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-svg-dom/1.7/batik-svg-dom-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-anim:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-anim/1.7/batik-anim-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-anim/1.7/batik-anim-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-anim/1.7/batik-anim-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-awt-util:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-awt-util/1.7/batik-awt-util-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-awt-util/1.7/batik-awt-util-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-awt-util/1.7/batik-awt-util-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-util:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-util/1.7/batik-util-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-util/1.7/batik-util-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-util/1.7/batik-util-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-dom:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-dom/1.7/batik-dom-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-dom/1.7/batik-dom-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-dom/1.7/batik-dom-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-css:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-css/1.7/batik-css-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-css/1.7/batik-css-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-css/1.7/batik-css-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-ext:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-ext/1.7/batik-ext-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-ext/1.7/batik-ext-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-ext/1.7/batik-ext-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xml-apis:xml-apis-ext:1.3.04">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-xml:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-xml/1.7/batik-xml-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-xml/1.7/batik-xml-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-xml/1.7/batik-xml-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-parser:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-parser/1.7/batik-parser-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-parser/1.7/batik-parser-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-parser/1.7/batik-parser-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-bridge:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-bridge/1.7/batik-bridge-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-bridge/1.7/batik-bridge-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-bridge/1.7/batik-bridge-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-gvt:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-gvt/1.7/batik-gvt-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-gvt/1.7/batik-gvt-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-gvt/1.7/batik-gvt-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-script:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-script/1.7/batik-script-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-script/1.7/batik-script-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-script/1.7/batik-script-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-transcoder:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-transcoder/1.7/batik-transcoder-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-transcoder/1.7/batik-transcoder-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-transcoder/1.7/batik-transcoder-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-svggen:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-svggen/1.7/batik-svggen-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-svggen/1.7/batik-svggen-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-svggen/1.7/batik-svggen-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-extension:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-extension/1.7/batik-extension-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-extension/1.7/batik-extension-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-extension/1.7/batik-extension-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.avalon.framework:avalon-framework-api:4.3.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/avalon/framework/avalon-framework-api/4.3.1/avalon-framework-api-4.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/avalon/framework/avalon-framework-api/4.3.1/avalon-framework-api-4.3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/avalon/framework/avalon-framework-api/4.3.1/avalon-framework-api-4.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.avalon.framework:avalon-framework-impl:4.3.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/avalon/framework/avalon-framework-impl/4.3.1/avalon-framework-impl-4.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/avalon/framework/avalon-framework-impl/4.3.1/avalon-framework-impl-4.3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/avalon/framework/avalon-framework-impl/4.3.1/avalon-framework-impl-4.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: batik:batik-rasterizer:1.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/batik/batik-rasterizer/1.6/batik-rasterizer-1.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/batik/batik-rasterizer/1.6/batik-rasterizer-1.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/batik/batik-rasterizer/1.6/batik-rasterizer-1.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.xmlgraphics:batik-codec:1.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-codec/1.7/batik-codec-1.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-codec/1.7/batik-codec-1.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-codec/1.7/batik-codec-1.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.yahoo.platform.yui:yuicompressor:2.2.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/yahoo/platform/yui/yuicompressor/2.2.5/yuicompressor-2.2.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/yahoo/platform/yui/yuicompressor/2.2.5/yuicompressor-2.2.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/yahoo/platform/yui/yuicompressor/2.2.5/yuicompressor-2.2.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: joda-time:joda-time:1.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.4/joda-time-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.4/joda-time-1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.4/joda-time-1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: rome:rome:0.8">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/rome/rome/0.8/rome-0.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/rome/rome/0.8/rome-0.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/rome/rome/0.8/rome-0.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: ical4j:ical4j:0.9.20">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/ical4j/ical4j/0.9.20/ical4j-0.9.20.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/ical4j/ical4j/0.9.20/ical4j-0.9.20-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/ical4j/ical4j/0.9.20/ical4j-0.9.20-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.mail:mail:1.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4/mail-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4/mail-1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4/mail-1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.activation:activation:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: picocontainer:picocontainer:1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/picocontainer/picocontainer/1.2/picocontainer-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/picocontainer/picocontainer/1.2/picocontainer-1.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/picocontainer/picocontainer/1.2/picocontainer-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.axis:axis:1.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis/axis/1.4/axis-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis/axis/1.4/axis-1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis/axis/1.4/axis-1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.poi:poi:3.0-FINAL">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.0-FINAL/poi-3.0-FINAL.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.0-FINAL/poi-3.0-FINAL-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.0-FINAL/poi-3.0-FINAL-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-component:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-component/1.5/xwiki-core-component-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-component/1.5/xwiki-core-component-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-component/1.5/xwiki-core-component-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-observation:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-observation/1.5/xwiki-core-observation-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-observation/1.5/xwiki-core-observation-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-observation/1.5/xwiki-core-observation-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-velocity:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-velocity/1.5/xwiki-core-velocity-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-velocity/1.5/xwiki-core-velocity-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-velocity/1.5/xwiki-core-velocity-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-container-api:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-api/1.5/xwiki-core-container-api-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-api/1.5/xwiki-core-container-api-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-api/1.5/xwiki-core-container-api-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-url:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-url/1.5/xwiki-core-url-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-url/1.5/xwiki-core-url-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-url/1.5/xwiki-core-url-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-container-servlet:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-servlet/1.5/xwiki-core-container-servlet-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-servlet/1.5/xwiki-core-container-servlet-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-servlet/1.5/xwiki-core-container-servlet-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-context:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-context/1.5/xwiki-core-context-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-context/1.5/xwiki-core-context-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-context/1.5/xwiki-core-context-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: velocity:velocity:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity/velocity/1.5/velocity-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity/velocity/1.5/velocity-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity/velocity/1.5/velocity-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: velocity-tools:velocity-tools:1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity-tools/velocity-tools/1.3/velocity-tools-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity-tools/velocity-tools/1.3/velocity-tools-1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity-tools/velocity-tools/1.3/velocity-tools-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-container-portlet:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-portlet/1.5/xwiki-core-container-portlet-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-portlet/1.5/xwiki-core-container-portlet-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-container-portlet/1.5/xwiki-core-container-portlet-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-xmlrpc-model:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-xmlrpc-model/1.5/xwiki-core-xmlrpc-model-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-xmlrpc-model/1.5/xwiki-core-xmlrpc-model-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-xmlrpc-model/1.5/xwiki-core-xmlrpc-model-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-rendering-wikimodel:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-wikimodel/1.5/xwiki-core-rendering-wikimodel-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-wikimodel/1.5/xwiki-core-rendering-wikimodel-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-wikimodel/1.5/xwiki-core-rendering-wikimodel-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-rendering-api:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-api/1.5/xwiki-core-rendering-api-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-api/1.5/xwiki-core-rendering-api-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-api/1.5/xwiki-core-rendering-api-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.wikimodel:wem:2.0.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/wikimodel/wem/2.0.6/wem-2.0.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/wikimodel/wem/2.0.6/wem-2.0.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/wikimodel/wem/2.0.6/wem-2.0.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.java.dev.javacc:javacc:4.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/javacc/javacc/4.0/javacc-4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/javacc/javacc/4.0/javacc-4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/javacc/javacc/4.0/javacc-4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:3.8.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-rendering-doxia:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-doxia/1.5/xwiki-core-rendering-doxia-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-doxia/1.5/xwiki-core-rendering-doxia-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-rendering-doxia/1.5/xwiki-core-rendering-doxia-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.maven.doxia:doxia-module-confluence:1.0-alpha-11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-module-confluence/1.0-alpha-11/doxia-module-confluence-1.0-alpha-11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-module-confluence/1.0-alpha-11/doxia-module-confluence-1.0-alpha-11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-module-confluence/1.0-alpha-11/doxia-module-confluence-1.0-alpha-11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.maven.doxia:doxia-core:1.0-alpha-11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-core/1.0-alpha-11/doxia-core-1.0-alpha-11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-core/1.0-alpha-11/doxia-core-1.0-alpha-11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-core/1.0-alpha-11/doxia-core-1.0-alpha-11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.maven.doxia:doxia-sink-api:1.0-alpha-11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-11/doxia-sink-api-1.0-alpha-11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-11/doxia-sink-api-1.0-alpha-11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-11/doxia-sink-api-1.0-alpha-11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.plexus:plexus-utils:1.4.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-30">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.plexus:plexus-classworlds:1.2-alpha-9">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.maven.doxia:doxia-module-twiki:1.0-alpha-11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-module-twiki/1.0-alpha-11/doxia-module-twiki-1.0-alpha-11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-module-twiki/1.0-alpha-11/doxia-module-twiki-1.0-alpha-11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/doxia/doxia-module-twiki/1.0-alpha-11/doxia-module-twiki-1.0-alpha-11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-cache-api:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-cache-api/1.5/xwiki-core-cache-api-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-cache-api/1.5/xwiki-core-cache-api-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-cache-api/1.5/xwiki-core-cache-api-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xwiki.platform:xwiki-core-cache-oscache:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-cache-oscache/1.5/xwiki-core-cache-oscache-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-cache-oscache/1.5/xwiki-core-cache-oscache-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/xwiki/platform/xwiki-core-cache-oscache/1.5/xwiki-core-cache-oscache-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: opensymphony:oscache:2.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/opensymphony/oscache/2.4/oscache-2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/opensymphony/oscache/2.4/oscache-2.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/opensymphony/oscache/2.4/oscache-2.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.servlet:servlet-api:2.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.4/servlet-api-2.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.4/servlet-api-2.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: aspectj:aspectjrt:1.5.2a">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/aspectj/aspectjrt/1.5.2a/aspectjrt-1.5.2a.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/aspectj/aspectjrt/1.5.2a/aspectjrt-1.5.2a-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/aspectj/aspectjrt/1.5.2a/aspectjrt-1.5.2a-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: ant:ant:1.6.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/ant/ant/1.6.5/ant-1.6.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/ant/ant/1.6.5/ant-1.6.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/ant/ant/1.6.5/ant-1.6.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform.plugins:xwiki-plugin-lucene:1.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-lucene/1.5/xwiki-plugin-lucene-1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-lucene/1.5/xwiki-plugin-lucene-1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-lucene/1.5/xwiki-plugin-lucene-1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-asset:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-asset/1.0-SNAPSHOT/curriki-plugin-asset-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-asset/1.0-SNAPSHOT/curriki-plugin-asset-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-asset/1.0-SNAPSHOT/curriki-plugin-asset-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-licence:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-licence/1.0-SNAPSHOT/curriki-plugin-licence-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-licence/1.0-SNAPSHOT/curriki-plugin-licence-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-licence/1.0-SNAPSHOT/curriki-plugin-licence-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-framework:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-framework/1.0-SNAPSHOT/curriki-plugin-framework-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-framework/1.0-SNAPSHOT/curriki-plugin-framework-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-framework/1.0-SNAPSHOT/curriki-plugin-framework-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-mimetype:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-mimetype/1.0-SNAPSHOT/curriki-plugin-mimetype-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-mimetype/1.0-SNAPSHOT/curriki-plugin-mimetype-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-mimetype/1.0-SNAPSHOT/curriki-plugin-mimetype-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jmock:jmock:1.1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock/1.1.0/jmock-1.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock/1.1.0/jmock-1.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock/1.1.0/jmock-1.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jmock:jmock-cglib:1.1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock-cglib/1.1.0/jmock-cglib-1.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock-cglib/1.1.0/jmock-cglib-1.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock-cglib/1.1.0/jmock-cglib-1.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: cglib:cglib-full:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib-full/2.0/cglib-full-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib-full/2.0/cglib-full-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib-full/2.0/cglib-full-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: postgresql:postgresql:8.2-504.jdbc3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/postgresql/postgresql/8.2-504.jdbc3/postgresql-8.2-504.jdbc3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/postgresql/postgresql/8.2-504.jdbc3/postgresql-8.2-504.jdbc3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/postgresql/postgresql/8.2-504.jdbc3/postgresql-8.2-504.jdbc3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:3.8.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-lucene:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-lucene/1.0-SNAPSHOT/curriki-plugin-lucene-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-lucene/1.0-SNAPSHOT/curriki-plugin-lucene-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-lucene/1.0-SNAPSHOT/curriki-plugin-lucene-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.lucene:lucene-core:2.3.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/2.3.1/lucene-core-2.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/2.3.1/lucene-core-2.3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/2.3.1/lucene-core-2.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: pdfbox:pdfbox:0.7.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/pdfbox/pdfbox/0.7.1/pdfbox-0.7.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/pdfbox/pdfbox/0.7.1/pdfbox-0.7.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/pdfbox/pdfbox/0.7.1/pdfbox-0.7.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform.plugins:xwiki-plugin-skinx:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-skinx/1.1/xwiki-plugin-skinx-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-skinx/1.1/xwiki-plugin-skinx-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-skinx/1.1/xwiki-plugin-skinx-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform.plugins:xwiki-plugin-scheduler:1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-scheduler/1.3/xwiki-plugin-scheduler-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-scheduler/1.3/xwiki-plugin-scheduler-1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-scheduler/1.3/xwiki-plugin-scheduler-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: quartz:quartz:1.5.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/quartz/quartz/1.5.2/quartz-1.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/quartz/quartz/1.5.2/quartz-1.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/quartz/quartz/1.5.2/quartz-1.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform.plugins:xwiki-plugin-mailsender:1.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-mailsender/1.4/xwiki-plugin-mailsender-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-mailsender/1.4/xwiki-plugin-mailsender-1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-mailsender/1.4/xwiki-plugin-mailsender-1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform.plugins:xwiki-plugin-spacemanager:1.1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-spacemanager/1.1.1/xwiki-plugin-spacemanager-1.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-spacemanager/1.1.1/xwiki-plugin-spacemanager-1.1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-spacemanager/1.1.1/xwiki-plugin-spacemanager-1.1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-spacemanager:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-spacemanager/1.0-SNAPSHOT/curriki-plugin-spacemanager-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-spacemanager/1.0-SNAPSHOT/curriki-plugin-spacemanager-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-spacemanager/1.0-SNAPSHOT/curriki-plugin-spacemanager-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform.plugins:xwiki-plugin-invitationmanager:1.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-invitationmanager/1.0.1/xwiki-plugin-invitationmanager-1.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-invitationmanager/1.0.1/xwiki-plugin-invitationmanager-1.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-invitationmanager/1.0.1/xwiki-plugin-invitationmanager-1.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-activitystream:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-activitystream/1.0-SNAPSHOT/curriki-plugin-activitystream-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-activitystream/1.0-SNAPSHOT/curriki-plugin-activitystream-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-activitystream/1.0-SNAPSHOT/curriki-plugin-activitystream-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.xpn.xwiki.platform.plugins:xwiki-plugin-activitystream:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-activitystream/1.1/xwiki-plugin-activitystream-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-activitystream/1.1/xwiki-plugin-activitystream-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/xpn/xwiki/platform/plugins/xwiki-plugin-activitystream/1.1/xwiki-plugin-activitystream-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-curriki:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-curriki/1.0-SNAPSHOT/curriki-plugin-curriki-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-curriki/1.0-SNAPSHOT/curriki-plugin-curriki-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-curriki/1.0-SNAPSHOT/curriki-plugin-curriki-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.curriki:curriki-plugin-servlet:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-servlet/1.0-SNAPSHOT/curriki-plugin-servlet-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-servlet/1.0-SNAPSHOT/curriki-plugin-servlet-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/curriki/curriki-plugin-servlet/1.0-SNAPSHOT/curriki-plugin-servlet-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.sf.ezmorph:ezmorph:1.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ezmorph/ezmorph/1.0.4/ezmorph-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ezmorph/ezmorph/1.0.4/ezmorph-1.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ezmorph/ezmorph/1.0.4/ezmorph-1.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xom:xom:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xom/xom/1.1/xom-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xom/xom/1.1/xom-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xom/xom/1.1/xom-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jaxen:jaxen:1.1-beta-8">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.restlet:org.restlet:1.1-M3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/restlet/org.restlet/1.1-M3/org.restlet-1.1-M3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/restlet/org.restlet/1.1-M3/org.restlet-1.1-M3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/restlet/org.restlet/1.1-M3/org.restlet-1.1-M3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.restlet:org.restlet.ext.json:1.1-M3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/restlet/org.restlet.ext.json/1.1-M3/org.restlet.ext.json-1.1-M3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/restlet/org.restlet.ext.json/1.1-M3/org.restlet.ext.json-1.1-M3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/restlet/org.restlet.ext.json/1.1-M3/org.restlet.ext.json-1.1-M3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.json:org.json:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/json/org.json/2.0/org.json-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/json/org.json/2.0/org.json-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/json/org.json/2.0/org.json-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.noelios.restlet:com.noelios.restlet.ext.servlet:1.1-M3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/noelios/restlet/com.noelios.restlet.ext.servlet/1.1-M3/com.noelios.restlet.ext.servlet-1.1-M3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/noelios/restlet/com.noelios.restlet.ext.servlet/1.1-M3/com.noelios.restlet.ext.servlet-1.1-M3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/noelios/restlet/com.noelios.restlet.ext.servlet/1.1-M3/com.noelios.restlet.ext.servlet-1.1-M3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.noelios.restlet:com.noelios.restlet:1.1-M3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/noelios/restlet/com.noelios.restlet/1.1-M3/com.noelios.restlet-1.1-M3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/noelios/restlet/com.noelios.restlet/1.1-M3/com.noelios.restlet-1.1-M3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/noelios/restlet/com.noelios.restlet/1.1-M3/com.noelios.restlet-1.1-M3-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+  <UsedPathMacros>
+    <macro name="MAVEN_REPOSITORY" />
+  </UsedPathMacros>
+</project>
+
