@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="root" parent_id="0"><content><name><![CDATA[Exameneisen VWO C (2010)]]></name></content></item>
+<item id="A" parent_id="root"><content><name><![CDATA[Domein A: Vaardigheden]]></name></content></item>
+<item id="A1" parent_id="A"><content><name><![CDATA[Subdomein A1: Informatievaardigheden]]></name></content></item>
+<item id="A2" parent_id="A"><content><name><![CDATA[Subdomein A2: Onderzoeksvaardigheden]]></name></content></item>
+<item id="A3" parent_id="A"><content><name><![CDATA[Subdomein A3: Technisch-instrumentele vaardigheden]]></name></content></item>
+<item id="A4" parent_id="A"><content><name><![CDATA[Subdomein A4: Orientatie op studie en beroep]]></name></content></item>
+<item id="A5" parent_id="A"><content><name><![CDATA[Subdomein A5: Algebra&iuml;sche vaardigheden]]></name></content></item>
+<item id="Bg" parent_id="root"><content><name><![CDATA[Domein Bg: Functies en grafieken]]></name></content></item>
+<item id="Bg1" parent_id="Bg"><content><name><![CDATA[Subdomein Bg1: Standaardfuncties]]></name></content></item>
+<item id="Bg2" parent_id="Bg"><content><name><![CDATA[Subdomein Bg2: Functies, grafieken, vergelijkingen en ongelijkheden]]></name></content></item>
+<item id="Cg" parent_id="root"><content><name><![CDATA[Domein Cg: Discrete analyse]]></name></content></item>
+<item id="Cg1" parent_id="Cg"><content><name><![CDATA[Subdomein Cg1: Veranderingen]]></name></content></item>
+<item id="Cg2" parent_id="Cg"><content><name><![CDATA[Subdomein Cg2: Rijen en recurrente betrekkingen]]></name></content></item>
+<item id="Eg" parent_id="root"><content><name><![CDATA[Domein Eg: Combinatoriek en kansrekening]]></name></content></item>
+<item id="Eg1" parent_id="Eg"><content><name><![CDATA[Subdomein Eg1: Combinatoriek]]></name></content></item>
+<item id="Eg2" parent_id="Eg"><content><name><![CDATA[Subdomein Eg2: Kansen]]></name></content></item>
+<item id="Eg3" parent_id="Eg"><content><name><![CDATA[Subdomein Eg3: Rekenen met kansen]]></name></content></item>
+<item id="Eg4" parent_id="Eg"><content><name><![CDATA[Subdomein Eg4: Speciale discrete verdelingen]]></name></content></item>
+<item id="Ea" parent_id="root"><content><name><![CDATA[Domein Ea: Grafen en matrices]]></name></content></item>
+<item id="Ea1" parent_id="Ea"><content><name><![CDATA[Subdomein Ea1: Grafen]]></name></content></item>
+<item id="Ea2" parent_id="Ea"><content><name><![CDATA[Subdomein Ea2: Matrices]]></name></content></item>
+<item id="Fa" parent_id="root"><content><name><![CDATA[Domein Fa: Statistiek en kansrekening]]></name></content></item>
+<item id="Fa1" parent_id="Fa"><content><name><![CDATA[Subdomein Fa1: Populatie en steekproef]]></name></content></item>
+<item id="Fa2" parent_id="Fa"><content><name><![CDATA[Subdomein Fa2: Ordenen, verwerken en samenvatten van statistische gegevens]]></name></content></item>
+<item id="Fa3" parent_id="Fa"><content><name><![CDATA[Subdomein Fa3: Kansverdelingen]]></name></content></item>
+</root>

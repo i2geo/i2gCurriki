@@ -1,0 +1,151 @@
+"id","pid","title","keys"
+"BW_0",0,"Jan van der Craats, Basisboek Wiskunde",
+"BW_1","BW_0","Rekenen met gehele getallen","Integer, Natural_number"
+"BW_1.1","BW_1","Optellen, aftrekken en vermenigvuldigen","Addition, Substraction, Multiplication"
+"BW_1.2","BW_1","Delen met rest","Division, Remainder"
+"BW_1.3","BW_1","Delers en priemgetallen",
+"BW_1.4","BW_1","De ggd en het kgv",
+"BW_10","BW_0","Tweedegraadsvergelijkingen","Quadratic_Equation"
+"BW_10.1","BW_10","Tweedegraadsvergelijkingen",
+"BW_10.2","BW_10","Kwadraatafsplitsen",
+"BW_10.3","BW_10","De abc-formule",
+"BW_11","BW_0","Stelsels eerstegraadsvergelijkingen",
+"BW_11.1","BW_11","Twee vergelijkingen met twee onbekenden","System_with_two_equations_and_two_unknowns"
+"BW_11.2","BW_11","Drie vergelijkingen met drie onbekenden",
+"BW_12","BW_0","Lijnen in het vlak","Straight_Line"
+"BW_12.1","BW_12","De vergelijking van een lijn in het vlak",
+"BW_12.2","BW_12","De vergelijking van de lijn door twee punten",
+"BW_12.3","BW_12","Het snijpunt van twee lijnen",
+"BW_13","BW_0","Afstanden en hoeken",
+"BW_13.1","BW_13","Afstand en middelloodlijn","Perpendicular_Bisector"
+"BW_13.2","BW_13","De normaalvector van een lijn",
+"BW_13.3","BW_13","Loodrechte stand van lijnen en vectoren",
+"BW_13.4","BW_13","Het inprodukt",
+"BW_14","BW_0","Cirkels","Circle"
+"BW_14.1","BW_14","Cirkelvergelijkingen",
+"BW_14.2","BW_14","De snijpunten van een cirkel en een lijn",
+"BW_14.3","BW_14","De snijpunten van twee cirkels",
+"BW_14.4","BW_14","Raaklijnen aan een cirkel","Tangent_Line"
+"BW_15","BW_0","Meetkunde in de ruimte",
+"BW_15.1","BW_15","Coordinaten en inprodukt in de ruimte","Coordinates"
+"BW_15.2","BW_15","Vlakken en normaalvectoren","Plane, Normal_Vector"
+"BW_15.3","BW_15","Evenwijdige en elkaar snijdende vlakken",
+"BW_15.4","BW_15","De drievlakkenstelling",
+"BW_15.5","BW_15","Bollen en raakvlakken","Sphere"
+"BW_16","BW_0","Functies en grafieken","Function, Plots"
+"BW_16.1","BW_16","Eerstegraadsfuncties","Linear_function"
+"BW_16.2","BW_16","Tweedegraads functies en parabolen","Parabola"
+"BW_16.3","BW_16","Snijpunten van grafieken","Intersection, Graph"
+"BW_16.4","BW_16","Gebroken lineaire functies",
+"BW_16.5","BW_16","Machtsfuncties, wortelfuncties en de absolute-waardefunctie",
+"BW_16.6","BW_16","Polynomen","Polynomial_function"
+"BW_16.7","BW_16","Rationale functies","Rational_Function"
+"BW_17","BW_0","Goniometrie","Angle_fig"
+"BW_17.1","BW_17","Hoekmeting","Measure"
+"BW_17.2","BW_17","De sinus, de cosinus en de tangens","Sine, Cosine, Tangent"
+"BW_17.3","BW_17","Grafieken van goniometrische functies",
+"BW_17.4","BW_17","Optelformules en dubbele-hoekformules",
+"BW_17.5","BW_17","De arcsinus de arccosinus en de arctangens",
+"BW_17.6","BW_17","Een standaardlimiet",
+"BW_17.7","BW_17","Driehoeksmeting",
+"BW_18","BW_0","Exponentiele en logaritmische functies",
+"BW_18.1","BW_18","Exponentiele functies",
+"BW_18.2","BW_18","Logaritmische functies",
+"BW_18.3","BW_18","De functie e^x en de natuurlijke logaritme",
+"BW_18.4","BW_18","Meer over logaritmische functies",
+"BW_19","BW_0","Geparametriseerde krommen",
+"BW_19.1","BW_19","Krommen in het vlak",
+"BW_19.2","BW_19","Poolcoordinaten","Polar_coordinates"
+"BW_19.3","BW_19","Krommen in de ruimte",
+"BW_19.4","BW_19","Rechte lijnen in parametervorm",
+"BW_2","BW_0","Rekenen met breuken",
+"BW_2.1","BW_2","Rationale getallen","Rational_number"
+"BW_2.2","BW_2","Optellen en aftrekken van breuken",
+"BW_2.3","BW_2","Vermenigvuldigen en delen van breuken",
+"BW_20","BW_0","Differentieren",
+"BW_20.1","BW_20","Raaklijn en afgeleide",
+"BW_20.2","BW_20","Differentieerbaarheid",
+"BW_20.3","BW_20","Rekenregels en standaardafgeleiden",
+"BW_20.4","BW_20","Hogere afgeleiden",
+"BW_20.5","BW_20","Een vijfdegraadspolynoom",
+"BW_20.6","BW_20","Stijgen, dalen en het teken van de afgeleide",
+"BW_20.7","BW_20","Extreme waarden","Maxima_and_Minima"
+"BW_20.8","BW_20","Stationaire punten en buigpunten",
+"BW_21","BW_0","Differentialen en integralen",
+"BW_21.1","BW_21","Differentialen - definitie en rekenregels",
+"BW_21.2","BW_21","Foutenschattingen",
+"BW_21.3","BW_21","Hoe goed is de differentiaal als benadering?",
+"BW_21.4","BW_21","Een oppervlakteberekening",
+"BW_21.5","BW_21","Oppervlakte en primitieve functie",
+"BW_21.6","BW_21","Integralen - algemene definitie en rekenregels",
+"BW_21.7","BW_21","Nogmaals het verband tussen oppervlakte en integraal",
+"BW_21.8","BW_21","Onbepaalde integralen",
+"BW_21.9","BW_21","De primitieve functies van f(x) = 1/x",
+"BW_22","BW_0","Integratietechnieken",
+"BW_22.1","BW_22","De substitutieregel",
+"BW_22.2","BW_22","Expliciete substituties",
+"BW_22.3","BW_22","Partieel integreren",
+"BW_22.4","BW_22","Voorbeelden van partieel integreren",
+"BW_22.5","BW_22","Oneigenlijke integralen van type 1",
+"BW_22.6","BW_22","Oneigenlijke integralen van type 2",
+"BW_22.7","BW_22","Sommen en integralen",
+"BW_22.8","BW_22","Numerieke integratiemethoden",
+"BW_22.9","BW_22","Is primitiveren in formulevorm altijd mogelijk?",
+"BW_23","BW_0","Toepassingen",
+"BW_23.1","BW_23","De raakvector aan een geparametriseerde kromme",
+"BW_23.2","BW_23","De lengte van een kromme",
+"BW_23.3","BW_23","De inhoud van een omwentelingslichaam",
+"BW_23.4","BW_23","De oppervlakte van een omwentelingsoppervlak",
+"BW_23.5","BW_23","Exponentiele groei",
+"BW_23.6","BW_23","Logistische groei - het ljnelementenveld",
+"BW_23.7","BW_23","Logistische groei - de oplossingsfuncties",
+"BW_24","BW_0","Reele getallen en coordinaten",
+"BW_24.1","BW_24","De reele getallenrechte",
+"BW_24.2","BW_24","De accolade-notatie voor verzamelingen",
+"BW_24.3","BW_24","Intervallen",
+"BW_24.4","BW_24","Wiskunde en werkelijkheid",
+"BW_24.5","BW_24","Coordinaten in het vlak",
+"BW_24.6","BW_24","De stelling van Pythagoras",
+"BW_24.7","BW_24","Coordinaten in de ruimte",
+"BW_25","BW_0","Functies, limieten en continuiteit",
+"BW_25.1","BW_25","Functie domein en bereik",
+"BW_25.2","BW_25","Inverteerbare functies",
+"BW_25.3","BW_25","Symmetrie",
+"BW_25.4","BW_25","Periodiciteit","Symmetry"
+"BW_25.5","BW_25","Limieten",
+"BW_25.6","BW_25","Continuiteit",
+"BW_26","BW_0","Aanvullende afleidingen",
+"BW_26.1","BW_26","Inprodukt en cosinusregel",
+"BW_26.2","BW_26","Exponentiele en logaritmische functies",
+"BW_26.3","BW_26","Rekenregels voor afgeleide functies",
+"BW_26.4","BW_26","Differentialen en de kettingregel",
+"BW_26.5","BW_26","Standaardafgeleiden",
+"BW_3","BW_0","Machten en wortels","Power"
+"BW_3.1","BW_3","Gehele machten",
+"BW_3.2","BW_3","Wortels van gehele getallen",
+"BW_3.3","BW_3","Wortels van breuken in standaardvorm",
+"BW_3.4","BW_3","Hogeremachtswortels in standaardvorm",
+"BW_3.5","BW_3","Gebroken machten",
+"BW_4","BW_0","Rekenen met letters",
+"BW_4.1","BW_4","Prioriteitsregels",
+"BW_4.2","BW_4","Haakjes uitwerken en buiten haakjes brengen",
+"BW_4.3","BW_4","De bananenformule",
+"BW_5","BW_0","Merkwaardige producten",
+"BW_5.1","BW_5","Het kwadraat van een som of een verschil",
+"BW_5.2","BW_5","Het verschil van twee kwadraten",
+"BW_6","BW_0","Breuken met letters",
+"BW_6.1","BW_6","Splitsen en onder een noemer brengen",
+"BW_6.2","BW_6","Breuken vereenvoudigen",
+"BW_7","BW_0","Faculteiten en binomiaalcoefficienten",
+"BW_7.1","BW_7","De formules voor (a + b)^3 en (a + b)^4",
+"BW_7.2","BW_7","Binomiaalcoefficienten en de driehoek van Pascal",
+"BW_7.3","BW_7","Het berekenen van binomiaalcoefficienten",
+"BW_7.4","BW_7","Het binomium van Newton en de sigma-notatie",
+"BW_8","BW_0","Rijen en limieten","Sequence"
+"BW_8.1","BW_8","Rekenkundige rijen",
+"BW_8.2","BW_8","Meetkundige rijen",
+"BW_8.3","BW_8","Limieten van rijen",
+"BW_9","BW_0","Eerstegraadsvergelijkingen en -ongelijkheden","Linear_equation, Linear_Inequality"
+"BW_9.1","BW_9","Algemene oplossingsregels",
+"BW_9.2","BW_9","Ongelijkheden",
+"BW_9.3","BW_9","Een vergelijking reduceren tot een eerstegraadsvergelijking",

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="B" parent_id="0"><content><name><![CDATA[Berlin]]></name></content></item>
+<item id="BPr" parent_id="B"><content><name><![CDATA[Primarstufe]]></name></content></item>
+<item id="BPrJ1/2" parent_id="BPr"><content><name><![CDATA[Jahrgangsstufen 1/2]]></name></content></item>
+<item id="BJ1/2T1" parent_id="BPrJ1/2"><content><name><![CDATA[Themenfeld 'Form und Veränderung']]></name></content></item>
+<item id="BJ1/2T1RV" parent_id="BJ1/2T1"><content><name><![CDATA[Raumvorstellung entwickeln]]></name></content></item>
+<item id="BJ1/2T1KEF" parent_id="BJ1/2T1"><content><name><![CDATA[Körper und ebene Figuren]]></name></content></item>
+<item id="BJ1/2T1ZB" parent_id="BJ1/2T1"><content><name><![CDATA[Zahlbegriff]]></name></content></item>
+<item id="BJ1/2T1ZD" parent_id="BJ1/2T1"><content><name><![CDATA[Zeichnen und darstellen]]></name></content></item>
+<item id="BJ1/2T1Sy" parent_id="BJ1/2T1"><content><name><![CDATA[Symmetrie]]></name></content></item>
+<item id="BJ1/2T2" parent_id="BPrJ1/2"><content><name><![CDATA[Themenfeld 'Zahlen und Operationen']]></name></content></item>
+<item id="BJ1/2T2ZR100" parent_id="BJ1/2T2"><content><name><![CDATA[Zahlenraum bis 100]]></name></content></item>
+<item id="BJ1/2T2Gl" parent_id="BJ1/2T2"><content><name><![CDATA[Gleichungen]]></name></content></item>
+<item id="BJ1/2T2RO" parent_id="BJ1/2T2"><content><name><![CDATA[Rechenoperationen]]></name></content></item>
+<item id="BJ1/2T3" parent_id="BPrJ1/2"><content><name><![CDATA[Themenfeld 'Größen und Messen']]></name></content></item>
+<item id="BJ1/2T3GE" parent_id="BJ1/2T3"><content><name><![CDATA[Größen und Einheiten]]></name></content></item>
+<item id="BJ1/2T3M" parent_id="BJ1/2T3"><content><name><![CDATA[Messen]]></name></content></item>
+<item id="BJ1/2T4" parent_id="BPrJ1/2"><content><name><![CDATA[Themenfeld 'Daten und Zufall']]></name></content></item>
+<item id="BJ1/2T4DE" parent_id="BJ1/2T4"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="BJ1/2T4TBD" parent_id="BJ1/2T4"><content><name><![CDATA[Tabelle und Bilder und Diagramme]]></name></content></item>
+<item id="BPrJ3/4" parent_id="BPr"><content><name><![CDATA[Jahrgangsstufen 3/4]]></name></content></item>
+<item id="BJ3/4T1" parent_id="BPrJ3/4"><content><name><![CDATA[Themenfeld 'Form und Veränderung']]></name></content></item>
+<item id="BJ3/4T1KN" parent_id="BJ3/4T1"><content><name><![CDATA[Körpernetze]]></name></content></item>
+<item id="BJ3/4T1LB" parent_id="BJ3/4T1"><content><name><![CDATA[Lagebeziehungen]]></name></content></item>
+<item id="BJ3/4T1KeF" parent_id="BJ3/4T1"><content><name><![CDATA[Körper und ebene Figuren]]></name></content></item>
+<item id="BJ3/4T1Sy" parent_id="BJ3/4T1"><content><name><![CDATA[Symmetrie]]></name></content></item>
+<item id="BJ3/4T1FFU" parent_id="BJ3/4T1"><content><name><![CDATA[Fläche und Flächeninhalt und Umfang]]></name></content></item>
+<item id="BJ3/4T2" parent_id="BPrJ3/4"><content><name><![CDATA[Themenfeld 'Zahlen und Operationen']]></name></content></item>
+<item id="BJ3/4T2NZ" parent_id="BJ3/4T2"><content><name><![CDATA[Natürliche Zahlen]]></name></content></item>
+<item id="BJ3/4T2VTT" parent_id="BJ3/4T2"><content><name><![CDATA[Vielfache und Teiler und Teilbarkeit]]></name></content></item>
+<item id="BJ3/4T3" parent_id="BPrJ3/4"><content><name><![CDATA[Themenfeld 'Größen und Messen']]></name></content></item>
+<item id="BJ3/4T3GE" parent_id="BJ3/4T3"><content><name><![CDATA[Größen und Einheiten]]></name></content></item>
+<item id="BJ3/4T4" parent_id="BPrJ3/4"><content><name><![CDATA[Themenfeld 'Daten und Zufall']]></name></content></item>
+<item id="BJ3/4T4DE" parent_id="BJ3/4T4"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="BJ3/4T4TBD" parent_id="BJ3/4T4"><content><name><![CDATA[Tabelle und Bilder und Diagramme]]></name></content></item>
+<item id="BJ3/4T4ZW" parent_id="BJ3/4T4"><content><name><![CDATA[Zufall und Wahrscheinlichkeit]]></name></content></item>
+<item id="BPrJ5/6" parent_id="BPr"><content><name><![CDATA[Jahrgangsstufen 5/6]]></name></content></item>
+<item id="BJ4/5T1" parent_id="BPrJ5/6"><content><name><![CDATA[Themenfeld 'Form und Veränderung']]></name></content></item>
+<item id="BJ4/5T1Koo" parent_id="BJ4/5T1"><content><name><![CDATA[Koordinaten]]></name></content></item>
+<item id="BJ4/5T1KN" parent_id="BJ4/5T1"><content><name><![CDATA[Körpernetze]]></name></content></item>
+<item id="BJ4/5T1W" parent_id="BJ4/5T1"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="BJ4/5T1DG" parent_id="BJ4/5T1"><content><name><![CDATA[Dynamische Geometrie]]></name></content></item>
+<item id="BJ4/5T1KDV" parent_id="BJ4/5T1"><content><name><![CDATA[Klassifizieren von Dreiecken und Vierecken und Winkel]]></name></content></item>
+<item id="BJ4/5T1SK" parent_id="BJ4/5T1"><content><name><![CDATA[Symmetrie und Kongruenz]]></name></content></item>
+<item id="BJ4/5T1UQ" parent_id="BJ4/5T1"><content><name><![CDATA[Umfang und Flächeninhalt von Quadrat und Rechteck]]></name></content></item>
+<item id="BJ4/5T1VW" parent_id="BJ4/5T1"><content><name><![CDATA[Volumen von Würfel und Quader]]></name></content></item>
+<item id="BJ4/5T2" parent_id="BPrJ5/6"><content><name><![CDATA[Themenfeld 'Zahlen und Operationen']]></name></content></item>
+<item id="BJ4/5T2TB" parent_id="BJ4/5T2"><content><name><![CDATA[Teilbarkeit]]></name></content></item>
+<item id="BJ4/5T2Q" parent_id="BJ4/5T2"><content><name><![CDATA[Quadratzahlen]]></name></content></item>
+<item id="BJ4/5T2BZ" parent_id="BJ4/5T2"><content><name><![CDATA[Bruchzahlen]]></name></content></item>
+<item id="BJ4/5T2Pr" parent_id="BJ4/5T2"><content><name><![CDATA[Proportionalität]]></name></content></item>
+<item id="BJ4/5T3" parent_id="BPrJ5/6"><content><name><![CDATA[Themenfeld 'Größen und Messen']]></name></content></item>
+<item id="BJ4/5T3G" parent_id="BJ4/5T3"><content><name><![CDATA[Größen]]></name></content></item>
+<item id="BJ4/5T3UD" parent_id="BJ4/5T3"><content><name><![CDATA[Flächeninhalt und Umfang von Dreiecken und Rechtecken]]></name></content></item>
+<item id="BJ4/5T4" parent_id="BPrJ5/6"><content><name><![CDATA[Themenfeld 'Daten und Zufall']]></name></content></item>
+<item id="BJ4/5T4DE" parent_id="BJ4/5T4"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="BJ4/5T4AM" parent_id="BJ4/5T4"><content><name><![CDATA[Arithmetisches Mittel]]></name></content></item>
+<item id="BSek1" parent_id="B"><content><name><![CDATA[Sekundarstufe I]]></name></content></item>
+<item id="BSek1Kl8" parent_id="BSek1"><content><name><![CDATA[Klasse 8]]></name></content></item>
+<item id="BSek1Kl8Z" parent_id="BSek1Kl8"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="B8ZEinfach" parent_id="BSek1Kl8Z"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B8ZEinfachNG" parent_id="B8ZEinfach"><content><name><![CDATA[Natürliche und Ganze Zahlen]]></name></content></item>
+<item id="B8ZEinfachBr" parent_id="B8ZEinfach"><content><name><![CDATA[Brüche]]></name></content></item>
+<item id="B8ZEinfachDez" parent_id="B8ZEinfach"><content><name><![CDATA[Dezimalzahlen]]></name></content></item>
+<item id="B8ZErweitertKo" parent_id="B8ZEinfach"><content><name><![CDATA[Kopfrechnen]]></name></content></item>
+<item id="B8ZEinfachSR" parent_id="B8ZEinfach"><content><name><![CDATA[Sinnvoll Runden]]></name></content></item>
+<item id="B8ZEinfach10" parent_id="B8ZEinfach"><content><name><![CDATA[Zehnerpotenzen]]></name></content></item>
+<item id="B8ZEinfachTas" parent_id="B8ZEinfach"><content><name><![CDATA[Taschenrechner verwenden]]></name></content></item>
+<item id="B8ZEinfachPZ" parent_id="B8ZEinfach"><content><name><![CDATA[Prozente und Zinsen]]></name></content></item>
+<item id="B8ZEinfachVG" parent_id="B8ZEinfach"><content><name><![CDATA[Variablen und Gleichungen]]></name></content></item>
+<item id="B8ZMittel" parent_id="BSek1Kl8Z"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B8ZMittelNG" parent_id="B8ZMittel"><content><name><![CDATA[Natürliche und Ganze Zahlen]]></name></content></item>
+<item id="B8ZMittelBr" parent_id="B8ZMittel"><content><name><![CDATA[Brüche]]></name></content></item>
+<item id="B8ZMittelKo" parent_id="B8ZMittel"><content><name><![CDATA[Kopfrechnen]]></name></content></item>
+<item id="B8ZMittelSR" parent_id="B8ZMittel"><content><name><![CDATA[Sinnvoll Runden]]></name></content></item>
+<item id="B8ZMittelDez" parent_id="B8ZMittel"><content><name><![CDATA[Dezimalzahlen]]></name></content></item>
+<item id="B8ZMittel10" parent_id="B8ZMittel"><content><name><![CDATA[Zehnerpotenzen]]></name></content></item>
+<item id="B8ZMittelTasc" parent_id="B8ZMittel"><content><name><![CDATA[Taschenrechner verwenden]]></name></content></item>
+<item id="B8ZMittelPZ" parent_id="B8ZMittel"><content><name><![CDATA[Prozente und Zinsen]]></name></content></item>
+<item id="B8ZMittelVG" parent_id="B8ZMittel"><content><name><![CDATA[Variablen und Gleichungen]]></name></content></item>
+<item id="B8ZErweitert" parent_id="BSek1Kl8Z"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B8ZErweitertNG" parent_id="B8ZErweitert"><content><name><![CDATA[Natürliche und Ganze Zahlen]]></name></content></item>
+<item id="B8ZErweitertBr" parent_id="B8ZErweitert"><content><name><![CDATA[Brüche]]></name></content></item>
+<item id="B8ZErweitertDez" parent_id="B8ZErweitert"><content><name><![CDATA[Dezimalzahlen]]></name></content></item>
+<item id="B8ZErweitertKo" parent_id="B8ZErweitert"><content><name><![CDATA[Kopfrechnen]]></name></content></item>
+<item id="B8ZErweitertSR" parent_id="B8ZErweitert"><content><name><![CDATA[Sinnvoll Runden]]></name></content></item>
+<item id="B8ZErweitert10" parent_id="B8ZErweitert"><content><name><![CDATA[Zehnerpotenzen]]></name></content></item>
+<item id="B8ZErweitertTasc" parent_id="B8ZErweitert"><content><name><![CDATA[Taschenrechner verwenden]]></name></content></item>
+<item id="B8ZErweitertPZ" parent_id="B8ZErweitert"><content><name><![CDATA[Prozente und Zinsen]]></name></content></item>
+<item id="B8ZErweitertVG" parent_id="B8ZErweitert"><content><name><![CDATA[Variablen und Gleichungen]]></name></content></item>
+<item id="BSek1Kl8M" parent_id="BSek1Kl8"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="B8MEinfach" parent_id="BSek1Kl8M"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B8MEinfachMG" parent_id="B8MEinfach"><content><name><![CDATA[Messen und Größen]]></name></content></item>
+<item id="B8MEinfachFU" parent_id="B8MEinfach"><content><name><![CDATA[Flächeninhalt und Umfang]]></name></content></item>
+<item id="B8MEinfachVO" parent_id="B8MEinfach"><content><name><![CDATA[Volumen und Oberfläche]]></name></content></item>
+<item id="B8MEinfachW" parent_id="B8MEinfach"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="B8MMittel" parent_id="BSek1Kl8M"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B8MMittelMG" parent_id="B8MMittel"><content><name><![CDATA[Messen und Größen]]></name></content></item>
+<item id="B8MMittelFU" parent_id="B8MMittel"><content><name><![CDATA[Flächeninhalt und Umfang]]></name></content></item>
+<item id="B8MMittelVO" parent_id="B8MMittel"><content><name><![CDATA[Volumen und Oberfläche]]></name></content></item>
+<item id="B8MMittelW" parent_id="B8MMittel"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="B8MErweitert" parent_id="BSek1Kl8M"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B8MErweitertMG" parent_id="B8MErweitert"><content><name><![CDATA[Messen und Größen]]></name></content></item>
+<item id="B8MErweitertFU" parent_id="B8MErweitert"><content><name><![CDATA[Flächeninhalt und Umfang]]></name></content></item>
+<item id="B8MErweitertVO" parent_id="B8MErweitert"><content><name><![CDATA[Volumen und Oberfläche]]></name></content></item>
+<item id="B8MErweitertW" parent_id="B8MErweitert"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="BSek1Kl8R" parent_id="BSek1Kl8"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="B8REinfach" parent_id="BSek1Kl8R"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B8REinfachW" parent_id="B8REinfach"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="B8REinfachS" parent_id="B8REinfach"><content><name><![CDATA[geometrische Strukturen]]></name></content></item>
+<item id="B8REinfachFig" parent_id="B8REinfach"><content><name><![CDATA[Eigenschaften ebener Figuren]]></name></content></item>
+<item id="B8REinfachAK" parent_id="B8REinfach"><content><name><![CDATA[Analysieren und Klassifizieren von Winkeln und Dreiecken und Vierecken]]></name></content></item>
+<item id="B8REinfachKDr" parent_id="B8REinfach"><content><name><![CDATA[Konstruktion von Dreiecken (mit Hilfsmitteln)]]></name></content></item>
+<item id="B8REinfachMod" parent_id="B8REinfach"><content><name><![CDATA[Modellierungsaufgaben]]></name></content></item>
+<item id="B8REinfachSä" parent_id="B8REinfach"><content><name><![CDATA[Sätze ebener Geometrie]]></name></content></item>
+<item id="B8REinfachKoo" parent_id="B8REinfach"><content><name><![CDATA[Koordinatensystem]]></name></content></item>
+<item id="B8RMittel" parent_id="BSek1Kl8R"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B8RMittelW" parent_id="B8RMittel"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="B8RMittelS" parent_id="B8RMittel"><content><name><![CDATA[geometrische Strukturen]]></name></content></item>
+<item id="B8RMittelFig" parent_id="B8RMittel"><content><name><![CDATA[Eigenschaften ebener Figuren]]></name></content></item>
+<item id="B8RMittelAK" parent_id="B8RMittel"><content><name><![CDATA[Analysieren und Klassifizieren von Winkeln und Dreiecken und Vierecken]]></name></content></item>
+<item id="B8RMittelKDr" parent_id="B8RMittel"><content><name><![CDATA[Konstruktion von Dreiecken (mit Hilfsmitteln)]]></name></content></item>
+<item id="B8RMittelMod" parent_id="B8RMittel"><content><name><![CDATA[Modellierungsaufgaben]]></name></content></item>
+<item id="B8RMittelSä" parent_id="B8RMittel"><content><name><![CDATA[Sätze ebener Geometrie]]></name></content></item>
+<item id="B8RMittelKoo" parent_id="B8RMittel"><content><name><![CDATA[Koordinatensystem]]></name></content></item>
+<item id="B8RErweitert" parent_id="BSek1Kl8R"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B8RErweitertW" parent_id="B8RErweitert"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="B8RErweitertS" parent_id="B8RErweitert"><content><name><![CDATA[geometrische Strukturen]]></name></content></item>
+<item id="B8RErweitertFig" parent_id="B8RErweitert"><content><name><![CDATA[Eigenschaften ebener Figuren]]></name></content></item>
+<item id="B8RErweitertAK" parent_id="B8RErweitert"><content><name><![CDATA[Analysieren und Klassifizieren von Winkeln und Dreiecken und Vierecken]]></name></content></item>
+<item id="B8RErweitertKDr" parent_id="B8RErweitert"><content><name><![CDATA[Konstruktion von Dreiecken (mit Hilfsmitteln)]]></name></content></item>
+<item id="B8RErweitertMod" parent_id="B8RErweitert"><content><name><![CDATA[Modellierungsaufgaben]]></name></content></item>
+<item id="B8RErweitertSa" parent_id="B8RErweitert"><content><name><![CDATA[Sätze ebener Geometrie]]></name></content></item>
+<item id="B8RErweitertKoo" parent_id="B8RErweitert"><content><name><![CDATA[Koordinatensystem]]></name></content></item>
+<item id="BSek1Kl8F" parent_id="BSek1Kl8"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="B8FEinfach" parent_id="BSek1Kl8F"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B8FEinfachZ" parent_id="B8FEinfach"><content><name><![CDATA[Zusammenhänge]]></name></content></item>
+<item id="B8FEinfachD" parent_id="B8FEinfach"><content><name><![CDATA[Darstellungsformen verwenden]]></name></content></item>
+<item id="B8FEinfachP" parent_id="B8FEinfach"><content><name><![CDATA[Prozentrechnung]]></name></content></item>
+<item id="B8FEinfachGl" parent_id="B8FEinfach"><content><name><![CDATA[Lineare Gleichungen und Gleichungssysteme]]></name></content></item>
+<item id="B8FEinfachF" parent_id="B8FEinfach"><content><name><![CDATA[lineare Funktionen]]></name></content></item>
+<item id="B8FMittel" parent_id="BSek1Kl8F"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B8FMittelZ" parent_id="B8FMittel"><content><name><![CDATA[Zusammenhänge]]></name></content></item>
+<item id="B8FMittelD" parent_id="B8FMittel"><content><name><![CDATA[Darstellungsformen verwenden]]></name></content></item>
+<item id="B8FMittelP" parent_id="B8FMittel"><content><name><![CDATA[Prozentrechnung]]></name></content></item>
+<item id="B8FMittelGl" parent_id="B8FMittel"><content><name><![CDATA[Lineare Gleichungen und Gleichungssysteme]]></name></content></item>
+<item id="B8FMittelF" parent_id="B8FMittel"><content><name><![CDATA[lineare Funktionen]]></name></content></item>
+<item id="B8FErweitert" parent_id="BSek1Kl8F"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B8FErweitertZ" parent_id="B8FErweitert"><content><name><![CDATA[Zusammenhänge]]></name></content></item>
+<item id="B8FErweitertD" parent_id="B8FErweitert"><content><name><![CDATA[Darstellungsformen verwenden]]></name></content></item>
+<item id="B8FErweitertP" parent_id="B8FErweitert"><content><name><![CDATA[Prozentrechnung]]></name></content></item>
+<item id="B8FErweitertGl" parent_id="B8FErweitert"><content><name><![CDATA[Lineare Gleichungen und Ungleichungen und Gleichungssysteme]]></name></content></item>
+<item id="B8FErweitertF" parent_id="B8FErweitert"><content><name><![CDATA[lineare Funktionen]]></name></content></item>
+<item id="BSek1Kl8D" parent_id="BSek1Kl8"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="B8DEinfach" parent_id="BSek1Kl8D"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B8DEinfachA" parent_id="B8DEinfach"><content><name><![CDATA[Auswertung von Daten]]></name></content></item>
+<item id="B8DEinfachD" parent_id="B8DEinfach"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="B8DEinfachH" parent_id="B8DEinfach"><content><name><![CDATA[Häufigkeiten und Mittelwerte]]></name></content></item>
+<item id="B8DEinfachW" parent_id="B8DEinfach"><content><name><![CDATA[Wahrscheinlichkeit und Zufall]]></name></content></item>
+<item id="B8DMittel" parent_id="BSek1Kl8D"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B8DMittelA" parent_id="B8DMittel"><content><name><![CDATA[Auswertung von Daten]]></name></content></item>
+<item id="B8DMittelD" parent_id="B8DMittel"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="B8DMittelH" parent_id="B8DMittel"><content><name><![CDATA[Häufigkeiten und Mittelwerte]]></name></content></item>
+<item id="B8DMittelW" parent_id="B8DMittel"><content><name><![CDATA[Wahrscheinlichkeit und Zufall]]></name></content></item>
+<item id="B8DErweitert" parent_id="BSek1Kl8D"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B8DErweitertA" parent_id="B8DErweitert"><content><name><![CDATA[Auswertung von Daten]]></name></content></item>
+<item id="B8DErweitertD" parent_id="B8DErweitert"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="B8DErweitertH" parent_id="B8DErweitert"><content><name><![CDATA[Häufigkeiten und Mittelwerte]]></name></content></item>
+<item id="B8DErweitertW" parent_id="B8DErweitert"><content><name><![CDATA[Wahrscheinlichkeit und Zufall]]></name></content></item>
+<item id="BSek1Kl10" parent_id="BSek1"><content><name><![CDATA[Klasse 10]]></name></content></item>
+<item id="BSek1Kl10Z" parent_id="BSek1Kl10"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="B10ZEinfach" parent_id="BSek1Kl10Z"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B10ZEinfachRZ" parent_id="B10ZEinfach"><content><name><![CDATA[Reelle Zahlen]]></name></content></item>
+<item id="B10ZEinfachKo" parent_id="B10ZEinfach"><content><name><![CDATA[Kopfrechnen]]></name></content></item>
+<item id="B10ZEinfachSR" parent_id="B10ZEinfach"><content><name><![CDATA[Sinnvoll Runden]]></name></content></item>
+<item id="B10ZEinfachTV" parent_id="B10ZEinfach"><content><name><![CDATA[Taschenrechner verwenden]]></name></content></item>
+<item id="B10ZEinfachDez" parent_id="B10ZEinfach"><content><name><![CDATA[Dezimaldarstellung und Potenzschreibweise]]></name></content></item>
+<item id="B10ZEinfachP" parent_id="B10ZEinfach"><content><name><![CDATA[Prozente und Zinsen und Zinseszins]]></name></content></item>
+<item id="B10ZMittel" parent_id="BSek1Kl10Z"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B10ZMittelIZ" parent_id="B10ZMittel"><content><name><![CDATA[Irrationale Zahlen]]></name></content></item>
+<item id="B10ZMittelRZ" parent_id="B10ZMittel"><content><name><![CDATA[Reelle Zahlen]]></name></content></item>
+<item id="B10ZMittelKoo" parent_id="B10ZMittel"><content><name><![CDATA[Kopfrechnen]]></name></content></item>
+<item id="B10ZMittelSr" parent_id="B10ZMittel"><content><name><![CDATA[Sinnvoll Runden]]></name></content></item>
+<item id="B10ZMittelTa" parent_id="B10ZMittel"><content><name><![CDATA[Taschenrechner verwenden]]></name></content></item>
+<item id="B10ZMittelDez" parent_id="B10ZMittel"><content><name><![CDATA[Dezimaldarstellung und Potenzschreibweise]]></name></content></item>
+<item id="B10ZMittelPZZ" parent_id="B10ZMittel"><content><name><![CDATA[Prozente und Zinsen und Zinseszins]]></name></content></item>
+<item id="B10ZMittelVG" parent_id="B10ZMittel"><content><name><![CDATA[Variablen und Gleichungen]]></name></content></item>
+<item id="B10ZErweitert" parent_id="BSek1Kl10Z"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B10ZErweitertIz" parent_id="B10ZErweitert"><content><name><![CDATA[Irrationale Zahlen]]></name></content></item>
+<item id="B10ZErweitertRZ" parent_id="B10ZErweitert"><content><name><![CDATA[Reelle Zahlen]]></name></content></item>
+<item id="B10ZErweitertKo" parent_id="B10ZErweitert"><content><name><![CDATA[Kopfrechnen]]></name></content></item>
+<item id="B10ZErweitertSR" parent_id="B10ZErweitert"><content><name><![CDATA[Sinnvoll Runden]]></name></content></item>
+<item id="B10ZErweitertTa" parent_id="B10ZErweitert"><content><name><![CDATA[Taschenrechner verwenden]]></name></content></item>
+<item id="B10ZErweitertDez" parent_id="B10ZErweitert"><content><name><![CDATA[Dezimaldarstellung und Potenzschreibweise]]></name></content></item>
+<item id="B10ZErweitertPZZ" parent_id="B10ZErweitert"><content><name><![CDATA[Prozente und Zinsen und Zinseszins]]></name></content></item>
+<item id="B10ZErweitertVG" parent_id="B10ZErweitert"><content><name><![CDATA[Variablen und Gleichungen]]></name></content></item>
+<item id="BSek1Kl10M" parent_id="BSek1Kl10"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="B10MEinfach" parent_id="BSek1Kl10M"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B10MEinfachMG" parent_id="B10MEinfach"><content><name><![CDATA[Messen und Größen]]></name></content></item>
+<item id="B10MEinfachFU" parent_id="B10MEinfach"><content><name><![CDATA[Flächeninhalt und Umfang]]></name></content></item>
+<item id="B10MEinfachVO" parent_id="B10MEinfach"><content><name><![CDATA[Volumen und Oberfläche]]></name></content></item>
+<item id="B10MEinfachT" parent_id="B10MEinfach"><content><name><![CDATA[Trigonometrie]]></name></content></item>
+<item id="B10MMittel" parent_id="BSek1Kl10M"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B10MMittelMG" parent_id="B10MMittel"><content><name><![CDATA[Messen und Größen]]></name></content></item>
+<item id="B10MMittelFU" parent_id="B10MMittel"><content><name><![CDATA[Flächeninhalt und Umfang]]></name></content></item>
+<item id="B10MMittelVO" parent_id="B10MMittel"><content><name><![CDATA[Volumen und Oberfläche]]></name></content></item>
+<item id="B10MMittelTr" parent_id="B10MMittel"><content><name><![CDATA[Trigonometrie]]></name></content></item>
+<item id="B10MMittelAhn" parent_id="B10MMittel"><content><name><![CDATA[Ähnlichkeit]]></name></content></item>
+<item id="B10MErweitert" parent_id="BSek1Kl10M"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B10MErweitertMG" parent_id="B10MErweitert"><content><name><![CDATA[Messen und Größen]]></name></content></item>
+<item id="B10MErweitertFU" parent_id="B10MErweitert"><content><name><![CDATA[Flächeninhalt und Umfang]]></name></content></item>
+<item id="B10MErweitertVO" parent_id="B10MErweitert"><content><name><![CDATA[Volumen und Oberfläche]]></name></content></item>
+<item id="B10MErweitertTR" parent_id="B10MErweitert"><content><name><![CDATA[Trigonometrie]]></name></content></item>
+<item id="B10MErweitertAhn" parent_id="B10MErweitert"><content><name><![CDATA[Ähnlichkeit]]></name></content></item>
+<item id="BSek1Kl10R" parent_id="BSek1Kl10"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="B10REinfach" parent_id="BSek1Kl10R"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B10REinfachW" parent_id="B10REinfach"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="B10REinfachgS" parent_id="B10REinfach"><content><name><![CDATA[geometrische Strukturen]]></name></content></item>
+<item id="B10REinfachKdr" parent_id="B10REinfach"><content><name><![CDATA[Konstruktion von Dreiecken (mit Hilfsmitteln)]]></name></content></item>
+<item id="B10REinfachMod" parent_id="B10REinfach"><content><name><![CDATA[Modellierungsaufgaben]]></name></content></item>
+<item id="B10REinfachGO" parent_id="B10REinfach"><content><name><![CDATA[Eigenschaften geometrischer Objekte]]></name></content></item>
+<item id="B10REinfachKö" parent_id="B10REinfach"><content><name><![CDATA[Analysieren und Klassifizieren von Körpern]]></name></content></item>
+<item id="B10REinfachSeG" parent_id="B10REinfach"><content><name><![CDATA[Sätze ebener Geometrie]]></name></content></item>
+<item id="B10REinfachVV" parent_id="B10REinfach"><content><name><![CDATA[Vergrößern und verkleinern ebener Figuren]]></name></content></item>
+<item id="B10REinfachKoo" parent_id="B10REinfach"><content><name><![CDATA[Koordinatensystem]]></name></content></item>
+<item id="B10REinfach2d" parent_id="B10REinfach"><content><name><![CDATA[2-D Körper bennenen und beschreiben]]></name></content></item>
+<item id="B10REinfachSK" parent_id="B10REinfach"><content><name><![CDATA[Schrägbilder und Körpernetze ]]></name></content></item>
+<item id="B10RMittel" parent_id="BSek1Kl10R"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B10RMittelW" parent_id="B10RMittel"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="B10RMittelgS" parent_id="B10RMittel"><content><name><![CDATA[geometrische Strukturen]]></name></content></item>
+<item id="B10RMittelKdr" parent_id="B10RMittel"><content><name><![CDATA[Konstruktion von Dreiecken (mit Hilfsmitteln)]]></name></content></item>
+<item id="B10RMittelMod" parent_id="B10RMittel"><content><name><![CDATA[Modellierungsaufgaben]]></name></content></item>
+<item id="B10RMittelgO" parent_id="B10RMittel"><content><name><![CDATA[Eigenschaften geometrischer Objekte]]></name></content></item>
+<item id="B10RMittelAK" parent_id="B10RMittel"><content><name><![CDATA[Analysieren und Klassifizieren von Körpern]]></name></content></item>
+<item id="B10RMittelSeG" parent_id="B10RMittel"><content><name><![CDATA[Sätze ebener Geometrie]]></name></content></item>
+<item id="B10RMittelVV" parent_id="B10RMittel"><content><name><![CDATA[Vergrößern und verkleinern ebener Figuren]]></name></content></item>
+<item id="B10RMittelKoo" parent_id="B10RMittel"><content><name><![CDATA[Koordinatensystem]]></name></content></item>
+<item id="B10RMittel2d" parent_id="B10RMittel"><content><name><![CDATA[2-D Körper bennenen und beschreiben]]></name></content></item>
+<item id="B10RMittelSK" parent_id="B10RMittel"><content><name><![CDATA[Schrägbilder und Körpernetze ]]></name></content></item>
+<item id="B10RErweitert" parent_id="BSek1Kl10R"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B10RErweitertSeG" parent_id="B10RErweitert"><content><name><![CDATA[Sätze ebener Geometrie]]></name></content></item>
+<item id="B10RErweitertEeF" parent_id="B10RErweitert"><content><name><![CDATA[Eigenschaften ebener Figuren]]></name></content></item>
+<item id="B10RErweitertW" parent_id="B10RErweitert"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="B10RErweitertgS" parent_id="B10RErweitert"><content><name><![CDATA[geometrische Strukturen]]></name></content></item>
+<item id="B10RErweitertKdr" parent_id="B10RErweitert"><content><name><![CDATA[Konstruktion von Dreiecken (mit Hilfsmitteln)]]></name></content></item>
+<item id="B10RErweitertMod" parent_id="B10RErweitert"><content><name><![CDATA[Modellierungsaufgaben]]></name></content></item>
+<item id="B10RErweitertEgO" parent_id="B10RErweitert"><content><name><![CDATA[Eigenschaften geometrischer Objekte]]></name></content></item>
+<item id="B10RErweitertAKK" parent_id="B10RErweitert"><content><name><![CDATA[Analysieren und Klassifizieren von Körpern]]></name></content></item>
+<item id="B10RErweitertVV" parent_id="B10RErweitert"><content><name><![CDATA[Vergrößern und verkleinern ebener Figuren]]></name></content></item>
+<item id="B10RErweitertKoo" parent_id="B10RErweitert"><content><name><![CDATA[Koordinatensystem]]></name></content></item>
+<item id="B10RErweitert2d" parent_id="B10RErweitert"><content><name><![CDATA[2-D Körper bennenen und beschreiben]]></name></content></item>
+<item id="B10RErweitertSK" parent_id="B10RErweitert"><content><name><![CDATA[Schrägbilder und Körpernetze]]></name></content></item>
+<item id="BSek1Kl10F" parent_id="BSek1Kl10"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="B10FEinfach" parent_id="BSek1Kl10F"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B10FEinfachFZ" parent_id="B10FEinfach"><content><name><![CDATA[Funktionale Zusammenhänge]]></name></content></item>
+<item id="B10FEinfachPR" parent_id="B10FEinfach"><content><name><![CDATA[Prozentrechnung]]></name></content></item>
+<item id="B10FEinfachLGG" parent_id="B10FEinfach"><content><name><![CDATA[Lineare Gleichungen und Gleichungssysteme]]></name></content></item>
+<item id="B10FEinfachLF" parent_id="B10FEinfach"><content><name><![CDATA[lineare Funktionen]]></name></content></item>
+<item id="B10FMittel" parent_id="BSek1Kl10F"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B10FMittelFZ" parent_id="B10FMittel"><content><name><![CDATA[Funktionale Zusammenhänge]]></name></content></item>
+<item id="B10FMittelPR" parent_id="B10FMittel"><content><name><![CDATA[Prozentrechnung]]></name></content></item>
+<item id="B10FMittelLGG" parent_id="B10FMittel"><content><name><![CDATA[Lineare Gleichungen und Gleichungssysteme]]></name></content></item>
+<item id="B10FMittelLQE" parent_id="B10FMittel"><content><name><![CDATA[lineare und quadratische und exponentiale Funktionen]]></name></content></item>
+<item id="B10FMittelTab" parent_id="B10FMittel"><content><name><![CDATA[Tabellenkalkulation]]></name></content></item>
+<item id="B10FMittelPF" parent_id="B10FMittel"><content><name><![CDATA[Potenzfunktionen]]></name></content></item>
+<item id="B10FMittelSF" parent_id="B10FMittel"><content><name><![CDATA[Sinusfunktion]]></name></content></item>
+<item id="B10FErweitert" parent_id="BSek1Kl10F"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B10FErweitertFZ" parent_id="B10FErweitert"><content><name><![CDATA[Funktionale Zusammenhänge]]></name></content></item>
+<item id="B10FErweitertPR" parent_id="B10FErweitert"><content><name><![CDATA[Prozentrechnung]]></name></content></item>
+<item id="B10FErweitertLGU" parent_id="B10FErweitert"><content><name><![CDATA[Lineare Gleichungen und Ungleichungen und Gleichungssysteme]]></name></content></item>
+<item id="B10FErweitertLQE" parent_id="B10FErweitert"><content><name><![CDATA[lineare und quadratische und exponentiale Funktionen und Logarithmusfunktion]]></name></content></item>
+<item id="B10FErweitertTab" parent_id="B10FErweitert"><content><name><![CDATA[Tabellenkalkulation]]></name></content></item>
+<item id="B10FErweitertPF" parent_id="B10FErweitert"><content><name><![CDATA[Potenzfunktionen]]></name></content></item>
+<item id="B10FErweitertSF" parent_id="B10FErweitert"><content><name><![CDATA[Sinusfunktion]]></name></content></item>
+<item id="BSek1Kl10D" parent_id="BSek1Kl10"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="B10DEinfach" parent_id="BSek1Kl10D"><content><name><![CDATA[Einfacher Standard]]></name></content></item>
+<item id="B10DEinfachAD" parent_id="B10DEinfach"><content><name><![CDATA[Auswertung von Daten]]></name></content></item>
+<item id="B10DEinfachDE" parent_id="B10DEinfach"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="B10DEinfachHMS" parent_id="B10DEinfach"><content><name><![CDATA[Häufigkeiten und Mittelwerte und Spannweiten]]></name></content></item>
+<item id="B10DEinfachWZ" parent_id="B10DEinfach"><content><name><![CDATA[Wahrscheinlichkeit und Zufall]]></name></content></item>
+<item id="B10DMittel" parent_id="BSek1Kl10D"><content><name><![CDATA[Mittlerer Standard]]></name></content></item>
+<item id="B10DMittelAD" parent_id="B10DMittel"><content><name><![CDATA[Auswertung von Daten]]></name></content></item>
+<item id="B10DMittelDE" parent_id="B10DMittel"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="B10DMittelHMS" parent_id="B10DMittel"><content><name><![CDATA[Häufigkeiten und Mittelwerte und Spannweiten]]></name></content></item>
+<item id="B10DMittelWZ" parent_id="B10DMittel"><content><name><![CDATA[Wahrscheinlichkeit und Zufall]]></name></content></item>
+<item id="B10DErweitert" parent_id="BSek1Kl10D"><content><name><![CDATA[Erweiterter Standard]]></name></content></item>
+<item id="B10DErweitertAD" parent_id="B10DErweitert"><content><name><![CDATA[Auswertung von Daten]]></name></content></item>
+<item id="B10DErweitertDE" parent_id="B10DErweitert"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="B10DErweitertHMS" parent_id="B10DErweitert"><content><name><![CDATA[Häufigkeiten und Mittelwerte und Spannweiten]]></name></content></item>
+<item id="B10DErweitertWZ" parent_id="B10DErweitert"><content><name><![CDATA[Wahrscheinlichkeit und Zufall]]></name></content></item>
+<item id="BSek2" parent_id="B"><content><name><![CDATA[Sekundarstufe II]]></name></content></item>
+<item id="BSek2EV" parent_id="BSek2"><content><name><![CDATA[Eingangsvorraussetzungen]]></name></content></item>
+<item id="BSek2Z" parent_id="BSek2EV"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="BSek2ZIZ" parent_id="BSek2Z"><content><name><![CDATA[Irrationale Zahlen]]></name></content></item>
+<item id="BSek2ZRZ" parent_id="BSek2Z"><content><name><![CDATA[Reelle Zahlen]]></name></content></item>
+<item id="BSek2ZKoo" parent_id="BSek2Z"><content><name><![CDATA[Kopfrechnen]]></name></content></item>
+<item id="BSek2ZSr" parent_id="BSek2Z"><content><name><![CDATA[Sinnvoll Runden]]></name></content></item>
+<item id="BSek2ZTA" parent_id="BSek2Z"><content><name><![CDATA[Taschenrechner verwenden]]></name></content></item>
+<item id="BSek2ZDez" parent_id="BSek2Z"><content><name><![CDATA[Dezimaldarstellung und Potenzschreibweise]]></name></content></item>
+<item id="BSek2ZPZZ" parent_id="BSek2Z"><content><name><![CDATA[Prozente und Zinsen und Zinseszins]]></name></content></item>
+<item id="BSek2ZVG" parent_id="BSek2Z"><content><name><![CDATA[Variablen und Gleichungen]]></name></content></item>
+<item id="BSek2ZBr" parent_id="BSek2Z"><content><name><![CDATA[Brüche]]></name></content></item>
+<item id="BSek2F" parent_id="BSek2EV"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="BSek2FPr" parent_id="BSek2F"><content><name><![CDATA[Prozentrechnung]]></name></content></item>
+<item id="BSek2FLGUG" parent_id="BSek2F"><content><name><![CDATA[Lineare Gleichungen und Ungleichungen und Gleichungssysteme]]></name></content></item>
+<item id="BSek2FLqex" parent_id="BSek2F"><content><name><![CDATA[lineare und quadratische und exponentiale Funktionen und Logarithmusfunktion]]></name></content></item>
+<item id="BSek2FTab" parent_id="BSek2F"><content><name><![CDATA[Tabellenkalkulation]]></name></content></item>
+<item id="BSek2FPo" parent_id="BSek2F"><content><name><![CDATA[Potenzfunktionen]]></name></content></item>
+<item id="BSek2FSin" parent_id="BSek2F"><content><name><![CDATA[Sinusfunktion]]></name></content></item>
+<item id="BSek2Ap" parent_id="BSek2EV"><content><name><![CDATA[Leitidee 'Approximation']]></name></content></item>
+<item id="BSek2ApAnd" parent_id="BSek2Ap"><content><name><![CDATA[Änderungsrate]]></name></content></item>
+<item id="BSek2ApFG" parent_id="BSek2Ap"><content><name><![CDATA[Funktionsgraph]]></name></content></item>
+<item id="BSek2R" parent_id="BSek2EV"><content><name><![CDATA[Leitidee 'Räumliches Strukturieren/Koordinatisieren']]></name></content></item>
+<item id="BSek2RKL" parent_id="BSek2R"><content><name><![CDATA[Klassifizieren geometrischer Objekte]]></name></content></item>
+<item id="BSek2REK" parent_id="BSek2R"><content><name><![CDATA[Eigenschafte von Figuren]]></name></content></item>
+<item id="BSek2RTR" parent_id="BSek2R"><content><name><![CDATA[Trigonomerie]]></name></content></item>
+<item id="BSek2RAhn" parent_id="BSek2R"><content><name><![CDATA[Ähnlichkeit]]></name></content></item>
+<item id="BSek2D" parent_id="BSek2EV"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="BSek2DAD" parent_id="BSek2D"><content><name><![CDATA[Auswertung von Daten]]></name></content></item>
+<item id="BSek2DDE" parent_id="BSek2D"><content><name><![CDATA[Daten erfassen]]></name></content></item>
+<item id="BSek2DHMS" parent_id="BSek2D"><content><name><![CDATA[Häufigkeiten und Mittelwerte und Spannweiten]]></name></content></item>
+<item id="BSek2DWZ" parent_id="BSek2D"><content><name><![CDATA[Wahrscheinlichkeit und Zufall]]></name></content></item>
+<item id="BSek2M" parent_id="BSek2EV"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="BSek2MMG" parent_id="BSek2M"><content><name><![CDATA[Messen und Größen]]></name></content></item>
+<item id="BSek2MFU" parent_id="BSek2M"><content><name><![CDATA[Flächeninhalt und Umfang]]></name></content></item>
+<item id="BSek2MVO" parent_id="BSek2M"><content><name><![CDATA[Volumen und Oberfläche]]></name></content></item>
+<item id="BSek2Al" parent_id="BSek2EV"><content><name><![CDATA[Leitidee 'Algorithmus']]></name></content></item>
+<item id="BSek2AlMH" parent_id="BSek2Al"><content><name><![CDATA[Mathematische Hilfsmittel]]></name></content></item>
+<item id="BSek2AlSTR" parent_id="BSek2Al"><content><name><![CDATA[Strukturierung durch Terme und Variablen]]></name></content></item>
+<item id="Bsek2AS" parent_id="BSek2"><content><name><![CDATA[Abschlussorientierte Standards]]></name></content></item>
+<item id="BSek2GK" parent_id="Bsek2AS"><content><name><![CDATA[Grundkurs]]></name></content></item>
+<item id="BSek2GKFZ" parent_id="BSek2GK"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="BSek2GKAPP" parent_id="BSek2GK"><content><name><![CDATA[Leitidee 'Approximation']]></name></content></item>
+<item id="BSek2GKRS" parent_id="BSek2GK"><content><name><![CDATA[Leitidee 'Räumliches Strukturieren/Koordinatisieren']]></name></content></item>
+<item id="BSek2GKDZ" parent_id="BSek2GK"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="BSek2GKM" parent_id="BSek2GK"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="BSek2GKAl" parent_id="BSek2GK"><content><name><![CDATA[Leitidee 'Algorithmus']]></name></content></item>
+<item id="BSek2LK" parent_id="Bsek2AS"><content><name><![CDATA[Leitsungskurs]]></name></content></item>
+<item id="BSek2LKFZ" parent_id="BSek2LK"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="BSek2LKAPP" parent_id="BSek2LK"><content><name><![CDATA[Leitidee 'Approximation']]></name></content></item>
+<item id="BSek2LKRS" parent_id="BSek2LK"><content><name><![CDATA[Leitidee 'Räumliches Strukturieren/Koordinatisieren']]></name></content></item>
+<item id="BSek2LKDZ" parent_id="BSek2LK"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="BSek2LKM" parent_id="BSek2LK"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="BSek2LKAl" parent_id="BSek2LK"><content><name><![CDATA[Leitidee 'Algorithmus']]></name></content></item>
+<item id="BABI" parent_id="BSek2"><content><name><![CDATA[Einheitlichen Prüfungsanforderungen für die Abiturprüfung (EPA)]]></name></content></item>
+<item id="BABIA" parent_id="BABI"><content><name><![CDATA[Themenbereich Analysis]]></name></content></item>
+<item id="BABIAG" parent_id="BABI"><content><name><![CDATA[Themenbereich Analytische Geometrie]]></name></content></item>
+<item id="BABIST" parent_id="BABI"><content><name><![CDATA[Themenbereich Stochastik]]></name></content></item>
+</root>

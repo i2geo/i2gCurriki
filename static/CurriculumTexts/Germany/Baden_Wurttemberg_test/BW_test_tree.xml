@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="chbwbw" parent_id="0"><content><name><![CDATA[Baden-Württemberg (encoded by Christopher Heck)]]></name></content></item>
+<item id="chbwgym" parent_id="chbwbw"><content><name><![CDATA[Gymnasium]]></name></content></item>
+<item id="chbwgym56" parent_id="chbwgym"><content><name><![CDATA[Klasse 5+6]]></name></content></item>
+<item id="chbwgym78" parent_id="chbwgym"><content><name><![CDATA[Klasse 7+8]]></name></content></item>
+<item id="chbwgym910" parent_id="chbwgym"><content><name><![CDATA[Klasse 9+10]]></name></content></item>
+<item id="chbwgymkurs" parent_id="chbwgym"><content><name><![CDATA[Kursstufe]]></name></content></item>
+<item id="chbwgymza" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwgymal" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Algorhitmus']]></name></content></item>
+<item id="chbwgymva" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Variable']]></name></content></item>
+<item id="chbwgymme" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwgymrafo" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwgymfzu" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwgymdauzu" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="chbwgymver" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Vernetzung']]></name></content></item>
+<item id="chbwgymmod" parent_id="chbwgym56"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwl1" parent_id="chbwgym78"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwl2" parent_id="chbwgym78"><content><name><![CDATA[Leitidee 'Algorhitmus']]></name></content></item>
+<item id="chbwl3" parent_id="chbwgym78"><content><name><![CDATA[Leitidee 'Variable']]></name></content></item>
+<item id="chbwl4" parent_id="chbwgym78"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwl5" parent_id="chbwgym78"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwl6" parent_id="chbwgym78"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="chbwl7" parent_id="chbwgym78"><content><name><![CDATA[Leitidee 'Vernetzung']]></name></content></item>
+<item id="chbwl8" parent_id="chbwgym78"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwl1.1" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwl1.2" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Algorhitmus']]></name></content></item>
+<item id="chbwl1.3" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Variable']]></name></content></item>
+<item id="chbwl1.4" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwl1.5" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwl1.6" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwl1.7" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="chbwl1.8" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Vernetzung']]></name></content></item>
+<item id="chbwl1.9" parent_id="chbwgym910"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwlkurs1.1" parent_id="chbwgymkurs"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwlkurs1.2" parent_id="chbwgymkurs"><content><name><![CDATA[Leitidee 'Algorhitmus']]></name></content></item>
+<item id="chbwlkurs1.3" parent_id="chbwgymkurs"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwlkurs1.4" parent_id="chbwgymkurs"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwlkurs1.5" parent_id="chbwgymkurs"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwlkurs1.6" parent_id="chbwgymkurs"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="chbwlkurs1.7" parent_id="chbwgymkurs"><content><name><![CDATA[Leitidee 'Vernetzung']]></name></content></item>
+<item id="chbwlkurs1.8" parent_id="chbwgymkurs"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwrea" parent_id="chbwbw"><content><name><![CDATA[Realschule]]></name></content></item>
+<item id="chbwrea56" parent_id="chbwrea"><content><name><![CDATA[Klasse 5+6]]></name></content></item>
+<item id="chbwrea78" parent_id="chbwrea"><content><name><![CDATA[Klasse 7+8]]></name></content></item>
+<item id="chbwrea910" parent_id="chbwrea"><content><name><![CDATA[Klasse 9+10]]></name></content></item>
+<item id="chbwrea561.1" parent_id="chbwrea56"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwrea561.2" parent_id="chbwrea56"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwrea561.3" parent_id="chbwrea56"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwrea561.4" parent_id="chbwrea56"><content><name><![CDATA[Leitidee 'Daten']]></name></content></item>
+<item id="chbwrea561.5" parent_id="chbwrea56"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwrea781.1" parent_id="chbwrea78"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwrea781.2" parent_id="chbwrea78"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwrea781.3" parent_id="chbwrea78"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwrea781.4" parent_id="chbwrea78"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwrea781.5" parent_id="chbwrea78"><content><name><![CDATA[Leitidee 'Daten']]></name></content></item>
+<item id="chbwrea781.6" parent_id="chbwrea78"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwrea9101.1" parent_id="chbwrea910"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwrea9101.2" parent_id="chbwrea910"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwrea9101.3" parent_id="chbwrea910"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwrea9101.4" parent_id="chbwrea910"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwrea9101.5" parent_id="chbwrea910"><content><name><![CDATA[Leitidee 'Daten']]></name></content></item>
+<item id="chbwrea9101.6" parent_id="chbwrea910"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwhau" parent_id="chbwbw"><content><name><![CDATA[Hauptschule/ Werkrealschule]]></name></content></item>
+<item id="chbwhau56" parent_id="chbwhau"><content><name><![CDATA[Klasse 5+6 (HS)]]></name></content></item>
+<item id="chbwhau789" parent_id="chbwhau"><content><name><![CDATA[Klasse 7+8+9 (HS)]]></name></content></item>
+<item id="chbwhau910" parent_id="chbwhau"><content><name><![CDATA[Klasse 9+10 (WRS)]]></name></content></item>
+<item id="chbwhau561.1" parent_id="chbwhau56"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwhau561.2" parent_id="chbwhau56"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwhau561.3" parent_id="chbwhau56"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwhau561.4" parent_id="chbwhau56"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwhau561.5" parent_id="chbwhau56"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwhau561.6" parent_id="chbwhau56"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="chbwhau7891.1" parent_id="chbwhau789"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwhau7891.2" parent_id="chbwhau789"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwhau7891.3" parent_id="chbwhau789"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwhau7891.4" parent_id="chbwhau789"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwhau7891.5" parent_id="chbwhau789"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwhau7891.6" parent_id="chbwhau789"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="chbwhau9101.1" parent_id="chbwhau910"><content><name><![CDATA[Leitidee 'Zahl']]></name></content></item>
+<item id="chbwhau9101.2" parent_id="chbwhau910"><content><name><![CDATA[Leitidee 'Messen']]></name></content></item>
+<item id="chbwhau9101.3" parent_id="chbwhau910"><content><name><![CDATA[Leitidee 'Raum und Form']]></name></content></item>
+<item id="chbwhau9101.4" parent_id="chbwhau910"><content><name><![CDATA[Leitidee 'Funktionaler Zusammenhang']]></name></content></item>
+<item id="chbwhau9101.5" parent_id="chbwhau910"><content><name><![CDATA[Leitidee 'Modellieren']]></name></content></item>
+<item id="chbwhau9101.6" parent_id="chbwhau910"><content><name><![CDATA[Leitidee 'Daten und Zufall']]></name></content></item>
+<item id="test1" parent_id="chbwrea781.2"><content><name><![CDATA[Formeln zur Berechnung von Volumen und Oberflächeninhalt von Prismen]]></name></content></item>
+<item id="test2" parent_id="chbwrea561.2"><content><name><![CDATA[Dimensionen von Zahlen, Größen und geometrischen Objekten abschätzen;]]></name></content></item>
+<item id="test3" parent_id="chbwrea9101.2"><content><name><![CDATA[die Formeln zur Kreisberechnung anwenden;]]></name></content></item>
+<item id="test4" parent_id="chbwrea9101.2"><content><name><![CDATA[Volumens von Pyramide]]></name></content></item>
+</root>

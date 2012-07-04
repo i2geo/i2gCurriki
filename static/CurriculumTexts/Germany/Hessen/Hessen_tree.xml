@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="chh" parent_id="0"><content><name><![CDATA[Hessen]]></name></content></item>
+<item id="chhgym" parent_id="chh"><content><name><![CDATA[Gymnasium]]></name></content></item>
+<item id="chhrea" parent_id="chh"><content><name><![CDATA[Realschule]]></name></content></item>
+<item id="chhhau" parent_id="chh"><content><name><![CDATA[Hauptschule]]></name></content></item>
+<item id="chhgymk5" parent_id="chhgym"><content><name><![CDATA[Klasse 5]]></name></content></item>
+<item id="chhgymk6" parent_id="chhgym"><content><name><![CDATA[Klasse 6]]></name></content></item>
+<item id="chhgymk7" parent_id="chhgym"><content><name><![CDATA[Klasse 7]]></name></content></item>
+<item id="chhgymk8" parent_id="chhgym"><content><name><![CDATA[Klasse 8]]></name></content></item>
+<item id="chhgymk9" parent_id="chhgym"><content><name><![CDATA[Klasse 9]]></name></content></item>
+<item id="chhgymk10" parent_id="chhgym"><content><name><![CDATA[Klasse 10]]></name></content></item>
+<item id="chhgymk11" parent_id="chhgym"><content><name><![CDATA[Klasse 11]]></name></content></item>
+<item id="chhgymk12" parent_id="chhgym"><content><name><![CDATA[Klasse 12]]></name></content></item>
+<item id="chhgymk13" parent_id="chhgym"><content><name><![CDATA[Klasse 13]]></name></content></item>
+<item id="chhgymk51.1" parent_id="chhgymk5"><content><name><![CDATA[Zahlbereiche]]></name></content></item>
+<item id="chhgymk51.2" parent_id="chhgymk5"><content><name><![CDATA[Geometrie]]></name></content></item>
+<item id="chhgymk51.3" parent_id="chhgymk5"><content><name><![CDATA[Größen]]></name></content></item>
+<item id="chhgymk61.1" parent_id="chhgymk6"><content><name><![CDATA[Zahlbereiche]]></name></content></item>
+<item id="chhgymk61.2" parent_id="chhgymk6"><content><name><![CDATA[Geometrie]]></name></content></item>
+<item id="chhgymk71.1" parent_id="chhgymk7"><content><name><![CDATA[Größen/ Funktionen]]></name></content></item>
+<item id="chhgymk71.2" parent_id="chhgymk7"><content><name><![CDATA[Zahlbereiche]]></name></content></item>
+<item id="chhgymk71.3" parent_id="chhgymk7"><content><name><![CDATA[Geometrie]]></name></content></item>
+<item id="chhgymk71.4" parent_id="chhgymk7"><content><name><![CDATA[Stochastik]]></name></content></item>
+<item id="chhgymk81.1" parent_id="chhgymk8"><content><name><![CDATA[Algebra/ Funktionen]]></name></content></item>
+<item id="chhgymk81.1" parent_id="chhgymk8"><content><name><![CDATA[Geometrie]]></name></content></item>
+<item id="chhgymk81.1" parent_id="chhgymk8"><content><name><![CDATA[Größen/ Algebra]]></name></content></item>
+<item id="chhgymk81.1" parent_id="chhgymk8"><content><name><![CDATA[Stochastik]]></name></content></item>
+<item id="chhgymk91.1" parent_id="chhgymk9"><content><name><![CDATA[Algebra]]></name></content></item>
+<item id="chhgymk91.2" parent_id="chhgymk9"><content><name><![CDATA[Zahlbereiche]]></name></content></item>
+<item id="chhgymk91.3" parent_id="chhgymk9"><content><name><![CDATA[Funktionen ]]></name></content></item>
+<item id="chhgymk91.4" parent_id="chhgymk9"><content><name><![CDATA[Geometrie 1]]></name></content></item>
+<item id="chhgymk91.5" parent_id="chhgymk9"><content><name><![CDATA[Geometrie 2]]></name></content></item>
+<item id="chhgymk91.6" parent_id="chhgymk9"><content><name><![CDATA[Geometrie 3]]></name></content></item>
+<item id="chhgymk91.7" parent_id="chhgymk9"><content><name><![CDATA[Stochastik]]></name></content></item>
+<item id="chhgymk101.1" parent_id="chhgymk10"><content><name><![CDATA[Funktionen 1]]></name></content></item>
+<item id="chhgymk101.2" parent_id="chhgymk10"><content><name><![CDATA[Funktionen 2]]></name></content></item>
+<item id="chhgymk101.3" parent_id="chhgymk10"><content><name><![CDATA[Geometrie]]></name></content></item>
+<item id="chhgymk101.4" parent_id="chhgymk10"><content><name><![CDATA[Geometrie/ Funktionen]]></name></content></item>
+<item id="chhgymk101.5" parent_id="chhgymk10"><content><name><![CDATA[Stochastik]]></name></content></item>
+<item id="chhgymk111.1" parent_id="chhgymk11"><content><name><![CDATA[Analysis I]]></name></content></item>
+<item id="chhgymk121.1" parent_id="chhgymk12"><content><name><![CDATA[Analysis II]]></name></content></item>
+<item id="chhgymk121.2" parent_id="chhgymk12"><content><name><![CDATA[Lineare Algebra / Analytische Geometrie]]></name></content></item>
+<item id="chhgymk131.1" parent_id="chhgymk13"><content><name><![CDATA[Stochastik]]></name></content></item>
+<item id="chhgymk131.2" parent_id="chhgymk13"><content><name><![CDATA[Wahlbereiche]]></name></content></item>
+<item id="chhreak5" parent_id="chhrea"><content><name><![CDATA[Klasse 5]]></name></content></item>
+<item id="chhreak6" parent_id="chhrea"><content><name><![CDATA[Klasse 6]]></name></content></item>
+<item id="chhreak7" parent_id="chhrea"><content><name><![CDATA[Klasse 7]]></name></content></item>
+<item id="chhreak8" parent_id="chhrea"><content><name><![CDATA[Klasse 8]]></name></content></item>
+<item id="chhreak9" parent_id="chhrea"><content><name><![CDATA[Klasse 9]]></name></content></item>
+<item id="chhreak10" parent_id="chhrea"><content><name><![CDATA[Klasse 10]]></name></content></item>
+<item id="chhreak51.1" parent_id="chhreak5"><content><name><![CDATA[Natürliche Zahlen und Größen]]></name></content></item>
+<item id="chhreak51.2" parent_id="chhreak5"><content><name><![CDATA[Geometrische Grundbegriffe und Grundformen sowie Berechnungen an]]></name></content></item>
+<item id="chhreak61.1" parent_id="chhreak6"><content><name><![CDATA[Gewönhliche Brüche]]></name></content></item>
+<item id="chhreak61.2" parent_id="chhreak6"><content><name><![CDATA[Umgang mit Winkeln und Berechnungen an räumlichen Körpern]]></name></content></item>
+<item id="chhreak61.3" parent_id="chhreak6"><content><name><![CDATA[Dezimalbrüche]]></name></content></item>
+<item id="chhreak71.1" parent_id="chhreak7"><content><name><![CDATA[Zuordnungen]]></name></content></item>
+<item id="chhreak71.2" parent_id="chhreak7"><content><name><![CDATA[Ganze und rationale Zahlen]]></name></content></item>
+<item id="chhreak71.3" parent_id="chhreak7"><content><name><![CDATA[Dreieckskonstruktionen]]></name></content></item>
+<item id="chhreak71.4" parent_id="chhreak7"><content><name><![CDATA[Einfache Prozentrechnung und beschreibende Statistik]]></name></content></item>
+<item id="chhreak71.5" parent_id="chhreak7"><content><name><![CDATA[Terme mit Variablen und einfache lineare Gleichungen]]></name></content></item>
+<item id="chhreak81.1" parent_id="chhreak8"><content><name><![CDATA[Lineare Gleichungen / Ungleichungen]]></name></content></item>
+<item id="chhreak81.2" parent_id="chhreak8"><content><name><![CDATA[Konstruktion und Flächeninhaltsberechnungen von Vielecken]]></name></content></item>
+<item id="chhreak81.3" parent_id="chhreak8"><content><name><![CDATA[Wahrscheinlichkeitsrechnung]]></name></content></item>
+<item id="chhreak81.4" parent_id="chhreak8"><content><name><![CDATA[Prozentrechnung und Zinsrechnung]]></name></content></item>
+<item id="chhreak81.5" parent_id="chhreak8"><content><name><![CDATA[Darstellung und Berechnung von Prismen]]></name></content></item>
+<item id="chhreak81.6" parent_id="chhreak8"><content><name><![CDATA[Lineare Funktionen]]></name></content></item>
+<item id="chhreak91.1" parent_id="chhreak9"><content><name><![CDATA[Lineare Gleichungssysteme]]></name></content></item>
+<item id="chhreak91.2" parent_id="chhreak9"><content><name><![CDATA[Reelle Zahlen und quadratische Funktionen und Gleichungen]]></name></content></item>
+<item id="chhreak91.3" parent_id="chhreak9"><content><name><![CDATA[Satzgruppe des Pythagoras]]></name></content></item>
+<item id="chhreak91.4" parent_id="chhreak9"><content><name><![CDATA[Darstellung und Berechnung von Kreisen und Zylindern und Kegeln]]></name></content></item>
+<item id="chhreak101.1" parent_id="chhreak10"><content><name><![CDATA[Darstellung und Berechnung von Körpern]]></name></content></item>
+<item id="chhreak101.2" parent_id="chhreak10"><content><name><![CDATA[Ähnlichkeit]]></name></content></item>
+<item id="chhreak101.3" parent_id="chhreak10"><content><name><![CDATA[Trigonometrie]]></name></content></item>
+<item id="chhreak101.4" parent_id="chhreak10"><content><name><![CDATA[Potenzfunktion und Exponentialfunktion]]></name></content></item>
+<item id="chhreak101.5" parent_id="chhreak10"><content><name><![CDATA[Beschreibende Statistik]]></name></content></item>
+<item id="chhhauk5" parent_id="chhhau"><content><name><![CDATA[Klasse 5]]></name></content></item>
+<item id="chhhauk6" parent_id="chhhau"><content><name><![CDATA[Klasse 6]]></name></content></item>
+<item id="chhhauk7" parent_id="chhhau"><content><name><![CDATA[Klasse 7]]></name></content></item>
+<item id="chhhauk8" parent_id="chhhau"><content><name><![CDATA[Klasse 8]]></name></content></item>
+<item id="chhhauk9" parent_id="chhhau"><content><name><![CDATA[Klasse 9]]></name></content></item>
+<item id="chhhauk10" parent_id="chhhau"><content><name><![CDATA[Klasse 10]]></name></content></item>
+<item id="chhhauk51.1" parent_id="chhhauk5"><content><name><![CDATA[Natürliche Zahlen]]></name></content></item>
+<item id="chhhauk51.2" parent_id="chhhauk5"><content><name><![CDATA[Geometrische Figuren und Beziehungen]]></name></content></item>
+<item id="chhhauk51.3" parent_id="chhhauk5"><content><name><![CDATA[Größen]]></name></content></item>
+<item id="chhhauk61.1" parent_id="chhhauk6"><content><name><![CDATA[Natürliche Zahlen und gewöhnliche Brüche]]></name></content></item>
+<item id="chhhauk61.2" parent_id="chhhauk6"><content><name><![CDATA[Winkel – Achsensymmetrie – Würfel und Quader]]></name></content></item>
+<item id="chhhauk61.3" parent_id="chhhauk6"><content><name><![CDATA[Dezimalbrüche]]></name></content></item>
+<item id="chhhauk71.1" parent_id="chhhauk7"><content><name><![CDATA[Rechnen mit natürlichen Zahlen und Brüchen]]></name></content></item>
+<item id="chhhauk71.2" parent_id="chhhauk7"><content><name><![CDATA[Prozentrechnung]]></name></content></item>
+<item id="chhhauk71.3" parent_id="chhhauk7"><content><name><![CDATA[Zuordnungen]]></name></content></item>
+<item id="chhhauk71.4" parent_id="chhhauk7"><content><name><![CDATA[Dreieckskonstruktionen]]></name></content></item>
+<item id="chhhauk71.5" parent_id="chhhauk7"><content><name><![CDATA[Ganze und Rationale Zahlen]]></name></content></item>
+<item id="chhhauk81.1" parent_id="chhhauk8"><content><name><![CDATA[Prozent- und Zinsrechnung/Zuordnungen]]></name></content></item>
+<item id="chhhauk81.2" parent_id="chhhauk8"><content><name><![CDATA[Termumformungen und Gleichungen]]></name></content></item>
+<item id="chhhauk81.3" parent_id="chhhauk8"><content><name><![CDATA[Flächen und Körper]]></name></content></item>
+<item id="chhhauk81.4" parent_id="chhhauk8"><content><name><![CDATA[Stochastik]]></name></content></item>
+<item id="chhhauk91.1" parent_id="chhhauk9"><content><name><![CDATA[Prozent- und Zinsrechnung]]></name></content></item>
+<item id="chhhauk91.2" parent_id="chhhauk9"><content><name><![CDATA[Quadratzahlen und Quadratwurzeln]]></name></content></item>
+<item id="chhhauk91.3" parent_id="chhhauk9"><content><name><![CDATA[Flächen und Körper]]></name></content></item>
+<item id="chhhauk91.4" parent_id="chhhauk9"><content><name><![CDATA[Lineare Gleichungen]]></name></content></item>
+<item id="chhhauk101.1" parent_id="chhhauk10"><content><name><![CDATA[Zahlen und Zahlenbereiche]]></name></content></item>
+<item id="chhhauk101.2" parent_id="chhhauk10"><content><name><![CDATA[Figuren und Körper]]></name></content></item>
+<item id="chhhauk101.3" parent_id="chhhauk10"><content><name><![CDATA[Termumformungen/Lineare Gleichungen und Ungleichungen]]></name></content></item>
+<item id="chhhauk101.4" parent_id="chhhauk10"><content><name><![CDATA[Lineare Funktionen und lineare Gleichungssysteme]]></name></content></item>
+<item id="chhhauk101.5" parent_id="chhhauk10"><content><name><![CDATA[Trigonometrie]]></name></content></item>
+</root>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="MWhavoD_0" parent_id="0"><content><name><![CDATA[Moderne Wiskunde havo D1]]></name></content></item>
+<item id="MWhavoD_1" parent_id="MWhavoD_0"><content><name><![CDATA[Vectoren]]></name></content></item>
+<item id="MWhavoD_1.1" parent_id="MWhavoD_1"><content><name><![CDATA[Een vlak in de ruimte]]></name></content></item>
+<item id="MWhavoD_1.2" parent_id="MWhavoD_1"><content><name><![CDATA[Lijnen in de ruimte]]></name></content></item>
+<item id="MWhavoD_1.3" parent_id="MWhavoD_1"><content><name><![CDATA[Vectoren]]></name></content></item>
+<item id="MWhavoD_1.4" parent_id="MWhavoD_1"><content><name><![CDATA[Vectoren en kengetallen]]></name></content></item>
+<item id="MWhavoD_1.5" parent_id="MWhavoD_1"><content><name><![CDATA[Vectorvoorstelling van een lijn]]></name></content></item>
+<item id="MWhavoD_1.6" parent_id="MWhavoD_1"><content><name><![CDATA[Coordinaten en vectoren in de ruimte]]></name></content></item>
+<item id="MWhavoD_1.7" parent_id="MWhavoD_1"><content><name><![CDATA[Gemengde opdrachten]]></name></content></item>
+<item id="MWhavoD_2" parent_id="MWhavoD_0"><content><name><![CDATA[Lijnen en vlakken]]></name></content></item>
+<item id="MWhavoD_2.1" parent_id="MWhavoD_2"><content><name><![CDATA[Lijnen in het vlak]]></name></content></item>
+<item id="MWhavoD_2.2" parent_id="MWhavoD_2"><content><name><![CDATA[Lijnen in de ruimte]]></name></content></item>
+<item id="MWhavoD_2.3" parent_id="MWhavoD_2"><content><name><![CDATA[Vectorvoorstelling van een vlak]]></name></content></item>
+<item id="MWhavoD_2.4" parent_id="MWhavoD_2"><content><name><![CDATA[Vergelijking van een vlak]]></name></content></item>
+<item id="MWhavoD_2.5" parent_id="MWhavoD_2"><content><name><![CDATA[Ligging van een lijn en een vlak]]></name></content></item>
+<item id="MWhavoD_2.6" parent_id="MWhavoD_2"><content><name><![CDATA[Twee vlakken]]></name></content></item>
+<item id="MWhavoD_2.7" parent_id="MWhavoD_2"><content><name><![CDATA[Gemengde opdrachten]]></name></content></item>
+<item id="MWhavoD_3" parent_id="MWhavoD_0"><content><name><![CDATA[Systematisch tellen]]></name></content></item>
+<item id="MWhavoD_3.1" parent_id="MWhavoD_3"><content><name><![CDATA[Boomdiagrammen maken]]></name></content></item>
+<item id="MWhavoD_3.2" parent_id="MWhavoD_3"><content><name><![CDATA[Mogelijkheden tellen]]></name></content></item>
+<item id="MWhavoD_3.3" parent_id="MWhavoD_3"><content><name><![CDATA[Routes in een rooster]]></name></content></item>
+<item id="MWhavoD_3.4" parent_id="MWhavoD_3"><content><name><![CDATA[Kiezen uit twee mogelijkheden]]></name></content></item>
+<item id="MWhavoD_3.5" parent_id="MWhavoD_3"><content><name><![CDATA[Tellen in een rooster]]></name></content></item>
+<item id="MWhavoD_3.6" parent_id="MWhavoD_3"><content><name><![CDATA[Gemengde opdrachten]]></name></content></item>
+<item id="MWhavoD_4" parent_id="MWhavoD_0"><content><name><![CDATA[Kansen]]></name></content></item>
+<item id="MWhavoD_4.1" parent_id="MWhavoD_4"><content><name><![CDATA[Theoretische kansen]]></name></content></item>
+<item id="MWhavoD_4.2" parent_id="MWhavoD_4"><content><name><![CDATA[Kansen bij de takken]]></name></content></item>
+<item id="MWhavoD_4.3" parent_id="MWhavoD_4"><content><name><![CDATA[Kansen berekenen]]></name></content></item>
+<item id="MWhavoD_4.4" parent_id="MWhavoD_4"><content><name><![CDATA[Kansen en roosters]]></name></content></item>
+<item id="MWhavoD_4.5" parent_id="MWhavoD_4"><content><name><![CDATA[Simuleren van kansen]]></name></content></item>
+<item id="MWhavoD_4.6" parent_id="MWhavoD_4"><content><name><![CDATA[Gemengde opdrachten]]></name></content></item>
+<item id="MWhavoD_5" parent_id="MWhavoD_0"><content><name><![CDATA[Evenredigheden]]></name></content></item>
+<item id="MWhavoD_5.1" parent_id="MWhavoD_5"><content><name><![CDATA[Evenredigheden]]></name></content></item>
+<item id="MWhavoD_5.2" parent_id="MWhavoD_5"><content><name><![CDATA[Kwadratische en kubische evenredigheden]]></name></content></item>
+<item id="MWhavoD_5.3" parent_id="MWhavoD_5"><content><name><![CDATA[Wortelevenredigheid]]></name></content></item>
+<item id="MWhavoD_5.4" parent_id="MWhavoD_5"><content><name><![CDATA[Omgekeerd evenredig]]></name></content></item>
+<item id="MWhavoD_5.5" parent_id="MWhavoD_5"><content><name><![CDATA[Gemengde opdrachten]]></name></content></item>
+<item id="MWhavoD_6" parent_id="MWhavoD_0"><content><name><![CDATA[Differentieren]]></name></content></item>
+<item id="MWhavoD_6.1" parent_id="MWhavoD_6"><content><name><![CDATA[Hellinggrafieken]]></name></content></item>
+<item id="MWhavoD_6.2" parent_id="MWhavoD_6"><content><name><![CDATA[Van vermoeden naar bewijs]]></name></content></item>
+<item id="MWhavoD_6.3" parent_id="MWhavoD_6"><content><name><![CDATA[Opmerkelijke situaties]]></name></content></item>
+<item id="MWhavoD_6.4" parent_id="MWhavoD_6"><content><name><![CDATA[Van de grafiek f' naar de grafiek van f]]></name></content></item>
+<item id="MWhavoD_6.5" parent_id="MWhavoD_6"><content><name><![CDATA[De afgeleide van exponentiele functies]]></name></content></item>
+<item id="MWhavoD_6.6" parent_id="MWhavoD_6"><content><name><![CDATA[Gemengde opdrachten]]></name></content></item>
+<item id="MWhavoD_7" parent_id="MWhavoD_0"><content><name><![CDATA[Statistische verwerking]]></name></content></item>
+<item id="MWhavoD_7.1" parent_id="MWhavoD_7"><content><name><![CDATA[Steekproeven]]></name></content></item>
+<item id="MWhavoD_7.2" parent_id="MWhavoD_7"><content><name><![CDATA[Statistische gegevens weergeven]]></name></content></item>
+<item id="MWhavoD_7.3" parent_id="MWhavoD_7"><content><name><![CDATA[Klassenindeling]]></name></content></item>
+<item id="MWhavoD_7.4" parent_id="MWhavoD_7"><content><name><![CDATA[Cumulatieve verdelingen]]></name></content></item>
+<item id="MWhavoD_7.5" parent_id="MWhavoD_7"><content><name><![CDATA[Centrummaten]]></name></content></item>
+<item id="MWhavoD_7.6" parent_id="MWhavoD_7"><content><name><![CDATA[Spreidingsmaten]]></name></content></item>
+<item id="MWhavoD_7.7" parent_id="MWhavoD_7"><content><name><![CDATA[Gemiddelde en standaardafwijking]]></name></content></item>
+<item id="MWhavoD_7.8" parent_id="MWhavoD_7"><content><name><![CDATA[Gemengde opdrachten]]></name></content></item>
+<item id="MWhavoD_8" parent_id="MWhavoD_0"><content><name><![CDATA[De normale verdeling]]></name></content></item>
+<item id="MWhavoD_8.1" parent_id="MWhavoD_8"><content><name><![CDATA[Indeling in klassen]]></name></content></item>
+<item id="MWhavoD_8.2" parent_id="MWhavoD_8"><content><name><![CDATA[Klokvormige verdelingen]]></name></content></item>
+<item id="MWhavoD_8.3" parent_id="MWhavoD_8"><content><name><![CDATA[Normaal verdeeld?]]></name></content></item>
+<item id="MWhavoD_8.4" parent_id="MWhavoD_8"><content><name><![CDATA[Verfijnen]]></name></content></item>
+<item id="MWhavoD_8.5" parent_id="MWhavoD_8"><content><name><![CDATA[Percentages berekenen]]></name></content></item>
+<item id="MWhavoD_8.6" parent_id="MWhavoD_8"><content><name><![CDATA[De grenswaarde opzoeken]]></name></content></item>
+<item id="MWhavoD_8.7" parent_id="MWhavoD_8"><content><name><![CDATA[Onbekend gemiddelde of onbekende standaarddeviatie]]></name></content></item>
+<item id="MWhavoD_8.8" parent_id="MWhavoD_8"><content><name><![CDATA[Gemengde opdrachten]]></name></content></item>
+</root>

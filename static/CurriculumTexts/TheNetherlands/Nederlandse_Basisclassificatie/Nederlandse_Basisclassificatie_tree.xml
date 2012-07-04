@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="NBC_31" parent_id="0"><content><name><![CDATA[Nederlandse Basis Classificatie]]></name></content></item>
+<item id="NBC_31.00" parent_id="NBC_31"><content><name><![CDATA[Wiskunde: algemeen]]></name></content></item>
+<item id="NBC_31.01" parent_id="NBC_31"><content><name><![CDATA[Geschiedenis van de wiskunde]]></name></content></item>
+<item id="NBC_31.02" parent_id="NBC_31"><content><name><![CDATA[Filosofie en theorie van de wiskunde]]></name></content></item>
+<item id="NBC_31.04" parent_id="NBC_31"><content><name><![CDATA[Onderwijs, beroepsuitoefening, organisaties]]></name></content></item>
+<item id="NBC_31.10" parent_id="NBC_31"><content><name><![CDATA[Logica, verzamelingsleer]]></name></content></item>
+<item id="NBC_31.11" parent_id="NBC_31"><content><name><![CDATA[Geordende algebra, algemene mathematische systemen]]></name></content></item>
+<item id="NBC_31.12" parent_id="NBC_31"><content><name><![CDATA[Combinatoriek]]></name></content></item>
+<item id="NBC_31.14" parent_id="NBC_31"><content><name><![CDATA[Getallentheorie]]></name></content></item>
+<item id="NBC_31.20" parent_id="NBC_31"><content><name><![CDATA[Algebra: algemeen]]></name></content></item>
+<item id="NBC_31.21" parent_id="NBC_31"><content><name><![CDATA[Groepentheorie]]></name></content></item>
+<item id="NBC_31.23" parent_id="NBC_31"><content><name><![CDATA[Ringen, algebra's]]></name></content></item>
+<item id="NBC_31.24" parent_id="NBC_31"><content><name><![CDATA[Lichamen, polynomen]]></name></content></item>
+<item id="NBC_31.25" parent_id="NBC_31"><content><name><![CDATA[Lineaire algebra, multilineaire algebra]]></name></content></item>
+<item id="NBC_31.27" parent_id="NBC_31"><content><name><![CDATA[Categorietheorie]]></name></content></item>
+<item id="NBC_31.29" parent_id="NBC_31"><content><name><![CDATA[Algebra: overige]]></name></content></item>
+<item id="NBC_31.30" parent_id="NBC_31"><content><name><![CDATA[Topologische groepen, Liegroepen]]></name></content></item>
+<item id="NBC_31.30" parent_id="NBC_31"><content><name><![CDATA[Topologische groepen, Liegroepen]]></name></content></item>
+<item id="NBC_31.35" parent_id="NBC_31"><content><name><![CDATA[Harmonische analyse]]></name></content></item>
+<item id="NBC_31.40" parent_id="NBC_31"><content><name><![CDATA[Analyse: algemeen]]></name></content></item>
+<item id="NBC_31.41" parent_id="NBC_31"><content><name><![CDATA[Reele analyse]]></name></content></item>
+<item id="NBC_31.42" parent_id="NBC_31"><content><name><![CDATA[Functies van een complexe variabele]]></name></content></item>
+<item id="NBC_31.43" parent_id="NBC_31"><content><name><![CDATA[Functies van meerdere complexe variabelen]]></name></content></item>
+<item id="NBC_31.44" parent_id="NBC_31"><content><name><![CDATA[Gewone differentiaalvergelijkingen]]></name></content></item>
+<item id="NBC_31.45" parent_id="NBC_31"><content><name><![CDATA[Partiele differentiaalvergelijkingen]]></name></content></item>
+<item id="NBC_31.46" parent_id="NBC_31"><content><name><![CDATA[Functionaalanalyse]]></name></content></item>
+<item id="NBC_31.48" parent_id="NBC_31"><content><name><![CDATA[Variatierekening]]></name></content></item>
+<item id="NBC_31.49" parent_id="NBC_31"><content><name><![CDATA[Analyse: overige]]></name></content></item>
+<item id="NBC_31.50" parent_id="NBC_31"><content><name><![CDATA[Meetkunde: algemeen]]></name></content></item>
+<item id="NBC_31.51" parent_id="NBC_31"><content><name><![CDATA[Algebraische meetkunde]]></name></content></item>
+<item id="NBC_31.52" parent_id="NBC_31"><content><name><![CDATA[Differentaalmeetkunde]]></name></content></item>
+<item id="NBC_31.55" parent_id="NBC_31"><content><name><![CDATA[Globale analyse]]></name></content></item>
+<item id="NBC_31.55" parent_id="NBC_31"><content><name><![CDATA[Globale analyse]]></name></content></item>
+<item id="NBC_31.59" parent_id="NBC_31"><content><name><![CDATA[Meetkunde: overige]]></name></content></item>
+<item id="NBC_31.60" parent_id="NBC_31"><content><name><![CDATA[Topologie: algemeen]]></name></content></item>
+<item id="NBC_31.61" parent_id="NBC_31"><content><name><![CDATA[Algebraische topologie]]></name></content></item>
+<item id="NBC_31.65" parent_id="NBC_31"><content><name><![CDATA[Varieteiten, celcomplexen]]></name></content></item>
+<item id="NBC_31.65" parent_id="NBC_31"><content><name><![CDATA[Varieteiten, celcomplexen]]></name></content></item>
+<item id="NBC_31.69" parent_id="NBC_31"><content><name><![CDATA[Topologie: overige]]></name></content></item>
+<item id="NBC_31.70" parent_id="NBC_31"><content><name><![CDATA[Waarschijnlijkheidsrekening]]></name></content></item>
+<item id="NBC_31.73" parent_id="NBC_31"><content><name><![CDATA[Mathematische statistiek]]></name></content></item>
+<item id="NBC_31.76" parent_id="NBC_31"><content><name><![CDATA[Numerieke analyse]]></name></content></item>
+<item id="NBC_31.80" parent_id="NBC_31"><content><name><![CDATA[Toepassingen van de wiskunde]]></name></content></item>
+<item id="NBC_31.81" parent_id="NBC_31"><content><name><![CDATA[Mathematische fysica]]></name></content></item>
+<item id="NBC_31.99" parent_id="NBC_31"><content><name><![CDATA[Wiskunde: overige]]></name></content></item>
+</root>

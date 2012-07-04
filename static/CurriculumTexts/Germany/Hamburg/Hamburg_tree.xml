@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="hh" parent_id="0"><content><name><![CDATA[Hamburg ]]></name></content></item>
+<item id="hhhr" parent_id="hh"><content><name><![CDATA[Haupt- und Realschule]]></name></content></item>
+<item id="hhhr5/6" parent_id="hhhr"><content><name><![CDATA[Jahrgangsstufe 5/6]]></name></content></item>
+<item id="hhhr5/6-1" parent_id="hhhr5/6"><content><name><![CDATA[5/6-1 Zahlenbereiche: Von natürlichen Zahlen und vom Teilen und Aufteilen]]></name></content></item>
+<item id="hhhr5/6-1a" parent_id="hhhr5/6-1"><content><name><![CDATA[den Stellenwert von Ziffern beim Schreiben von natürlichen und dezimalen Zahlen kennen]]></name></content></item>
+<item id="hhhr5/6-1b" parent_id="hhhr5/6-1"><content><name><![CDATA[die Hälfte und das Doppelte und ein Drittel und.. von natürlichen und gebrochenen Zahlen im Kopf berechnen]]></name></content></item>
+<item id="hhhr5/6-1c" parent_id="hhhr5/6-1"><content><name><![CDATA[den Quotient zweier natürlichen Zahlen auf den Zahlenstrahl darstellen]]></name></content></item>
+<item id="hhhr5/6-1d" parent_id="hhhr5/6-1"><content><name><![CDATA[negative Zahlen (im Kontext) ordnen]]></name></content></item>
+<item id="hhhr5/6-1e" parent_id="hhhr5/6-1"><content><name><![CDATA[zwei Brüche vergleichen]]></name></content></item>
+<item id="hhhr5/6-1f" parent_id="hhhr5/6-1"><content><name><![CDATA[Summen von Brüchen berechnen]]></name></content></item>
+<item id="hhhr5/6-1g" parent_id="hhhr5/6-1"><content><name><![CDATA[Subtraktion von Brüchen berechnen]]></name></content></item>
+<item id="hhhr5/6-2" parent_id="hhhr5/6"><content><name><![CDATA[5/6-2 Größen: Vergleichen und Messen]]></name></content></item>
+<item id="hhhr5/6-2a" parent_id="hhhr5/6-2"><content><name><![CDATA[Größen und Messen]]></name></content></item>
+<item id="hhhr5/6-2b" parent_id="hhhr5/6-2"><content><name><![CDATA[den Dreisatz verwenden]]></name></content></item>
+<item id="hhhr5/6-2c" parent_id="hhhr5/6-2"><content><name><![CDATA[Summen von Brüchen berechnen]]></name></content></item>
+<item id="hhhr5/6-2d" parent_id="hhhr5/6-2"><content><name><![CDATA[Subtraktion von Brüchen berechnen]]></name></content></item>
+<item id="hhhr5/6-2e" parent_id="hhhr5/6-2"><content><name><![CDATA[zusammengesetzte Größen verstehen]]></name></content></item>
+<item id="hhhr5/6-2f" parent_id="hhhr5/6-2"><content><name><![CDATA[das Zeichen einer Einheit zur Berechnung von Größen bei linearen Aufgaben verwenden]]></name></content></item>
+<item id="hhhr5/6-3" parent_id="hhhr5/6"><content><name><![CDATA[5/6-3 Von Flächen und Körpern]]></name></content></item>
+<item id="hhhr5/6-3a" parent_id="hhhr5/6-3"><content><name><![CDATA[Eigenschaften von ebenen Formen]]></name></content></item>
+<item id="hhhr5/6-3b" parent_id="hhhr5/6-3"><content><name><![CDATA[grundlegende Geometrie zur Beschreibung der Welt verwenden]]></name></content></item>
+<item id="hhhr5/6-3c" parent_id="hhhr5/6-3"><content><name><![CDATA[grundlegende Beziehungen und Eigenschaften von ebenen Formen kennen]]></name></content></item>
+<item id="hhhr5/6-3d" parent_id="hhhr5/6-3"><content><name><![CDATA[grundlegende Beziehungen und Eigenschaften von Körpern kennen]]></name></content></item>
+<item id="hhhr5/6-3e" parent_id="hhhr5/6-3"><content><name><![CDATA[Anfertigen von Netzen und Schrägbildern und Modellen ausgewählter Körper]]></name></content></item>
+<item id="hhhr5/6-3f" parent_id="hhhr5/6-3"><content><name><![CDATA[maßstäbliches Zeichnen]]></name></content></item>
+<item id="hhhr5/6-4" parent_id="hhhr5/6"><content><name><![CDATA[5/6-4 Daten und Zahlen: Wir befragen uns und lernen uns kennen]]></name></content></item>
+<item id="hhhr5/6-4a" parent_id="hhhr5/6-4"><content><name><![CDATA[Daten]]></name></content></item>
+<item id="hhhr5/6-4b" parent_id="hhhr5/6-4"><content><name><![CDATA[Daten sammeln]]></name></content></item>
+<item id="hhhr5/6-4c" parent_id="hhhr5/6-4"><content><name><![CDATA[graphische Darstellung von Daten]]></name></content></item>
+<item id="hhhr5/6-4d" parent_id="hhhr5/6-4"><content><name><![CDATA[schätzen]]></name></content></item>
+<item id="hhhr5/6-4e" parent_id="hhhr5/6-4"><content><name><![CDATA[Situationen durch Verwendung von Symbolen und Worten und Diagramme mathematisch beschreiben]]></name></content></item>
+<item id="hhhr5/6-4f" parent_id="hhhr5/6-4"><content><name><![CDATA[auf eine aussagekräftigen Zahl runden]]></name></content></item>
+<item id="hhhr5/6-4g" parent_id="hhhr5/6-4"><content><name><![CDATA[Daten sammeln]]></name></content></item>
+<item id="hhhr5/6-4h" parent_id="hhhr5/6-4"><content><name><![CDATA[Daten in einer Tabelle darstellen]]></name></content></item>
+<item id="hhhr5/6-4i" parent_id="hhhr5/6-4"><content><name><![CDATA[Daten in einem Diagramm darstellen]]></name></content></item>
+<item id="hhhr5/6-4j" parent_id="hhhr5/6-4"><content><name><![CDATA[Daten (graphisch) darstellen]]></name></content></item>
+<item id="hhhr5/6-4k" parent_id="hhhr5/6-4"><content><name><![CDATA[das arithmetische Mittel einer Gruppe von Daten schätzen]]></name></content></item>
+<item id="hhhr5/6-4l" parent_id="hhhr5/6-4"><content><name><![CDATA[Daten analysieren]]></name></content></item>
+<item id="hhhr5/6-5" parent_id="hhhr5/6"><content><name><![CDATA[5/6-5 Vom Teilen und Aufteilen – Brüche]]></name></content></item>
+<item id="hhhr5/6-5a" parent_id="hhhr5/6-5"><content><name><![CDATA[Bruch]]></name></content></item>
+<item id="hhhr5/6-5b" parent_id="hhhr5/6-5"><content><name><![CDATA[den Quotient zweier natürlichen Zahlen auf den Zahlenstrahl darstellen]]></name></content></item>
+<item id="hhhr5/6-5c" parent_id="hhhr5/6-5"><content><name><![CDATA[zwei Brüche vergleichen]]></name></content></item>
+<item id="hhhr5/6-5d" parent_id="hhhr5/6-5"><content><name><![CDATA[Summen von Brüchen berechnen]]></name></content></item>
+<item id="hhhr5/6-5e" parent_id="hhhr5/6-5"><content><name><![CDATA[Subtraktion von Brüchen berechnen]]></name></content></item>
+<item id="hhhr5/6-5f" parent_id="hhhr5/6-5"><content><name><![CDATA[Rechnen mit Dezimalbrüchen]]></name></content></item>
+<item id="hhhr5/6-5g" parent_id="hhhr5/6-5"><content><name><![CDATA[Überschlagsrechnungen durchführen]]></name></content></item>
+<item id="hhhr5/6-6" parent_id="hhhr5/6"><content><name><![CDATA[5/6-6 Beziehung im Raum – Von Flächen und Körpern]]></name></content></item>
+<item id="hhhr5/6-6a" parent_id="hhhr5/6-6"><content><name><![CDATA[einfache Flächenberechnung]]></name></content></item>
+<item id="hhhr5/6-6b" parent_id="hhhr5/6-6"><content><name><![CDATA[Fläche]]></name></content></item>
+<item id="hhhr5/6-6c" parent_id="hhhr5/6-6"><content><name><![CDATA[Umfang]]></name></content></item>
+<item id="hhhr5/6-6d" parent_id="hhhr5/6-6"><content><name><![CDATA[Flächen berechnen]]></name></content></item>
+<item id="hhhr5/6-6e" parent_id="hhhr5/6-6"><content><name><![CDATA[die Formel für den Flächeninhalt eines Rechtecks verstehen]]></name></content></item>
+<item id="hhhr5/6-6f" parent_id="hhhr5/6-6"><content><name><![CDATA[wissen und wie die Fläche eines Quadrats berechnet wird]]></name></content></item>
+<item id="hhhr5/6-6g" parent_id="hhhr5/6-6"><content><name><![CDATA[Flächen vergleichen]]></name></content></item>
+<item id="hhhr5/6-6h" parent_id="hhhr5/6-6"><content><name><![CDATA[die Oberfläche messen]]></name></content></item>
+<item id="hhhr5/6-6i" parent_id="hhhr5/6-6"><content><name><![CDATA[Umfangsberechnungen]]></name></content></item>
+<item id="hhhr5/6-6j" parent_id="hhhr5/6-6"><content><name><![CDATA[Kennen und Verstehen des Grundprinzips der Flächen- und Rauminhaltsmessung]]></name></content></item>
+<item id="hhhr5/6-7" parent_id="hhhr5/6"><content><name><![CDATA[5/6-7 Spiegelbilder]]></name></content></item>
+<item id="hhhr5/6-7a" parent_id="hhhr5/6-7"><content><name><![CDATA[Symmetrieachse]]></name></content></item>
+<item id="hhhr5/6-7b" parent_id="hhhr5/6-7"><content><name><![CDATA[Aufgaben unter Nutzung von Symmetrie lösen]]></name></content></item>
+<item id="hhhr5/6-7c" parent_id="hhhr5/6-7"><content><name><![CDATA[die Symmetrieachse konstruieren]]></name></content></item>
+<item id="hhhr5/6-8" parent_id="hhhr5/6"><content><name><![CDATA[5/6-8 Orientierung im Raum – Winkel]]></name></content></item>
+<item id="hhhr5/6-8a" parent_id="hhhr5/6-8"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="hhhr5/6-8b" parent_id="hhhr5/6-8"><content><name><![CDATA[Winkel in der Ebene]]></name></content></item>
+<item id="hhhr5/6-8c" parent_id="hhhr5/6-8"><content><name><![CDATA[Winkelmesser]]></name></content></item>
+<item id="hhhr5/6-8d" parent_id="hhhr5/6-8"><content><name><![CDATA[Wissen wie man einen Winkelmesser verwendet]]></name></content></item>
+<item id="hhhr5/6-8e" parent_id="hhhr5/6-8"><content><name><![CDATA[ein Winkel mit dem Winkelmesser messen]]></name></content></item>
+<item id="hhhr5/6-8f" parent_id="hhhr5/6-8"><content><name><![CDATA[einen Winkel reproduzieren]]></name></content></item>
+<item id="hhhr5/6-8g" parent_id="hhhr5/6-8"><content><name><![CDATA[einen Winkel gegebener Größe konstruieren (mit Hilfe eines Winkelmessers)]]></name></content></item>
+<item id="hhhr5/6-8h" parent_id="hhhr5/6-8"><content><name><![CDATA[Kennen der Kreisskala mit 360°]]></name></content></item>
+<item id="hhhr5/6-9" parent_id="hhhr5/6"><content><name><![CDATA[5/6-9 Daten und Zufall: Wer gewinnt? Einfache Zufallsexperimente]]></name></content></item>
+<item id="hhhr5/6-9a" parent_id="hhhr5/6-9"><content><name><![CDATA[Daten und Häufigkeiten und Wahrscheinlichkeiten]]></name></content></item>
+<item id="hhhr5/6-9b" parent_id="hhhr5/6-9"><content><name><![CDATA[Wahrscheinlichkeit]]></name></content></item>
+<item id="hhhr5/6-9c" parent_id="hhhr5/6-9"><content><name><![CDATA[die Wahrscheinlichkeit im bekannten Zusammenhang berechnen]]></name></content></item>
+<item id="hhhr5/6-9d" parent_id="hhhr5/6-9"><content><name><![CDATA[Wahrscheinlichkeitstheorie auf 'echte' Situationen anwenden]]></name></content></item>
+<item id="hhhr5/6-9e" parent_id="hhhr5/6-9"><content><name><![CDATA[Daten in einem Diagramm darstellen]]></name></content></item>
+<item id="hhhr5/6-9f" parent_id="hhhr5/6-9"><content><name><![CDATA[Daten (graphisch) darstellen]]></name></content></item>
+<item id="hhhr7/8" parent_id="hhhr"><content><name><![CDATA[Jahrgangsstufe 7/8]]></name></content></item>
+<item id="hhhr7/8-1" parent_id="hhhr7/8"><content><name><![CDATA[7/8-1 Über und unter Null – Zahlenbereiche]]></name></content></item>
+<item id="hhhr7/8-1a" parent_id="hhhr7/8-1"><content><name><![CDATA[rationale Zahl]]></name></content></item>
+<item id="hhhr7/8-1b" parent_id="hhhr7/8-1"><content><name><![CDATA[Bruch]]></name></content></item>
+<item id="hhhr7/8-1c" parent_id="hhhr7/8-1"><content><name><![CDATA[Gleichungen]]></name></content></item>
+<item id="hhhr7/8-1d" parent_id="hhhr7/8-1"><content><name><![CDATA[Terme]]></name></content></item>
+<item id="hhhr7/8-1e" parent_id="hhhr7/8-1"><content><name><![CDATA[den Bruch a/b als Quotient von a durch b interpretieren]]></name></content></item>
+<item id="hhhr7/8-1f" parent_id="hhhr7/8-1"><content><name><![CDATA[das Produkt von zwei positiven Brüchen berechnen]]></name></content></item>
+<item id="hhhr7/8-1g" parent_id="hhhr7/8-1"><content><name><![CDATA[Division von Brüchen berechnen]]></name></content></item>
+<item id="hhhr7/8-1h" parent_id="hhhr7/8-1"><content><name><![CDATA[mit rationalen Zahlen rechnen]]></name></content></item>
+<item id="hhhr7/8-1i" parent_id="hhhr7/8-1"><content><name><![CDATA[Lösen von Gleichungen durch Probieren]]></name></content></item>
+<item id="hhhr7/8-1j" parent_id="hhhr7/8-1"><content><name><![CDATA[Terme mit Variablen verwenden]]></name></content></item>
+<item id="hhhr7/8-1k" parent_id="hhhr7/8-1"><content><name><![CDATA[Terme berechnen]]></name></content></item>
+<item id="hhhr7/8-1l" parent_id="hhhr7/8-1"><content><name><![CDATA[einen Term mit einer Variablen kürzen]]></name></content></item>
+<item id="hhhr7/8-1m" parent_id="hhhr7/8-1"><content><name><![CDATA[algbraische Terme verändern]]></name></content></item>
+<item id="hhhr7/8-1n" parent_id="hhhr7/8-1"><content><name><![CDATA[Produkte und Quotienten vereinfachen]]></name></content></item>
+<item id="hhhr7/8-2" parent_id="hhhr7/8"><content><name><![CDATA[7/8-2 Veränderungen und Zuordnungen]]></name></content></item>
+<item id="hhhr7/8-2a" parent_id="hhhr7/8-2"><content><name><![CDATA[einen Graphen interpretieren]]></name></content></item>
+<item id="hhhr7/8-2b" parent_id="hhhr7/8-2"><content><name><![CDATA[einen Graphen und der eine echte Gegebenheit darstellt und interpretieren]]></name></content></item>
+<item id="hhhr7/8-2c" parent_id="hhhr7/8-2"><content><name><![CDATA[eine Wertetabelle zeichnen]]></name></content></item>
+<item id="hhhr7/8-2d" parent_id="hhhr7/8-2"><content><name><![CDATA[den Dreisatz verwenden]]></name></content></item>
+<item id="hhhr7/8-2e" parent_id="hhhr7/8-2"><content><name><![CDATA[Die Bedeutung von 'Prozent' kennen]]></name></content></item>
+<item id="hhhr7/8-2f" parent_id="hhhr7/8-2"><content><name><![CDATA[Prozentrechnen in einfachen Fällen verwenden]]></name></content></item>
+<item id="hhhr7/8-3" parent_id="hhhr7/8"><content><name><![CDATA[7/8-3 Beziehungen in der Ebene: Dreiecke und Kreise]]></name></content></item>
+<item id="hhhr7/8-3a" parent_id="hhhr7/8-3"><content><name><![CDATA[Dreieck]]></name></content></item>
+<item id="hhhr7/8-3b" parent_id="hhhr7/8-3"><content><name><![CDATA[kongruente Dreiecke]]></name></content></item>
+<item id="hhhr7/8-3c" parent_id="hhhr7/8-3"><content><name><![CDATA[Grundlegende Eigenschaften von Dreiecken]]></name></content></item>
+<item id="hhhr7/8-3d" parent_id="hhhr7/8-3"><content><name><![CDATA[Kreis]]></name></content></item>
+<item id="hhhr7/8-3e" parent_id="hhhr7/8-3"><content><name><![CDATA[die Eigenschaften eines speziellen Dreiecks kennen]]></name></content></item>
+<item id="hhhr7/8-3f" parent_id="hhhr7/8-3"><content><name><![CDATA[den Flächeninhalt eines Dreieck berechnen]]></name></content></item>
+<item id="hhhr7/8-3g" parent_id="hhhr7/8-3"><content><name><![CDATA[verstehen und dass die Winkelsumme im Dreieck 180° beträgt]]></name></content></item>
+<item id="hhhr7/8-3h" parent_id="hhhr7/8-3"><content><name><![CDATA[die Winkelsumme im Dreieck verwenden]]></name></content></item>
+<item id="hhhr7/8-3i" parent_id="hhhr7/8-3"><content><name><![CDATA[ein gleichseitiges Dreieck konstruieren]]></name></content></item>
+<item id="hhhr7/8-3j" parent_id="hhhr7/8-3"><content><name><![CDATA[ein rechtwinkliges Dreieck konstruieren]]></name></content></item>
+<item id="hhhr7/8-3k" parent_id="hhhr7/8-3"><content><name><![CDATA[die Definition für einen Kreis kennen]]></name></content></item>
+<item id="hhhr7/8-3l" parent_id="hhhr7/8-3"><content><name><![CDATA[wissen und was die Kreislinie (Kreisumfang) ist]]></name></content></item>
+<item id="hhhr7/8-3m" parent_id="hhhr7/8-3"><content><name><![CDATA[wissen und was Kreislinie und Kreisfläche und Mittelpunkt und Radius und Durchmesser und Tangente sind]]></name></content></item>
+<item id="hhhr7/8-4" parent_id="hhhr7/8"><content><name><![CDATA[7/8-4 Daten und Zahlen: Statistische Erhebungen]]></name></content></item>
+<item id="hhhr7/8-4a" parent_id="hhhr7/8-4"><content><name><![CDATA[Daten]]></name></content></item>
+<item id="hhhr7/8-4b" parent_id="hhhr7/8-4"><content><name><![CDATA[Daten sammeln]]></name></content></item>
+<item id="hhhr7/8-4c" parent_id="hhhr7/8-4"><content><name><![CDATA[graphische Darstellung von Daten]]></name></content></item>
+<item id="hhhr7/8-4d" parent_id="hhhr7/8-4"><content><name><![CDATA[Taschenrechner]]></name></content></item>
+<item id="hhhr7/8-4e" parent_id="hhhr7/8-4"><content><name><![CDATA[Daten sammeln]]></name></content></item>
+<item id="hhhr7/8-4f" parent_id="hhhr7/8-4"><content><name><![CDATA[Daten ablesen]]></name></content></item>
+<item id="hhhr7/8-4g" parent_id="hhhr7/8-4"><content><name><![CDATA[Daten in einer Tabelle darstellen]]></name></content></item>
+<item id="hhhr7/8-4h" parent_id="hhhr7/8-4"><content><name><![CDATA[Daten in einem Diagramm darstellen]]></name></content></item>
+<item id="hhhr7/8-4i" parent_id="hhhr7/8-4"><content><name><![CDATA[Daten (graphisch) darstellen]]></name></content></item>
+<item id="hhhr7/8-4j" parent_id="hhhr7/8-4"><content><name><![CDATA[Daten analysieren]]></name></content></item>
+<item id="hhhr7/8-4k" parent_id="hhhr7/8-4"><content><name><![CDATA[Die Ergebnise einer Datenanalyse interpretieren]]></name></content></item>
+<item id="hhhr7/8-4l" parent_id="hhhr7/8-4"><content><name><![CDATA[Taschenrechner benutzen]]></name></content></item>
+<item id="hhhr7/8-5" parent_id="hhhr7/8"><content><name><![CDATA[7/8-5 Die Sprache der Mathematik]]></name></content></item>
+<item id="hhhr7/8-5a" parent_id="hhhr7/8-5"><content><name><![CDATA[Äquivalenz]]></name></content></item>
+<item id="hhhr7/8-5b" parent_id="hhhr7/8-5"><content><name><![CDATA[Potenz]]></name></content></item>
+<item id="hhhr7/8-5c" parent_id="hhhr7/8-5"><content><name><![CDATA[Ausdrücke mit Summen und Differenzen und Klammern berechnen (nur R)]]></name></content></item>
+<item id="hhhr7/8-5d" parent_id="hhhr7/8-5"><content><name><![CDATA[die binomischen Formeln kennen (nur R)]]></name></content></item>
+<item id="hhhr7/8-5e" parent_id="hhhr7/8-5"><content><name><![CDATA[Umformungsregeln für einfache lineare Gleichungen kennen und beim Lösen anwenden]]></name></content></item>
+<item id="hhhr7/8-5f" parent_id="hhhr7/8-5"><content><name><![CDATA[lineare Gleichungen mit Hilfe von Äquivalenzumformungen lösen (nur R)]]></name></content></item>
+<item id="hhhr7/8-5g" parent_id="hhhr7/8-5"><content><name><![CDATA[Formeln nach einer Variablen auflösen]]></name></content></item>
+<item id="hhhr7/8-5h" parent_id="hhhr7/8-5"><content><name><![CDATA[Potenzen als andere Schreibweise von Multiplikationen kennen]]></name></content></item>
+<item id="hhhr7/8-5i" parent_id="hhhr7/8-5"><content><name><![CDATA[die Begriffe „Potenz“ und „Exponent“ und „Basis“ kennen und anwenden]]></name></content></item>
+<item id="hhhr7/8-6" parent_id="hhhr7/8"><content><name><![CDATA[7/8-6 Zuordnungen und Funktionen]]></name></content></item>
+<item id="hhhr7/8-6a" parent_id="hhhr7/8-6"><content><name><![CDATA[Funktion]]></name></content></item>
+<item id="hhhr7/8-6b" parent_id="hhhr7/8-6"><content><name><![CDATA[lineare Funktion]]></name></content></item>
+<item id="hhhr7/8-6c" parent_id="hhhr7/8-6"><content><name><![CDATA[Wertetabelle]]></name></content></item>
+<item id="hhhr7/8-6d" parent_id="hhhr7/8-6"><content><name><![CDATA[Steigung]]></name></content></item>
+<item id="hhhr7/8-6e" parent_id="hhhr7/8-6"><content><name><![CDATA[Nullstellen]]></name></content></item>
+<item id="hhhr7/8-6f" parent_id="hhhr7/8-6"><content><name><![CDATA[einen Graphen als Funktion interpretieren]]></name></content></item>
+<item id="hhhr7/8-6g" parent_id="hhhr7/8-6"><content><name><![CDATA[Eine lineare Funktion graphisch darstellen]]></name></content></item>
+<item id="hhhr7/8-6h" parent_id="hhhr7/8-6"><content><name><![CDATA[einen Graphen entwerfen]]></name></content></item>
+<item id="hhhr7/8-6i" parent_id="hhhr7/8-6"><content><name><![CDATA[einen Graphen interpretieren]]></name></content></item>
+<item id="hhhr7/8-6j" parent_id="hhhr7/8-6"><content><name><![CDATA[die Steigung einer linearen Funktion grafisch interpretieren]]></name></content></item>
+<item id="hhhr7/8-6k" parent_id="hhhr7/8-6"><content><name><![CDATA[eine Wertetabelle zeichnen]]></name></content></item>
+<item id="hhhr7/8-6l" parent_id="hhhr7/8-6"><content><name><![CDATA[Lagebeziehungen von Geraden (nur R)]]></name></content></item>
+<item id="hhhr7/8-6m" parent_id="hhhr7/8-6"><content><name><![CDATA[Prozentrechnen in einfachen Fällen verwenden]]></name></content></item>
+<item id="hhhr7/8-6n" parent_id="hhhr7/8-6"><content><name><![CDATA[Prozente anwenden]]></name></content></item>
+<item id="hhhr7/8-6o" parent_id="hhhr7/8-6"><content><name><![CDATA[mit Promille rechnen]]></name></content></item>
+<item id="hhhr7/8-6p" parent_id="hhhr7/8-6"><content><name><![CDATA[einfache Zinsrechnung anwenden]]></name></content></item>
+<item id="hhhr7/8-7" parent_id="hhhr7/8"><content><name><![CDATA[7/8-7 Beziehungen im Raum - Darstellen und Berechnen von Flächen und Prismen]]></name></content></item>
+<item id="hhhr7/8-7a" parent_id="hhhr7/8-7"><content><name><![CDATA[einfache Figur]]></name></content></item>
+<item id="hhhr7/8-7b" parent_id="hhhr7/8-7"><content><name><![CDATA[Umfang]]></name></content></item>
+<item id="hhhr7/8-7c" parent_id="hhhr7/8-7"><content><name><![CDATA[Formel für den Flächeninhalt]]></name></content></item>
+<item id="hhhr7/8-7d" parent_id="hhhr7/8-7"><content><name><![CDATA[Körper]]></name></content></item>
+<item id="hhhr7/8-7e" parent_id="hhhr7/8-7"><content><name><![CDATA[Einfache Körper]]></name></content></item>
+<item id="hhhr7/8-7f" parent_id="hhhr7/8-7"><content><name><![CDATA[Netz eines Körpers]]></name></content></item>
+<item id="hhhr7/8-7g" parent_id="hhhr7/8-7"><content><name><![CDATA[Prisma]]></name></content></item>
+<item id="hhhr7/8-7h" parent_id="hhhr7/8-7"><content><name><![CDATA[Umformen]]></name></content></item>
+<item id="hhhr7/8-7i" parent_id="hhhr7/8-7"><content><name><![CDATA[dynamische Geometrie-Software]]></name></content></item>
+<item id="hhhr7/8-7j" parent_id="hhhr7/8-7"><content><name><![CDATA[eine einfache Figur untersuchen]]></name></content></item>
+<item id="hhhr7/8-7k" parent_id="hhhr7/8-7"><content><name><![CDATA[eine einfache Figur konstruieren]]></name></content></item>
+<item id="hhhr7/8-7l" parent_id="hhhr7/8-7"><content><name><![CDATA[eine Figur mit Zirkel und Lineal konstruieren]]></name></content></item>
+<item id="hhhr7/8-7m" parent_id="hhhr7/8-7"><content><name><![CDATA[die Winkelsumme im Dreieck kennen]]></name></content></item>
+<item id="hhhr7/8-7n" parent_id="hhhr7/8-7"><content><name><![CDATA[die Winkelsumme im Dreieck verwenden]]></name></content></item>
+<item id="hhhr7/8-7o" parent_id="hhhr7/8-7"><content><name><![CDATA[den Flächeninhalt eines Dreieck berechnen]]></name></content></item>
+<item id="hhhr7/8-7p" parent_id="hhhr7/8-7"><content><name><![CDATA[die Formel für den Flächeninhalt eines Rechtecks verstehen]]></name></content></item>
+<item id="hhhr7/8-7q" parent_id="hhhr7/8-7"><content><name><![CDATA[Umfangs- unf Flächeninhaltsformeln anwenden]]></name></content></item>
+<item id="hhhr7/8-7r" parent_id="hhhr7/8-7"><content><name><![CDATA[Vierecke klassifizieren]]></name></content></item>
+<item id="hhhr7/8-7s" parent_id="hhhr7/8-7"><content><name><![CDATA[verschiedene Darstellungen eines Körpers aufzeigen]]></name></content></item>
+<item id="hhhr7/8-7t" parent_id="hhhr7/8-7"><content><name><![CDATA[einen einfachen Körper konstruieren]]></name></content></item>
+<item id="hhhr7/8-7u" parent_id="hhhr7/8-7"><content><name><![CDATA[das Netz eines Körpers konstruieren]]></name></content></item>
+<item id="hhhr7/8-7v" parent_id="hhhr7/8-7"><content><name><![CDATA[das Volumen eines geraden Prismas berechnen]]></name></content></item>
+<item id="hhhr7/8-7w" parent_id="hhhr7/8-7"><content><name><![CDATA[die Oberfläche eines geraden Prismas berechnen]]></name></content></item>
+<item id="hhhr7/8-7x" parent_id="hhhr7/8-7"><content><name><![CDATA[die Oberfläche durch Zerlegung berechnen]]></name></content></item>
+<item id="hhhr7/8-7y" parent_id="hhhr7/8-7"><content><name><![CDATA[etwas mit dynamischen Abbilungen veranschaulichen]]></name></content></item>
+<item id="hhhr7/8-8" parent_id="hhhr7/8"><content><name><![CDATA[7/8-8 Daten und Zufall: Glücksspiele]]></name></content></item>
+<item id="hhhr7/8-8a" parent_id="hhhr7/8-8"><content><name><![CDATA[Wahrscheinlichkeit]]></name></content></item>
+<item id="hhhr7/8-8b" parent_id="hhhr7/8-8"><content><name><![CDATA[Durchführung einfacher Wahrscheinlichkeitsberechnungen]]></name></content></item>
+<item id="hhhr7/8-8c" parent_id="hhhr7/8-8"><content><name><![CDATA[die Wahrscheinlichkeit eines verknüpften Ereignis berechnen]]></name></content></item>
+<item id="hhhr7/8-8d" parent_id="hhhr7/8-8"><content><name><![CDATA[ein Baumdiagramm zur Berechnung verwenden]]></name></content></item>
+<item id="hhhr7/8-8e" parent_id="hhhr7/8-8"><content><name><![CDATA[Anwenden der Produktregel (Pfadregel) (nur R)]]></name></content></item>
+<item id="hhhr7/8-8f" parent_id="hhhr7/8-8"><content><name><![CDATA[Anwenden der Summenregel (nur R)]]></name></content></item>
+<item id="hhhr9/10" parent_id="hhhr"><content><name><![CDATA[Jahrgangsstufe 9/10]]></name></content></item>
+<item id="hhhr9/10-1" parent_id="hhhr9/10"><content><name><![CDATA[9/10-1 Quadratwurzeln und reelle Zahlen]]></name></content></item>
+<item id="hhhr9/10-1a" parent_id="hhhr9/10-1"><content><name><![CDATA[Quadratwurzel]]></name></content></item>
+<item id="hhhr9/10-1b" parent_id="hhhr9/10-1"><content><name><![CDATA[reelle Zahl (nur R)]]></name></content></item>
+<item id="hhhr9/10-1c" parent_id="hhhr9/10-1"><content><name><![CDATA[irrationale Zahl (nur R)]]></name></content></item>
+<item id="hhhr9/10-1d" parent_id="hhhr9/10-1"><content><name><![CDATA[die Quadratwurzel einer positiven Zahl mit dem Taschenrechner berechnen]]></name></content></item>
+<item id="hhhr9/10-1e" parent_id="hhhr9/10-1"><content><name><![CDATA[mit Quadratwurzeln rechnen]]></name></content></item>
+<item id="hhhr9/10-1f" parent_id="hhhr9/10-1"><content><name><![CDATA[rationale und irrationale Zahlen begreifen (nur R)]]></name></content></item>
+<item id="hhhr9/10-1g" parent_id="hhhr9/10-1"><content><name><![CDATA[mit irrationale Zahlen rechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-1h" parent_id="hhhr9/10-1"><content><name><![CDATA[Kenne Intervallhalbierungsverfahren (nur R)]]></name></content></item>
+<item id="hhhr9/10-1i" parent_id="hhhr9/10-1"><content><name><![CDATA[Teilmengenbeziehungen zwischen Zahlbereichen begreifen (nur R)]]></name></content></item>
+<item id="hhhr9/10-2" parent_id="hhhr9/10"><content><name><![CDATA[9/10-2 Funktionen und Gleichungen]]></name></content></item>
+<item id="hhhr9/10-2a" parent_id="hhhr9/10-2"><content><name><![CDATA[lineare Gleichung]]></name></content></item>
+<item id="hhhr9/10-2b" parent_id="hhhr9/10-2"><content><name><![CDATA[Lineares Gleichungssystem]]></name></content></item>
+<item id="hhhr9/10-2c" parent_id="hhhr9/10-2"><content><name><![CDATA[lineare Gleichungen mit Angabe des Nährungswertes grafisch lösen]]></name></content></item>
+<item id="hhhr9/10-2d" parent_id="hhhr9/10-2"><content><name><![CDATA[ein lineares Gleichungssystem mit zwei Variablen grafisch lösen]]></name></content></item>
+<item id="hhhr9/10-2e" parent_id="hhhr9/10-2"><content><name><![CDATA[analytische Methoden zur Lösung von Gleichungen verwenden (nur R)]]></name></content></item>
+<item id="hhhr9/10-2f" parent_id="hhhr9/10-2"><content><name><![CDATA[lineare Gleichungen mit ganzzahligen Koeffizienten lösen]]></name></content></item>
+<item id="hhhr9/10-2g" parent_id="hhhr9/10-2"><content><name><![CDATA[ein Gleichungssystem mit zwei linearen Gleichungen und zwei Unbekannten lösen (nur R)]]></name></content></item>
+<item id="hhhr9/10-2h" parent_id="hhhr9/10-2"><content><name><![CDATA[einfache Bruchterme erweitern und kürzen und multiplizieren (nur R)]]></name></content></item>
+<item id="hhhr9/10-3a" parent_id="hhhr9/10"><content><name><![CDATA[9/10-3 Beziehungen im Raum - Satzgruppe des Pythagoras]]></name></content></item>
+<item id="hhhr9/10-3aa" parent_id="hhhr9/10-3"><content><name><![CDATA[Satz des Pythagoras]]></name></content></item>
+<item id="hhhr9/10-3ab" parent_id="hhhr9/10-3"><content><name><![CDATA[den Satz des Pythagoras kennen]]></name></content></item>
+<item id="hhhr9/10-3ac" parent_id="hhhr9/10-3"><content><name><![CDATA[den Satz des Pythagoras verstehen]]></name></content></item>
+<item id="hhhr9/10-3ad" parent_id="hhhr9/10-3"><content><name><![CDATA[die Umkehrung des Satzes des Pythagoras verstehen]]></name></content></item>
+<item id="hhhr9/10-3ae" parent_id="hhhr9/10-3"><content><name><![CDATA[den Satz des Pythagoras zur Berechnung von Größen verwenden]]></name></content></item>
+<item id="hhhr9/10-3af" parent_id="hhhr9/10-3"><content><name><![CDATA[die Umkehrung des Satzes des Pythagoras verwenden]]></name></content></item>
+<item id="hhhr9/10-3ag" parent_id="hhhr9/10-3"><content><name><![CDATA[den Beweis für den Satz des Pythagoras verstehen]]></name></content></item>
+<item id="hhhr9/10-3b" parent_id="hhhr9/10"><content><name><![CDATA[9/10-3b Beziehungen im Raum - Strahlensätze (nur R)]]></name></content></item>
+<item id="hhhr9/10-3ba" parent_id="hhhr9/10-3b"><content><name><![CDATA[Strahlensatz]]></name></content></item>
+<item id="hhhr9/10-3bb" parent_id="hhhr9/10-3b"><content><name><![CDATA[Maßstab]]></name></content></item>
+<item id="hhhr9/10-3bc" parent_id="hhhr9/10-3b"><content><name><![CDATA[den Strahlensatz verwenden]]></name></content></item>
+<item id="hhhr9/10-3c" parent_id="hhhr9/10"><content><name><![CDATA[9/10-3c Beziehungen im Raum - Darstellen und Berechnung von Flächen und Körper]]></name></content></item>
+<item id="hhhr9/10-3ca" parent_id="hhhr9/10-3c"><content><name><![CDATA[Kreis]]></name></content></item>
+<item id="hhhr9/10-3cb" parent_id="hhhr9/10-3c"><content><name><![CDATA[Zylinder]]></name></content></item>
+<item id="hhhr9/10-3cc" parent_id="hhhr9/10-3c"><content><name><![CDATA[Pyramide]]></name></content></item>
+<item id="hhhr9/10-3cd" parent_id="hhhr9/10-3c"><content><name><![CDATA[Kegel]]></name></content></item>
+<item id="hhhr9/10-3ce" parent_id="hhhr9/10-3c"><content><name><![CDATA[Kugel]]></name></content></item>
+<item id="hhhr9/10-3cf" parent_id="hhhr9/10-3c"><content><name><![CDATA[Umformen]]></name></content></item>
+<item id="hhhr9/10-3cg" parent_id="hhhr9/10-3c"><content><name><![CDATA[wissen und was die Kreislinie (Kreisumfang) ist]]></name></content></item>
+<item id="hhhr9/10-3ch" parent_id="hhhr9/10-3c"><content><name><![CDATA[die Formel für den Kreisumfang verwenden]]></name></content></item>
+<item id="hhhr9/10-3ci" parent_id="hhhr9/10-3c"><content><name><![CDATA[den Flächeninhalt eines Kreises berechnen]]></name></content></item>
+<item id="hhhr9/10-3cj" parent_id="hhhr9/10-3c"><content><name><![CDATA[die Länge eines Kreisbogens berechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-3ck" parent_id="hhhr9/10-3c"><content><name><![CDATA[Kreisausschnitte berechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-3cl" parent_id="hhhr9/10-3c"><content><name><![CDATA[Die Manntelfläche eines Zylinders berechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-3cm" parent_id="hhhr9/10-3c"><content><name><![CDATA[die Oberfläche eines Zylinders berechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-3cn" parent_id="hhhr9/10-3c"><content><name><![CDATA[das Voumen eines Zylinders berechnen]]></name></content></item>
+<item id="hhhr9/10-3co" parent_id="hhhr9/10-3c"><content><name><![CDATA[das Netz einer Pyramide mit gegebenen Maßen konstruieren]]></name></content></item>
+<item id="hhhr9/10-3cp" parent_id="hhhr9/10-3c"><content><name><![CDATA[Die Mantelfläche einer Pyramide berechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-3cq" parent_id="hhhr9/10-3c"><content><name><![CDATA[Die Oberfläche einer Pyramide berechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-3cr" parent_id="hhhr9/10-3c"><content><name><![CDATA[das Volumen einer Pyramide berechnen]]></name></content></item>
+<item id="hhhr9/10-3cs" parent_id="hhhr9/10-3c"><content><name><![CDATA[das Volumen eines Kegel berechnen]]></name></content></item>
+<item id="hhhr9/10-3ct" parent_id="hhhr9/10-3c"><content><name><![CDATA[eine Kugel darstellen]]></name></content></item>
+<item id="hhhr9/10-3cu" parent_id="hhhr9/10-3c"><content><name><![CDATA[das Volumen einer Kugel berechnen]]></name></content></item>
+<item id="hhhr9/10-3cv" parent_id="hhhr9/10-3c"><content><name><![CDATA[Die Oberfläche der Kugel berechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-4" parent_id="hhhr9/10"><content><name><![CDATA[9/10-4 Daten und Zahlen: Datenerhebung]]></name></content></item>
+<item id="hhhr9/10-4a" parent_id="hhhr9/10-4"><content><name><![CDATA[Daten]]></name></content></item>
+<item id="hhhr9/10-4b" parent_id="hhhr9/10-4"><content><name><![CDATA[statistische Daten]]></name></content></item>
+<item id="hhhr9/10-4c" parent_id="hhhr9/10-4"><content><name><![CDATA[Daten sammeln]]></name></content></item>
+<item id="hhhr9/10-4d" parent_id="hhhr9/10-4"><content><name><![CDATA[graphische Darstellung von Daten]]></name></content></item>
+<item id="hhhr9/10-4e" parent_id="hhhr9/10-4"><content><name><![CDATA[Daten sammeln]]></name></content></item>
+<item id="hhhr9/10-4f" parent_id="hhhr9/10-4"><content><name><![CDATA[Daten bearbeiten]]></name></content></item>
+<item id="hhhr9/10-4g" parent_id="hhhr9/10-4"><content><name><![CDATA[grafische Darstellung von Daten verwenden]]></name></content></item>
+<item id="hhhr9/10-4h" parent_id="hhhr9/10-4"><content><name><![CDATA[Daten in einem Diagramm darstellen]]></name></content></item>
+<item id="hhhr9/10-5" parent_id="hhhr9/10"><content><name><![CDATA[9/10-5 Quadratische Gleichungen und quadratische Funktionen (nur R)]]></name></content></item>
+<item id="hhhr9/10-5a" parent_id="hhhr9/10-5"><content><name><![CDATA[Quadratische Gleichung]]></name></content></item>
+<item id="hhhr9/10-5b" parent_id="hhhr9/10-5"><content><name><![CDATA[quadratische Funktion]]></name></content></item>
+<item id="hhhr9/10-5c" parent_id="hhhr9/10-5"><content><name><![CDATA[Parabel]]></name></content></item>
+<item id="hhhr9/10-5d" parent_id="hhhr9/10-5"><content><name><![CDATA[gleichzeitig eine lineare und eine quadratische Gleichung lösen]]></name></content></item>
+<item id="hhhr9/10-5e" parent_id="hhhr9/10-5"><content><name><![CDATA[quadratische Gleichungen grafisch und rechnerische lösen]]></name></content></item>
+<item id="" parent_id=""><content><name><![CDATA[Eigenschaften der quadratischen Funktion insbesondere Symmetrieeigenschaften kennen und nutzen]]></name></content></item>
+<item id="hhhr9/10-6" parent_id="hhhr9/10"><content><name><![CDATA[9/10-6 Veränderungen - Wachstum und Abnahme (nur R)]]></name></content></item>
+<item id="hhhr9/10-6a" parent_id="hhhr9/10-6"><content><name><![CDATA[Parabel]]></name></content></item>
+<item id="hhhr9/10-6b" parent_id="hhhr9/10-6"><content><name><![CDATA[Exponentialfunktion]]></name></content></item>
+<item id="hhhr9/10-6c" parent_id="hhhr9/10-6"><content><name><![CDATA[Potenz]]></name></content></item>
+<item id="hhhr9/10-6d" parent_id="hhhr9/10-6"><content><name><![CDATA[Potenzen und Wurzeln von Zahlen berechnen]]></name></content></item>
+<item id="hhhr9/10-6e" parent_id="hhhr9/10-6"><content><name><![CDATA[Exponentialdarstellung großer und kleiner Zahlen auf dem Taschenrechner]]></name></content></item>
+<item id="hhhr9/10-6f" parent_id="hhhr9/10-6"><content><name><![CDATA[Zins- und Zinseszinsrechnung]]></name></content></item>
+<item id="hhhr9/10-7" parent_id="hhhr9/10"><content><name><![CDATA[9/10-7 Orientierung im Raum und in der Ebene - Trigonometrie (nur R)]]></name></content></item>
+<item id="hhhr9/10-7a" parent_id="hhhr9/10-7"><content><name><![CDATA[Sinus]]></name></content></item>
+<item id="hhhr9/10-7b" parent_id="hhhr9/10-7"><content><name><![CDATA[Sinussatz]]></name></content></item>
+<item id="hhhr9/10-7c" parent_id="hhhr9/10-7"><content><name><![CDATA[Sinus und Kosinus und Tangens in rechtwinkligen Dreiecken verwenden]]></name></content></item>
+<item id="hhhr9/10-7d" parent_id="hhhr9/10-7"><content><name><![CDATA[Bestimmen von Längen und Winkeln in nicht rechtwinkligen Dreiecken]]></name></content></item>
+<item id="hhhr9/10-7e" parent_id="hhhr9/10-7"><content><name><![CDATA[Bestimmen von Sinus- und Kosinuswerten im Einheitskreis]]></name></content></item>
+<item id="hhhr9/10-8" parent_id="hhhr9/10"><content><name><![CDATA[9/10-8 Statistik und Wahrscheinlichkeit]]></name></content></item>
+<item id="hhhr9/10-8a" parent_id="hhhr9/10-8"><content><name><![CDATA[Statistik]]></name></content></item>
+<item id="hhhr9/10-8b" parent_id="hhhr9/10-8"><content><name><![CDATA[Wahrscheinlichkeit]]></name></content></item>
+<item id="hhhr9/10-8c" parent_id="hhhr9/10-8"><content><name><![CDATA[die Wahrscheinlichkeit im bekannten Zusammenhang berechnen]]></name></content></item>
+<item id="hhhr9/10-8d" parent_id="hhhr9/10-8"><content><name><![CDATA[die Wahrscheinlichkeit eines verknüpften Ereignis berechnen (nur R)]]></name></content></item>
+<item id="hhhr9/10-8e" parent_id="hhhr9/10-8"><content><name><![CDATA[Gewinnen und Aufbereiten und Auswerten statistischer Daten und Erhebungen (nur R)]]></name></content></item>
+<item id="hhgy" parent_id="hh"><content><name><![CDATA[Gymnasium 8-stufig]]></name></content></item>
+<item id="" parent_id=""><content><name><![CDATA[ ]]></name></content></item>
+<item id="hhgy5/6" parent_id="hhgy"><content><name><![CDATA[Jahrgangsstufe 5/6]]></name></content></item>
+<item id="hhgy5/6-1" parent_id="hhgy5/6"><content><name><![CDATA[5/6-1 Natürliche Zahlen – groß und klein]]></name></content></item>
+<item id="hhgy5/6-1a" parent_id="hhgy5/6-1"><content><name><![CDATA[Potenz]]></name></content></item>
+<item id="hhgy5/6-1b" parent_id="hhgy5/6-1"><content><name><![CDATA[natürliche Zahl]]></name></content></item>
+<item id="hhgy5/6-1c" parent_id="hhgy5/6-1"><content><name><![CDATA[Variable]]></name></content></item>
+<item id="hhgy5/6-1d" parent_id="hhgy5/6-1"><content><name><![CDATA[Potenzen und Wurzeln von Zahlen berechnen]]></name></content></item>
+<item id="hhgy5/6-1e" parent_id="hhgy5/6-1"><content><name><![CDATA[im Kopf rechnen]]></name></content></item>
+<item id="hhgy5/6-1f" parent_id="hhgy5/6-1"><content><name><![CDATA[auf eine aussagekräftigen Zahl runden]]></name></content></item>
+<item id="hhgy5/6-1g" parent_id="hhgy5/6-1"><content><name><![CDATA[kennen Eigenschaften natürlicher Zahlen]]></name></content></item>
+<item id="hhgy5/6-2" parent_id="hhgy5/6"><content><name><![CDATA[5/6-2 Figuren und Körper – Herstellen und Messen und Strukturieren]]></name></content></item>
+<item id="hhgy5/6-2a" parent_id="hhgy5/6-2"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="hhgy5/6-2b" parent_id="hhgy5/6-2"><content><name><![CDATA[Viereck]]></name></content></item>
+<item id="hhgy5/6-2c" parent_id="hhgy5/6-2"><content><name><![CDATA[Würfel]]></name></content></item>
+<item id="hhgy5/6-2d" parent_id="hhgy5/6-2"><content><name><![CDATA[Quader]]></name></content></item>
+<item id="hhgy5/6-2e" parent_id="hhgy5/6-2"><content><name><![CDATA[geometrisches Vokabular verwenden]]></name></content></item>
+<item id="hhgy5/6-2f" parent_id="hhgy5/6-2"><content><name><![CDATA[einen Winkel gegebener Größe konstruieren (mit Hilfe eines Winkelmessers)]]></name></content></item>
+<item id="hhgy5/6-2g" parent_id="hhgy5/6-2"><content><name><![CDATA[Wissen wie man einen Winkelmesser verwendet]]></name></content></item>
+<item id="hhgy5/6-2h" parent_id="hhgy5/6-2"><content><name><![CDATA[wissen und was ein Viereck ist]]></name></content></item>
+<item id="hhgy5/6-2i" parent_id="hhgy5/6-2"><content><name><![CDATA[die Eigenschaften eines Vierecks kennen]]></name></content></item>
+<item id="hhgy5/6-2j" parent_id="hhgy5/6-2"><content><name><![CDATA[die Eigenschaften von Vierecken verwenden]]></name></content></item>
+<item id="hhgy5/6-2k" parent_id="hhgy5/6-2"><content><name><![CDATA[das Netz eines Würfels interpretieren]]></name></content></item>
+<item id="hhgy5/6-2l" parent_id="hhgy5/6-2"><content><name><![CDATA[schätzen]]></name></content></item>
+<item id="hhgy5/6-2m" parent_id="hhgy5/6-2"><content><name><![CDATA[Propädeutik von Brüchen]]></name></content></item>
+<item id="hhgy5/6-2n" parent_id="hhgy5/6-2"><content><name><![CDATA[haben Grundvorstellungen von Länge und Flächeninhalt und Volumen]]></name></content></item>
+<item id="hhgy5/6-o" parent_id="hhgy5/6-2"><content><name><![CDATA[einfache geometrische Gebilde in verschiedenen Lagebeziehungen darstellen]]></name></content></item>
+<item id="hhgy5/6-3" parent_id="hhgy5/6"><content><name><![CDATA[5/6-3 „Weißt du und wie viel Sternlein stehen ...?“ – Beschreibende Statistik]]></name></content></item>
+<item id="hhgy5/6-3a" parent_id="hhgy5/6-3"><content><name><![CDATA[Daten]]></name></content></item>
+<item id="hhgy5/6-3b" parent_id="hhgy5/6-3"><content><name><![CDATA[absolute Häufigkeit]]></name></content></item>
+<item id="hhgy5/6-3c" parent_id="hhgy5/6-3"><content><name><![CDATA[relative Häufigkeit]]></name></content></item>
+<item id="hhgy5/6-3d" parent_id="hhgy5/6-3"><content><name><![CDATA[Daten analysieren]]></name></content></item>
+<item id="hhgy5/6-3e" parent_id="hhgy5/6-3"><content><name><![CDATA[grafische Darstellung von Daten verwenden]]></name></content></item>
+<item id="hhgy5/6-3f" parent_id="hhgy5/6-3"><content><name><![CDATA[Daten (graphisch) darstellen]]></name></content></item>
+<item id="hhgy5/6-3g" parent_id="hhgy5/6-3"><content><name><![CDATA[Daten in einem Diagramm darstellen]]></name></content></item>
+<item id="hhgy5/6-3h" parent_id="hhgy5/6-3"><content><name><![CDATA[ein Tabellenkalkulationsprogramm zur Darstellung von Daten verwenden]]></name></content></item>
+<item id="hhgy5/6-3i" parent_id="hhgy5/6-3"><content><name><![CDATA[den Median einer Datenreihe interpretieren]]></name></content></item>
+<item id="hhgy5/6-3j" parent_id="hhgy5/6-3"><content><name><![CDATA[die Bedeutung des Mittelwerts von diskreten Daten verstehen]]></name></content></item>
+<item id="hhgy5/6-3k" parent_id="hhgy5/6-3"><content><name><![CDATA[das arithmetische Mittel einer Gruppe von Daten schätzen]]></name></content></item>
+<item id="hhgy5/6-3l" parent_id="hhgy5/6-3"><content><name><![CDATA[die relative Häufigkeit berechnen]]></name></content></item>
+<item id="hhgy5/6-4" parent_id="hhgy5/6"><content><name><![CDATA[5/6-4 Anteile und Prozente]]></name></content></item>
+<item id="hhgy5/6-4a" parent_id="hhgy5/6-4"><content><name><![CDATA[mit Bruchzahlen rechnen]]></name></content></item>
+<item id="hhgy5/6-4b" parent_id="hhgy5/6-4"><content><name><![CDATA[die Äuivalenz zwischen Brüchen und Dezimalzahlen und Prozenten verstehen]]></name></content></item>
+<item id="hhgy5/6-4c" parent_id="hhgy5/6-4"><content><name><![CDATA[Dezimalzahlen anordnen]]></name></content></item>
+<item id="hhgy5/6-4d" parent_id="hhgy5/6-4"><content><name><![CDATA[positive oder negative Brüche mit Dezimalzahlen vergleichen]]></name></content></item>
+<item id="hhgy5/6-4e" parent_id="hhgy5/6-4"><content><name><![CDATA[den Umgang mit den Größen Zeit und Masse beherrschen]]></name></content></item>
+<item id="hhgy5/6-4f" parent_id="hhgy5/6-4"><content><name><![CDATA[Die Bedeutung von 'Prozent' kennen]]></name></content></item>
+<item id="hhgy5/6-4g" parent_id="hhgy5/6-4"><content><name><![CDATA[Prozentrechnen in einfachen Fällen verwenden]]></name></content></item>
+<item id="hhgy5/6-4h" parent_id="hhgy5/6-4"><content><name><![CDATA[Prozente anwenden]]></name></content></item>
+<item id="hhgy5/6-4i" parent_id="hhgy5/6-4"><content><name><![CDATA[Verhältnisse durch einfache Brüche und Prozentzahlen beschreiben]]></name></content></item>
+<item id="hhgy5/6-5" parent_id="hhgy5/6"><content><name><![CDATA[5/6-5 Messen und Berechnen – in der Ebene und im Raum]]></name></content></item>
+<item id="hhgy5/6-5a" parent_id="hhgy5/6-5"><content><name><![CDATA[mit Bruchzahlen rechnen]]></name></content></item>
+<item id="hhgy5/6-5b" parent_id="hhgy5/6-5"><content><name><![CDATA[die Formel für den Flächeninhalt eines Rechtecks verstehen]]></name></content></item>
+<item id="hhgy5/6-5c" parent_id="hhgy5/6-5"><content><name><![CDATA[den Flächeninhalt eines rechtwinkligen Dreiecks berechnen]]></name></content></item>
+<item id="hhgy5/6-5d" parent_id="hhgy5/6-5"><content><name><![CDATA[die exakten Einheiten verwenden]]></name></content></item>
+<item id="hhgy5/6-5e" parent_id="hhgy5/6-5"><content><name><![CDATA[die Umrechnung von Masseeinheiten berechnen]]></name></content></item>
+<item id="hhgy5/6-5f" parent_id="hhgy5/6-5"><content><name><![CDATA[das Volumen eines Quaders berechnen]]></name></content></item>
+<item id="hhgy5/6-5g" parent_id="hhgy5/6-5"><content><name><![CDATA[den Flächeninhalt eines Rechtecks berechnen]]></name></content></item>
+<item id="hhgy5/6-6" parent_id="hhgy5/6"><content><name><![CDATA[5/6-6 Experimentieren mit dem Zufall]]></name></content></item>
+<item id="hhgy5/6-6a" parent_id="hhgy5/6-6"><content><name><![CDATA[Wahrscheinlichkeit]]></name></content></item>
+<item id="hhgy5/6-6b" parent_id="hhgy5/6-6"><content><name><![CDATA[Laplace- Experimente]]></name></content></item>
+<item id="hhgy5/6-6c" parent_id="hhgy5/6-6"><content><name><![CDATA[die relative Häufigkeit berechnen]]></name></content></item>
+<item id="hhgy5/6-6d" parent_id="hhgy5/6-6"><content><name><![CDATA[die Wahrscheinlichkeit im bekannten Zusammenhang berechnen]]></name></content></item>
+<item id="hhgy5/6-6e" parent_id="hhgy5/6-6"><content><name><![CDATA[die Bedeutung des Mittelwerts von diskreten Daten verstehen]]></name></content></item>
+<item id="hhgy5/6-6f" parent_id="hhgy5/6-6"><content><name><![CDATA[den Mittelwert von diskreten Daten verwenden]]></name></content></item>
+<item id="hhgy7/8" parent_id="hhgy"><content><name><![CDATA[Jahrgangsstufe 7/8]]></name></content></item>
+<item id="hhgy7/8-1" parent_id="hhgy7/8"><content><name><![CDATA[7/8-1 Über Null und unter Null]]></name></content></item>
+<item id="hhgy7/8-1a" parent_id="hhgy7/8-1"><content><name><![CDATA[Variable]]></name></content></item>
+<item id="hhgy7/8-1b" parent_id="hhgy7/8-1"><content><name><![CDATA[Dezimalzahlen anordnen]]></name></content></item>
+<item id="hhgy7/8-1c" parent_id="hhgy7/8-1"><content><name><![CDATA[negative Zahlen (im Kontext) ordnen]]></name></content></item>
+<item id="hhgy7/8-1d" parent_id="hhgy7/8-1"><content><name><![CDATA[positive oder negative Brüche mit Dezimalzahlen vergleichen]]></name></content></item>
+<item id="hhgy7/8-2" parent_id="hhgy7/8"><content><name><![CDATA[7/8-2 „Wetten und dass...!“ Wahrscheinlichkeiten und Erwartungswerte / „Welche Urne ist das?“ Erste Schritte in die schließende Statistik]]></name></content></item>
+<item id="hhgy7/8-2a" parent_id="hhgy7/8-2"><content><name><![CDATA[Wahrscheinlichkeit]]></name></content></item>
+<item id="hhgy7/8-2b" parent_id="hhgy7/8-2"><content><name><![CDATA[Laplace- Experimente]]></name></content></item>
+<item id="hhgy7/8-2c" parent_id="hhgy7/8-2"><content><name><![CDATA[die Wahrscheinlichkeit eines verknüpften Ereignis berechnen]]></name></content></item>
+<item id="hhgy7/8-2d" parent_id="hhgy7/8-2"><content><name><![CDATA[ein Baumdiagramm zur Berechnung verwenden]]></name></content></item>
+<item id="hhgy7/8-2e" parent_id="hhgy7/8-2"><content><name><![CDATA[Berechnung von Erwartungswerten]]></name></content></item>
+<item id="hhgy7/8-2f" parent_id="hhgy7/8-2"><content><name><![CDATA[Bernoulliexperimente und -ketten]]></name></content></item>
+<item id="hhgy7/8-2g" parent_id="hhgy7/8-2"><content><name><![CDATA[Summen- und Produktregel der Wahrscheinlichkeitsrechnung verwenden]]></name></content></item>
+<item id="hhgy7/8-3" parent_id="hhgy7/8"><content><name><![CDATA[7/8-3 Grundlegendes für Funktionen]]></name></content></item>
+<item id="hhgy7/8-3a" parent_id="hhgy7/8-3"><content><name><![CDATA[Funktion]]></name></content></item>
+<item id="hhgy7/8-3b" parent_id="hhgy7/8-3"><content><name><![CDATA[Wertetabelle]]></name></content></item>
+<item id="hhgy7/8-3c" parent_id="hhgy7/8-3"><content><name><![CDATA[Graph]]></name></content></item>
+<item id="hhgy7/8-3d" parent_id="hhgy7/8-3"><content><name><![CDATA[eine Wertetabelle zeichnen]]></name></content></item>
+<item id="hhgy7/8-3e" parent_id="hhgy7/8-3"><content><name><![CDATA[einen Graphen als Funktion interpretieren]]></name></content></item>
+<item id="hhgy7/8-3f" parent_id="hhgy7/8-3"><content><name><![CDATA[die grafische Charakteristik der Proportionalität verwenden]]></name></content></item>
+<item id="hhgy7/8-3g" parent_id="hhgy7/8-3"><content><name><![CDATA[den Dreisatz verwenden]]></name></content></item>
+<item id="hhgy7/8-3h" parent_id="hhgy7/8-3"><content><name><![CDATA[Maßstäbe von Diagrammen sinnvoll wählen]]></name></content></item>
+<item id="hhgy7/8-3i" parent_id="hhgy7/8-3"><content><name><![CDATA[kennen Grundbegriffe von Funktionen: Definitionsmenge und Wertebereich und Argument und Funktionswert und Zuweisungsvorschrift]]></name></content></item>
+<item id="hhgy7/8-4" parent_id="hhgy7/8"><content><name><![CDATA[7/8-4 Gestalt und Figur: Gleichheit und Berechnung]]></name></content></item>
+<item id="hhgy7/8-4a" parent_id="hhgy7/8-4"><content><name><![CDATA[kongruent]]></name></content></item>
+<item id="hhgy7/8-4b" parent_id="hhgy7/8-4"><content><name><![CDATA[Gerade]]></name></content></item>
+<item id="hhgy7/8-4c" parent_id="hhgy7/8-4"><content><name><![CDATA[Winkel]]></name></content></item>
+<item id="hhgy7/8-4d" parent_id="hhgy7/8-4"><content><name><![CDATA[Trapez]]></name></content></item>
+<item id="hhgy7/8-4e" parent_id="hhgy7/8-4"><content><name><![CDATA[Quader]]></name></content></item>
+<item id="hhgy7/8-4f" parent_id="hhgy7/8-4"><content><name><![CDATA[Gerades Prisma]]></name></content></item>
+<item id="hhgy7/8-4g" parent_id="hhgy7/8-4"><content><name><![CDATA[Zylinder]]></name></content></item>
+<item id="hhgy7/8-4h" parent_id="hhgy7/8-4"><content><name><![CDATA[Kongruenz verstehen]]></name></content></item>
+<item id="hhgy7/8-4i" parent_id="hhgy7/8-4"><content><name><![CDATA[Kongruenz verwenden]]></name></content></item>
+<item id="hhgy7/8-4j" parent_id="hhgy7/8-4"><content><name><![CDATA[einen Winkel gegebener Größe konstruieren (mit Hilfe eines Winkelmessers)]]></name></content></item>
+<item id="hhgy7/8-4k" parent_id="hhgy7/8-4"><content><name><![CDATA[einen Winkel übertragen]]></name></content></item>
+<item id="hhgy7/8-4l" parent_id="hhgy7/8-4"><content><name><![CDATA[die Winkelhalbierende kennen]]></name></content></item>
+<item id="hhgy7/8-4m" parent_id="hhgy7/8-4"><content><name><![CDATA[die Definition der Winkelhalbierenden kennen]]></name></content></item>
+<item id="hhgy7/8-4n" parent_id="hhgy7/8-4"><content><name><![CDATA[den Flächeninhalt eines Dreieck berechnen]]></name></content></item>
+<item id="hhgy7/8-4o" parent_id="hhgy7/8-4"><content><name><![CDATA[wissen und wie die Fläche eines Rechtecks berechnet wird]]></name></content></item>
+<item id="hhgy7/8-4p" parent_id="hhgy7/8-4"><content><name><![CDATA[den Flächeninhalt eines Kreises berechnen]]></name></content></item>
+<item id="hhgy7/8-4q" parent_id="hhgy7/8-4"><content><name><![CDATA[die Formel für den Kreisumfang verwenden]]></name></content></item>
+<item id="hhgy7/8-4r" parent_id="hhgy7/8-4"><content><name><![CDATA[das Volumen eines geraden Prismas berechnen]]></name></content></item>
+<item id="hhgy7/8-4s" parent_id="hhgy7/8-4"><content><name><![CDATA[das Voumen eines Zylinders berechnen]]></name></content></item>
+<item id="hhgy7/8-4t" parent_id="hhgy7/8-4"><content><name><![CDATA[die Oberfläche eines Zylinders berechnen]]></name></content></item>
+<item id="hhgy7/8-4u" parent_id="hhgy7/8-4"><content><name><![CDATA[Prozentrechnen in einfachen Fällen verwenden]]></name></content></item>
+<item id="hhgy7/8-4v" parent_id="hhgy7/8-4"><content><name><![CDATA[Prozente anwenden]]></name></content></item>
+<item id="hhgy7/8-4w" parent_id="hhgy7/8-4"><content><name><![CDATA[den Dreisatz verwenden]]></name></content></item>
+<item id="hhgy7/8-5" parent_id="hhgy7/8"><content><name><![CDATA[7/8-5 Linearisierbare Prozesse]]></name></content></item>
+<item id="hhgy7/8-5a" parent_id="hhgy7/8-5"><content><name><![CDATA[Gleichungen]]></name></content></item>
+<item id="hhgy7/8-5b" parent_id="hhgy7/8-5"><content><name><![CDATA[lineare Gleichung]]></name></content></item>
+<item id="hhgy7/8-5c" parent_id="hhgy7/8-5"><content><name><![CDATA[Gleichungssystem]]></name></content></item>
+<item id="hhgy7/8-5d" parent_id="hhgy7/8-5"><content><name><![CDATA[Terme berechnen]]></name></content></item>
+<item id="hhgy7/8-5e" parent_id="hhgy7/8-5"><content><name><![CDATA[einen algebraischen Term ausmultiplizieren]]></name></content></item>
+<item id="hhgy7/8-5f" parent_id="hhgy7/8-5"><content><name><![CDATA[die binomischen Formeln zur Lösung von Gleichungen verwenden]]></name></content></item>
+<item id="hhgy7/8-5g" parent_id="hhgy7/8-5"><content><name><![CDATA[Gleichungen verändern]]></name></content></item>
+<item id="hhgy7/8-5h" parent_id="hhgy7/8-5"><content><name><![CDATA[lineare Gleichungen mit ganzzahligen Koeffizienten lösen]]></name></content></item>
+<item id="hhgy7/8-5i" parent_id="hhgy7/8-5"><content><name><![CDATA[ein Gleichungssystem mit zwei linearen Gleichungen und zwei Unbekannten lösen]]></name></content></item>
+<item id="hhgy7/8-5j" parent_id="hhgy7/8-5"><content><name><![CDATA[Schnittpunktsbestimmung zweier Graphen]]></name></content></item>
+<item id="hhgy7/8-5k" parent_id="hhgy7/8-5"><content><name><![CDATA[einen algebraischen Term ausklammern]]></name></content></item>
+<item id="hhgy7/8-5l" parent_id="hhgy7/8-5"><content><name><![CDATA[Gleichungen lösen]]></name></content></item>
+<item id="hhgy7/8-6" parent_id="hhgy7/8"><content><name><![CDATA[7/8-6 Erzeugen und Konstruieren und Zerlegen und Berechnen]]></name></content></item>
+<item id="hhgy7/8-6a" parent_id="hhgy7/8-6"><content><name><![CDATA[Dreieck]]></name></content></item>
+<item id="hhgy7/8-6b" parent_id="hhgy7/8-6"><content><name><![CDATA[dynamische Geometrie-Software]]></name></content></item>
+<item id="hhgy7/8-6c" parent_id="hhgy7/8-6"><content><name><![CDATA[Konstruieren eines Dreiecks]]></name></content></item>
+<item id="hhgy7/8-6d" parent_id="hhgy7/8-6"><content><name><![CDATA[die Definition der Höhe kennen]]></name></content></item>
+<item id="hhgy7/8-6e" parent_id="hhgy7/8-6"><content><name><![CDATA[die Definition der Höhe in einem Dreieck verwenden]]></name></content></item>
+<item id="hhgy7/8-6f" parent_id="hhgy7/8-6"><content><name><![CDATA[wissen und was eine Mittelsenkrechte ist]]></name></content></item>
+<item id="hhgy7/8-6g" parent_id="hhgy7/8-6"><content><name><![CDATA[die Mittelsenkrechte einer Strecke konstruieren]]></name></content></item>
+<item id="hhgy7/8-6h" parent_id="hhgy7/8-6"><content><name><![CDATA[den Umkreis von einfachen Figuren finden]]></name></content></item>
+<item id="hhgy7/8-6i" parent_id="hhgy7/8-6"><content><name><![CDATA[die Definition der Winkelhalbierenden kennen]]></name></content></item>
+<item id="hhgy7/8-6j" parent_id="hhgy7/8-6"><content><name><![CDATA[den Inkreis eines Dreiecks konstruieren]]></name></content></item>
+<item id="hhgy7/8-6k" parent_id="hhgy7/8-6"><content><name><![CDATA[den Schnittpunkt der 3 Winkelhalbierenden (Inkreismittelpunkt) kennen]]></name></content></item>
+<item id="hhgy7/8-6l" parent_id="hhgy7/8-6"><content><name><![CDATA[die Definition der Seitenhalbierenden in einem Dreieck verwenden]]></name></content></item>
+<item id="hhgy7/8-6m" parent_id="hhgy7/8-6"><content><name><![CDATA[den Satz des Thales kennen]]></name></content></item>
+<item id="hhgy7/8-6n" parent_id="hhgy7/8-6"><content><name><![CDATA[den Satz des Pythagoras verstehen]]></name></content></item>
+<item id="hhgy7/8-6o" parent_id="hhgy7/8-6"><content><name><![CDATA[den Strahlensatz verwenden]]></name></content></item>
+<item id="hhgy7/8-6p" parent_id="hhgy7/8-6"><content><name><![CDATA[Potenzen und Wurzeln von Zahlen berechnen]]></name></content></item>
+<item id="hhgy7/8-6q" parent_id="hhgy7/8-6"><content><name><![CDATA[etwas mit dynamischen Abbilungen veranschaulichen]]></name></content></item>
+<item id="hhgy9/10" parent_id="hhgy"><content><name><![CDATA[Jahrgangsstufe 9/10]]></name></content></item>
+<item id="hhgy9/10-1" parent_id="hhgy9/10"><content><name><![CDATA[9/10-1 Über die linearen Funktionen hinaus]]></name></content></item>
+<item id="hhgy9/10-1a" parent_id="hhgy9/10-1"><content><name><![CDATA[Kompetenzen zu Funktionen]]></name></content></item>
+<item id="hhgy9/10-1b" parent_id="hhgy9/10-1"><content><name><![CDATA[Graphen skizzieren]]></name></content></item>
+<item id="hhgy9/10-1c" parent_id="hhgy9/10-1"><content><name><![CDATA[Funktion]]></name></content></item>
+<item id="hhgy9/10-1d" parent_id="hhgy9/10-1"><content><name><![CDATA[Hyperbelfunktion]]></name></content></item>
+<item id="hhgy9/10-1e" parent_id="hhgy9/10-1"><content><name><![CDATA[quadratische Funktion]]></name></content></item>
+<item id="hhgy9/10-1f" parent_id="hhgy9/10-1"><content><name><![CDATA[Quadratische Gleichung]]></name></content></item>
+<item id="hhgy9/10-1g" parent_id="hhgy9/10-1"><content><name><![CDATA[Potenzfunktionen]]></name></content></item>
+<item id="hhgy9/10-1h" parent_id="hhgy9/10-1"><content><name><![CDATA[Wurzelfunktionen]]></name></content></item>
+<item id="hhgy9/10-1i" parent_id="hhgy9/10-1"><content><name><![CDATA[gleichzeitig eine lineare und eine quadratische Gleichung lösen]]></name></content></item>
+<item id="hhgy9/10-1j" parent_id="hhgy9/10-1"><content><name><![CDATA[einen Graphen entwerfen]]></name></content></item>
+<item id="hhgy9/10-1k" parent_id="hhgy9/10-1"><content><name><![CDATA[einen Graphen qualitativ beschreiben]]></name></content></item>
+<item id="hhgy9/10-1l" parent_id="hhgy9/10-1"><content><name><![CDATA[einen Graphen interpretieren]]></name></content></item>
+<item id="hhgy9/10-1m" parent_id="hhgy9/10-1"><content><name><![CDATA[Quadratische Gleichungen lösen]]></name></content></item>
+<item id="hhgy9/10-1n" parent_id="hhgy9/10-1"><content><name><![CDATA[Quadratische Gleichungen umformen]]></name></content></item>
+<item id="hhgy9/10-1o" parent_id="hhgy9/10-1"><content><name><![CDATA[Benutze Taschenrecher]]></name></content></item>
+<item id="hhgy9/10-1p" parent_id="hhgy9/10-1"><content><name><![CDATA[genaue mathematische Grafiken von Hand oder mit dem Computer erstellen]]></name></content></item>
+<item id="hhgy9/10-1q" parent_id="hhgy9/10-1"><content><name><![CDATA[eine Tabellenkalkulation (mit einem Programm) erstellen]]></name></content></item>
+<item id="hhgy9/10-1r" parent_id="hhgy9/10-1"><content><name><![CDATA[Einen Graph mit den Daten aus einer Tabellenkalkulation erstellen]]></name></content></item>
+<item id="hhgy9/10-2a" parent_id="hhgy9/10"><content><name><![CDATA[9/10-2 Lernen aus Erfahrung – Entscheidungen unter Unsicherheit]]></name></content></item>
+<item id="hhgy9/10-2b" parent_id="hhgy9/10-2"><content><name><![CDATA[bedingte Wahrscheinlichkeit]]></name></content></item>
+<item id="hhgy9/10-2c" parent_id="hhgy9/10-2"><content><name><![CDATA[Wahrscheinlichkeit]]></name></content></item>
+<item id="hhgy9/10-2d" parent_id="hhgy9/10-2"><content><name><![CDATA[die Wahrscheinlichkeit eines verknüpften Ereignis berechnen]]></name></content></item>
+<item id="hhgy9/10-2e" parent_id="hhgy9/10-2"><content><name><![CDATA[aus Zufallsexperimenten Schlussfolgerungen auf den zugrunde liegenden Zufallsprozess ziehen]]></name></content></item>
+<item id="hhgy9/10-2f" parent_id="hhgy9/10-2"><content><name><![CDATA[bedingte Wahrscheinlichkeiten mithilfe von Baumdiagrammen und/oder Vierfeldertafeln berechnen]]></name></content></item>
+<item id="hhgy9/10-2g" parent_id="hhgy9/10-2"><content><name><![CDATA[die Bayes-Regel anwenden]]></name></content></item>
+<item id="hhgy9/10-3" parent_id="hhgy9/10"><content><name><![CDATA[9/10-3 Über die Alltagswelt hinaus: Reelle Zahlen]]></name></content></item>
+<item id="hhgy9/10-3a" parent_id="hhgy9/10-3"><content><name><![CDATA[reelle Zahl]]></name></content></item>
+<item id="hhgy9/10-3b" parent_id="hhgy9/10-3"><content><name><![CDATA[Heron-Verfahren]]></name></content></item>
+<item id="hhgy9/10-3c" parent_id="hhgy9/10-3"><content><name><![CDATA[Potenzen und Wurzeln von Zahlen berechnen]]></name></content></item>
+<item id="hhgy9/10-3d" parent_id="hhgy9/10-3"><content><name><![CDATA[mit Quadratwurzeln rechnen]]></name></content></item>
+<item id="hhgy9/10-3e" parent_id="hhgy9/10-3"><content><name><![CDATA[das Ergebnis des Taschenrechners (kontextabhängig) interpretieren]]></name></content></item>
+<item id="hhgy9/10-4" parent_id="hhgy9/10"><content><name><![CDATA[9/10-4 Trigonometrische Funktionen: Periodische Prozesse und Dreiecke]]></name></content></item>
+<item id="hhgy9/10-4a" parent_id="hhgy9/10-4"><content><name><![CDATA[trigonometrische Funktion]]></name></content></item>
+<item id="hhgy9/10-4b" parent_id="hhgy9/10-4"><content><name><![CDATA[trigonometrische Verhältnisse]]></name></content></item>
+<item id="hhgy9/10-4c" parent_id="hhgy9/10-4"><content><name><![CDATA[Sinus]]></name></content></item>
+<item id="hhgy9/10-4d" parent_id="hhgy9/10-4"><content><name><![CDATA[Kosinus]]></name></content></item>
+<item id="hhgy9/10-4e" parent_id="hhgy9/10-4"><content><name><![CDATA[Formel]]></name></content></item>
+<item id="hhgy9/10-4f" parent_id="hhgy9/10-4"><content><name><![CDATA[trigonometrische Verhältnisse berechnen]]></name></content></item>
+<item id="hhgy9/10-4g" parent_id="hhgy9/10-4"><content><name><![CDATA[trigonometrische Funktionen graphisch darstellen]]></name></content></item>
+<item id="hhgy9/10-4h" parent_id="hhgy9/10-4"><content><name><![CDATA[Sinus und Kosinus und Tangens in rechtwinkligen Dreiecken verwenden]]></name></content></item>
+<item id="hhgy9/10-4i" parent_id="hhgy9/10-4"><content><name><![CDATA[eine einfache Formel erstellen]]></name></content></item>
+<item id="hhgy9/10-5" parent_id="hhgy9/10"><content><name><![CDATA[9/10-5 Wachstumsprozesse]]></name></content></item>
+<item id="hhgy9/10-5a" parent_id="hhgy9/10-5"><content><name><![CDATA[Exponentialfunktion]]></name></content></item>
+<item id="hhgy9/10-5b" parent_id="hhgy9/10-5"><content><name><![CDATA[Logarithmus Funktion]]></name></content></item>
+<item id="hhgy9/10-5c" parent_id="hhgy9/10-5"><content><name><![CDATA[arbeiten mit der Zahl e]]></name></content></item>
+<item id="hhgy9/10-5d" parent_id="hhgy9/10-5"><content><name><![CDATA[Zins- und Zinseszinsrechnung anwenden]]></name></content></item>
+<item id="hhgy9/10-5e" parent_id="hhgy9/10-5"><content><name><![CDATA[kennen Rechengesetze für Exponential- und Logarithmenrechnung]]></name></content></item>
+<item id="hhgy9/10-5f" parent_id="hhgy9/10-5"><content><name><![CDATA[den Logarithmus als Berechnungshilfe verwended]]></name></content></item>
+<item id="hhgy9/10-6" parent_id="hhgy9/10"><content><name><![CDATA[9/10-6 Funktionen und Änderungsraten]]></name></content></item>
+<item id="hhgy9/10-6a" parent_id="hhgy9/10-6"><content><name><![CDATA[Schnittpunkte mit der x undy- Achse]]></name></content></item>
+<item id="hhgy9/10-6b" parent_id="hhgy9/10-6"><content><name><![CDATA[bestimmen von (lokalen) Änderungsraten (graphisch und rechnerisch)]]></name></content></item>
+<item id="hhgy9/10-6c" parent_id="hhgy9/10-6"><content><name><![CDATA[Ableitungen von Funktionen bestimmen]]></name></content></item>
+<item id="hhgy9/10-6d" parent_id="hhgy9/10-6"><content><name><![CDATA[die Summen- und die Faktorregel anwenden]]></name></content></item>
+<item id="hhgy9/10-6e" parent_id="hhgy9/10-6"><content><name><![CDATA[Elementare Optimierungsprobleme (graphisch und rechnerisch lösen)]]></name></content></item>
+<item id="hhgy9/10-6f" parent_id="hhgy9/10-6"><content><name><![CDATA[Eigenschaften von Funktionsklassen (Verlauf des Graphen und Nullstellen und Randverhalten…) bestimmen]]></name></content></item>
+<item id="hhgyo" parent_id="hhgy"><content><name><![CDATA[Gymnasiale Oberstufe]]></name></content></item>
+<item id="hhgyov" parent_id="hhgyo"><content><name><![CDATA[Vorstufe]]></name></content></item>
+<item id="hhgyov1" parent_id="hhgyov"><content><name><![CDATA[V1 - Von Daten zu Funktionen]]></name></content></item>
+<item id="hhgyov1a" parent_id="hhgyov1"><content><name><![CDATA[Daten]]></name></content></item>
+<item id="hhgyov1b" parent_id="hhgyov1"><content><name><![CDATA[statistische Daten]]></name></content></item>
+<item id="hhgyov1c" parent_id="hhgyov1"><content><name><![CDATA[empirische Daten]]></name></content></item>
+<item id="hhgyov1d" parent_id="hhgyov1"><content><name><![CDATA[deterministische Daten]]></name></content></item>
+<item id="hhgyov1e" parent_id="hhgyov1"><content><name><![CDATA[zufällige Daten]]></name></content></item>
+<item id="hhgyov1f" parent_id="hhgyov1"><content><name><![CDATA[diskrete Daten]]></name></content></item>
+<item id="hhgyov1g" parent_id="hhgyov1"><content><name><![CDATA[kontinuierliche Daten]]></name></content></item>
+<item id="hhgyov1h" parent_id="hhgyov1"><content><name><![CDATA[Funktionsklassen]]></name></content></item>
+<item id="hhgyov1i" parent_id="hhgyov1"><content><name><![CDATA[Gleichungen]]></name></content></item>
+<item id="hhgyov1j" parent_id="hhgyov1"><content><name><![CDATA[Lineares Gleichungssystem]]></name></content></item>
+<item id="hhgyov1k" parent_id="hhgyov1"><content><name><![CDATA[Schnittpunkte mit der x undy- Achse]]></name></content></item>
+<item id="hhgyov1l" parent_id="hhgyov1"><content><name><![CDATA[bestimmen von (lokalen) Änderungsraten (graphisch und rechnerisch)]]></name></content></item>
+<item id="hhgyov1m" parent_id="hhgyov1"><content><name><![CDATA[Ableitungen von Funktionen bestimmen]]></name></content></item>
+<item id="hhgyov1n" parent_id="hhgyov1"><content><name><![CDATA[die Summen- und die Faktorregel anwenden]]></name></content></item>
+<item id="hhgyov1o" parent_id="hhgyov1"><content><name><![CDATA[Elementare Optimierungsprobleme (graphisch)]]></name></content></item>
+<item id="hhgyov2" parent_id="hhgyov"><content><name><![CDATA[V2 - Graphen (Daten- und Beziehungsstrukturen und elementare Aspekte)]]></name></content></item>
+<item id="hhgyov2a" parent_id="hhgyov2"><content><name><![CDATA[Funktion]]></name></content></item>
+<item id="hhgyov2b" parent_id="hhgyov2"><content><name><![CDATA[Wertetabelle]]></name></content></item>
+<item id="hhgyov2c" parent_id="hhgyov2"><content><name><![CDATA[Graph]]></name></content></item>
+<item id="hhgyov2d" parent_id="hhgyov2"><content><name><![CDATA[eine Wertetabelle zeichnen]]></name></content></item>
+<item id="hhgyov2e" parent_id="hhgyov2"><content><name><![CDATA[einen Graphen als Funktion interpretieren]]></name></content></item>
+<item id="hhgyov2f" parent_id="hhgyov2"><content><name><![CDATA[einen Graphen qualitativ beschreiben]]></name></content></item>
+<item id="hhgyov3" parent_id="hhgyov"><content><name><![CDATA[V3 - Iteration]]></name></content></item>
+<item id="hhgyov3a" parent_id="hhgyov3"><content><name><![CDATA[lineares und exponentielles Wachstum als Beispiel für Iteration verstehen]]></name></content></item>
+<item id="hhgyov4" parent_id="hhgyov"><content><name><![CDATA[V4 - Lineare Optimierung]]></name></content></item>
+<item id="hhgyov4a" parent_id="hhgyov4"><content><name><![CDATA[Aufstellen einer Gleichung]]></name></content></item>
+<item id="hhgyov4b" parent_id="hhgyov4"><content><name><![CDATA[Funktionsgleichung]]></name></content></item>
+<item id="hhgyov4c" parent_id="hhgyov4"><content><name><![CDATA[lineare Ungleichung mit einer Variablen]]></name></content></item>
+<item id="hhgyov4d" parent_id="hhgyov4"><content><name><![CDATA[eine Gleichung aufstellen]]></name></content></item>
+<item id="hhgyov4e" parent_id="hhgyov4"><content><name><![CDATA[Aufstellen eines Systems linearer Ungleichungen und Veranschaulichung im Koordinatensystem]]></name></content></item>
+<item id="hhgyov5" parent_id="hhgyov"><content><name><![CDATA[V5 - Geometrie]]></name></content></item>
+<item id="hhgyov5a" parent_id="hhgyov5"><content><name><![CDATA[Geometrischer Ort]]></name></content></item>
+<item id="hhgyov5b" parent_id="hhgyov5"><content><name><![CDATA[Kreis]]></name></content></item>
+<item id="hhgyov5c" parent_id="hhgyov5"><content><name><![CDATA[Ellipse]]></name></content></item>
+<item id="hhgyov5d" parent_id="hhgyov5"><content><name><![CDATA[Parabel]]></name></content></item>
+<item id="hhgyov5e" parent_id="hhgyov5"><content><name><![CDATA[Hyperbel]]></name></content></item>
+<item id="hhgyov5f" parent_id="hhgyov5"><content><name><![CDATA[Tangente]]></name></content></item>
+<item id="hhgyov5g" parent_id="hhgyov5"><content><name><![CDATA[Normale]]></name></content></item>
+<item id="hhgyov5h" parent_id="hhgyov5"><content><name><![CDATA[Sekante]]></name></content></item>
+<item id="hhgyov5i" parent_id="hhgyov5"><content><name><![CDATA[Kugel]]></name></content></item>
+<item id="hhgyov5j" parent_id="hhgyov5"><content><name><![CDATA[Paraboloid]]></name></content></item>
+<item id="hhgyov5k" parent_id="hhgyov5"><content><name><![CDATA[Erkennen oder Identifizieren]]></name></content></item>
+<item id="hhgyov6" parent_id="hhgyov"><content><name><![CDATA[V6 - Von der mittleren zur lokalen Änderung]]></name></content></item>
+<item id="hhgyov6a" parent_id="hhgyov6"><content><name><![CDATA[Ableiten ganzrationaler Funktionen]]></name></content></item>
+<item id="hhgyov6b" parent_id="hhgyov6"><content><name><![CDATA[bestimmen von (lokalen) Änderungsraten (graphisch und rechnerisch)]]></name></content></item>
+<item id="hhgyov6c" parent_id="hhgyov6"><content><name><![CDATA[Ableitungen von Funktionen bestimmen]]></name></content></item>
+<item id="hhgyov6d" parent_id="hhgyov6"><content><name><![CDATA[die Summen- und die Faktorregel anwenden]]></name></content></item>
+<item id="hhgyov6e" parent_id="hhgyov6"><content><name><![CDATA[Elementare Optimierungsprobleme (graphisch und rechnerisch lösen)]]></name></content></item>
+<item id="hhgyov6f" parent_id="hhgyov6"><content><name><![CDATA[geometrische Deutung der Zusammenhänge zwischen Fläche und Umfang bzw. Volumen und Oberfläche]]></name></content></item>
+<item id="hhgyoe" parent_id="hhgyo"><content><name><![CDATA[Vorstufe Ergänzungskurs]]></name></content></item>
+<item id="hhgyoe1" parent_id="hhgyoe"><content><name><![CDATA[E1 - Beschreibende Statistik]]></name></content></item>
+<item id="hhgyoe1a" parent_id="hhgyoe1"><content><name><![CDATA[Datenanalyse]]></name></content></item>
+<item id="hhgyoe1b" parent_id="hhgyoe1"><content><name><![CDATA[Wahrscheinlichkeitsverteilung]]></name></content></item>
+<item id="hhgyoe1c" parent_id="hhgyoe1"><content><name><![CDATA[Median einer statistischen Verteilung]]></name></content></item>
+<item id="hhgyoe1d" parent_id="hhgyoe1"><content><name><![CDATA[geometrisches Mittel]]></name></content></item>
+<item id="hhgyoe1e" parent_id="hhgyoe1"><content><name><![CDATA[gewichtetes Mittel]]></name></content></item>
+<item id="hhgyoe1f" parent_id="hhgyoe1"><content><name><![CDATA[Modalwert]]></name></content></item>
+<item id="hhgyoe1g" parent_id="hhgyoe1"><content><name><![CDATA[Boxplots]]></name></content></item>
+<item id="hhgyoe1h" parent_id="hhgyoe1"><content><name><![CDATA[Kausalität]]></name></content></item>
+<item id="hhgyoe1i" parent_id="hhgyoe1"><content><name><![CDATA[Die Begriffe Erwartungswert und Spannweite und mittlere quadratische Abweichung und Standardabweichung kennen]]></name></content></item>
+<item id="hhgyoe1j" parent_id="hhgyoe1"><content><name><![CDATA[lineare Regression verstehen]]></name></content></item>
+<item id="hhgyoe1k" parent_id="hhgyoe1"><content><name><![CDATA[Daten analysieren]]></name></content></item>
+<item id="hhgyoe1l" parent_id="hhgyoe1"><content><name><![CDATA[was Korrelation bedeutet und verstehen]]></name></content></item>
+<item id="hhgyoe1m" parent_id="hhgyoe1"><content><name><![CDATA[ein arithmetisches Mittel interpretieren]]></name></content></item>
+<item id="hhgyoe1n" parent_id="hhgyoe1"><content><name><![CDATA[das arithmetische Mittel und die Standartabweichung interpretieren]]></name></content></item>
+<item id="hhgyoe1o" parent_id="hhgyoe1"><content><name><![CDATA[zwei Verteilungen unter Berücksichtigung der Spannweite und des arith. Mittels und des Medians vergleichen]]></name></content></item>
+<item id="hhgyoe2" parent_id="hhgyoe"><content><name><![CDATA[E2 - Dynamische Systeme]]></name></content></item>
+<item id="hhgyoe2a" parent_id="hhgyoe2"><content><name><![CDATA[Differenzenrechnung]]></name></content></item>
+<item id="hhgyoe2b" parent_id="hhgyoe2"><content><name><![CDATA[Wachstum]]></name></content></item>
+<item id="hhgyoe2c" parent_id="hhgyoe2"><content><name><![CDATA[mit Differenzengleichungen 1. Ordnung rechnen]]></name></content></item>
+<item id="hhgyoe2d" parent_id="hhgyoe2"><content><name><![CDATA[mit Systemen von Differenzengleichungen rechnen]]></name></content></item>
+<item id="hhgyoe2e" parent_id="hhgyoe2"><content><name><![CDATA[mit Differenzengleichungen 2. Ordnung rechnen]]></name></content></item>
+<item id="hhgyog" parent_id="hhgyo"><content><name><![CDATA[Grundkurse]]></name></content></item>
+<item id="hhgyog1" parent_id="hhgyos"><content><name><![CDATA[G1 - Von der Änderungsrate zum Bestand]]></name></content></item>
+<item id="hhgyog1a" parent_id="hhgyog1"><content><name><![CDATA[verstehen den Hauptsatz der Differential- und Integralrechnung]]></name></content></item>
+<item id="hhgyog1b" parent_id="hhgyog1"><content><name><![CDATA[Ableitungen von Funktionen bestimmen]]></name></content></item>
+<item id="hhgyog1c" parent_id="hhgyog1"><content><name><![CDATA[die Summen- und die Faktorregel anwenden]]></name></content></item>
+<item id="hhgyog1d" parent_id="hhgyog1"><content><name><![CDATA[beherrschen numerische Berechnung von Integralen]]></name></content></item>
+<item id="hhgyog2" parent_id="hhgyos"><content><name><![CDATA[G2 - Matrizen und Vektoren als Datenspeicher]]></name></content></item>
+<item id="hhgyog2a" parent_id="hhgyog2"><content><name><![CDATA[Vektor]]></name></content></item>
+<item id="hhgyog2b" parent_id="hhgyog2"><content><name><![CDATA[Matrix]]></name></content></item>
+<item id="hhgyog2c" parent_id="hhgyog2"><content><name><![CDATA[Vektoraddition]]></name></content></item>
+<item id="hhgyog2d" parent_id="hhgyog2"><content><name><![CDATA[Skalarprodukt]]></name></content></item>
+<item id="hhgyog2e" parent_id="hhgyog2"><content><name><![CDATA[Iteration]]></name></content></item>
+<item id="hhgyog2f" parent_id="hhgyog2"><content><name><![CDATA[Rekursion]]></name></content></item>
+<item id="hhgyog2g" parent_id="hhgyog2"><content><name><![CDATA[Gaußsches Eliminationsverfahren]]></name></content></item>
+<item id="hhgyog3" parent_id="hhgyos"><content><name><![CDATA[G3 - Der Zufall steht Modell]]></name></content></item>
+<item id="hhgyog3a" parent_id="hhgyog3"><content><name><![CDATA[Random Walk]]></name></content></item>
+<item id="hhgyog3b" parent_id="hhgyog3"><content><name><![CDATA[Bernoulli-Kette]]></name></content></item>
+<item id="hhgyog3c" parent_id="hhgyog3"><content><name><![CDATA[Binomialverteilung]]></name></content></item>
+<item id="hhgyog3d" parent_id="hhgyog3"><content><name><![CDATA[Zufallsgrößen und ihre Verteilungen und Kennwerte: Erwartungswert und Varianz und Standardabweichung]]></name></content></item>
+<item id="hhgyog3e" parent_id="hhgyog3"><content><name><![CDATA[Normalverteilung]]></name></content></item>
+<item id="hhgyog4" parent_id="hhgyos"><content><name><![CDATA[G4 - Änderungsraten und Bestände]]></name></content></item>
+<item id="hhgyog4a" parent_id="hhgyog4"><content><name><![CDATA[Ableitungsregeln]]></name></content></item>
+<item id="hhgyog4b" parent_id="hhgyog4"><content><name><![CDATA[Ableitungsfunktion]]></name></content></item>
+<item id="hhgyog4c" parent_id="hhgyog4"><content><name><![CDATA[Differenzierbarkeit]]></name></content></item>
+<item id="hhgyog4d" parent_id="hhgyog4"><content><name><![CDATA[Logarithmus Funktion]]></name></content></item>
+<item id="hhgyog4e" parent_id="hhgyog4"><content><name><![CDATA[Stammfunktion]]></name></content></item>
+<item id="hhgyog4f" parent_id="hhgyog4"><content><name><![CDATA[ableiten von Potenzfunktionen]]></name></content></item>
+<item id="hhgyog4g" parent_id="hhgyog4"><content><name><![CDATA[ableiten von Exponentialfunktionen]]></name></content></item>
+<item id="hhgyog4h" parent_id="hhgyog4"><content><name><![CDATA[ableiten von periodischen Funktionen]]></name></content></item>
+<item id="hhgyog4i" parent_id="hhgyog4"><content><name><![CDATA[verstehen den Hauptsatz der Differential- und Integralrechnung]]></name></content></item>
+<item id="hhgyog4j" parent_id="hhgyog4"><content><name><![CDATA[kennen die wichtigsten Stammfunktionen]]></name></content></item>
+<item id="hhgyog5" parent_id="hhgyos"><content><name><![CDATA[G5 - Analytische Geometrie]]></name></content></item>
+<item id="hhgyog5a" parent_id="hhgyog5"><content><name><![CDATA[Vektor]]></name></content></item>
+<item id="hhgyog5b" parent_id="hhgyog5"><content><name><![CDATA[Gleichung einer Ebene]]></name></content></item>
+<item id="hhgyog5c" parent_id="hhgyog5"><content><name><![CDATA[Ebene in einem Koordinatensystem]]></name></content></item>
+<item id="hhgyog5d" parent_id="hhgyog5"><content><name><![CDATA[Lineares Gleichungssystem]]></name></content></item>
+<item id="hhgyog5e" parent_id="hhgyog5"><content><name><![CDATA[das Skalarprodukt zur Bestimmung von Winkeln und Abständen verwenden]]></name></content></item>
+<item id="hhgyog6" parent_id="hhgyos"><content><name><![CDATA[G6 - Anwendungsprobleme der Stochastik]]></name></content></item>
+<item id="hhgyog6a" parent_id="hhgyog6"><content><name><![CDATA[Hypothese]]></name></content></item>
+<item id="hhgyog6b" parent_id="hhgyog6"><content><name><![CDATA[eine Hypothese prüfen]]></name></content></item>
+<item id="hhgyog6c" parent_id="hhgyog6"><content><name><![CDATA[verstehen die Bayes’sche Entscheidungstheorie]]></name></content></item>
+<item id="hhgyog6d" parent_id="hhgyog6"><content><name><![CDATA[verstehen Signifikanz]]></name></content></item>
+<item id="hhgyog6e" parent_id="hhgyog6"><content><name><![CDATA[was Korrelation bedeutet und verstehen]]></name></content></item>
+<item id="hhgyog6f" parent_id="hhgyog6"><content><name><![CDATA[verstehen Kausalität]]></name></content></item>
+<item id="hhgyol" parent_id="hhgyo"><content><name><![CDATA[Leistungskurse]]></name></content></item>
+<item id="hhgyol1" parent_id="hhgyol"><content><name><![CDATA[L1 - Von der Änderungsrate zum Bestand]]></name></content></item>
+<item id="hhgyol1a" parent_id="hhgyol1"><content><name><![CDATA[verstehen den Hauptsatz der Differential- und Integralrechnung]]></name></content></item>
+<item id="hhgyol1b" parent_id="hhgyol1"><content><name><![CDATA[Ableitungen von Funktionen bestimmen]]></name></content></item>
+<item id="hhgyol1c" parent_id="hhgyol1"><content><name><![CDATA[die Summen- und die Faktorregel anwenden]]></name></content></item>
+<item id="hhgyol1d" parent_id="hhgyol1"><content><name><![CDATA[beherrschen numerische Berechnung von Integralen]]></name></content></item>
+<item id="hhgyol2" parent_id="hhgyol"><content><name><![CDATA[L2 - Matrizen und Vektoren als Datenspeicher]]></name></content></item>
+<item id="hhgyol2a" parent_id="hhgyol2"><content><name><![CDATA[Vektor]]></name></content></item>
+<item id="hhgyol2b" parent_id="hhgyol2"><content><name><![CDATA[Matrix]]></name></content></item>
+<item id="hhgyol2c" parent_id="hhgyol2"><content><name><![CDATA[Vektoraddition]]></name></content></item>
+<item id="hhgyol2d" parent_id="hhgyol2"><content><name><![CDATA[Skalarprodukt]]></name></content></item>
+<item id="hhgyol2e" parent_id="hhgyol2"><content><name><![CDATA[Iteration]]></name></content></item>
+<item id="hhgyol2f" parent_id="hhgyol2"><content><name><![CDATA[Rekursion]]></name></content></item>
+<item id="hhgyol2g" parent_id="hhgyol2"><content><name><![CDATA[Gaußsches Eliminationsverfahren]]></name></content></item>
+<item id="hhgyol3" parent_id="hhgyol"><content><name><![CDATA[L3 - Der Zufall steht Modell]]></name></content></item>
+<item id="hhgyol3a" parent_id="hhgyol3"><content><name><![CDATA[Random Walk]]></name></content></item>
+<item id="hhgyol3b" parent_id="hhgyol3"><content><name><![CDATA[Bernoulli-Kette]]></name></content></item>
+<item id="hhgyol3c" parent_id="hhgyol3"><content><name><![CDATA[Binomialverteilung]]></name></content></item>
+<item id="hhgyol3d" parent_id="hhgyol3"><content><name><![CDATA[Zufallsgrößen und ihre Verteilungen und Kennwerte: Erwartungswert und Varianz und Standardabweichung]]></name></content></item>
+<item id="hhgyol3e" parent_id="hhgyol3"><content><name><![CDATA[Normalverteilung]]></name></content></item>
+<item id="hhgyol3f" parent_id="hhgyol3"><content><name><![CDATA[Endliche Markoff-Ketten]]></name></content></item>
+<item id="hhgyol3g" parent_id="hhgyol3"><content><name><![CDATA[Normalverteilung]]></name></content></item>
+<item id="hhgyol3h" parent_id="hhgyol3"><content><name><![CDATA[Grenzwert]]></name></content></item>
+<item id="hhgyol3i" parent_id="hhgyol3"><content><name><![CDATA[Grenzwertsätze]]></name></content></item>
+<item id="hhgyol3j" parent_id="hhgyol3"><content><name><![CDATA[Axiomensystem von Kolmogorow]]></name></content></item>
+<item id="hhgyol3k" parent_id="hhgyol3"><content><name><![CDATA[kennen endliche Markoff-Ketten]]></name></content></item>
+<item id="hhgyol4" parent_id="hhgyol"><content><name><![CDATA[L4 - Änderungsraten und Bestände]]></name></content></item>
+<item id="hhgyol4a" parent_id="hhgyol4"><content><name><![CDATA[Ableitungsregeln]]></name></content></item>
+<item id="hhgyol4b" parent_id="hhgyol4"><content><name><![CDATA[Ableitungsfunktion]]></name></content></item>
+<item id="hhgyol4c" parent_id="hhgyol4"><content><name><![CDATA[Differenzierbarkeit]]></name></content></item>
+<item id="hhgyol4d" parent_id="hhgyol4"><content><name><![CDATA[Logarithmus Funktion]]></name></content></item>
+<item id="hhgyol4e" parent_id="hhgyol4"><content><name><![CDATA[Stammfunktion]]></name></content></item>
+<item id="hhgyol4f" parent_id="hhgyol4"><content><name><![CDATA[Wachstum]]></name></content></item>
+<item id="hhgyol4g" parent_id="hhgyol4"><content><name><![CDATA[Substitution]]></name></content></item>
+<item id="hhgyol4h" parent_id="hhgyol4"><content><name><![CDATA[ableiten von Potenzfunktionen]]></name></content></item>
+<item id="hhgyol4i" parent_id="hhgyol4"><content><name><![CDATA[ableiten von Exponentialfunktionen]]></name></content></item>
+<item id="hhgyol4j" parent_id="hhgyol4"><content><name><![CDATA[ableiten von periodischen Funktionen]]></name></content></item>
+<item id="hhgyol4k" parent_id="hhgyol4"><content><name><![CDATA[verstehen den Hauptsatz der Differential- und Integralrechnung]]></name></content></item>
+<item id="hhgyol4l" parent_id="hhgyol4"><content><name><![CDATA[kennen die wichtigsten Stammfunktionen]]></name></content></item>
+<item id="hhgyol4m" parent_id="hhgyol4"><content><name><![CDATA[kennen exponentielles und beschränktes und logistisches Wachstum mit den zugehörigen Funktional- bzw. Differentialgleichungen]]></name></content></item>
+<item id="hhgyol4n" parent_id="hhgyol4"><content><name><![CDATA[wenden Substitution an / Integration durch S.]]></name></content></item>
+<item id="hhgyol5" parent_id="hhgyol"><content><name><![CDATA[L5 - Analytische Geometrie]]></name></content></item>
+<item id="hhgyol5a" parent_id="hhgyol5"><content><name><![CDATA[Vektor]]></name></content></item>
+<item id="hhgyol5b" parent_id="hhgyol5"><content><name><![CDATA[Gleichung einer Ebene]]></name></content></item>
+<item id="hhgyol5c" parent_id="hhgyol5"><content><name><![CDATA[Ebene in einem Koordinatensystem]]></name></content></item>
+<item id="hhgyol5d" parent_id="hhgyol5"><content><name><![CDATA[Lineares Gleichungssystem]]></name></content></item>
+<item id="hhgyol5e" parent_id="hhgyol5"><content><name><![CDATA[das Skalarprodukt zur Bestimmung von Winkeln und Abständen verwenden]]></name></content></item>
+<item id="hhgyol5f" parent_id="hhgyol5"><content><name><![CDATA[kennen ein Verfahren zur numerischen Lösung linearer Gleichungssysteme]]></name></content></item>
+<item id="hhgyol6" parent_id="hhgyol"><content><name><![CDATA[L6 - Anwendungsprobleme der Stochastik]]></name></content></item>
+<item id="hhgyol6a" parent_id="hhgyol6"><content><name><![CDATA[Hypothese]]></name></content></item>
+<item id="hhgyol6b" parent_id="hhgyol6"><content><name><![CDATA[eine Hypothese prüfen]]></name></content></item>
+<item id="hhgyol6c" parent_id="hhgyol6"><content><name><![CDATA[verstehen die Bayes’sche Entscheidungstheorie]]></name></content></item>
+<item id="hhgyol6d" parent_id="hhgyol6"><content><name><![CDATA[verstehen Signifikanz]]></name></content></item>
+<item id="hhgyol6e" parent_id="hhgyol6"><content><name><![CDATA[was Korrelation bedeutet und verstehen]]></name></content></item>
+<item id="hhgyol6f" parent_id="hhgyol6"><content><name><![CDATA[verstehen Kausalität]]></name></content></item>
+<item id="hhgyol6g" parent_id="hhgyol6"><content><name><![CDATA[den Satz von der totalen Wahrscheinlichkeit kennen]]></name></content></item>
+</root>

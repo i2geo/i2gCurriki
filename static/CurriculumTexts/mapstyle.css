@@ -1,0 +1,128 @@
+/* Style file for i2geo curriculum text part of the i2geo platform. This is an adaptation and extension of the file style.css with the following license */
+
+/* 
+CSS - Clickable map of Europe - 600px
+- http://winstonwolf.pl/css,europe.html
+- version 1.3 (December 2009)
+
+author: Winston_Wolf [ http://winstonwolf.pl ]
+contact: http://winstonwolf.pl/contact.html
+
+(cc)2009 Attribution-Share Alike 
+http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+body{width:100%;height:100%;font:normal 1em sans-serif;color:#fff;background:#036;text-align:center}
+*{padding:0;margin:0;border:0 none;outline:0 none}
+
+.blueisland {background: #69c; text-align: left; margin: 1em; color: white; font: normal 1em sans-serif; font-size: 0.8em; height: 90%; min-height: 100px;}
+.blueisland a {color: white}
+.blueisland ul {margin: 2em;}
+ 
+#toctree {float: left; margin: 0.5%; width: 49%; max-height: 95%; overflow: auto;}
+#description_and_queries {float: right; margin: 0.5%; width:49%; max-height: 95%; overflow: auto;}
+#description {float: left; width: 100%; max-height: 40%; overflow: auto;}
+#queries {float: left; width: 100%; max-height: 40%; overflow: auto;}
+
+iframe { border: 0;}
+iframe#contentframe {width: 99%; background: white; color: black; padding: 0.5%;}
+iframe#queryframe {width: 99%; background: white; color: black; padding: 0.5%;}
+
+#a{position:relative;width:100%;margin:0em auto;text-align:left}
+#b{overflow:hidden}
+#c{width:100%;text-align:left}
+ #c ul{list-style:none}
+  #c {margin:1em 1em;font-size:0.7em;color:#999}
+  #c a{color:white}
+   #c li a:hover{color:#fd0}
+
+ 
+/* --- map of europe --- */
+/* list style */
+ #europe a{
+	  display:block;
+	  width:100%;
+	  padding:1px 0;
+	  font:normal 0.8em sans-serif;
+	  color:#69c;
+	  text-decoration:none;
+	  text-align:left;
+	 }
+  #europe a:hover,#europe li:hover a{
+  	  color:#fff;
+  	  text-decoration:underline;
+  	 }
+
+/* don't edit */
+#europe,#europe span.bg{background:transparent url('/static/CurriculumTexts/europe-600px.png') no-repeat -9999px 0}
+#europe{position:relative;top:0;left:1em;display:block;background-position:0 -966px;list-style:none}
+ #europe *{padding:0;margin:0;border:0 none;outline:0 none}
+  #europe li{cursor:pointer}
+  #europe li span{position:absolute;display:block;width:0;height:0;z-index:15}
+  #europe li a span.bg{z-index:3}
+  #europe li .map{top:0;left:0}
+
+  #europe.hidden{width:635px;height:520px;overflow:hidden}
+   #europe.hidden li{width:0;height:0;text-indent:-9999px}
+  #europe.left{left:210px;width:635px;min-height:520px}
+   #europe.left li{margin-left:-210px;width:200px}
+  #europe.right{width:845px;min-height:520px}
+   #europe.right li{width:200px;margin-left:635px}
+   #europe.left li:first-child,#europe.right li:first-child{padding-top:2em}
+  #europe.bottom{width:635px;padding-top:530px;overflow:hidden}
+  #europe.bottom li{width:100%;float:left}
+  #europe.bottom.two_columns li{width:50%;float:left}
+  #europe.bottom.three_columns li{width:33%;float:left}
+  #europe.bottom.four_columns li{width:25%;float:left}
+  #europe.bottom.five_columns li{width:20%;float:left}
+
+ #europe li span{position:absolute;display:block;top:0;left:0;width:0;height:0;z-index:15}
+ #europe1 a:hover .bg{top:395px;left:303px;width:20px;height:40px;background-position:-10px -10px} #europe1 .s1{top:401px;left:303px;width:15px;height:32px} #europe1 .s2{top:397px;left:305px;width:8px;height:4px} #europe1 .s3{top:418px;left:318px;width:4px;height:9px}
+ #europe2 a:hover .bg{top:385px;left:133px;width:5px;height:6px;background-position:-35px -10px} #europe2 .s1{top:383px;left:131px;width:9px;height:10px}
+ #europe3 a:hover .bg{top:316px;left:214px;width:67px;height:35px;background-position:-50px -10px} #europe3 .s1{top:334px;left:215px;width:61px;height:9px} #europe3 .s2{top:325px;left:245px;width:35px;height:9px} #europe3 .s3{top:322px;left:249px;width:30px;height:3px} #europe3 .s4{top:318px;left:261px;width:10px;height:4px} #europe3 .s5{top:343px;left:240px;width:33px;height:4px} #europe3 .s6{top:347px;left:250px;width:15px;height:2px}
+ #europe4 a:hover .bg{top:216px;left:325px;width:72px;height:64px;background-position:-130px -10px} #europe4 .s1{top:218px;left:350px;width:28px;height:57px} #europe4 .s2{top:233px;left:378px;width:9px;height:42px} #europe4 .s3{top:241px;left:387px;width:9px;height:9px} #europe4 .s4{top:255px;left:387px;width:5px;height:8px} #europe4 .s5{top:223px;left:345px;width:5px;height:52px} #europe4 .s6{top:250px;left:330px;width:15px;height:25px} #europe4 .s7{top:235px;left:342px;width:3px;height:15px} #europe4 .s8{top:244px;left:337px;width:5px;height:6px} #europe4 .s9{top:275px;left:330px;width:6px;height:4px} #europe4 .s10{top:269px;left:326px;width:4px;height:5px}
+ #europe5 a:hover .bg{top:278px;left:162px;width:31px;height:28px;background-position:-210px -10px} #europe5 .s1{top:279px;left:163px;width:10px;height:8px} #europe5 .s2{top:281px;left:168px;width:22px;height:11px} #europe5 .s3{top:292px;left:174px;width:8px;height:6px} #europe5 .s4{top:292px;left:180px;width:8px;height:12px} #europe5 .s5{top:292px;left:188px;width:5px;height:5px}
+ #europe6 a:hover .bg{top:364px;left:268px;width:38px;height:35px;background-position:-250px -10px} #europe6 .s1{top:366px;left:269px;width:5px;height:5px} #europe6 .s2{top:366px;left:272px;width:30px;height:11px} #europe6 .s3{top:377px;left:275px;width:30px;height:5px} #europe6 .s4{top:382px;left:280px;width:25px;height:5px} #europe6 .s5{top:387px;left:285px;width:13px;height:5px} #europe6 .s6{top:392px;left:287px;width:10px;height:10px}
+ #europe7 a:hover .bg{top:369px;left:330px;width:60px;height:43px;background-position:-300px -10px} #europe7 .s1{top:375px;left:331px;width:6px;height:9px} #europe7 .s2{top:378px;left:336px;width:55px;height:20px} #europe7 .s3{top:390px;left:333px;width:41px;height:12px} #europe7 .s4{top:371px;left:364px;width:25px;height:15px} #europe7 .s5{top:402px;left:339px;width:32px;height:6px} #europe7 .s6{top:408px;left:339px;width:5px;height:3px}
+ #europe8 a:hover .bg{top:290px;left:238px;width:57px;height:33px;background-position:-370px -10px} #europe8 .s1{top:299px;left:240px;width:35px;height:10px} #europe8 .s2{top:295px;left:248px;width:25px;height:4px} #europe8 .s3{top:292px;left:256px;width:10px;height:3px} #europe8 .s4{top:301px;left:279px;width:6px;height:8px} #europe8 .s5{top:304px;left:242px;width:50px;height:10px} #europe8 .s6{top:314px;left:250px;width:11px;height:8px} #europe8 .s7{top:314px;left:261px;width:27px;height:4px} #europe8 .s8{top:318px;left:271px;width:10px;height:4px}
+ #europe9 a:hover .bg{top:347px;left:248px;width:54px;height:53px;background-position:-435px -10px} #europe9 .s1{top:360px;left:248px;width:22px;height:20px} #europe9 .s2{top:371px;left:260px;width:12px;height:20px} #europe9 .s3{top:377px;left:272px;width:3px;height:20px} #europe9 .s4{top:382px;left:275px;width:5px;height:17px} #europe9 .s5{top:387px;left:280px;width:5px;height:12px} #europe9 .s6{top:392px;left:285px;width:2px;height:8px} #europe9 .s7{top:357px;left:266px;width:33px;height:9px} #europe9 .s8{top:352px;left:269px;width:14px;height:5px} #europe9 .s9{top:349px;left:273px;width:6px;height:3px}
+ #europe10 a:hover .bg{top:460px;left:448px;width:23px;height:21px;background-position:-510px -10px} #europe10 .s1{top:458px;left:465px;width:8px;height:18px} #europe10 .s2{top:465px;left:447px;width:18px;height:18px}
+ #europe11 a:hover .bg{top:126px;left:128px;width:137px;height:121px;background-position:-10px -80px} #europe11 .s1{top:125px;left:126px;width:10px;height:15px} #europe11 .s2{top:210px;left:210px;width:30px;height:32px} #europe11 .s3{top:200px;left:225px;width:10px;height:15px} #europe11 .s4{top:225px;left:240px;width:6px;height:10px} #europe11 .s5{top:235px;left:230px;width:16px;height:11px} #europe11 .s6{top:236px;left:257px;width:10px;height:7px}
+ #europe12 a:hover .bg{top:175px;left:308px;width:43px;height:58px;background-position:-170px -90px} #europe12 .s1{top:183px;left:306px;width:20px;height:18px} #europe12 .s2{top:176px;left:318px;width:29px;height:22px} #europe12 .s3{top:190px;left:338px;width:12px;height:12px}
+ #europe13 a:hover .bg{top:281px;left:95px;width:117px;height:132px;background-position:-230px -90px} #europe13 .s1{top:281px;left:153px;width:10px;height:6px} #europe13 .s2{top:287px;left:108px;width:60px;height:90px} #europe13 .s3{top:297px;left:95px;width:13px;height:25px} #europe13 .s4{top:292px;left:116px;width:58px;height:91px} #europe13 .s5{top:383px;left:140px;width:12px;height:10px} #europe13 .s6{top:298px;left:170px;width:10px;height:92px} #europe13 .s7{top:304px;left:180px;width:8px;height:38px} #europe13 .s8{top:342px;left:180px;width:4px;height:7px} #europe13 .s9{top:347px;left:180px;width:10px;height:43px} #europe13 .s10{top:375px;left:190px;width:5px;height:8px} #europe13 .s11{top:389px;left:198px;width:15px;height:25px} #europe13 .s12{top:307px;left:188px;width:7px;height:30px} #europe13 .s13{top:311px;left:195px;width:5px;height:22px} #europe13 .s14{top:313px;left:200px;width:5px;height:6px}
+ #europe14 a:hover .bg{top:38px;left:289px;width:72px;height:138px;background-position:-360px -90px} #europe14 .s1{top:40px;left:314px;width:15px;height:137px} #europe14 .s2{top:53px;left:290px;width:7px;height:10px} #europe14 .s3{top:59px;left:295px;width:20px;height:6px} #europe14 .s4{top:64px;left:305px;width:32px;height:20px} #europe14 .s5{top:84px;left:308px;width:34px;height:85px} #europe14 .s6{top:125px;left:298px;width:20px;height:50px} #europe14 .s7{top:168px;left:290px;width:10px;height:10px} #europe14 .s8{top:105px;left:342px;width:7px;height:60px} #europe14 .s9{top:121px;left:349px;width:5px;height:30px} #europe14 .s10{top:125px;left:354px;width:5px;height:15px}
+ #europe15 a:hover .bg{top:238px;left:189px;width:75px;height:100px;background-position:-440px -90px} #europe15 .s1{top:242px;left:205px;width:22px;height:89px} #europe15 .s2{top:319px;left:200px;width:45px;height:15px} #europe15 .s3{top:245px;left:227px;width:31px;height:50px} #europe15 .s4{top:264px;left:200px;width:48px;height:35px} #europe15 .s5{top:272px;left:258px;width:3px;height:20px} #europe15 .s6{top:276px;left:190px;width:10px;height:16px} #europe15 .s7{top:292px;left:193px;width:47px;height:21px} #europe15 .s8{top:309px;left:227px;width:17px;height:10px} #europe15 .s9{top:314px;left:244px;width:6px;height:11px} #europe15 .s10{top:253px;left:202px;width:5px;height:11px}
+ #europe16 a:hover .bg{top:400px;left:308px;width:95px;height:95px;background-position:-525px -50px} #europe16 .s1{top:401px;left:370px;width:4px;height:12px} #europe16 .s2{top:408px;left:344px;width:26px;height:90px} #europe16 .s3{top:411px;left:340px;width:4px;height:70px} #europe16 .s4{top:430px;left:370px;width:10px;height:65px} #europe16 .s5{top:449px;left:313px;width:75px;height:30px} #europe16 .s6{top:459px;left:380px;width:12px;height:33px} #europe16 .s7{top:465px;left:388px;width:17px;height:20px} #europe16 .s8{top:419px;left:322px;width:18px;height:30px} #europe16 .s9{top:414px;left:328px;width:12px;height:5px} #europe16 .s10{top:427px;left:318px;width:4px;height:6px} #europe16 .s11{top:433px;left:308px;width:15px;height:16px}
+ #europe17 a:hover .bg{top:319px;left:272px;width:59px;height:39px;background-position:-525px -160px} #europe17 .s1{top:333px;left:276px;width:43px;height:17px} #europe17 .s2{top:330px;left:280px;width:5px;height:5px} #europe17 .s3{top:343px;left:273px;width:3px;height:6px} #europe17 .s4{top:350px;left:278px;width:35px;height:2px} #europe17 .s5{top:352px;left:283px;width:16px;height:5px} #europe17 .s6{top:328px;left:295px;width:27px;height:13px} #europe17 .s7{top:325px;left:300px;width:25px;height:10px} #europe17 .s8{top:321px;left:307px;width:23px;height:10px}
+ #europe18 a:hover .bg{top:40px;left:54px;width:58px;height:49px;background-position:-10px -210px} #europe18 .s1{top:39px;left:53px;width:30px;height:40px} #europe18 .s2{top:50px;left:60px;width:54px;height:42px}
+ #europe19 a:hover .bg{top:340px;left:186px;width:113px;height:137px;background-position:-80px -210px} #europe19 .s1{top:414px;left:193px;width:20px;height:33px} #europe19 .s2{top:448px;left:228px;width:55px;height:30px} #europe19 .s3{top:353px;left:190px;width:59px;height:22px} #europe19 .s4{top:375px;left:195px;width:54px;height:10px} #europe19 .s5{top:385px;left:215px;width:40px;height:15px} #europe19 .s6{top:400px;left:223px;width:40px;height:15px} #europe19 .s7{top:405px;left:263px;width:15px;height:10px} #europe19 .s8{top:415px;left:240px;width:50px;height:15px} #europe19 .s9{top:420px;left:260px;width:40px;height:30px} #europe19 .s10{top:348px;left:200px;width:7px;height:5px} #europe19 .s11{top:347px;left:212px;width:37px;height:6px} #europe19 .s12{top:343px;left:222px;width:18px;height:5px}
+ #europe20 a:hover .bg{top:210px;left:66px;width:42px;height:44px;background-position:-210px -240px} #europe20 .s1{top:208px;left:88px;width:15px;height:10px} #europe20 .s2{top:215px;left:75px;width:20px;height:40px} #europe20 .s3{top:237px;left:64px;width:11px;height:18px} #europe20 .s4{top:225px;left:95px;width:11px;height:28px}
+ #europe21 a:hover .bg{top:388px;left:309px;width:19px;height:18px;background-position:-220px -310px} #europe21 .s1{top:389px;left:314px;width:8px;height:5px} #europe21 .s2{top:394px;left:310px;width:16px;height:7px} #europe21 .s3{top:401px;left:315px;width:5px;height:4px}
+ #europe22 a:hover .bg{top:196px;left:304px;width:53px;height:31px;background-position:-270px -240px} #europe22 .s1{top:198px;left:320px;width:18px;height:23px} #europe22 .s2{top:201px;left:304px;width:16px;height:20px} #europe22 .s3{top:221px;left:303px;width:6px;height:5px} #europe22 .s4{top:202px;left:338px;width:14px;height:20px} #europe22 .s5{top:210px;left:352px;width:4px;height:8px}
+ #europe23 a:hover .bg{top:336px;left:214px;width:4px;height:5px;background-position:-275px -290px} #europe23 .s1{top:336px;left:214px;width:3px;height:4px}
+ #europe24 a:hover .bg{top:217px;left:305px;width:44px;height:34px;background-position:-270px -310px} #europe24 .s1{top:221px;left:308px;width:37px;height:15px} #europe24 .s2{top:226px;left:304px;width:5px;height:10px} #europe24 .s3{top:236px;left:320px;width:22px;height:10px} #europe24 .s4{top:236px;left:312px;width:8px;height:2px} #europe24 .s5{top:246px;left:325px;width:12px;height:4px}
+ #europe25 a:hover .bg{top:297px;left:185px;width:8px;height:11px;background-position:-300px -290px} #europe25 .s1{top:297px;left:186px;width:7px;height:11px}
+ #europe26 a:hover .bg{top:398px;left:315px;width:26px;height:22px;background-position:-340px -250px} #europe26 .s1{top:400px;left:320px;width:15px;height:15px} #europe26 .s2{top:402px;left:335px;width:5px;height:12px} #europe26 .s3{top:405px;left:316px;width:4px;height:10px} #europe26 .s4{top:415px;left:318px;width:11px;height:4px}
+ #europe27 a:hover .bg{top:483px;left:254px;width:5px;height:6px;background-position:-330px -290px} #europe27 .s1{top:480px;left:252px;width:8px;height:10px}
+ #europe28 a:hover .bg{top:313px;left:361px;width:35px;height:38px;background-position:-330px -310px} #europe28 .s1{top:315px;left:360px;width:17px;height:5px} #europe28 .s2{top:318px;left:367px;width:18px;height:8px} #europe28 .s3{top:325px;left:370px;width:20px;height:6px} #europe28 .s4{top:331px;left:377px;width:17px;height:7px} #europe28 .s5{top:338px;left:378px;width:8px;height:10px} #europe28 .s6{top:348px;left:379px;width:5px;height:4px}
+ #europe29 a:hover .bg{top:384px;left:295px;width:19px;height:23px;background-position:-380px -250px} #europe29 .s1{top:385px;left:300px;width:5px;height:22px} #europe29 .s2{top:388px;left:296px;width:4px;height:15px} #europe29 .s3{top:389px;left:305px;width:5px;height:8px} #europe29 .s4{top:391px;left:310px;width:4px;height:5px}
+ #europe30 a:hover .bg{top:254px;left:169px;width:35px;height:37px;background-position:-380px -290px} #europe30 .s1{top:253px;left:180px;width:22px;height:15px} #europe30 .s2{top:268px;left:170px;width:30px;height:9px} #europe30 .s3{top:277px;left:170px;width:22px;height:4px} #europe30 .s4{top:281px;left:187px;width:5px;height:6px}
+ #europe31 a:hover .bg{top:25px;left:197px;width:140px;height:176px;background-position:-430px -230px} #europe31 .s1{top:24px;left:290px;width:47px;height:17px} #europe31 .s2{top:41px;left:328px;width:7px;height:8px} #europe31 .s3{top:41px;left:265px;width:49px;height:13px} #europe31 .s4{top:54px;left:297px;width:17px;height:5px} #europe31 .s5{top:54px;left:250px;width:40px;height:13px} #europe31 .s6{top:67px;left:248px;width:30px;height:7px} #europe31 .s7{top:74px;left:245px;width:25px;height:23px} #europe31 .s8{top:97px;left:230px;width:30px;height:27px} #europe31 .s9{top:124px;left:210px;width:37px;height:15px} #europe31 .s10{top:139px;left:195px;width:42px;height:63px} #europe31 .s11{top:139px;left:237px;width:6px;height:50px} #europe31 .s12{top:139px;left:243px;width:3px;height:40px}
+ #europe32 a:hover .bg{top:241px;left:255px;width:82px;height:73px;background-position:-10px -370px} #europe32 .s1{top:246px;left:260px;width:66px;height:46px} #europe32 .s2{top:240px;left:270px;width:25px;height:6px} #europe32 .s3{top:250px;left:258px;width:2px;height:22px} #europe32 .s4{top:250px;left:326px;width:4px;height:19px} #europe32 .s5{top:274px;left:265px;width:65px;height:21px} #europe32 .s6{top:295px;left:273px;width:6px;height:9px} #europe32 .s7{top:295px;left:279px;width:53px;height:6px} #europe32 .s8{top:279px;left:330px;width:4px;height:16px} #europe32 .s9{top:301px;left:285px;width:43px;height:4px} #europe32 .s10{top:305px;left:292px;width:36px;height:6px}
+ #europe33 a:hover .bg{top:368px;left:14px;width:47px;height:66px;background-position:-110px -370px} #europe33 .s1{top:369px;left:30px;width:16px;height:35px} #europe33 .s2{top:374px;left:46px;width:12px;height:12px} #europe33 .s3{top:386px;left:46px;width:5px;height:11px} #europe33 .s4{top:386px;left:13px;width:20px;height:50px} #europe33 .s5{top:404px;left:33px;width:8px;height:11px} #europe33 .s6{top:415px;left:33px;width:5px;height:10px}
+ #europe34 a:hover .bg{top:318px;left:308px;width:87px;height:63px;background-position:-170px -370px} #europe34 .s1{top:325px;left:330px;width:40px;height:47px} #europe34 .s2{top:320px;left:357px;width:10px;height:5px} #europe34 .s3{top:372px;left:330px;width:34px;height:4px} #europe34 .s4{top:376px;left:335px;width:29px;height:3px} #europe34 .s5{top:331px;left:324px;width:53px;height:40px} #europe34 .s6{top:338px;left:377px;width:2px;height:33px} #europe34 .s7{top:351px;left:379px;width:17px;height:20px} #europe34 .s8{top:341px;left:319px;width:5px;height:27px} #europe34 .s9{top:335px;left:322px;width:3px;height:7px} #europe34 .s10{top:349px;left:315px;width:4px;height:13px} #europe34 .s11{top:350px;left:311px;width:4px;height:6px}
+ #europe35 a:hover .bg{top:10px;left:296px;width:315px;height:342px;background-position:-10px -460px} #europe35 .s1{top:8px;left:359px;width:250px;height:185px} #europe35 .s2{top:235px;left:297px;width:15px;height:12px} #europe35 .s3{top:237px;left:312px;width:8px;height:10px} #europe35 .s4{top:25px;left:337px;width:22px;height:61px} #europe35 .s5{top:49px;left:329px;width:8px;height:15px} #europe35 .s6{top:86px;left:342px;width:17px;height:20px} #europe35 .s7{top:106px;left:349px;width:10px;height:19px} #europe35 .s8{top:140px;left:354px;width:5px;height:78px} #europe35 .s9{top:151px;left:350px;width:4px;height:59px} #europe35 .s10{top:151px;left:347px;width:3px;height:40px} #europe35 .s11{top:193px;left:359px;width:225px;height:25px} #europe35 .s12{top:218px;left:377px;width:160px;height:15px} #europe35 .s13{top:233px;left:385px;width:150px;height:8px} #europe35 .s14{top:241px;left:395px;width:125px;height:16px} #europe35 .s15{top:249px;left:387px;width:8px;height:7px} #europe35 .s16{top:256px;left:391px;width:165px;height:75px} #europe35 .s17{top:310px;left:455px;width:120px;height:35px}
+ #europe36 a:hover .bg{top:380px;left:237px;width:3px;height:3px;background-position:-270px -370px} #europe36 .s1{top:378px;left:235px;width:6px;height:6px}
+ #europe37 a:hover .bg{top:351px;left:297px;width:42px;height:55px;background-position:-290px -370px} #europe37 .s1{top:352px;left:299px;width:12px;height:15px} #europe37 .s2{top:356px;left:302px;width:13px;height:21px} #europe37 .s3{top:362px;left:305px;width:14px;height:28px} #europe37 .s4{top:368px;left:319px;width:5px;height:23px} #europe37 .s5{top:371px;left:322px;width:11px;height:23px} #europe37 .s6{top:384px;left:326px;width:10px;height:16px}
+ #europe38 a:hover .bg{top:307px;left:277px;width:49px;height:26px;background-position:-350px -370px} #europe38 .s1{top:311px;left:290px;width:35px;height:11px} #europe38 .s2{top:314px;left:287px;width:21px;height:13px} #europe38 .s3{top:318px;left:281px;width:20px;height:10px} #europe38 .s4{top:321px;left:279px;width:6px;height:9px} #europe38 .s5{top:328px;left:285px;width:10px;height:5px}
+ #europe39 a:hover .bg{top:343px;left:248px;width:29px;height:21px;background-position:-350px -450px} #europe39 .s1{top:343px;left:270px;width:6px;height:8px} #europe39 .s2{top:346px;left:265px;width:10px;height:6px} #europe39 .s3{top:348px;left:249px;width:20px;height:9px} #europe39 .s4{top:357px;left:248px;width:18px;height:4px}
+ #europe40 a:hover .bg{top:349px;left:30px;width:127px;height:105px;background-position:-390px -440px} #europe40 .s1{top:348px;left:35px;width:30px;height:21px} #europe40 .s2{top:352px;left:45px;width:30px;height:22px} #europe40 .s3{top:357px;left:58px;width:50px;height:100px} #europe40 .s4{top:386px;left:51px;width:80px;height:55px} #europe40 .s5{top:377px;left:108px;width:8px;height:9px} #europe40 .s6{top:383px;left:116px;width:15px;height:3px} #europe40 .s7{top:397px;left:46px;width:12px;height:60px} #europe40 .s8{top:404px;left:41px;width:5px;height:55px} #europe40 .s9{top:415px;left:38px;width:3px;height:40px} #europe40 .s10{top:425px;left:33px;width:5px;height:15px} #europe40 .s11{top:393px;left:131px;width:23px;height:42px} #europe40 .s12{top:420px;left:154px;width:8px;height:12px}
+ #europe41 a:hover .bg{top:56px;left:236px;width:76px;height:181px;background-position:-530px -440px} #europe41 .s1{top:57px;left:287px;width:7px;height:8px} #europe41 .s2{top:65px;left:278px;width:27px;height:30px} #europe41 .s3{top:74px;left:270px;width:38px;height:30px} #europe41 .s4{top:97px;left:260px;width:44px;height:27px} #europe41 .s5{top:124px;left:246px;width:51px;height:40px} #europe41 .s6{top:164px;left:246px;width:45px;height:30px} #europe41 .s7{top:179px;left:242px;width:38px;height:46px} #europe41 .s8{top:189px;left:237px;width:5px;height:22px} #europe41 .s9{top:225px;left:247px;width:12px;height:12px} #europe41 .s10{top:225px;left:259px;width:14px;height:5px} #europe41 .s11{top:195px;left:280px;width:15px;height:23px}
+ #europe42 a:hover .bg{top:329px;left:182px;width:42px;height:27px;background-position:-350px -560px} #europe42 .s1{top:332px;left:195px;width:20px;height:16px} #europe42 .s2{top:342px;left:215px;width:8px;height:6px} #europe42 .s3{top:348px;left:207px;width:5px;height:5px} #europe42 .s4{top:336px;left:190px;width:10px;height:17px} #europe42 .s5{top:338px;left:187px;width:3px;height:9px} #europe42 .s6{top:342px;left:184px;width:3px;height:6px}
+ #europe43 a:hover .bg{top:360px;left:368px;width:200px;height:108px;background-position:-360px -640px} #europe43 .s1{top:397px;left:374px;width:150px;height:33px} #europe43 .s2{top:413px;left:370px;width:4px;height:12px} #europe43 .s3{top:430px;left:380px;width:111px;height:19px} #europe43 .s4{top:449px;left:389px;width:80px;height:10px} #europe43 .s5{top:459px;left:392px;width:40px;height:6px} #europe43 .s6{top:465px;left:410px;width:17px;height:4px} #europe43 .s7{top:459px;left:443px;width:15px;height:4px} #europe43 .s8{top:449px;left:480px;width:10px;height:6px} #europe43 .s9{top:430px;left:491px;width:30px;height:13px} #europe43 .s10{top:370px;left:505px;width:50px;height:57px} #europe43 .s11{top:360px;left:510px;width:30px;height:10px} #europe43 .s12{top:390px;left:555px;width:12px;height:25px} #europe43 .s13{top:375px;left:420px;width:85px;height:22px}
+ #europe44 a:hover .bg{top:254px;left:323px;width:150px;height:100px;background-position:-350px -770px} #europe44 .s1{top:275px;left:335px;width:128px;height:40px} #europe44 .s2{top:279px;left:332px;width:3px;height:8px} #europe44 .s3{top:262px;left:385px;width:30px;height:63px} #europe44 .s4{top:255px;left:397px;width:17px;height:97px} #europe44 .s5{top:295px;left:332px;width:3px;height:20px} #europe44 .s6{top:301px;left:328px;width:4px;height:14px} #europe44 .s7{top:312px;left:325px;width:36px;height:10px} #europe44 .s8{top:322px;left:330px;width:27px;height:3px} #europe44 .s9{top:315px;left:377px;width:82px;height:3px} #europe44 .s10{top:318px;left:390px;width:65px;height:13px} #europe44 .s11{top:331px;left:394px;width:61px;height:22px} #europe44 .s12{top:337px;left:386px;width:8px;height:14px} #europe44 .s13{top:348px;left:383px;width:5px;height:6px} #europe44 .s14{top:267px;left:410px;width:16px;height:15px} #europe44 .s15{top:272px;left:440px;width:6px;height:5px} #europe44 .s16{top:274px;left:450px;width:20px;height:25px}
+ #europe45 a:hover .bg{top:154px;left:93px;width:72px;height:129px;background-position:-510px -770px} #europe45 .s1{top:153px;left:155px;width:11px;height:16px} #europe45 .s2{top:169px;left:105px;width:46px;height:117px} #europe45 .s3{top:210px;left:102px;width:3px;height:17px} #europe45 .s4{top:218px;left:95px;width:7px;height:8px} #europe45 .s5{top:270px;left:90px;width:15px;height:15px} #europe45 .s6{top:248px;left:151px;width:12px;height:30px} #europe45 .s7{top:278px;left:151px;width:5px;height:5px}
+/* end */
+
+
+

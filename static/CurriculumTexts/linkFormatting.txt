@@ -1,0 +1,33 @@
+This file contains several one-line scripts to modify the format of the links in an HTML file.
+The desired final format is this:
+<a href="http://i2geo.net/comped/show.html?uri=Collinear_vectors" 
+onclick="window.opener.chooseNode('Collinear_vectors'); return false;"> ... </a>
+
+
+
+
+Original format: 
+<a href="http://www.inter2geo.eu/2008/ontology/ontology.owl#Collinear_vectors" target="_blank">
+
+Script:
+sed "s/<a href=""http:\/\/www.inter2geo.eu\/2008\/ontology\/ontology.owl\#\([^""]*\)""[^>]*>/<a href=""http:\/\/i2geo.net\/comped\/show.html?uri=\1"" onclick=""window.opener.chooseNode('\1'); return false;"">/g"      <inputFile.html >outputFile.html
+
+
+
+
+Original format: 
+<a href="http://www.inter2geo.eu/2008/ontology.owl#Collinear_vectors" target="_blank">
+
+Script:
+sed "s/<a href=""http:\/\/www.inter2geo.eu\/2008\/ontology.owl\#\([^""]*\)""[^>]*>/<a href=""http:\/\/i2geo.net\/comped\/show.html?uri=\1"" onclick=""window.opener.chooseNode('\1'); return false;"">/g"      <inputFile.html >outputFile.html
+
+
+
+
+
+Original format:
+<a href="http://i2geo.net/comped/showTopic.html?uri=common_multiple">
+
+Script:
+sed "s/<a href=""http:\/\/i2geo.net\/comped\/showTopic.html?uri=\([^""]*\)""[^>]*>/<a href=""http:\/\/i2geo.net\/comped\/show.html?uri=\1"" onclick=""window.opener.chooseNode('\1'); return false;"">/g"      <Spain-ESO-07.html >Spain-ESO-08.html
+

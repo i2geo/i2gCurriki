@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" title="basic" media="screen,projection" href="../../mapstyle.css" />
+    <style> body {background: white; color: black; font-size: 0.8em; text-align: left;} </style>
+    <script type="text/javascript">
+      function triggersearch(node) {
+        if (parent.opener && !parent.opener.closed) {
+          parent.opener.chooseNode(node);
+        } else {
+          i2geowindow = window.open("http://i2geo.net/","i2geo"); 
+          i2geowindow.chooseNode(node);
+        } 
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

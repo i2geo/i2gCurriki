@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="RO_0" parent_id="0"><content><name><![CDATA[Raaklijn en Oppervlakte (Gerretsen)]]></name></content></item>
+<item id="RO_1" parent_id="RO_0"><content><name><![CDATA[Functies]]></name></content></item>
+<item id="RO_1.1" parent_id="RO_1"><content><name><![CDATA[De getallenrechte]]></name></content></item>
+<item id="RO_1.2" parent_id="RO_1"><content><name><![CDATA[Ordening der reele getallen]]></name></content></item>
+<item id="RO_1.3" parent_id="RO_1"><content><name><![CDATA[Variabelen]]></name></content></item>
+<item id="RO_1.4" parent_id="RO_1"><content><name><![CDATA[Functies]]></name></content></item>
+<item id="RO_1.5" parent_id="RO_1"><content><name><![CDATA[Grafische voorstellingen]]></name></content></item>
+<item id="RO_1.6" parent_id="RO_1"><content><name><![CDATA[Het rekenen met functies]]></name></content></item>
+<item id="RO_1.7" parent_id="RO_1"><content><name><![CDATA[Samengestelde functies]]></name></content></item>
+<item id="RO_1.8" parent_id="RO_1"><content><name><![CDATA[De inverse van een functie]]></name></content></item>
+<item id="RO_2" parent_id="RO_0"><content><name><![CDATA[Elementaire functies]]></name></content></item>
+<item id="RO_2.1" parent_id="RO_2"><content><name><![CDATA[De macht van een variabele]]></name></content></item>
+<item id="RO_2.10" parent_id="RO_2"><content><name><![CDATA[De oppervlaktefunctie]]></name></content></item>
+<item id="RO_2.11" parent_id="RO_2"><content><name><![CDATA[De natuurlijke logarithme]]></name></content></item>
+<item id="RO_2.12" parent_id="RO_2"><content><name><![CDATA[De exponentiele functie]]></name></content></item>
+<item id="RO_2.13" parent_id="RO_2"><content><name><![CDATA[Machten met reele exponenten]]></name></content></item>
+<item id="RO_2.14" parent_id="RO_2"><content><name><![CDATA[Logarithmen met een grondtal]]></name></content></item>
+<item id="RO_2.15" parent_id="RO_2"><content><name><![CDATA[Hyperbolische functies]]></name></content></item>
+<item id="RO_2.2" parent_id="RO_2"><content><name><![CDATA[Veeltermen]]></name></content></item>
+<item id="RO_2.3" parent_id="RO_2"><content><name><![CDATA[De stelling van Euclides]]></name></content></item>
+<item id="RO_2.4" parent_id="RO_2"><content><name><![CDATA[Rationale functies]]></name></content></item>
+<item id="RO_2.5" parent_id="RO_2"><content><name><![CDATA[De cirkelfuncties]]></name></content></item>
+<item id="RO_2.6" parent_id="RO_2"><content><name><![CDATA[De optellingstheorema's]]></name></content></item>
+<item id="RO_2.7" parent_id="RO_2"><content><name><![CDATA[De getallenvariabele op een cirkelomtrek]]></name></content></item>
+<item id="RO_2.8" parent_id="RO_2"><content><name><![CDATA[De cyclometrische functies]]></name></content></item>
+<item id="RO_2.9" parent_id="RO_2"><content><name><![CDATA[De oppervlakte van een hyperbooltrapezium]]></name></content></item>
+<item id="RO_3" parent_id="RO_0"><content><name><![CDATA[De afgeleide van een functie]]></name></content></item>
+<item id="RO_3.1" parent_id="RO_3"><content><name><![CDATA[De hellingfunctie]]></name></content></item>
+<item id="RO_3.10" parent_id="RO_3"><content><name><![CDATA[De afgeleide van de inverse van een functie]]></name></content></item>
+<item id="RO_3.11" parent_id="RO_3"><content><name><![CDATA[De differentiaal van een functie]]></name></content></item>
+<item id="RO_3.12" parent_id="RO_3"><content><name><![CDATA[Differentiaalrekening]]></name></content></item>
+<item id="RO_3.2" parent_id="RO_3"><content><name><![CDATA[De afgeleide functie]]></name></content></item>
+<item id="RO_3.3" parent_id="RO_3"><content><name><![CDATA[De somregel en de productregel]]></name></content></item>
+<item id="RO_3.4" parent_id="RO_3"><content><name><![CDATA[De afgeleide van de logarithmische en de exponentiele functie]]></name></content></item>
+<item id="RO_3.5" parent_id="RO_3"><content><name><![CDATA[De kettingregel]]></name></content></item>
+<item id="RO_3.6" parent_id="RO_3"><content><name><![CDATA[Continuiteit]]></name></content></item>
+<item id="RO_3.7" parent_id="RO_3"><content><name><![CDATA[De quotientregel]]></name></content></item>
+<item id="RO_3.8" parent_id="RO_3"><content><name><![CDATA[De afgeleiden van de cirkelfuncties]]></name></content></item>
+<item id="RO_3.9" parent_id="RO_3"><content><name><![CDATA[Hogere afgeleiden]]></name></content></item>
+<item id="RO_4" parent_id="RO_0"><content><name><![CDATA[Onbepaalde integralen]]></name></content></item>
+<item id="RO_4.1" parent_id="RO_4"><content><name><![CDATA[De primitieve functie]]></name></content></item>
+<item id="RO_4.2" parent_id="RO_4"><content><name><![CDATA[De onbepaalde integraal]]></name></content></item>
+<item id="RO_4.3" parent_id="RO_4"><content><name><![CDATA[De substitutieregel]]></name></content></item>
+<item id="RO_4.4" parent_id="RO_4"><content><name><![CDATA[Partiele integratie]]></name></content></item>
+<item id="RO_4.5" parent_id="RO_4"><content><name><![CDATA[Integratie van rationale functies]]></name></content></item>
+<item id="RO_4.6" parent_id="RO_4"><content><name><![CDATA[De lineaire differentiaalvergelijking van de eerste orde]]></name></content></item>
+<item id="RO_5" parent_id="RO_0"><content><name><![CDATA[Locale eigenschappen van functies]]></name></content></item>
+<item id="RO_5.1" parent_id="RO_5"><content><name><![CDATA[Locaal stijgen en dalen]]></name></content></item>
+<item id="RO_5.2" parent_id="RO_5"><content><name><![CDATA[Convexiteit en buigpunten]]></name></content></item>
+<item id="RO_5.3" parent_id="RO_5"><content><name><![CDATA[Het theorema van Rolle]]></name></content></item>
+<item id="RO_5.4" parent_id="RO_5"><content><name><![CDATA[Monotoniestellingen]]></name></content></item>
+<item id="RO_5.5" parent_id="RO_5"><content><name><![CDATA[De benaderingsmethode van Newton]]></name></content></item>
+<item id="RO_5.6" parent_id="RO_5"><content><name><![CDATA[Reeksontwikkeling voor de logarithme]]></name></content></item>
+<item id="RO_5.7" parent_id="RO_5"><content><name><![CDATA[Reeksontwikkeling voor de arcus tangens]]></name></content></item>
+<item id="RO_5.8" parent_id="RO_5"><content><name><![CDATA[Uitbreiding van de middelwaardestelling]]></name></content></item>
+<item id="RO_5.9" parent_id="RO_5"><content><name><![CDATA[Raking van krommen]]></name></content></item>
+<item id="RO_6" parent_id="RO_0"><content><name><![CDATA[De bepaalde integraal]]></name></content></item>
+<item id="RO_6.1" parent_id="RO_6"><content><name><![CDATA[De oppervlakte van een kromlijnig trapezium]]></name></content></item>
+<item id="RO_6.2" parent_id="RO_6"><content><name><![CDATA[De bepaalde integraal]]></name></content></item>
+<item id="RO_6.3" parent_id="RO_6"><content><name><![CDATA[De hoofdregels]]></name></content></item>
+<item id="RO_6.4" parent_id="RO_6"><content><name><![CDATA[Partiele integratie]]></name></content></item>
+<item id="RO_6.5" parent_id="RO_6"><content><name><![CDATA[Monotoniestellingen]]></name></content></item>
+<item id="RO_6.6" parent_id="RO_6"><content><name><![CDATA[De stelling van Stirling]]></name></content></item>
+<item id="RO_6.7" parent_id="RO_6"><content><name><![CDATA[Oneindig integratie-interval]]></name></content></item>
+<item id="RO_6.8" parent_id="RO_6"><content><name><![CDATA[Fourier-coefficienten]]></name></content></item>
+<item id="RO_6.9" parent_id="RO_6"><content><name><![CDATA[De integraal van Dirichlet]]></name></content></item>
+<item id="RO_7" parent_id="RO_0"><content><name><![CDATA[De transformatie van Laplace]]></name></content></item>
+<item id="RO_7.1" parent_id="RO_7"><content><name><![CDATA[De integraal van Laplace]]></name></content></item>
+<item id="RO_7.2" parent_id="RO_7"><content><name><![CDATA[Algebraische rekenregels]]></name></content></item>
+<item id="RO_7.3" parent_id="RO_7"><content><name><![CDATA[De getransformeerde van de afgeleide en de integraal van een functie]]></name></content></item>
+<item id="RO_7.4" parent_id="RO_7"><content><name><![CDATA[De inverse transformatie]]></name></content></item>
+<item id="RO_7.5" parent_id="RO_7"><content><name><![CDATA[Lineaire differentiaalvergelijkingen met constante]]></name></content></item>
+<item id="RO_7.6" parent_id="RO_7"><content><name><![CDATA[Het compositieproduct]]></name></content></item>
+<item id="RO_7.7" parent_id="RO_7"><content><name><![CDATA[De gammafunctie]]></name></content></item>
+<item id="RO_7.8" parent_id="RO_7"><content><name><![CDATA[De betafunctie]]></name></content></item>
+<item id="RO_7.9" parent_id="RO_7"><content><name><![CDATA[De verdubbelingsfunctie en de formule der complementen]]></name></content></item>
+</root>

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<item id="MB_0" parent_id="0"><content><name><![CDATA[MathTax, Nederlandse versie]]></name></content></item>
+<item id="MB_1" parent_id="MB_0"><content><name><![CDATA[Getallen en rekenen]]></name></content></item>
+<item id="MB_1.1" parent_id="MB_1"><content><name><![CDATA[Getalbegrip]]></name></content></item>
+<item id="MB_1.1.1" parent_id="MB_1.1"><content><name><![CDATA[Natuurlijke getallen]]></name></content></item>
+<item id="MB_1.1.2" parent_id="MB_1.1"><content><name><![CDATA[Gehele getallen]]></name></content></item>
+<item id="MB_1.1.3" parent_id="MB_1.1"><content><name><![CDATA[Rationale getallen]]></name></content></item>
+<item id="MB_1.1.4" parent_id="MB_1.1"><content><name><![CDATA[Irrationale getallen]]></name></content></item>
+<item id="MB_1.1.5" parent_id="MB_1.1"><content><name><![CDATA[Algebraische getallen]]></name></content></item>
+<item id="MB_1.1.6" parent_id="MB_1.1"><content><name><![CDATA[Reele getallen]]></name></content></item>
+<item id="MB_1.1.7" parent_id="MB_1.1"><content><name><![CDATA[Complexe getallen]]></name></content></item>
+<item id="MB_1.1.8" parent_id="MB_1.1"><content><name><![CDATA[Bijzondere getallen]]></name></content></item>
+<item id="MB_1.1.8.1" parent_id="MB_1.1.8"><content><name><![CDATA[0]]></name></content></item>
+<item id="MB_1.1.8.2" parent_id="MB_1.1.8"><content><name><![CDATA[pi]]></name></content></item>
+<item id="MB_1.1.8.3" parent_id="MB_1.1.8"><content><name><![CDATA[e]]></name></content></item>
+<item id="MB_1.1.8.4" parent_id="MB_1.1.8"><content><name><![CDATA[i]]></name></content></item>
+<item id="MB_1.1.8.5" parent_id="MB_1.1.8"><content><name><![CDATA[Gulden snede]]></name></content></item>
+<item id="MB_1.2" parent_id="MB_1"><content><name><![CDATA[Rekenen]]></name></content></item>
+<item id="MB_1.2.1" parent_id="MB_1.2"><content><name><![CDATA[Bewerkingen]]></name></content></item>
+<item id="MB_1.2.1.1" parent_id="MB_1.2.1"><content><name><![CDATA[Optellen]]></name></content></item>
+<item id="MB_1.2.1.2" parent_id="MB_1.2.1"><content><name><![CDATA[Aftrekken]]></name></content></item>
+<item id="MB_1.2.1.3" parent_id="MB_1.2.1"><content><name><![CDATA[Vermenigvuldigen]]></name></content></item>
+<item id="MB_1.2.1.4" parent_id="MB_1.2.1"><content><name><![CDATA[Delen]]></name></content></item>
+<item id="MB_1.2.1.5" parent_id="MB_1.2.1"><content><name><![CDATA[Worteltrekken]]></name></content></item>
+<item id="MB_1.2.1.6" parent_id="MB_1.2.1"><content><name><![CDATA[Faculteit]]></name></content></item>
+<item id="MB_1.2.1.7" parent_id="MB_1.2.1"><content><name><![CDATA[Ontbinden in factoren]]></name></content></item>
+<item id="MB_1.2.1.8" parent_id="MB_1.2.1"><content><name><![CDATA[Eigenschappen van bewerkingen]]></name></content></item>
+<item id="MB_1.2.1.9" parent_id="MB_1.2.1"><content><name><![CDATA[Schatten]]></name></content></item>
+<item id="MB_1.2.2" parent_id="MB_1.2"><content><name><![CDATA[Breuken]]></name></content></item>
+<item id="MB_1.2.2.1" parent_id="MB_1.2.2"><content><name><![CDATA[Optellen]]></name></content></item>
+<item id="MB_1.2.2.2" parent_id="MB_1.2.2"><content><name><![CDATA[Aftrekken]]></name></content></item>
+<item id="MB_1.2.2.3" parent_id="MB_1.2.2"><content><name><![CDATA[Vermenigvuldigen]]></name></content></item>
+<item id="MB_1.2.2.4" parent_id="MB_1.2.2"><content><name><![CDATA[Delen]]></name></content></item>
+<item id="MB_1.2.2.5" parent_id="MB_1.2.2"><content><name><![CDATA[Verhouding en evenredigheid]]></name></content></item>
+<item id="MB_1.2.2.6" parent_id="MB_1.2.2"><content><name><![CDATA[Gelijkwaardige breuken]]></name></content></item>
+<item id="MB_1.2.2.6.2" parent_id="MB_1.2.2.6"><content><name><![CDATA[Breuken gelijknamig maken]]></name></content></item>
+<item id="MB_1.2.3" parent_id="MB_1.2"><content><name><![CDATA[Decimale breuken]]></name></content></item>
+<item id="MB_1.2.3.1" parent_id="MB_1.2.3"><content><name><![CDATA[Optellen]]></name></content></item>
+<item id="MB_1.2.3.2" parent_id="MB_1.2.3"><content><name><![CDATA[Aftrekken]]></name></content></item>
+<item id="MB_1.2.3.3" parent_id="MB_1.2.3"><content><name><![CDATA[Vermenigvuldigen]]></name></content></item>
+<item id="MB_1.2.3.4" parent_id="MB_1.2.3"><content><name><![CDATA[Delen]]></name></content></item>
+<item id="MB_1.2.3.5" parent_id="MB_1.2.3"><content><name><![CDATA[Procenten]]></name></content></item>
+<item id="MB_1.2.4" parent_id="MB_1.2"><content><name><![CDATA[Vergelijking van getallen]]></name></content></item>
+<item id="MB_1.2.5" parent_id="MB_1.2"><content><name><![CDATA[Exponenten]]></name></content></item>
+<item id="MB_1.2.5.1" parent_id="MB_1.2.5"><content><name><![CDATA[Vermenigvuldiging]]></name></content></item>
+<item id="MB_1.2.5.2" parent_id="MB_1.2.5"><content><name><![CDATA[Delen]]></name></content></item>
+<item id="MB_1.2.5.3" parent_id="MB_1.2.5"><content><name><![CDATA[Machten]]></name></content></item>
+<item id="MB_1.2.5.4" parent_id="MB_1.2.5"><content><name><![CDATA[Gehele exponenten]]></name></content></item>
+<item id="MB_1.2.5.4.1" parent_id="MB_1.2.5.4"><content><name><![CDATA[Negatieve exponenten]]></name></content></item>
+<item id="MB_1.2.5.5" parent_id="MB_1.2.5"><content><name><![CDATA[Rationale exponenten]]></name></content></item>
+<item id="MB_1.2.5.5.1" parent_id="MB_1.2.5.5"><content><name><![CDATA[Wortels op standaardvorm]]></name></content></item>
+<item id="MB_1.2.5*1" parent_id="MB_1.2"><content><name><![CDATA[Complexe getallen]]></name></content></item>
+<item id="MB_1.2.5*1.1" parent_id="MB_1.2.5*1"><content><name><![CDATA[Canonieke vorm]]></name></content></item>
+<item id="MB_1.2.5*1.2" parent_id="MB_1.2.5*1"><content><name><![CDATA[Optellen en aftrekken]]></name></content></item>
+<item id="MB_1.2.5*1.3" parent_id="MB_1.2.5*1"><content><name><![CDATA[Vermenigvuldigen]]></name></content></item>
+<item id="MB_1.2.5*1.4" parent_id="MB_1.2.5*1"><content><name><![CDATA[Delen]]></name></content></item>
+<item id="MB_1.2.5*1.5" parent_id="MB_1.2.5*1"><content><name><![CDATA[Conjugeren]]></name></content></item>
+<item id="MB_1.2.5*1.6" parent_id="MB_1.2.5*1"><content><name><![CDATA[Modulus]]></name></content></item>
+<item id="MB_1.2.5*1.7" parent_id="MB_1.2.5*1"><content><name><![CDATA[Argument]]></name></content></item>
+<item id="MB_1.2.5*1.8" parent_id="MB_1.2.5*1"><content><name><![CDATA[Polaire vorm]]></name></content></item>
+<item id="MB_1.2.5*1.9" parent_id="MB_1.2.5*1"><content><name><![CDATA[Formule van Euler]]></name></content></item>
+<item id="MB_1.3" parent_id="MB_1"><content><name><![CDATA[Patronen en rijen]]></name></content></item>
+<item id="MB_1.3.1" parent_id="MB_1.3"><content><name><![CDATA[Getalpatronen]]></name></content></item>
+<item id="MB_1.3.1*1" parent_id="MB_1.3"><content><name><![CDATA[Rijen]]></name></content></item>
+<item id="MB_1.3.1*1.1" parent_id="MB_1.3.1*1"><content><name><![CDATA[Recursief gedefinieerde rijen]]></name></content></item>
+<item id="MB_1.3.1*1.1.1" parent_id="MB_1.3.1*1.1"><content><name><![CDATA[Bepalen van algemene formule]]></name></content></item>
+<item id="MB_1.3.1*1.1.2" parent_id="MB_1.3.1*1.1"><content><name><![CDATA[Rekenkundige rij]]></name></content></item>
+<item id="MB_1.3.1*1.1.3" parent_id="MB_1.3.1*1.1"><content><name><![CDATA[Meetkundige rij]]></name></content></item>
+<item id="MB_1.3.1*1.1.4" parent_id="MB_1.3.1*1.1"><content><name><![CDATA[Rij van Fibonacci]]></name></content></item>
+<item id="MB_1.3.1*1.2" parent_id="MB_1.3.1*1"><content><name><![CDATA[Som van een rij]]></name></content></item>
+<item id="MB_1.3.1*1.2.1" parent_id="MB_1.3.1*1.2"><content><name><![CDATA[Sigma-teken]]></name></content></item>
+<item id="MB_1.3.2" parent_id="MB_1.3"><content><name><![CDATA[Rij van Fibonacci]]></name></content></item>
+<item id="MB_1.3.3" parent_id="MB_1.3"><content><name><![CDATA[Rekenkundige reeks]]></name></content></item>
+<item id="MB_1.3.4" parent_id="MB_1.3"><content><name><![CDATA[Meetkundige reeks]]></name></content></item>
+<item id="MB_1.4" parent_id="MB_1"><content><name><![CDATA[Grootheden en eenheden]]></name></content></item>
+<item id="MB_1.4.1" parent_id="MB_1.4"><content><name><![CDATA[Eenheden]]></name></content></item>
+<item id="MB_1.4.1.1" parent_id="MB_1.4.1"><content><name><![CDATA[Metrisch systeem]]></name></content></item>
+<item id="MB_1.4.1.2" parent_id="MB_1.4.1"><content><name><![CDATA[Standaard eenheden]]></name></content></item>
+<item id="MB_1.4.1.3" parent_id="MB_1.4.1"><content><name><![CDATA[Niet-standaard eenheden]]></name></content></item>
+<item id="MB_1.4.10" parent_id="MB_1.4"><content><name><![CDATA[Schaal]]></name></content></item>
+<item id="MB_1.4.2" parent_id="MB_1.4"><content><name><![CDATA[Eendimensionale grootheden]]></name></content></item>
+<item id="MB_1.4.2.1" parent_id="MB_1.4.2"><content><name><![CDATA[Afstand]]></name></content></item>
+<item id="MB_1.4.2.2" parent_id="MB_1.4.2"><content><name><![CDATA[Omtrek van een cirkel]]></name></content></item>
+<item id="MB_1.4.2.3" parent_id="MB_1.4.2"><content><name><![CDATA[Omtrek algemeen]]></name></content></item>
+<item id="MB_1.4.3" parent_id="MB_1.4"><content><name><![CDATA[Oppervlakte]]></name></content></item>
+<item id="MB_1.4.3.1" parent_id="MB_1.4.3"><content><name><![CDATA[Oppervlakte van een veelhoek]]></name></content></item>
+<item id="MB_1.4.3.2" parent_id="MB_1.4.3"><content><name><![CDATA[Oppervlakte van een cirkel]]></name></content></item>
+<item id="MB_1.4.3.3" parent_id="MB_1.4.3"><content><name><![CDATA[Oppervlakte van een gebied]]></name></content></item>
+<item id="MB_1.4.3.4" parent_id="MB_1.4.3"><content><name><![CDATA[Niet-standaard vormen]]></name></content></item>
+<item id="MB_1.4.4" parent_id="MB_1.4"><content><name><![CDATA[Volume]]></name></content></item>
+<item id="MB_1.4.5" parent_id="MB_1.4"><content><name><![CDATA[Gewicht en massa]]></name></content></item>
+<item id="MB_1.4.6" parent_id="MB_1.4"><content><name><![CDATA[Temperatuur]]></name></content></item>
+<item id="MB_1.4.7" parent_id="MB_1.4"><content><name><![CDATA[Tijd]]></name></content></item>
+<item id="MB_1.4.8" parent_id="MB_1.4"><content><name><![CDATA[Snelheid]]></name></content></item>
+<item id="MB_1.4.9" parent_id="MB_1.4"><content><name><![CDATA[Geld]]></name></content></item>
+<item id="MB_10" parent_id="MB_0"><content><name><![CDATA[Toegepaste wiskunde]]></name></content></item>
+<item id="MB_10.1" parent_id="MB_10"><content><name><![CDATA[Natuurkunde]]></name></content></item>
+<item id="MB_10.10" parent_id="MB_10"><content><name><![CDATA[Consumenten]]></name></content></item>
+<item id="MB_10.2" parent_id="MB_10"><content><name><![CDATA[Economie]]></name></content></item>
+<item id="MB_10.3" parent_id="MB_10"><content><name><![CDATA[Biologie]]></name></content></item>
+<item id="MB_10.4" parent_id="MB_10"><content><name><![CDATA[Bedrijfskunde]]></name></content></item>
+<item id="MB_10.5" parent_id="MB_10"><content><name><![CDATA[Techniek en engineering]]></name></content></item>
+<item id="MB_10.6" parent_id="MB_10"><content><name><![CDATA[Sociologie]]></name></content></item>
+<item id="MB_10.7" parent_id="MB_10"><content><name><![CDATA[Maatschappijwetenschappen]]></name></content></item>
+<item id="MB_10.8" parent_id="MB_10"><content><name><![CDATA[Informatica]]></name></content></item>
+<item id="MB_10.9" parent_id="MB_10"><content><name><![CDATA[Menswetenschappen]]></name></content></item>
+<item id="MB_11" parent_id="MB_0"><content><name><![CDATA[Geschiedenis van de wiskunde]]></name></content></item>
+<item id="MB_11.1" parent_id="MB_11"><content><name><![CDATA[Algemeen]]></name></content></item>
+<item id="MB_11.2" parent_id="MB_11"><content><name><![CDATA[Beroemde problemen]]></name></content></item>
+<item id="MB_11.3" parent_id="MB_11"><content><name><![CDATA[Biografien van beroemde wiskundigen]]></name></content></item>
+<item id="MB_2" parent_id="MB_0"><content><name><![CDATA[Logica en grondslagen]]></name></content></item>
+<item id="MB_2.1" parent_id="MB_2"><content><name><![CDATA[Logica]]></name></content></item>
+<item id="MB_2.1.1" parent_id="MB_2.1"><content><name><![CDATA[Venn diagrammen]]></name></content></item>
+<item id="MB_2.1.2" parent_id="MB_2.1"><content><name><![CDATA[Propositie en predicatenlogica]]></name></content></item>
+<item id="MB_2.1.3" parent_id="MB_2.1"><content><name><![CDATA[Bewijsmethoden]]></name></content></item>
+<item id="MB_2.2" parent_id="MB_2"><content><name><![CDATA[Verzamelingentheorie]]></name></content></item>
+<item id="MB_2.2.1" parent_id="MB_2.2"><content><name><![CDATA[Verzamelingen en bewerkingen]]></name></content></item>
+<item id="MB_2.2.2" parent_id="MB_2.2"><content><name><![CDATA[Relaties en functies]]></name></content></item>
+<item id="MB_2.2.2.1" parent_id="MB_2.2.2"><content><name><![CDATA[Carthesisch product]]></name></content></item>
+<item id="MB_2.2.2.2" parent_id="MB_2.2.2"><content><name><![CDATA[Relaties]]></name></content></item>
+<item id="MB_2.2.2.3" parent_id="MB_2.2.2"><content><name><![CDATA[Functies]]></name></content></item>
+<item id="MB_2.2.2.3.1" parent_id="MB_2.2.2.3"><content><name><![CDATA[Domein en bereik]]></name></content></item>
+<item id="MB_2.2.2.3.2" parent_id="MB_2.2.2.3"><content><name><![CDATA[Grafiek]]></name></content></item>
+<item id="MB_2.2.2.3.3" parent_id="MB_2.2.2.3"><content><name><![CDATA[Volledig origineel]]></name></content></item>
+<item id="MB_2.2.2.3.4" parent_id="MB_2.2.2.3"><content><name><![CDATA[Inverse]]></name></content></item>
+<item id="MB_2.2.2.3.5" parent_id="MB_2.2.2.3"><content><name><![CDATA[Samenstellen van twee functies]]></name></content></item>
+<item id="MB_2.2.2.3.6" parent_id="MB_2.2.2.3"><content><name><![CDATA[Reele functies]]></name></content></item>
+<item id="MB_2.2.2.3.6.1" parent_id="MB_2.2.2.3.6"><content><name><![CDATA[Bewerkingen]]></name></content></item>
+<item id="MB_2.2.2.3.6.1.1" parent_id="MB_2.2.2.3.6.1"><content><name><![CDATA[Optellen en aftrekken]]></name></content></item>
+<item id="MB_2.2.2.3.6.1.2" parent_id="MB_2.2.2.3.6.1"><content><name><![CDATA[Vermenigvuldigen]]></name></content></item>
+<item id="MB_2.2.2.3.6.1.3" parent_id="MB_2.2.2.3.6.1"><content><name><![CDATA[Delen]]></name></content></item>
+<item id="MB_2.2.2.3.6.2" parent_id="MB_2.2.2.3.6"><content><name><![CDATA[Maximum en minimum]]></name></content></item>
+<item id="MB_2.2.3" parent_id="MB_2.2"><content><name><![CDATA[Cardinaliteit]]></name></content></item>
+<item id="MB_2.2.4" parent_id="MB_2.2"><content><name><![CDATA[Keuzeaxioma]]></name></content></item>
+<item id="MB_2.3" parent_id="MB_2"><content><name><![CDATA[Berekenbaarheid en beslisbaarheid]]></name></content></item>
+<item id="MB_2.4" parent_id="MB_2"><content><name><![CDATA[Modeltheorie]]></name></content></item>
+<item id="MB_3" parent_id="MB_0"><content><name><![CDATA[Algebra en getaltheorie]]></name></content></item>
+<item id="MB_3.1" parent_id="MB_3"><content><name><![CDATA[Algebra]]></name></content></item>
+<item id="MB_3.1.1" parent_id="MB_3.1"><content><name><![CDATA[Plottechnieken]]></name></content></item>
+<item id="MB_3.1.2" parent_id="MB_3.1"><content><name><![CDATA[Algebraische bewerkingen]]></name></content></item>
+<item id="MB_3.1.2.1" parent_id="MB_3.1.2"><content><name><![CDATA[Expressies]]></name></content></item>
+<item id="MB_3.1.2.2" parent_id="MB_3.1.2"><content><name><![CDATA[Gelijkheid van expressies]]></name></content></item>
+<item id="MB_3.1.2.2.1" parent_id="MB_3.1.2.2"><content><name><![CDATA[Vereenvoudigen]]></name></content></item>
+<item id="MB_3.1.2.2.2" parent_id="MB_3.1.2.2"><content><name><![CDATA[Haakjes wegwerken]]></name></content></item>
+<item id="MB_3.1.2.2.3" parent_id="MB_3.1.2.2"><content><name><![CDATA[Ontbinden in factoren]]></name></content></item>
+<item id="MB_3.1.2.2.4" parent_id="MB_3.1.2.2"><content><name><![CDATA[Merkwaardige producten]]></name></content></item>
+<item id="MB_3.1.2.3" parent_id="MB_3.1.2"><content><name><![CDATA[Breuken]]></name></content></item>
+<item id="MB_3.1.2.3.1" parent_id="MB_3.1.2.3"><content><name><![CDATA[Vereenvoudigen]]></name></content></item>
+<item id="MB_3.1.2.3.2" parent_id="MB_3.1.2.3"><content><name><![CDATA[Glijknamig maken en optellen]]></name></content></item>
+<item id="MB_3.1.2.3.3" parent_id="MB_3.1.2.3"><content><name><![CDATA[Breuksplitsen]]></name></content></item>
+<item id="MB_3.1.2.4" parent_id="MB_3.1.2"><content><name><![CDATA[Expressies met vierkantswortels]]></name></content></item>
+<item id="MB_3.1.2.4.1" parent_id="MB_3.1.2.4"><content><name><![CDATA[Standaardvorm]]></name></content></item>
+<item id="MB_3.1.2.4.2" parent_id="MB_3.1.2.4"><content><name><![CDATA[Som van expressies met wortels]]></name></content></item>
+<item id="MB_3.1.2.4.3" parent_id="MB_3.1.2.4"><content><name><![CDATA[Product van expressies met wortels]]></name></content></item>
+<item id="MB_3.1.2.4.4" parent_id="MB_3.1.2.4"><content><name><![CDATA[Noemers wortelvrij maken]]></name></content></item>
+<item id="MB_3.1.2.5" parent_id="MB_3.1.2"><content><name><![CDATA[Rationale exponenten]]></name></content></item>
+<item id="MB_3.1.2.5.1" parent_id="MB_3.1.2.5"><content><name><![CDATA[Positieve exponenten]]></name></content></item>
+<item id="MB_3.1.2.5.2" parent_id="MB_3.1.2.5"><content><name><![CDATA[Negatieve exponenten]]></name></content></item>
+<item id="MB_3.1.3" parent_id="MB_3.1"><content><name><![CDATA[Functies]]></name></content></item>
+<item id="MB_3.1.3.1" parent_id="MB_3.1.3"><content><name><![CDATA[Lineaire functies]]></name></content></item>
+<item id="MB_3.1.3.1.1" parent_id="MB_3.1.3.1"><content><name><![CDATA[Nulpunt en snijpunten met de assen]]></name></content></item>
+<item id="MB_3.1.3.1.2" parent_id="MB_3.1.3.1"><content><name><![CDATA[Richtingscoefficient]]></name></content></item>
+<item id="MB_3.1.3.1.3" parent_id="MB_3.1.3.1"><content><name><![CDATA[Vergelijking van een lijn door een punt en met gegeven richtingscoefficient]]></name></content></item>
+<item id="MB_3.1.3.1.4" parent_id="MB_3.1.3.1"><content><name><![CDATA[Vergelijking van een lijn door twee punten]]></name></content></item>
+<item id="MB_3.1.3.2" parent_id="MB_3.1.3"><content><name><![CDATA[Kwadratische functies]]></name></content></item>
+<item id="MB_3.1.3.2.1" parent_id="MB_3.1.3.2"><content><name><![CDATA[Nulpunten]]></name></content></item>
+<item id="MB_3.1.3.3" parent_id="MB_3.1.3"><content><name><![CDATA[Veeltermen]]></name></content></item>
+<item id="MB_3.1.3.3.1" parent_id="MB_3.1.3.3"><content><name><![CDATA[Basisbegrippen]]></name></content></item>
+<item id="MB_3.1.3.3.2" parent_id="MB_3.1.3.3"><content><name><![CDATA[Nulpunten]]></name></content></item>
+<item id="MB_3.1.3.4" parent_id="MB_3.1.3"><content><name><![CDATA[Rationale functies]]></name></content></item>
+<item id="MB_3.1.3.5" parent_id="MB_3.1.3"><content><name><![CDATA[Exponentiele functies]]></name></content></item>
+<item id="MB_3.1.3.6" parent_id="MB_3.1.3"><content><name><![CDATA[Logaritmes]]></name></content></item>
+<item id="MB_3.1.3.7" parent_id="MB_3.1.3"><content><name><![CDATA[Stuksgewijs gedefinieerde functies]]></name></content></item>
+<item id="MB_3.1.3.7.1" parent_id="MB_3.1.3.7"><content><name><![CDATA[Absolute waarde]]></name></content></item>
+<item id="MB_3.1.3.8" parent_id="MB_3.1.3"><content><name><![CDATA[Stapfuncties]]></name></content></item>
+<item id="MB_3.1.4" parent_id="MB_3.1"><content><name><![CDATA[Vergelijkingen]]></name></content></item>
+<item id="MB_3.1.4.1" parent_id="MB_3.1.4"><content><name><![CDATA[Eerstegraads vergelijkingen]]></name></content></item>
+<item id="MB_3.1.4.2" parent_id="MB_3.1.4"><content><name><![CDATA[Tweedegraads vergelijkingen]]></name></content></item>
+<item id="MB_3.1.4.2.1" parent_id="MB_3.1.4.2"><content><name><![CDATA[Som-product methode]]></name></content></item>
+<item id="MB_3.1.4.2.2" parent_id="MB_3.1.4.2"><content><name><![CDATA[Kwadraatafsplitsen]]></name></content></item>
+<item id="MB_3.1.4.2.3" parent_id="MB_3.1.4.2"><content><name><![CDATA[De abc-formule]]></name></content></item>
+<item id="MB_3.1.4.2.3.1" parent_id="MB_3.1.4.2.3"><content><name><![CDATA[De discriminant]]></name></content></item>
+<item id="MB_3.1.4.2.3.2" parent_id="MB_3.1.4.2.3"><content><name><![CDATA[Complexe oplossingen bij negatieve discriminant]]></name></content></item>
+<item id="MB_3.1.4.3" parent_id="MB_3.1.4"><content><name><![CDATA[Veeltermvergelijkingen]]></name></content></item>
+<item id="MB_3.1.4.3.1" parent_id="MB_3.1.4.3"><content><name><![CDATA[Hoofdstelling van de algebra]]></name></content></item>
+<item id="MB_3.1.4.3.2" parent_id="MB_3.1.4.3"><content><name><![CDATA[Staartdeling]]></name></content></item>
+<item id="MB_3.1.4.3.3" parent_id="MB_3.1.4.3"><content><name><![CDATA[Ontbinden in factoren]]></name></content></item>
+<item id="MB_3.1.4.4" parent_id="MB_3.1.4"><content><name><![CDATA[Rationale vergelijkingen]]></name></content></item>
+<item id="MB_3.1.4.5" parent_id="MB_3.1.4"><content><name><![CDATA[Exponentiele vergelijkingen]]></name></content></item>
+<item id="MB_3.1.4.6" parent_id="MB_3.1.4"><content><name><![CDATA[Logaritmische vergelijkingen]]></name></content></item>
+<item id="MB_3.1.4.7" parent_id="MB_3.1.4"><content><name><![CDATA[Stelsels vergelijkingen]]></name></content></item>
+<item id="MB_3.1.5" parent_id="MB_3.1"><content><name><![CDATA[Ongelijkheden]]></name></content></item>
+<item id="MB_3.1.5.1" parent_id="MB_3.1.5"><content><name><![CDATA[Eerstegraads ongelijkheden]]></name></content></item>
+<item id="MB_3.1.5.2" parent_id="MB_3.1.5"><content><name><![CDATA[Ongelijkheden met absolute waarde]]></name></content></item>
+<item id="MB_3.1.5.3" parent_id="MB_3.1.5"><content><name><![CDATA[Tweedegraads ongelijkheden]]></name></content></item>
+<item id="MB_3.1.5.4" parent_id="MB_3.1.5"><content><name><![CDATA[Oplossen met behulp van grafiek]]></name></content></item>
+<item id="MB_3.1.5.5" parent_id="MB_3.1.5"><content><name><![CDATA[Stelsels ongelijkheden]]></name></content></item>
+<item id="MB_3.1.6" parent_id="MB_3.1"><content><name><![CDATA[Matrices]]></name></content></item>
+<item id="MB_3.1.7" parent_id="MB_3.1"><content><name><![CDATA[Rijen en reeksen]]></name></content></item>
+<item id="MB_3.1.8" parent_id="MB_3.1"><content><name><![CDATA[Bewijzen]]></name></content></item>
+<item id="MB_3.2" parent_id="MB_3"><content><name><![CDATA[Lineaire algebra]]></name></content></item>
+<item id="MB_3.2.1" parent_id="MB_3.2"><content><name><![CDATA[Stelsels lineaire vergelijkingen]]></name></content></item>
+<item id="MB_3.2.2" parent_id="MB_3.2"><content><name><![CDATA[Matrixrekenen]]></name></content></item>
+<item id="MB_3.2.2.1" parent_id="MB_3.2.2"><content><name><![CDATA[Bewerkingen]]></name></content></item>
+<item id="MB_3.2.2.1.1" parent_id="MB_3.2.2.1"><content><name><![CDATA[Optellen en aftrekken]]></name></content></item>
+<item id="MB_3.2.2.1.2" parent_id="MB_3.2.2.1"><content><name><![CDATA[Scalair vermenigvuldigen]]></name></content></item>
+<item id="MB_3.2.2.1.3" parent_id="MB_3.2.2.1"><content><name><![CDATA[Vermenigvuldigen]]></name></content></item>
+<item id="MB_3.2.2.2" parent_id="MB_3.2.2"><content><name><![CDATA[Determinant]]></name></content></item>
+<item id="MB_3.2.2.2.1" parent_id="MB_3.2.2.2"><content><name><![CDATA[Determinant van een 2x2 matrix]]></name></content></item>
+<item id="MB_3.2.2.2.2" parent_id="MB_3.2.2.2"><content><name><![CDATA[Determinant van een 3x3 matrix]]></name></content></item>
+<item id="MB_3.2.2.3" parent_id="MB_3.2.2"><content><name><![CDATA[Inverse]]></name></content></item>
+<item id="MB_3.2.2.3.1" parent_id="MB_3.2.2.3"><content><name><![CDATA[Inverse van een 2x2 matrix]]></name></content></item>
+<item id="MB_3.2.2.3.2" parent_id="MB_3.2.2.3"><content><name><![CDATA[Inverse van een 3x3 matrix]]></name></content></item>
+<item id="MB_3.2.2.4" parent_id="MB_3.2.2"><content><name><![CDATA[Verband met stelsel lineaire vergelijkingen]]></name></content></item>
+<item id="MB_3.2.2.5" parent_id="MB_3.2.2"><content><name><![CDATA[Gauss-Jordan eliminatie]]></name></content></item>
+<item id="MB_3.2.2.6" parent_id="MB_3.2.2"><content><name><![CDATA[Rang]]></name></content></item>
+<item id="MB_3.2.3" parent_id="MB_3.2"><content><name><![CDATA[Vectoren in R3]]></name></content></item>
+<item id="MB_3.2.3*1" parent_id="MB_3.2"><content><name><![CDATA[Vectoren]]></name></content></item>
+<item id="MB_3.2.3*1.1" parent_id="MB_3.2.3*1"><content><name><![CDATA[Vectoren in R2]]></name></content></item>
+<item id="MB_3.2.3*1.2" parent_id="MB_3.2.3*1"><content><name><![CDATA[Vectoren in R3]]></name></content></item>
+<item id="MB_3.2.3*1.3" parent_id="MB_3.2.3*1"><content><name><![CDATA[Complexe vectoren]]></name></content></item>
+<item id="MB_3.2.3*1.4" parent_id="MB_3.2.3*1"><content><name><![CDATA[Bewerkingen]]></name></content></item>
+<item id="MB_3.2.3*1.4.1" parent_id="MB_3.2.3*1.4"><content><name><![CDATA[Optellen]]></name></content></item>
+<item id="MB_3.2.3*1.4.2" parent_id="MB_3.2.3*1.4"><content><name><![CDATA[Aftrekken]]></name></content></item>
+<item id="MB_3.2.3*1.4.3" parent_id="MB_3.2.3*1.4"><content><name><![CDATA[Scalair vermenigvuldigen]]></name></content></item>
+<item id="MB_3.2.3*1.5" parent_id="MB_3.2.3*1"><content><name><![CDATA[Inwendig product]]></name></content></item>
+<item id="MB_3.2.3*1.6" parent_id="MB_3.2.3*1"><content><name><![CDATA[Hoek tussen vectoren]]></name></content></item>
+<item id="MB_3.2.3*1.7" parent_id="MB_3.2.3*1"><content><name><![CDATA[Projectie langs een andere vector]]></name></content></item>
+<item id="MB_3.2.3*1.8" parent_id="MB_3.2.3*1"><content><name><![CDATA[Uitwendig product]]></name></content></item>
+<item id="MB_3.2.4" parent_id="MB_3.2"><content><name><![CDATA[Vectorruimten]]></name></content></item>
+<item id="MB_3.2.4.1" parent_id="MB_3.2.4"><content><name><![CDATA[R2]]></name></content></item>
+<item id="MB_3.2.4.2" parent_id="MB_3.2.4"><content><name><![CDATA[R3]]></name></content></item>
+<item id="MB_3.2.4.3" parent_id="MB_3.2.4"><content><name><![CDATA[Lijnen]]></name></content></item>
+<item id="MB_3.2.4.3.1" parent_id="MB_3.2.4.3"><content><name><![CDATA[Vergelijking van een lijn]]></name></content></item>
+<item id="MB_3.2.4.3.2" parent_id="MB_3.2.4.3"><content><name><![CDATA[Vectorvoorstelling van een lijn]]></name></content></item>
+<item id="MB_3.2.4.3.3" parent_id="MB_3.2.4.3"><content><name><![CDATA[Normaalvector van een lijn]]></name></content></item>
+<item id="MB_3.2.4.4" parent_id="MB_3.2.4"><content><name><![CDATA[Vlakken]]></name></content></item>
+<item id="MB_3.2.4.4.1" parent_id="MB_3.2.4.4"><content><name><![CDATA[Vergelijkingen van een vlak]]></name></content></item>
+<item id="MB_3.2.4.4.2" parent_id="MB_3.2.4.4"><content><name><![CDATA[Vectorvoorstelling van een vlak]]></name></content></item>
+<item id="MB_3.2.4.4.3" parent_id="MB_3.2.4.4"><content><name><![CDATA[Normaalvector van een vlak]]></name></content></item>
+<item id="MB_3.2.4.4.4" parent_id="MB_3.2.4.4"><content><name><![CDATA[Snijlijn van twee vlakken]]></name></content></item>
+<item id="MB_3.2.4.5" parent_id="MB_3.2.4"><content><name><![CDATA[Afstand tussen twee vectoren en lengte van een vector]]></name></content></item>
+<item id="MB_3.2.4.6" parent_id="MB_3.2.4"><content><name><![CDATA[Lineaire onafhankelijkheid]]></name></content></item>
+<item id="MB_3.2.4.7" parent_id="MB_3.2.4"><content><name><![CDATA[Basis van een vectorruimte]]></name></content></item>
+<item id="MB_3.2.4.8" parent_id="MB_3.2.4"><content><name><![CDATA[Gram-Schmid orthonormalisatie]]></name></content></item>
+<item id="MB_3.2.5" parent_id="MB_3.2"><content><name><![CDATA[Lineaire afbeeldingen]]></name></content></item>
+<item id="MB_3.2.6" parent_id="MB_3.2"><content><name><![CDATA[Eigenwaarden en eigenvectoren]]></name></content></item>
+<item id="MB_3.2.7" parent_id="MB_3.2"><content><name><![CDATA[Inwendig productruimtes]]></name></content></item>
+<item id="MB_3.3" parent_id="MB_3"><content><name><![CDATA[Algebra]]></name></content></item>
+<item id="MB_3.3.1" parent_id="MB_3.3"><content><name><![CDATA[Groepen]]></name></content></item>
+<item id="MB_3.3.2" parent_id="MB_3.3"><content><name><![CDATA[Ringen en idealen]]></name></content></item>
+<item id="MB_3.3.3" parent_id="MB_3.3"><content><name><![CDATA[Lichamen]]></name></content></item>
+<item id="MB_3.3.4" parent_id="MB_3.3"><content><name><![CDATA[Galois theorie]]></name></content></item>
+<item id="MB_3.3.5" parent_id="MB_3.3"><content><name><![CDATA[Multilineariteit]]></name></content></item>
+<item id="MB_3.4" parent_id="MB_3"><content><name><![CDATA[Getaltheorie]]></name></content></item>
+<item id="MB_3.4.1" parent_id="MB_3.4"><content><name><![CDATA[Gehele getallen]]></name></content></item>
+<item id="MB_3.4.2" parent_id="MB_3.4"><content><name><![CDATA[Priemgetallen]]></name></content></item>
+<item id="MB_3.4.2.1" parent_id="MB_3.4.2"><content><name><![CDATA[Deelbaarheid]]></name></content></item>
+<item id="MB_3.4.2.1.1" parent_id="MB_3.4.2.1"><content><name><![CDATA[Staartdeling]]></name></content></item>
+<item id="MB_3.4.2.1.2" parent_id="MB_3.4.2.1"><content><name><![CDATA[Delen met rest]]></name></content></item>
+<item id="MB_3.4.2.2" parent_id="MB_3.4.2"><content><name><![CDATA[Ontbinden in factoren]]></name></content></item>
+<item id="MB_3.4.2.2.1" parent_id="MB_3.4.2.2"><content><name><![CDATA[Ontbinden in priemfactoren]]></name></content></item>
+<item id="MB_3.4.2.2.2" parent_id="MB_3.4.2.2"><content><name><![CDATA[Vereenvoudigen van breuken]]></name></content></item>
+<item id="MB_3.4.2.3" parent_id="MB_3.4.2"><content><name><![CDATA[De verdeling van priemgetallen]]></name></content></item>
+<item id="MB_3.4.2*1" parent_id="MB_3.4"><content><name><![CDATA[Grootste gemene deler]]></name></content></item>
+<item id="MB_3.4.2*1.1" parent_id="MB_3.4.2*1"><content><name><![CDATA[Algoritme van Euclides]]></name></content></item>
+<item id="MB_3.4.2*1.2" parent_id="MB_3.4.2*1"><content><name><![CDATA[Lineaire combinatie van twee getallen]]></name></content></item>
+<item id="MB_3.4.2*2" parent_id="MB_3.4"><content><name><![CDATA[Kleinste gemene veelvoud]]></name></content></item>
+<item id="MB_3.4.3" parent_id="MB_3.4"><content><name><![CDATA[Congruenties]]></name></content></item>
+<item id="MB_3.4.3.1" parent_id="MB_3.4.3"><content><name><![CDATA[Modulo rekenen]]></name></content></item>
+<item id="MB_3.4.3.1.1" parent_id="MB_3.4.3.1"><content><name><![CDATA[Optellen en aftrekken]]></name></content></item>
+<item id="MB_3.4.3.1.2" parent_id="MB_3.4.3.1"><content><name><![CDATA[Vermenigvuldigen]]></name></content></item>
+<item id="MB_3.4.3.1.3" parent_id="MB_3.4.3.1"><content><name><![CDATA[Inverse]]></name></content></item>
+<item id="MB_3.4.3.1.4" parent_id="MB_3.4.3.1"><content><name><![CDATA[Functie van Euler]]></name></content></item>
+<item id="MB_3.4.3.2" parent_id="MB_3.4.3"><content><name><![CDATA[Kleine stelling van Fermat]]></name></content></item>
+<item id="MB_3.4.4" parent_id="MB_3.4"><content><name><![CDATA[Diophantische vergelijkingen]]></name></content></item>
+<item id="MB_3.4.5" parent_id="MB_3.4"><content><name><![CDATA[Irrationale getallen]]></name></content></item>
+<item id="MB_3.4.6" parent_id="MB_3.4"><content><name><![CDATA[Beroemde problemen]]></name></content></item>
+<item id="MB_3.4.7" parent_id="MB_3.4"><content><name><![CDATA[Coderingstheorie]]></name></content></item>
+<item id="MB_3.4.8" parent_id="MB_3.4"><content><name><![CDATA[Cryptografie]]></name></content></item>
+<item id="MB_3.5" parent_id="MB_3"><content><name><![CDATA[Categorientheorie]]></name></content></item>
+<item id="MB_3.6" parent_id="MB_3"><content><name><![CDATA[K-theorie]]></name></content></item>
+<item id="MB_3.7" parent_id="MB_3"><content><name><![CDATA[Homologische algebra]]></name></content></item>
+<item id="MB_3.8" parent_id="MB_3"><content><name><![CDATA[Modulo rekenen]]></name></content></item>
+<item id="MB_4" parent_id="MB_0"><content><name><![CDATA[Discrete wiskunde]]></name></content></item>
+<item id="MB_4.1" parent_id="MB_4"><content><name><![CDATA[Cellulaire automata]]></name></content></item>
+<item id="MB_4.10" parent_id="MB_4"><content><name><![CDATA[Chaostheorie]]></name></content></item>
+<item id="MB_4.2" parent_id="MB_4"><content><name><![CDATA[Combinatoriek]]></name></content></item>
+<item id="MB_4.2.*1" parent_id="MB_4.2"><content><name><![CDATA[Variaties]]></name></content></item>
+<item id="MB_4.2.1" parent_id="MB_4.2"><content><name><![CDATA[Combinaties]]></name></content></item>
+<item id="MB_4.2.1.1" parent_id="MB_4.2.1"><content><name><![CDATA[Driehoek van Pascal]]></name></content></item>
+<item id="MB_4.2.2" parent_id="MB_4.2"><content><name><![CDATA[Permutaties]]></name></content></item>
+<item id="MB_4.2.2*1" parent_id="MB_4.2"><content><name><![CDATA[Herhalingsvariaties]]></name></content></item>
+<item id="MB_4.2.2*2" parent_id="MB_4.2"><content><name><![CDATA[Binomium van Newton]]></name></content></item>
+<item id="MB_4.3" parent_id="MB_4"><content><name><![CDATA[Speltheorie]]></name></content></item>
+<item id="MB_4.4" parent_id="MB_4"><content><name><![CDATA[Algoritmen]]></name></content></item>
+<item id="MB_4.5" parent_id="MB_4"><content><name><![CDATA[Recursie]]></name></content></item>
+<item id="MB_4.6" parent_id="MB_4"><content><name><![CDATA[Grafentheorie]]></name></content></item>
+<item id="MB_4.7" parent_id="MB_4"><content><name><![CDATA[Lineair programmeren]]></name></content></item>
+<item id="MB_4.8" parent_id="MB_4"><content><name><![CDATA[Ordeningen en roosters]]></name></content></item>
+<item id="MB_4.9" parent_id="MB_4"><content><name><![CDATA[Berekeningstheorie]]></name></content></item>
+<item id="MB_5" parent_id="MB_0"><content><name><![CDATA[Meetkunde en topologie]]></name></content></item>
+<item id="MB_5.1" parent_id="MB_5"><content><name><![CDATA[Meetkundige bewijzen]]></name></content></item>
+<item id="MB_5.10" parent_id="MB_5"><content><name><![CDATA[Fractale meetkunde]]></name></content></item>
+<item id="MB_5.2" parent_id="MB_5"><content><name><![CDATA[Vlakke meetkunde]]></name></content></item>
+<item id="MB_5.2.1" parent_id="MB_5.2"><content><name><![CDATA[Lengte en afstanden]]></name></content></item>
+<item id="MB_5.2.2" parent_id="MB_5.2"><content><name><![CDATA[Lijnen en vlakken]]></name></content></item>
+<item id="MB_5.2.3" parent_id="MB_5.2"><content><name><![CDATA[Hoeken]]></name></content></item>
+<item id="MB_5.2.4" parent_id="MB_5.2"><content><name><![CDATA[Driehoeken]]></name></content></item>
+<item id="MB_5.2.4.1" parent_id="MB_5.2.4"><content><name><![CDATA[Eigenschappen]]></name></content></item>
+<item id="MB_5.2.4.2" parent_id="MB_5.2.4"><content><name><![CDATA[Congruentie]]></name></content></item>
+<item id="MB_5.2.4.3" parent_id="MB_5.2.4"><content><name><![CDATA[Gelijkvormigheid]]></name></content></item>
+<item id="MB_5.2.4.4" parent_id="MB_5.2.4"><content><name><![CDATA[Stelling van Pythagoras]]></name></content></item>
+<item id="MB_5.2.5" parent_id="MB_5.2"><content><name><![CDATA[Veelhoeken]]></name></content></item>
+<item id="MB_5.2.5.1" parent_id="MB_5.2.5"><content><name><![CDATA[Eigenschappen]]></name></content></item>
+<item id="MB_5.2.5.2" parent_id="MB_5.2.5"><content><name><![CDATA[Regelmatige veelhoeken]]></name></content></item>
+<item id="MB_5.2.5.3" parent_id="MB_5.2.5"><content><name><![CDATA[Niet-regelmatige veelhoeken]]></name></content></item>
+<item id="MB_5.2.5.4" parent_id="MB_5.2.5"><content><name><![CDATA[Congruentie]]></name></content></item>
+<item id="MB_5.2.5.5" parent_id="MB_5.2.5"><content><name><![CDATA[Gelijkvormigheid]]></name></content></item>
+<item id="MB_5.2.6" parent_id="MB_5.2"><content><name><![CDATA[Cirkels]]></name></content></item>
+<item id="MB_5.2.7" parent_id="MB_5.2"><content><name><![CDATA[Patronen]]></name></content></item>
+<item id="MB_5.2.7.1" parent_id="MB_5.2.7"><content><name><![CDATA[Meetkundige patronen]]></name></content></item>
+<item id="MB_5.2.7.2" parent_id="MB_5.2.7"><content><name><![CDATA[Tegelingen]]></name></content></item>
+<item id="MB_5.2.7.3" parent_id="MB_5.2.7"><content><name><![CDATA[Symmetrie]]></name></content></item>
+<item id="MB_5.2.7.4" parent_id="MB_5.2.7"><content><name><![CDATA[Gulden snede]]></name></content></item>
+<item id="MB_5.2.8" parent_id="MB_5.2"><content><name><![CDATA[Transformaties]]></name></content></item>
+<item id="MB_5.2.8.1" parent_id="MB_5.2.8"><content><name><![CDATA[Translatie]]></name></content></item>
+<item id="MB_5.2.8.2" parent_id="MB_5.2.8"><content><name><![CDATA[Rotatie]]></name></content></item>
+<item id="MB_5.2.8.3" parent_id="MB_5.2.8"><content><name><![CDATA[Spiegeling]]></name></content></item>
+<item id="MB_5.2.8.4" parent_id="MB_5.2.8"><content><name><![CDATA[Schaling]]></name></content></item>
+<item id="MB_5.3" parent_id="MB_5"><content><name><![CDATA[Ruimtemeetkunde]]></name></content></item>
+<item id="MB_5.3.1" parent_id="MB_5.3"><content><name><![CDATA[Hoeken tussen vlakken]]></name></content></item>
+<item id="MB_5.3.2" parent_id="MB_5.3"><content><name><![CDATA[Bollen]]></name></content></item>
+<item id="MB_5.3.3" parent_id="MB_5.3"><content><name><![CDATA[Kegels]]></name></content></item>
+<item id="MB_5.3.4" parent_id="MB_5.3"><content><name><![CDATA[Cilinders]]></name></content></item>
+<item id="MB_5.3.5" parent_id="MB_5.3"><content><name><![CDATA[Piramides]]></name></content></item>
+<item id="MB_5.3.6" parent_id="MB_5.3"><content><name><![CDATA[Prisma's]]></name></content></item>
+<item id="MB_5.3.7" parent_id="MB_5.3"><content><name><![CDATA[Veelvlakken]]></name></content></item>
+<item id="MB_5.4" parent_id="MB_5"><content><name><![CDATA[Analytische meetkunde]]></name></content></item>
+<item id="MB_5.4.1" parent_id="MB_5.4"><content><name><![CDATA[Cartesische coordinaten]]></name></content></item>
+<item id="MB_5.4.2" parent_id="MB_5.4"><content><name><![CDATA[Lijnen]]></name></content></item>
+<item id="MB_5.4.3" parent_id="MB_5.4"><content><name><![CDATA[Cirkels]]></name></content></item>
+<item id="MB_5.4.3.1" parent_id="MB_5.4.3"><content><name><![CDATA[Vergelijking van een cirkel]]></name></content></item>
+<item id="MB_5.4.4" parent_id="MB_5.4"><content><name><![CDATA[Vlakken]]></name></content></item>
+<item id="MB_5.4.5" parent_id="MB_5.4"><content><name><![CDATA[Kegelsneden]]></name></content></item>
+<item id="MB_5.4.5.1" parent_id="MB_5.4.5"><content><name><![CDATA[Parabolen]]></name></content></item>
+<item id="MB_5.4.5.2" parent_id="MB_5.4.5"><content><name><![CDATA[Ellips]]></name></content></item>
+<item id="MB_5.4.5.3" parent_id="MB_5.4.5"><content><name><![CDATA[Hyperbolen]]></name></content></item>
+<item id="MB_5.4.6" parent_id="MB_5.4"><content><name><![CDATA[Poolcoordinaten]]></name></content></item>
+<item id="MB_5.4.7" parent_id="MB_5.4"><content><name><![CDATA[Geparametriseerde krommen]]></name></content></item>
+<item id="MB_5.4.7.1" parent_id="MB_5.4.7"><content><name><![CDATA[Ruimtekrommen]]></name></content></item>
+<item id="MB_5.4.8" parent_id="MB_5.4"><content><name><![CDATA[Oppervlakken]]></name></content></item>
+<item id="MB_5.4.8.1" parent_id="MB_5.4.8"><content><name><![CDATA[Bollen]]></name></content></item>
+<item id="MB_5.4.8.2" parent_id="MB_5.4.8"><content><name><![CDATA[Ruimtekrommen als snijlijn van twee oppervlakken]]></name></content></item>
+<item id="MB_5.4.9" parent_id="MB_5.4"><content><name><![CDATA[Afstandsformule]]></name></content></item>
+<item id="MB_5.5" parent_id="MB_5"><content><name><![CDATA[Projectieve meetkunde]]></name></content></item>
+<item id="MB_5.6" parent_id="MB_5"><content><name><![CDATA[Differentiaalmeetkunde]]></name></content></item>
+<item id="MB_5.7" parent_id="MB_5"><content><name><![CDATA[Algebraische meetkunde]]></name></content></item>
+<item id="MB_5.8" parent_id="MB_5"><content><name><![CDATA[Topologie]]></name></content></item>
+<item id="MB_5.8.1" parent_id="MB_5.8"><content><name><![CDATA[Topologische ruimten]]></name></content></item>
+<item id="MB_5.8.2" parent_id="MB_5.8"><content><name><![CDATA[Algemene topologie]]></name></content></item>
+<item id="MB_5.8.3" parent_id="MB_5.8"><content><name><![CDATA[Differentiaaltopologie]]></name></content></item>
+<item id="MB_5.8.4" parent_id="MB_5.8"><content><name><![CDATA[Algebraische topologie]]></name></content></item>
+<item id="MB_5.9" parent_id="MB_5"><content><name><![CDATA[Goniometrie]]></name></content></item>
+<item id="MB_5.9.1" parent_id="MB_5.9"><content><name><![CDATA[Hoeken]]></name></content></item>
+<item id="MB_5.9.2" parent_id="MB_5.9"><content><name><![CDATA[Goniometrische functies]]></name></content></item>
+<item id="MB_5.9.3" parent_id="MB_5.9"><content><name><![CDATA[Inversen van goniometrische functies]]></name></content></item>
+<item id="MB_5.9.4" parent_id="MB_5.9"><content><name><![CDATA[Gelijkheden]]></name></content></item>
+<item id="MB_5.9.5" parent_id="MB_5.9"><content><name><![CDATA[Vergelijkingen]]></name></content></item>
+<item id="MB_5.9.6" parent_id="MB_5.9"><content><name><![CDATA[Eenheidswortels]]></name></content></item>
+<item id="MB_5.9.7" parent_id="MB_5.9"><content><name><![CDATA[Bolmeetkunde]]></name></content></item>
+<item id="MB_6" parent_id="MB_0"><content><name><![CDATA[Calculus]]></name></content></item>
+<item id="MB_6.1" parent_id="MB_6"><content><name><![CDATA[Functies van een variabele]]></name></content></item>
+<item id="MB_6.1.1" parent_id="MB_6.1"><content><name><![CDATA[Functies]]></name></content></item>
+<item id="MB_6.1.1.1" parent_id="MB_6.1.1"><content><name><![CDATA[Bewerkingen]]></name></content></item>
+<item id="MB_6.1.1.2" parent_id="MB_6.1.1"><content><name><![CDATA[Maximum en minimum]]></name></content></item>
+<item id="MB_6.1.2" parent_id="MB_6.1"><content><name><![CDATA[Limieten]]></name></content></item>
+<item id="MB_6.1.2.1" parent_id="MB_6.1.2"><content><name><![CDATA[Definitie en eigenschappen]]></name></content></item>
+<item id="MB_6.1.2.2" parent_id="MB_6.1.2"><content><name><![CDATA[Standaardlimieten]]></name></content></item>
+<item id="MB_6.1.2.3" parent_id="MB_6.1.2"><content><name><![CDATA[Rekenregels]]></name></content></item>
+<item id="MB_6.1.2.4" parent_id="MB_6.1.2"><content><name><![CDATA[Stelling van l'Hopital]]></name></content></item>
+<item id="MB_6.1.2.5" parent_id="MB_6.1.2"><content><name><![CDATA[Insluitstelling]]></name></content></item>
+<item id="MB_6.1.2.6" parent_id="MB_6.1.2"><content><name><![CDATA[Limieten naar oneindig]]></name></content></item>
+<item id="MB_6.1.3" parent_id="MB_6.1"><content><name><![CDATA[Continuiteit]]></name></content></item>
+<item id="MB_6.1.3.1" parent_id="MB_6.1.3"><content><name><![CDATA[Definitie en eigenschappen]]></name></content></item>
+<item id="MB_6.1.3.2" parent_id="MB_6.1.3"><content><name><![CDATA[Globale continuiteit]]></name></content></item>
+<item id="MB_6.1.3.3" parent_id="MB_6.1.3"><content><name><![CDATA[Continuiteit van standaardfuncties]]></name></content></item>
+<item id="MB_6.1.3.4" parent_id="MB_6.1.3"><content><name><![CDATA[Rekenregels]]></name></content></item>
+<item id="MB_6.1.4" parent_id="MB_6.1"><content><name><![CDATA[Differentieren]]></name></content></item>
+<item id="MB_6.1.4.1" parent_id="MB_6.1.4"><content><name><![CDATA[Definitie en eigenschappen]]></name></content></item>
+<item id="MB_6.1.4.2" parent_id="MB_6.1.4"><content><name><![CDATA[Afgeleide]]></name></content></item>
+<item id="MB_6.1.4.3" parent_id="MB_6.1.4"><content><name><![CDATA[Afgeleide van standaardfuncties]]></name></content></item>
+<item id="MB_6.1.4.3.1" parent_id="MB_6.1.4.3"><content><name><![CDATA[Afgeleide van veeltermfuncties]]></name></content></item>
+<item id="MB_6.1.4.3.2" parent_id="MB_6.1.4.3"><content><name><![CDATA[Afgeleide van exponentiele functies]]></name></content></item>
+<item id="MB_6.1.4.3.3" parent_id="MB_6.1.4.3"><content><name><![CDATA[Afgeleide van logaritmische functies]]></name></content></item>
+<item id="MB_6.1.4.3.4" parent_id="MB_6.1.4.3"><content><name><![CDATA[Afgeleide van goniometrische functies]]></name></content></item>
+<item id="MB_6.1.4.3.5" parent_id="MB_6.1.4.3"><content><name><![CDATA[Afgeleide van inversen van goniometrische functies]]></name></content></item>
+<item id="MB_6.1.4.4" parent_id="MB_6.1.4"><content><name><![CDATA[Rekenregels]]></name></content></item>
+<item id="MB_6.1.4.4.1" parent_id="MB_6.1.4.4"><content><name><![CDATA[Somregel en vermenigvuldigen met constante]]></name></content></item>
+<item id="MB_6.1.4.4.2" parent_id="MB_6.1.4.4"><content><name><![CDATA[Productregel]]></name></content></item>
+<item id="MB_6.1.4.4.3" parent_id="MB_6.1.4.4"><content><name><![CDATA[Quotientregel]]></name></content></item>
+<item id="MB_6.1.4.4.4" parent_id="MB_6.1.4.4"><content><name><![CDATA[Kettingregel]]></name></content></item>
+<item id="MB_6.1.4.5" parent_id="MB_6.1.4"><content><name><![CDATA[Hogere orde afgeleiden]]></name></content></item>
+<item id="MB_6.1.4.6" parent_id="MB_6.1.4"><content><name><![CDATA[Toepassingen]]></name></content></item>
+<item id="MB_6.1.4.6.1" parent_id="MB_6.1.4.6"><content><name><![CDATA[Stijgen en dalen]]></name></content></item>
+<item id="MB_6.1.4.6.2" parent_id="MB_6.1.4.6"><content><name><![CDATA[Maxima en minima]]></name></content></item>
+<item id="MB_6.1.4.6.3" parent_id="MB_6.1.4.6"><content><name><![CDATA[Buigpunten]]></name></content></item>
+<item id="MB_6.1.5" parent_id="MB_6.1"><content><name><![CDATA[Integreren]]></name></content></item>
+<item id="MB_6.1.5.1" parent_id="MB_6.1.5"><content><name><![CDATA[Definitie en eigenschappen]]></name></content></item>
+<item id="MB_6.1.5.2" parent_id="MB_6.1.5"><content><name><![CDATA[Bepaalde integraal en oppervlakte]]></name></content></item>
+<item id="MB_6.1.5.3" parent_id="MB_6.1.5"><content><name><![CDATA[Primitieve en onbepaalde integraal]]></name></content></item>
+<item id="MB_6.1.5.4" parent_id="MB_6.1.5"><content><name><![CDATA[Integreren van standaardfuncties]]></name></content></item>
+<item id="MB_6.1.5.4.1" parent_id="MB_6.1.5.4"><content><name><![CDATA[Afgeleide van veeltermfuncties]]></name></content></item>
+<item id="MB_6.1.5.4.2" parent_id="MB_6.1.5.4"><content><name><![CDATA[Integreren van exponentiele functies]]></name></content></item>
+<item id="MB_6.1.5.4.3" parent_id="MB_6.1.5.4"><content><name><![CDATA[Integreren van logaritmische functies]]></name></content></item>
+<item id="MB_6.1.5.4.4" parent_id="MB_6.1.5.4"><content><name><![CDATA[Integreren van goniometrische functies]]></name></content></item>
+<item id="MB_6.1.5.4.5" parent_id="MB_6.1.5.4"><content><name><![CDATA[Integreren van inversen van goniometrische functies]]></name></content></item>
+<item id="MB_6.1.5.5" parent_id="MB_6.1.5"><content><name><![CDATA[Integratietechnieken]]></name></content></item>
+<item id="MB_6.1.5.5.1" parent_id="MB_6.1.5.5"><content><name><![CDATA[Methode van substitutie]]></name></content></item>
+<item id="MB_6.1.5.5.2" parent_id="MB_6.1.5.5"><content><name><![CDATA[Partiele integratie]]></name></content></item>
+<item id="MB_6.1.5.5.3" parent_id="MB_6.1.5.5"><content><name><![CDATA[Breuksplitsen]]></name></content></item>
+<item id="MB_6.1.5.6" parent_id="MB_6.1.5"><content><name><![CDATA[Oneigenlijke integralen]]></name></content></item>
+<item id="MB_6.1.6" parent_id="MB_6.1"><content><name><![CDATA[Reeksen]]></name></content></item>
+<item id="MB_6.2" parent_id="MB_6"><content><name><![CDATA[Functies van meer variabelen]]></name></content></item>
+<item id="MB_6.2.1" parent_id="MB_6.2"><content><name><![CDATA[Functies van meer variabelen]]></name></content></item>
+<item id="MB_6.2.2" parent_id="MB_6.2"><content><name><![CDATA[Limieten]]></name></content></item>
+<item id="MB_6.2.3" parent_id="MB_6.2"><content><name><![CDATA[Continuiteit]]></name></content></item>
+<item id="MB_6.2.4" parent_id="MB_6.2"><content><name><![CDATA[Partiele afgeleiden]]></name></content></item>
+<item id="MB_6.2.5" parent_id="MB_6.2"><content><name><![CDATA[Meervoudige integralen]]></name></content></item>
+<item id="MB_6.2.6" parent_id="MB_6.2"><content><name><![CDATA[Taylorreeksen]]></name></content></item>
+<item id="MB_6.3" parent_id="MB_6"><content><name><![CDATA[Voortgezette calculus]]></name></content></item>
+<item id="MB_6.3.1" parent_id="MB_6.3"><content><name><![CDATA[Vectorvelden]]></name></content></item>
+<item id="MB_6.3.2" parent_id="MB_6.3"><content><name><![CDATA[Lijnintegralen]]></name></content></item>
+<item id="MB_6.3.3" parent_id="MB_6.3"><content><name><![CDATA[Oppervlakteintegralen]]></name></content></item>
+<item id="MB_6.3.4" parent_id="MB_6.3"><content><name><![CDATA[Stelling van Stokes]]></name></content></item>
+<item id="MB_6.3.5" parent_id="MB_6.3"><content><name><![CDATA[Coordinatensystemen]]></name></content></item>
+<item id="MB_6.3.6" parent_id="MB_6.3"><content><name><![CDATA[Lineaire ruimten]]></name></content></item>
+<item id="MB_6.3.7" parent_id="MB_6.3"><content><name><![CDATA[Fourierreeksen]]></name></content></item>
+<item id="MB_6.3.8" parent_id="MB_6.3"><content><name><![CDATA[Orthogonale functies]]></name></content></item>
+<item id="MB_6.4" parent_id="MB_6"><content><name><![CDATA[Tensorcalculus]]></name></content></item>
+<item id="MB_6.5" parent_id="MB_6"><content><name><![CDATA[Variatierekening]]></name></content></item>
+<item id="MB_6.6" parent_id="MB_6"><content><name><![CDATA[Operatorrekening]]></name></content></item>
+<item id="MB_7" parent_id="MB_0"><content><name><![CDATA[Analyse]]></name></content></item>
+<item id="MB_7.1" parent_id="MB_7"><content><name><![CDATA[Reele analyse]]></name></content></item>
+<item id="MB_7.1.1" parent_id="MB_7.1"><content><name><![CDATA[Metrische ruimten]]></name></content></item>
+<item id="MB_7.1.2" parent_id="MB_7.1"><content><name><![CDATA[Convergentie]]></name></content></item>
+<item id="MB_7.1.3" parent_id="MB_7.1"><content><name><![CDATA[Continuiteit]]></name></content></item>
+<item id="MB_7.1.4" parent_id="MB_7.1"><content><name><![CDATA[Differentieren]]></name></content></item>
+<item id="MB_7.1.5" parent_id="MB_7.1"><content><name><![CDATA[Integreren]]></name></content></item>
+<item id="MB_7.1.6" parent_id="MB_7.1"><content><name><![CDATA[Maattheorie]]></name></content></item>
+<item id="MB_7.2" parent_id="MB_7"><content><name><![CDATA[Complexe analyse]]></name></content></item>
+<item id="MB_7.2.1" parent_id="MB_7.2"><content><name><![CDATA[Convergentie]]></name></content></item>
+<item id="MB_7.2.2" parent_id="MB_7.2"><content><name><![CDATA[Oneindige rijen]]></name></content></item>
+<item id="MB_7.2.3" parent_id="MB_7.2"><content><name><![CDATA[Analytische functies]]></name></content></item>
+<item id="MB_7.2.4" parent_id="MB_7.2"><content><name><![CDATA[Integreren]]></name></content></item>
+<item id="MB_7.2.5" parent_id="MB_7.2"><content><name><![CDATA[Contourintegralen]]></name></content></item>
+<item id="MB_7.2.6" parent_id="MB_7.2"><content><name><![CDATA[Conforme afbeeldingen]]></name></content></item>
+<item id="MB_7.2.7" parent_id="MB_7.2"><content><name><![CDATA[Meerdere complexe variabelen]]></name></content></item>
+<item id="MB_7.3" parent_id="MB_7"><content><name><![CDATA[Numerieke analyse]]></name></content></item>
+<item id="MB_7.3.1" parent_id="MB_7.3"><content><name><![CDATA[Machineberekeningen]]></name></content></item>
+<item id="MB_7.3.2" parent_id="MB_7.3"><content><name><![CDATA[Oplossen van vergelijkingen]]></name></content></item>
+<item id="MB_7.3.3" parent_id="MB_7.3"><content><name><![CDATA[Oplossen van stelsels vergelijkingen]]></name></content></item>
+<item id="MB_7.3.4" parent_id="MB_7.3"><content><name><![CDATA[Interpolatie]]></name></content></item>
+<item id="MB_7.3.5" parent_id="MB_7.3"><content><name><![CDATA[Numeriek differentieren]]></name></content></item>
+<item id="MB_7.3.6" parent_id="MB_7.3"><content><name><![CDATA[Numeriek integreren]]></name></content></item>
+<item id="MB_7.3.7" parent_id="MB_7.3"><content><name><![CDATA[Numeriek oplossen van differentiaalvergelijkingen]]></name></content></item>
+<item id="MB_7.3.8" parent_id="MB_7.3"><content><name><![CDATA[Numeriek oplossen van partiele differentiaalvergelijkingen]]></name></content></item>
+<item id="MB_7.4" parent_id="MB_7"><content><name><![CDATA[Integraaltransformaties]]></name></content></item>
+<item id="MB_7.4.1" parent_id="MB_7.4"><content><name><![CDATA[Fourier transformatie]]></name></content></item>
+<item id="MB_7.4.2" parent_id="MB_7.4"><content><name><![CDATA[Laplace transformatie]]></name></content></item>
+<item id="MB_7.4.3" parent_id="MB_7.4"><content><name><![CDATA[Hankel transformatie]]></name></content></item>
+<item id="MB_7.4.4" parent_id="MB_7.4"><content><name><![CDATA[Wavelets]]></name></content></item>
+<item id="MB_7.4.5" parent_id="MB_7.4"><content><name><![CDATA[Overige transformaties]]></name></content></item>
+<item id="MB_7.5" parent_id="MB_7"><content><name><![CDATA[Signaalanalyse]]></name></content></item>
+<item id="MB_7.5.1" parent_id="MB_7.5"><content><name><![CDATA[Samples]]></name></content></item>
+<item id="MB_7.5.2" parent_id="MB_7.5"><content><name><![CDATA[Filters]]></name></content></item>
+<item id="MB_7.5.3" parent_id="MB_7.5"><content><name><![CDATA[Ruis]]></name></content></item>
+<item id="MB_7.5.4" parent_id="MB_7.5"><content><name><![CDATA[Datacompressie]]></name></content></item>
+<item id="MB_7.5.5" parent_id="MB_7.5"><content><name><![CDATA[Beeldverwerking]]></name></content></item>
+<item id="MB_7.6" parent_id="MB_7"><content><name><![CDATA[Functionaalanalyse]]></name></content></item>
+<item id="MB_7.6.1" parent_id="MB_7.6"><content><name><![CDATA[Hilbert ruimten]]></name></content></item>
+<item id="MB_7.6.2" parent_id="MB_7.6"><content><name><![CDATA[Banach ruimten]]></name></content></item>
+<item id="MB_7.6.3" parent_id="MB_7.6"><content><name><![CDATA[Topologische ruimten]]></name></content></item>
+<item id="MB_7.6.4" parent_id="MB_7.6"><content><name><![CDATA[Lokaal convexe ruimten]]></name></content></item>
+<item id="MB_7.6.5" parent_id="MB_7.6"><content><name><![CDATA[Begrensde operatoren]]></name></content></item>
+<item id="MB_7.6.6" parent_id="MB_7.6"><content><name><![CDATA[Spectraalstelling]]></name></content></item>
+<item id="MB_7.6.7" parent_id="MB_7.6"><content><name><![CDATA[Onbegrensde operatoren]]></name></content></item>
+<item id="MB_7.7" parent_id="MB_7"><content><name><![CDATA[Harmonische analyse]]></name></content></item>
+<item id="MB_7.8" parent_id="MB_7"><content><name><![CDATA[Globale analyse]]></name></content></item>
+<item id="MB_8" parent_id="MB_0"><content><name><![CDATA[Differentiaal en differentievergelijkingen]]></name></content></item>
+<item id="MB_8.1" parent_id="MB_8"><content><name><![CDATA[Gewone differentiaalvergelijkingen]]></name></content></item>
+<item id="MB_8.1.*1" parent_id="MB_8.1"><content><name><![CDATA[Lijnelementenveld]]></name></content></item>
+<item id="MB_8.1.1" parent_id="MB_8.1"><content><name><![CDATA[Eerste orde]]></name></content></item>
+<item id="MB_8.1.1.1" parent_id="MB_8.1.1"><content><name><![CDATA[Lineaire differentiaalvergelijkingen]]></name></content></item>
+<item id="MB_8.1.1.2" parent_id="MB_8.1.1"><content><name><![CDATA[Numerieke methoden]]></name></content></item>
+<item id="MB_8.1.1.2.1" parent_id="MB_8.1.1.2"><content><name><![CDATA[Methode van Euler]]></name></content></item>
+<item id="MB_8.1.1.3" parent_id="MB_8.1.1"><content><name><![CDATA[Scheiden van variabelen]]></name></content></item>
+<item id="MB_8.1.1.4" parent_id="MB_8.1.1"><content><name><![CDATA[Toepassingen]]></name></content></item>
+<item id="MB_8.1.1.4.1" parent_id="MB_8.1.1.4"><content><name><![CDATA[Exponentiele groei en verval]]></name></content></item>
+<item id="MB_8.1.1.4.2" parent_id="MB_8.1.1.4"><content><name><![CDATA[Logistische groei]]></name></content></item>
+<item id="MB_8.1.1.4.3" parent_id="MB_8.1.1.4"><content><name><![CDATA[Mathematische slinger]]></name></content></item>
+<item id="MB_8.1.2" parent_id="MB_8.1"><content><name><![CDATA[Tweede orde]]></name></content></item>
+<item id="MB_8.1.2.1" parent_id="MB_8.1.2"><content><name><![CDATA[Lineaire differentiaalvergelijkingen]]></name></content></item>
+<item id="MB_8.1.2.1.1" parent_id="MB_8.1.2.1"><content><name><![CDATA[Homogene differentiaalvergelijkingen]]></name></content></item>
+<item id="MB_8.1.2.1.2" parent_id="MB_8.1.2.1"><content><name><![CDATA[Karakteristieke vergelijking]]></name></content></item>
+<item id="MB_8.1.2.1.3" parent_id="MB_8.1.2.1"><content><name><![CDATA[Particuliere oplossing]]></name></content></item>
+<item id="MB_8.1.3" parent_id="MB_8.1"><content><name><![CDATA[Lineaire trillingen]]></name></content></item>
+<item id="MB_8.1.4" parent_id="MB_8.1"><content><name><![CDATA[Niet-lineaire trillingen]]></name></content></item>
+<item id="MB_8.1.5" parent_id="MB_8.1"><content><name><![CDATA[Stelsels differentiaalvergelijkingen]]></name></content></item>
+<item id="MB_8.1.6" parent_id="MB_8.1"><content><name><![CDATA[Sturm-Liouville problemen]]></name></content></item>
+<item id="MB_8.1.7" parent_id="MB_8.1"><content><name><![CDATA[Speciale functies]]></name></content></item>
+<item id="MB_8.1.8" parent_id="MB_8.1"><content><name><![CDATA[Machtreeksen]]></name></content></item>
+<item id="MB_8.1.9" parent_id="MB_8.1"><content><name><![CDATA[Laplace transformaties]]></name></content></item>
+<item id="MB_8.2" parent_id="MB_8"><content><name><![CDATA[Partiele differentiaalvergelijkingen]]></name></content></item>
+<item id="MB_8.2.1" parent_id="MB_8.2"><content><name><![CDATA[Eerste orde]]></name></content></item>
+<item id="MB_8.2.2" parent_id="MB_8.2"><content><name><![CDATA[Elliptische]]></name></content></item>
+<item id="MB_8.2.3" parent_id="MB_8.2"><content><name><![CDATA[Parabolische]]></name></content></item>
+<item id="MB_8.2.4" parent_id="MB_8.2"><content><name><![CDATA[Hyperbolische]]></name></content></item>
+<item id="MB_8.2.5" parent_id="MB_8.2"><content><name><![CDATA[Integraaltransformaties]]></name></content></item>
+<item id="MB_8.2.6" parent_id="MB_8.2"><content><name><![CDATA[Integraalvergelijkingen]]></name></content></item>
+<item id="MB_8.2.7" parent_id="MB_8.2"><content><name><![CDATA[Potentiaaltheorie]]></name></content></item>
+<item id="MB_8.2.8" parent_id="MB_8.2"><content><name><![CDATA[Niet-lineaire vergelijkingen]]></name></content></item>
+<item id="MB_8.2.9" parent_id="MB_8.2"><content><name><![CDATA[Symmetrien en integreerbaarheid]]></name></content></item>
+<item id="MB_8.3" parent_id="MB_8"><content><name><![CDATA[Differentievergelijkingen]]></name></content></item>
+<item id="MB_8.3.1" parent_id="MB_8.3"><content><name><![CDATA[Eerste orde]]></name></content></item>
+<item id="MB_8.3.2" parent_id="MB_8.3"><content><name><![CDATA[Tweede orde]]></name></content></item>
+<item id="MB_8.3.3" parent_id="MB_8.3"><content><name><![CDATA[Lineaire stelsels]]></name></content></item>
+<item id="MB_8.3.4" parent_id="MB_8.3"><content><name><![CDATA[Z-transformaties]]></name></content></item>
+<item id="MB_8.3.5" parent_id="MB_8.3"><content><name><![CDATA[Orthogonale veeltermen]]></name></content></item>
+<item id="MB_8.4" parent_id="MB_8"><content><name><![CDATA[Dynamische systemen]]></name></content></item>
+<item id="MB_8.4.1" parent_id="MB_8.4"><content><name><![CDATA[1D afbeeldingen]]></name></content></item>
+<item id="MB_8.4.2" parent_id="MB_8.4"><content><name><![CDATA[2D afbeeldingen]]></name></content></item>
+<item id="MB_8.4.3" parent_id="MB_8.4"><content><name><![CDATA[Lyapunov exponenten]]></name></content></item>
+<item id="MB_8.4.4" parent_id="MB_8.4"><content><name><![CDATA[Bifurcaties]]></name></content></item>
+<item id="MB_8.4.5" parent_id="MB_8.4"><content><name><![CDATA[Fractals]]></name></content></item>
+<item id="MB_8.4.6" parent_id="MB_8.4"><content><name><![CDATA[Differentieerbare dynamische systemen]]></name></content></item>
+<item id="MB_8.4.7" parent_id="MB_8.4"><content><name><![CDATA[Conservatieve dynamische systemen]]></name></content></item>
+<item id="MB_8.4.8" parent_id="MB_8.4"><content><name><![CDATA[Chaos]]></name></content></item>
+<item id="MB_8.4.9" parent_id="MB_8.4"><content><name><![CDATA[Complexe dynamische systemen]]></name></content></item>
+<item id="MB_9" parent_id="MB_0"><content><name><![CDATA[Kansrekening en statistiek]]></name></content></item>
+<item id="MB_9.1" parent_id="MB_9"><content><name><![CDATA[Dataverwerking]]></name></content></item>
+<item id="MB_9.1.1" parent_id="MB_9.1"><content><name><![CDATA[Proefopzetten]]></name></content></item>
+<item id="MB_9.1.2" parent_id="MB_9.1"><content><name><![CDATA[Steekproeven en surveys]]></name></content></item>
+<item id="MB_9.1.3" parent_id="MB_9.1"><content><name><![CDATA[Data en metingen]]></name></content></item>
+<item id="MB_9.2" parent_id="MB_9"><content><name><![CDATA[Beschrijven en representeren van data]]></name></content></item>
+<item id="MB_9.2.1" parent_id="MB_9.2"><content><name><![CDATA[Beschrijvende statistiek]]></name></content></item>
+<item id="MB_9.2.1.1" parent_id="MB_9.2.1"><content><name><![CDATA[Meten van centrum]]></name></content></item>
+<item id="MB_9.2.1.2" parent_id="MB_9.2.1"><content><name><![CDATA[Meten van spreiding]]></name></content></item>
+<item id="MB_9.2.2" parent_id="MB_9.2"><content><name><![CDATA[Datarepresentatie]]></name></content></item>
+<item id="MB_9.2.2.1" parent_id="MB_9.2.2"><content><name><![CDATA[Grafieken en plaatjes]]></name></content></item>
+<item id="MB_9.2.2.2" parent_id="MB_9.2.2"><content><name><![CDATA[Tabellen]]></name></content></item>
+<item id="MB_9.3" parent_id="MB_9"><content><name><![CDATA[Inductieve statistiek en technieken]]></name></content></item>
+<item id="MB_9.3.1" parent_id="MB_9.3"><content><name><![CDATA[Verdelingen van steekproeven]]></name></content></item>
+<item id="MB_9.3.2" parent_id="MB_9.3"><content><name><![CDATA[Regressie en correlatie]]></name></content></item>
+<item id="MB_9.3.3" parent_id="MB_9.3"><content><name><![CDATA[Betrouwbaarheidsintervallen]]></name></content></item>
+<item id="MB_9.3.4" parent_id="MB_9.3"><content><name><![CDATA[Toetsingstheorie]]></name></content></item>
+<item id="MB_9.3.5" parent_id="MB_9.3"><content><name><![CDATA[Kwaliteitscontrole]]></name></content></item>
+<item id="MB_9.3.6" parent_id="MB_9.3"><content><name><![CDATA[Non-parametrische technieken]]></name></content></item>
+<item id="MB_9.3.7" parent_id="MB_9.3"><content><name><![CDATA[Multivariate technieken]]></name></content></item>
+<item id="MB_9.3.8" parent_id="MB_9.3"><content><name><![CDATA[Overlevingsanalyse]]></name></content></item>
+<item id="MB_9.3.9" parent_id="MB_9.3"><content><name><![CDATA[Bayesiaanse statistiek]]></name></content></item>
+<item id="MB_9.4" parent_id="MB_9"><content><name><![CDATA[Kansrekening]]></name></content></item>
+<item id="MB_9.4.1" parent_id="MB_9.4"><content><name><![CDATA[ Grondslagen van de kansrekening]]></name></content></item>
+<item id="MB_9.4.1.1" parent_id="MB_9.4.1"><content><name><![CDATA[Kansruimten en gebeurtenissen]]></name></content></item>
+<item id="MB_9.4.1.2" parent_id="MB_9.4.1"><content><name><![CDATA[Algemene regels]]></name></content></item>
+<item id="MB_9.4.1.3" parent_id="MB_9.4.1"><content><name><![CDATA[Combinaties en permutaties]]></name></content></item>
+<item id="MB_9.4.1.4" parent_id="MB_9.4.1"><content><name><![CDATA[Toevalsgetallen]]></name></content></item>
+<item id="MB_9.4.2" parent_id="MB_9.4"><content><name><![CDATA[Verdelingen]]></name></content></item>
+<item id="MB_9.4.2.1" parent_id="MB_9.4.2"><content><name><![CDATA[Discrete verdelingen]]></name></content></item>
+<item id="MB_9.4.2.1.1" parent_id="MB_9.4.2.1"><content><name><![CDATA[Homogene verdeling]]></name></content></item>
+<item id="MB_9.4.2.1.2" parent_id="MB_9.4.2.1"><content><name><![CDATA[Binomiale verdeling]]></name></content></item>
+<item id="MB_9.4.2.1.3" parent_id="MB_9.4.2.1"><content><name><![CDATA[Geometrische verdeling]]></name></content></item>
+<item id="MB_9.4.2.1.4" parent_id="MB_9.4.2.1"><content><name><![CDATA[Hypergeometrischee verdeling]]></name></content></item>
+<item id="MB_9.4.2.1.5" parent_id="MB_9.4.2.1"><content><name><![CDATA[Poisson verdeling]]></name></content></item>
+<item id="MB_9.4.2.2" parent_id="MB_9.4.2"><content><name><![CDATA[Continue verdelingen]]></name></content></item>
+<item id="MB_9.4.2.2.1" parent_id="MB_9.4.2.2"><content><name><![CDATA[Exponentiele verdeling]]></name></content></item>
+<item id="MB_9.4.2.2.2" parent_id="MB_9.4.2.2"><content><name><![CDATA[Normale verdeling]]></name></content></item>
+<item id="MB_9.4.2.3" parent_id="MB_9.4.2"><content><name><![CDATA[Verwachtingswaarde]]></name></content></item>
+<item id="MB_9.4.2.3*1" parent_id="MB_9.4.2"><content><name><![CDATA[Variantie en standaardafwijking]]></name></content></item>
+<item id="MB_9.4.3" parent_id="MB_9.4"><content><name><![CDATA[Limietstellingen]]></name></content></item>
+<item id="MB_9.4.3.1" parent_id="MB_9.4.3"><content><name><![CDATA[Centrale limietstelling]]></name></content></item>
+<item id="MB_9.4.3.2" parent_id="MB_9.4.3"><content><name><![CDATA[Wet van de grote aantallen]]></name></content></item>
+<item id="MB_9.4.4" parent_id="MB_9.4"><content><name><![CDATA[Multivariate verdelingen]]></name></content></item>
+<item id="MB_9.4.4.1" parent_id="MB_9.4.4"><content><name><![CDATA[Simultane verdeling]]></name></content></item>
+<item id="MB_9.4.4.2" parent_id="MB_9.4.4"><content><name><![CDATA[Marginale verdeling]]></name></content></item>
+<item id="MB_9.4.4.3" parent_id="MB_9.4.4"><content><name><![CDATA[Verwachtingswaarde]]></name></content></item>
+<item id="MB_9.4.5" parent_id="MB_9.4"><content><name><![CDATA[Stochastische processen]]></name></content></item>
+<item id="MB_9.4.5.1" parent_id="MB_9.4.5"><content><name><![CDATA[Brownse beweging]]></name></content></item>
+<item id="MB_9.4.5.2" parent_id="MB_9.4.5"><content><name><![CDATA[Markov ketens]]></name></content></item>
+<item id="MB_9.4.5.3" parent_id="MB_9.4.5"><content><name><![CDATA[Wachtrijtheorie]]></name></content></item>
+<item id="MB_9.4.6" parent_id="MB_9.4"><content><name><![CDATA[Waarschijnlijkheidsmaten]]></name></content></item>
+<item id="MB_9.4.7" parent_id="MB_9.4"><content><name><![CDATA[Simulatie]]></name></content></item>
+</root>

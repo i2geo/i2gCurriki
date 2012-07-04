@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Moderne Wiskunde vwo B1</title>
+
+    <link rel="stylesheet" type="text/css" title="basic" media="screen,projection" href="../../mapstyle.css" />
+
+    <script type="text/javascript" src="../../jsTree0.9.9a/lib/jquery.js"></script>
+    <script type="text/javascript" src="../../jsTree0.9.9a/jquery.tree.min.js"></script>	
+ 	  <script type="text/javascript" src="../../jsTree0.9.9a/lib/sarissa.js"></script>
+	  <script type="text/javascript" src="../../jsTree0.9.9a/plugins/jquery.tree.xml_flat.js"></script>
+
+    <script type="text/javascript">
+      var activenode;
+      $(function () { 
+        $("#xml_f").tree({
+          data : { 
+          type : "xml_flat",
+	  opts : {
+	  url : "Moderne_Wiskunde_vwoB1_tree.xml"
+	  }
+	},
+        callback : {
+	  onload : function () { activenode = "";},
+          onselect : function (node) {
+	    if (activenode != "") {
+              if (self.frames['contentframe'].document.getElementById(activenode)) {
+	        self.frames['contentframe'].document.getElementById(activenode).style.display = "none";
+              } 
+              if (self.frames['queryframe'].document.getElementById(activenode)) {  
+	        self.frames['queryframe'].document.getElementById(activenode).style.display = "none";
+              }
+	    }
+	    if (self.frames['contentframe'].document.getElementById(node.id)) {
+              self.frames['contentframe'].document.getElementById(node.id).style.display = "block";
+            }
+            if (self.frames['queryframe'].document.getElementById(node.id)) {
+	      self.frames['queryframe'].document.getElementById(node.id).style.display = "block";
+            }
+	    activenode = node.id; 
+          }
+        }
+      });
+      });
+    </script>
+   </head>
+  <body>
+    <h2>Moderne Wiskunde vwo B1</h2>
+    <div id="curriculumtextcontainer" class="blueisland">
+      <div id="toctree">
+	      <h3>Contents</h3><br />
+	      <div id="xml_f"></div>
+      </div>  
+      <div id="description_and_queries">
+	      <div id="description">
+	        <h3>Description of this section:</h3>
+  	      <iframe name="contentframe" id="contentframe" src="Moderne_Wiskunde_vwoB1_content.html">Your browser does not seem to support iframes. Please update to a newer version.</iframe>
+	      </div>
+	      <hr style="height: 5%;" />
+	      <div id="queries">
+	        <h3>i2geo search queries related to this section:</h3>
+	        <iframe name="queryframe" id="queryframe" src="Moderne_Wiskunde_vwoB1_queries.html">Your browser does not seem to support iframes. Please update to a newer version.</iframe>
+	      </div>
+      </div>
+    </div>
+  </body>
+</html>
