@@ -152,15 +152,15 @@ YAHOO.widget.CheckNode.prototype.getNodeHtml = function() {
 function checkNortel6ELessonPlanForm() {
   var missed_fields_str = '';
   if (getFieldContentStr('CurrikiCode.AssetClass_0_title') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.title')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.title'));
   }
   if (getFieldContentStr('CurrikiCode.AssetClass_0_description') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.description')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.description'));
   }
   /*{
     var form_fw_items = getFieldContentStr('CurrikiCode.AssetClass_0_fw_items');
     if ((form_fw_items == null) || (form_fw_items == 'FW_masterFramework.WebHome')) {
-      missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.subject')');
+      missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.subject'));
     }
   }
   { // Eductional-Level -- for validation, must look at "checked" on each button.
@@ -173,85 +173,85 @@ function checkNortel6ELessonPlanForm() {
       }
     }
     if (!one_checked) {
-      missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.level')');
+      missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.level'));
     } 
   }*/
 //NO-ICT-IN-SLP if ($('XWiki.AssetClass_0_instructional_component2').value.length <= 1) {
-//NO-ICT-IN-SLP   missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('form.scratch.required.fields.dialog.ict')');
+//NO-ICT-IN-SLP   missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('form.scratch.required.fields.dialog.ict'));
 //NO-ICT-IN-SLP }
   if (getFieldContentStr('nlp_overview') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.overview')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.overview'));
   }
   if (getFieldContentStr('nlp_techinteg') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.techinteg')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.techinteg'));
   }
 /* CURRIKI-2456 - No longer required fields
   if (getFieldContentStr('nlp_prereq') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.prereq')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.prereq'));
   }
   if (getFieldContentStr('nlp_preptime') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.preptime')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.preptime'));
   }
   if (getFieldContentStr('nlp_timecomplete') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.timecomplete')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.timecomplete'));
   }
   if (getFieldContentStr('nlp_materials') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.materials')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.materials'));
   }
 */
   if (getFieldContentStr('nlp_project') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.project')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.project'));
   }
 /* CURRIKI-2456 - No longer required fields
   if (getFieldContentStr('nlp_timemanagement') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.timemanagement')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.timemanagement'));
   }
   if (getFieldContentStr('nlp_assess') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.assess')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.assess'));
   }
 */
   if (getWysiwygFieldContent('mce_editor_0', 'nlp_engage') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.engage')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.engage'));
   }
   if (getWysiwygFieldContent('mce_editor_1', 'nlp_explore') == null) { 
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.explore')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.explore'));
   }
   if (getWysiwygFieldContent('mce_editor_2', 'nlp_explain') == null) { 
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.explain')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.explain'));
   }
   if (getWysiwygFieldContent('mce_editor_3', 'nlp_elaborate') == null) { 
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.elaborate')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.elaborate'));
   }
   if (getWysiwygFieldContent('mce_editor_4', 'nlp_evaluate') == null) { 
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.evaluate')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.evaluate'));
   }
 /* CURRIKI-2456 - No longer required fields
   if (getWysiwygFieldContent('mce_editor_5', 'nlp_extend') == null) { 
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.extend')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.extend'));
   }
 */
 //NOT-REQD-FIELD  if (getWysiwygFieldContent('mce_editor_6', 'nlp_standards') == null) { 
-//NOT-REQD-FIELD    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.standards')');
+//NOT-REQD-FIELD    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.standards'));
 //NOT-REQD-FIELD  }
   if (getFieldContentStr('CurrikiCode.AssetLicenseClass_0_rightsHolder') == null) {
-    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, '$msg.get('lesson.plan.required.fields.dialog.rights')');
+    missed_fields_str = appendSeparatedErrorMessageStr(missed_fields_str, _('lesson.plan.required.fields.dialog.rights'));
   }
   if (getAttachmentsSize() > $msg.get("lesson.plan.file.size.maximum")) {
-    missed_fields_str = missed_fields_str + '\n\n' + '$msg.get('lesson.plan.file.size.oversize')';
+    missed_fields_str = missed_fields_str + '\n\n' + _('lesson.plan.file.size.oversize');
   }
 
   var error_msg = "";
   if(missed_fields_str != ''){
-	error_msg = '$msg.get('lesson.plan.required.fields.dialog')' + missed_fields_str;
+	error_msg = _('lesson.plan.required.fields.dialog') + missed_fields_str;
   }else{
     if (getFieldContentStr('CurrikiCode.AssetClass_0_title').length > 250) {
-      error_msg = '$msg.get("nortel.lesson.plan.title.more.250")';
+      error_msg = _("nortel.lesson.plan.title.more.250");
     }
   }
 
   if (error_msg != '') { // since theres error messages, validation failed... bail out.
     alert(error_msg);
-    setTextAssetToWikiText('$msg.get('form.done.wysiwyg.error.wikitext')');  // not POSTing due to 'false' return below, so this should not matter -- reset in case of going "back" in browser after successful POST??
+    setTextAssetToWikiText(_('form.done.wysiwyg.error.wikitext'));  // not POSTing due to 'false' return below, so this should not matter -- reset in case of going "back" in browser after successful POST??
     setSuccessMessage('');     //not POSTing due to 'false' return below, so this should not matter -- reset in case of going "back" in browser after successful POST??
     return false;
   }
@@ -268,7 +268,7 @@ function checkNortel6ELessonPlanForm() {
     // continue through to POST if the validation code above fails... for
     // example).
     setTextAssetToWikiText(formatTextareasIntoWikiText());
-    setSuccessMessage('$msg.get('form.done.created.lessonplan')');
+    setSuccessMessage(_('form.done.created.lessonplan'));
     return true;
   }
 }
@@ -308,24 +308,24 @@ function wysiwygIsDirty(wysiwyg_id_str) {
 // concatenates all the textarea and wysiwyg fields in the form
 //
 function formatTextareasIntoWikiText() {
-  var slp_str = '#' + 'currikiNortelIcon()\n\n' + '$msg.get("nortel.lesson.plan.output.heading.content")';
-  slp_str = outputTextareaSection(slp_str, 'nlp_overview',			'$msg.get("nortel.lesson.plan.overview.title")',     '\\\\\n\n', '*');
-  slp_str = outputTextareaSection(slp_str, 'nlp_techinteg',			'$msg.get("nortel.lesson.plan.techinteg.title")',    '\\\\\n\n', '*');
-  slp_str = outputTextareaSection(slp_str, 'nlp_prereq',			'$msg.get("nortel.lesson.plan.prereq.title")',       '\\\\\n\n', '*');
-  slp_str = outputTextareaSection(slp_str, 'nlp_preptime',			'$msg.get("nortel.lesson.plan.preptime.title")',     '\\\\\n\n', '*');
-  slp_str = outputTextareaSection(slp_str, 'nlp_timecomplete',			'$msg.get("nortel.lesson.plan.timecomplete.title")', '\\\\\n\n', '*');
-  slp_str = outputTextareaSection(slp_str, 'nlp_materials',			'$msg.get("nortel.lesson.plan.materials.title")',    '\\\\\n\n', '*');
-  slp_str = outputTextareaSection(slp_str, 'nlp_project',			'$msg.get("nortel.lesson.plan.project.title")',      '\\\\\n\n', '*');
-  slp_str = outputTextareaSection(slp_str, 'nlp_timemanagement',		'$msg.get("nortel.lesson.plan.timemanagement.title")','\\\\\n\n','*');
-  slp_str = outputTextareaSection(slp_str, 'nlp_assess',			'$msg.get("nortel.lesson.plan.assess.title")',       '\\\\\n\n', '*');
-  slp_str = outputWysiwygSection(slp_str,  'nlp_engage',	'mce_editor_0', '$msg.get("nortel.lesson.plan.engage.title")',       '\\\\\n\n', '*');
-  slp_str = outputWysiwygSection(slp_str,  'nlp_explore',	'mce_editor_1', '$msg.get("nortel.lesson.plan.explore.title")',      '\\\\\n\n', '*');
-  slp_str = outputWysiwygSection(slp_str,  'nlp_explain',	'mce_editor_2', '$msg.get("nortel.lesson.plan.explain.title")',      '\\\\\n\n', '*');
-  slp_str = outputWysiwygSection(slp_str,  'nlp_elaborate',	'mce_editor_3', '$msg.get("nortel.lesson.plan.elaborate.title")',    '\\\\\n\n', '*');
-  slp_str = outputWysiwygSection(slp_str,  'nlp_evaluate',	'mce_editor_4', '$msg.get("nortel.lesson.plan.evaluate.title")',     '\\\\\n\n', '*');
-  slp_str = outputWysiwygSection(slp_str,  'nlp_extend',	'mce_editor_5', '$msg.get("nortel.lesson.plan.extend.title")',       '\\\\\n\n', '*');
-  slp_str = outputWysiwygSection(slp_str,  'nlp_standards',	'mce_editor_6', '$msg.get("nortel.lesson.plan.standards.title")',    '\\\\\n\n', '*');
-  slp_str = outputAttachmentsSection(slp_str, 					'$msg.get("nortel.lesson.plan.required.attachments.title")', '\\\\\n\n','*');
+  var slp_str = '#' + 'currikiNortelIcon()\n\n' + _("nortel.lesson.plan.output.heading.content");
+  slp_str = outputTextareaSection(slp_str, 'nlp_overview',			_("nortel.lesson.plan.overview.title"),     '\\\\\n\n', '*');
+  slp_str = outputTextareaSection(slp_str, 'nlp_techinteg',			_("nortel.lesson.plan.techinteg.title"),    '\\\\\n\n', '*');
+  slp_str = outputTextareaSection(slp_str, 'nlp_prereq',			_("nortel.lesson.plan.prereq.title"),       '\\\\\n\n', '*');
+  slp_str = outputTextareaSection(slp_str, 'nlp_preptime',			_("nortel.lesson.plan.preptime.title"),     '\\\\\n\n', '*');
+  slp_str = outputTextareaSection(slp_str, 'nlp_timecomplete',			_("nortel.lesson.plan.timecomplete.title"), '\\\\\n\n', '*');
+  slp_str = outputTextareaSection(slp_str, 'nlp_materials',			_("nortel.lesson.plan.materials.title"),    '\\\\\n\n', '*');
+  slp_str = outputTextareaSection(slp_str, 'nlp_project',			_("nortel.lesson.plan.project.title"),      '\\\\\n\n', '*');
+  slp_str = outputTextareaSection(slp_str, 'nlp_timemanagement',		_("nortel.lesson.plan.timemanagement.title"),'\\\\\n\n','*');
+  slp_str = outputTextareaSection(slp_str, 'nlp_assess',			_("nortel.lesson.plan.assess.title"),       '\\\\\n\n', '*');
+  slp_str = outputWysiwygSection(slp_str,  'nlp_engage',	'mce_editor_0', _("nortel.lesson.plan.engage.title"),       '\\\\\n\n', '*');
+  slp_str = outputWysiwygSection(slp_str,  'nlp_explore',	'mce_editor_1', _("nortel.lesson.plan.explore.title"),      '\\\\\n\n', '*');
+  slp_str = outputWysiwygSection(slp_str,  'nlp_explain',	'mce_editor_2', _("nortel.lesson.plan.explain.title"),      '\\\\\n\n', '*');
+  slp_str = outputWysiwygSection(slp_str,  'nlp_elaborate',	'mce_editor_3', _("nortel.lesson.plan.elaborate.title"),    '\\\\\n\n', '*');
+  slp_str = outputWysiwygSection(slp_str,  'nlp_evaluate',	'mce_editor_4', _("nortel.lesson.plan.evaluate.title"),     '\\\\\n\n', '*');
+  slp_str = outputWysiwygSection(slp_str,  'nlp_extend',	'mce_editor_5', _("nortel.lesson.plan.extend.title"),       '\\\\\n\n', '*');
+  slp_str = outputWysiwygSection(slp_str,  'nlp_standards',	'mce_editor_6', _("nortel.lesson.plan.standards.title"),    '\\\\\n\n', '*');
+  slp_str = outputAttachmentsSection(slp_str, 					_("nortel.lesson.plan.required.attachments.title"), '\\\\\n\n','*');
   return (slp_str);
 }
 //
@@ -518,7 +518,7 @@ function setAttachmentsIframeSize() {
   ##
   ## NB: default action goes back to this form, which shouldnt happen, because,
   ## after successful validation via call to checkNortel6ELessonPlanForm(), the button
-  ## below sets document.forms.inline.action='$msg.get("form.done.url")'
+  ## below sets document.forms.inline.action=_("form.done.url")
   ##
   <form action="" class="curriki-form1" id="inline" method="post">
   ## 
@@ -671,7 +671,7 @@ function setAttachmentsIframeSize() {
   <p><label>$msg.get("form.scratch.step4.instruction")</label></p>
   <p class="links">
      <button
-      onclick="try { if (document.forms.inline.onsubmit) document.forms.inline.onsubmit(); if (checkNortel6ELessonPlanForm()) { clearUnloadDialog(); startWaitingDialog(); document.forms.inline.action='$msg.get("form.done.url")'; document.forms.inline.submit(); } return false; } catch(e) { alert('$msg.get("form.scratch.submit.button") button onclick error: '+e+' ...'); return false; }"
+      onclick="try { if (document.forms.inline.onsubmit) document.forms.inline.onsubmit(); if (checkNortel6ELessonPlanForm()) { clearUnloadDialog(); startWaitingDialog(); document.forms.inline.action=_('form.done.url'); document.forms.inline.submit(); } return false; } catch(e) { alert(_('form.scratch.submit.button') + 'button onclick error: '+e+' ...'); return false; }"
       >$msg.get("form.scratch.submit.button")</button>
      #if( "$!cameFrom" != "" ) ## { 
        #set( $cancelURL = $cameFrom )
