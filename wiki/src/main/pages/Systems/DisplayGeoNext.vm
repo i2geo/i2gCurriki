@@ -9,7 +9,9 @@
         <table style="width:99%;"><tr><td align="left">
         <a href="$resource_url">i2geo resource</a>
     </td>
-    <td align="center">constructed with   <a href="http://geonext.uni-bayreuth.de/" target="GeoNext">GeoNext</a></td>
+    <td align="center"><a href='/xwiki/bin/view/Systems/DisplayJSXGraph?asset=$request.asset&xpage=popup'>Display with JSXGraph</a>
+        <br/>
+        constructed with   <a href="http://geonext.uni-bayreuth.de/" target="GeoNext">GeoNext</a></td>
     <td align="right">
         <applet width="20" height="20" name="vignette-camera"
                 archive="/files/vignettes.jar"

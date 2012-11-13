@@ -66,12 +66,12 @@
 	#end      
 	<table align="left" border=0>
 	<tr><td>
-	 	<button class="button-link button-link-download" onclick="window.open('/xwiki/bin/view/Systems/DisplayGeoNext?asset=${asset}&amp;xpage=popup','','width=800,height=600,resizable=1'); return false;"">$msg.get("rve.content.play")</button>
+	 	<button class="button-link button-link-download" onclick="window.open('/xwiki/bin/view/Systems/DisplayJSXGraph?asset=${asset}&amp;xpage=popup','','width=800,height=600,resizable=1'); return false;"">$msg.get("rve.content.play")</button>
 	</td><td>
 	 	<img width="10px" height="10px"src="/files/blank.gif" >
 	</td><td>
 		<blockquote>
-	     <a href="/xwiki/bin/view/Systems/DisplayGeoNext?asset=${asset}&amp;xpage=popup" onClick="window.open('/xwiki/bin/view/Systems/DisplayGeoNext?asset=${asset}&amp;xpage=popup','','width=800,height=600,resizable=1'); return false;">$msg.get("rve.content.playGeoNext.description.instruction_title.single_file")</a>
+	     <a href="/xwiki/bin/view/Systems/DisplayJSXGraph?asset=${asset}&amp;xpage=popup" onClick="window.open('/xwiki/bin/view/Systems/DisplayJSXGraph?asset=${asset}&amp;xpage=popup','','width=800,height=600,resizable=1'); return false;">$msg.get("rve.content.playGeoNext.description.instruction_title.single_file")</a>
 		</blockquote> 
 	 </td></tr></table>
 	</td></tr>	
