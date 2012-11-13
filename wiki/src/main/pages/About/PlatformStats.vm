@@ -1,0 +1,120 @@
+1 I2Geo Platform Statistics
+
+the statistics here are the ones deduced from the XWiki documents: resources, users, evaluations...
+
+1.1 Resources Count
+
+Note that the total count also indicates the resources made private!
+
+#macro(luceneSearchAndCount $label $query)
+    #if($hasGlobalAdmin)##
+        #set($link="http://i2geo.net/xwiki/bin/view/Admin/Lucene?text=${util.encodeURI($query)}")##
+    #else##
+        #set($link="http://i2geo.net/xwiki/bin/view/Admin/Lucene?text=${util.encodeURI($query)}")##
+    #end##
+[$label:  $xwiki.lucene.count($query,$context.context) > $link] <!-- $query -->#end
+
+#set($baseExcludes="-CurrikiCode.TextAssetClass.syntax:cboe -web:AssetTemp -web:Coll_Templates -name:WebHome -name:WebPreferences -name:MyCollections -name:SpaceIndex -CurrikiCode.AssetClass.hidden_from_search:1 -CurrikiCode.AssetClass.rights:private")
+#macro(searchWithClassAndCount $label $cls)#luceneSearchAndCount($label "+object:${cls} $baseExcludes")#end
+#macro(searchForFileTypeAndCount $label $type)#luceneSearchAndCount($label "CurrikiCode.AttachmentAssetClass.file_type:${type.toLowerCase()} $baseExcludes")#end
+
+
+This list below presents a few indicative numbers.
+It also links to the list of the relevant XWiki documents, but only for access by administrators.
+
+- #luceneSearchAndCount("number of resources" "+object:CurrikiCode.AssetClass -name:favorites -name:webhome"),
+- #searchWithClassAndCount("number of public-readable resources" "CurrikiCode.AssetClass"),
+-- #searchWithClassAndCount("number of external-links" "CurrikiCode.ExternalAssetClass"),
+-- #searchWithClassAndCount("simple wiki resources (lesson plan, ...)" "CurrikiCode.TextAssetClass"),
+-- #luceneSearchAndCount("collections" "object:CurrikiCode.CompositeAssetClass -name:favorites -name:WebHome -name:Favorites -web:AssetTemp"),
+- uploads:
+## see http://i2geo.net/xwiki/bin/edit/CurrikiCode/MimeTypeConfig for a list
+-- #searchForFileTypeAndCount("Cabri files" "cabri2file"),
+-- #searchForFileTypeAndCount("Cinderela files" "cdy"),
+-- #searchForFileTypeAndCount("Geogebra files" "ggb"),
+-- #searchForFileTypeAndCount("GeoNext" "gxt"),
+-- #searchForFileTypeAndCount("TracenPoche" "tracenpocheFile"),
+-- #searchForFileTypeAndCount("ZUL" "zir"),
+-- #searchForFileTypeAndCount("Cabri 3D" "cg3"),
+-- #searchForFileTypeAndCount("GeoPlan" "g2w"),
+-- #searchForFileTypeAndCount("GeoSpace" "g3w"),
+-- #searchForFileTypeAndCount("Cabri II+" "cabri2plusFile"),
+-- #searchForFileTypeAndCount("Cabri II" "cabri2File"),
+-- #searchForFileTypeAndCount("Wiris" "wiris"),
+-- #luceneSearchAndCount("zip", "CurrikiCode.ArchiveAssetClass.type:zip"),
+-- others: #searchForFileTypeAndCount("PDF" "pdf"), #searchForFileTypeAndCount("Word" "doc"), #searchForFileTypeAndCount("Excel" "xls"), #searchForFileTypeAndCount("PPT" "ppt"), #searchForFileTypeAndCount("RTF" "rtf"), #searchForFileTypeAndCount("SWF" "swf"), #searchForFileTypeAndCount("JPEG" "jpg"), #searchForFileTypeAndCount("PNG" "png"), #searchForFileTypeAndCount("TIFF" "tif"), #searchForFileTypeAndCount("GIF" "gif"), #searchForFileTypeAndCount("TXT" "txt"), #searchForFileTypeAndCount("HTML" "html"),  #searchForFileTypeAndCount("MP4" "mp4"),
+
+- by language:
+-- #luceneSearchAndCount("Czech" "CurrikiCode.AssetClass.language:ces -name:favorites -name:webhome"),
+-- #luceneSearchAndCount("Dutch" "CurrikiCode.AssetClass.language:dut -name:favorites -name:webhome"),
+-- #luceneSearchAndCount("English" "CurrikiCode.AssetClass.language:eng -name:favorites -name:webhome"),
+-- #luceneSearchAndCount("French" "CurrikiCode.AssetClass.language:fra -name:favorites -name:webhome"),
+-- #luceneSearchAndCount("German" "CurrikiCode.AssetClass.language:deu -name:favorites -name:webhome"),
+-- #luceneSearchAndCount("Spanish" "CurrikiCode.AssetClass.language:spa -name:favorites -name:webhome"),
+-- #luceneSearchAndCount("others" "-CurrikiCode.AssetClass.language:ces -CurrikiCode.AssetClass.language:dut -CurrikiCode.AssetClass.language:eng -CurrikiCode.AssetClass.language:fra -CurrikiCode.AssetClass.language:deu -CurrikiCode.AssetClass.language:spa -name:favorites -name:webhome +object:CurrikiCode.AssetClass"),
+
+1.1.1 Resources By License Type
+#set($licenses="Licences.CurrikiLicense,Licences.PublicDomain,Licences.CreativeCommonsAttributionNon-Commercial,Licences.CreativeCommonsAttributionNoDerivatives,Licences.CreativeCommonsAttributionNon-CommercialNoDerivatives,Licences.CreativeCommonsAttributionSharealike,Licences.CreativeCommonsAttributionNon-CommercialShareAlike")
+
+#set($licenses = $licenses.split(","))
+#foreach($license in $licenses)
+* #set($luceneQuery = "NOT name:WebHome AND NOT name:WebPreferences AND NOT name:MyCollections AND NOT name:SpaceIndex AND NOT web:AssetTemp AND NOT CurrikiCode.AssetClass.hidden_from_search:1 AND NOT CurrikiCode.AssetClass.rights:private AND  CurrikiCode.AssetLicenseClass.licenseType:${license} ")##
+    #luceneSearchAndCount($license.substring(9) $luceneQuery)
+
+#end
+
+
+1.1.1 Resources by Instructional Component Type
+
+#macro(ictQ $ict)#luceneSearchAndCount($ict "CurrikiCode.AssetClass.instructional_component.key:$ict.toLowerCase() -name:favorites -name:webhome")#end
+
+#set($vals=$xwiki.getClass("CurrikiCode.AssetClass").get("instructional_component").getPropertyClass().getList($context.context))
+#foreach($v in $vals)#if($v!="---")
+- #ictQ($v)
+
+#end#end
+
+
+
+
+
+
+
+## =======================================================================
+
+1.1 Quality Evaluations
+- #searchWithClassAndCount("number of reviews" "QF.ReviewClass"):
+-- #luceneSearchAndCount("reviews of low score" "+(QF.ReviewClass.overallRanking:1)"),
+-- #luceneSearchAndCount("reviews of medium scores" "+(QF.ReviewClass.overallRanking:2 QF.ReviewClass.overallRanking:3)"),
+-- #luceneSearchAndCount("reviews of high score" "+(QF.ReviewClass.overallRanking:4)"),
+--  #luceneSearchAndCount("incomplete reviews" "object:QF.ReviewClass -(QF.ReviewClass.overallRanking:1 QF.ReviewClass.overallRanking:2 QF.ReviewClass.overallRanking:3 QF.ReviewClass.overallRanking:4 QF.ReviewClass.overallRanking:5)")
+
+Per resources:
+-- #luceneSearchAndCount("resources of low quality" "i2geo.reviewOverallRanking:1"),
+-- #luceneSearchAndCount("resources of medium-low quality" "i2geo.reviewOverallRanking:2"),
+-- #luceneSearchAndCount("resources of medium-high quality" "i2geo.reviewOverallRanking:3"),
+-- #luceneSearchAndCount("resources of high quality" "i2geo.reviewOverallRanking:4"),
+-- #luceneSearchAndCount("resources without quality evaluations" "-i2geo.reviewOverallRanking:1 -i2geo.reviewOverallRanking:2 -i2geo.reviewOverallRanking:3 -i2geo.reviewOverallRanking:4 +object:CurrikiCode.AssetClass"),
+
+#set($lucene = $xwiki.getPlugin("lucene"))
+
+
+* All resources: ##
+#set($luceneQuery = "(CurrikiCode.AssetClass.fw_items:FW_masterFramework.WebHome) AND NOT name:WebHome AND NOT name:WebPreferences AND NOT name:MyCollections AND NOT name:SpaceIndex AND NOT web:AssetTemp")##
+#set($searchresults = $lucene.getSearchResults($luceneQuery, "xwiki", "default,en,de", $xwiki))##
+$searchresults.totalHitcount
+
+
+
+
+
+1.1 Social Activity
+
+- #searchWithClassAndCount("users" "XWiki.XWikiUsers"),
+- #searchWithClassAndCount("groups" "XWiki.CurrikiSpaceClass"),
+- #luceneSearchAndCount("users with blog" "+web:blog* +name:webpreferences"),
+
+FIXME:
+- #luceneSearchAndCount("blog-entries" "+web:Blog* +object:XWiki.ArticleClass"),
+- #luceneSearchAndCount("messages in groups" "+web:Messages* +group object:XWiki.ArticleClass"),
+
