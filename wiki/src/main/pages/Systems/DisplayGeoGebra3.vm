@@ -1,0 +1,30 @@
+#includeInContext('Systems.PlayerHead')##
+<div style="position:absolute; width:95%; height:2em; top:0"><h1 align="center"><a href="$baseurl$resource_url">$title</a></h1></div>
+<div style="position:absolute; width:95%; height:95%; padding:1em; top:2em; center">
+			<applet code="geogebra.GeoGebraApplet" archive="/files/GeoGebra/geogebra.jar"
+                     width="97%" height="90%" name="main-player">
+				<param name="filename" value="$url">
+				<param name="framePossible" value="true">
+				<param name="language" value="de">Please <a href="http://www.java.com">install Java 1.4.2</a> (or later) to use this page.</applet>
+				<br /><p><pre>
+    </div>
+<div style="position:absolute; bottom:0; width:95%; height:3em;">
+    <table style="width:99%;"><tr><td align="left">
+    <a href="$resource_url">i2geo resource</a>
+</td>
+<td align="center">constructed with   <a href="http://www.geogebra.org/" target="GeoGebra">GeoGebra</a>
+    <br/>
+    <a href="./DisplayGeoGebra?asset=$request.asset&xpage=$request.xpage">run with newer GeoGebra</a></td>
+<td align="right">
+    <applet width="20" height="20" name="vignette-camera"
+            archive="/files/vignettes.jar"
+            code="net.i2geo.vignettes.VignetteCamera">
+        <param name="otherApplet" value="main-player"/>
+        <param name="language" value="$context.language"/>
+        <param name="tooltip" value="$msg.get('vignettes.camera.tooltip')"/>
+        <param name="resourceName" value="$assetDoc.name"/>
+        <param name="web" value="$assetDoc.web"/>
+    </applet>
+</td>
+</tr>
+</table></div>

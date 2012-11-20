@@ -1,0 +1,22 @@
+import com.xpn.xwiki.api.XWiki
+import com.xpn.xwiki.api.Context
+import com.xpn.xwiki.api.Document
+import com.xpn.xwiki.api.Attachment
+
+public class DisplayerTool {
+
+
+
+    public void init(XWiki xwiki, Context context) {
+        this.xwiki = xwiki;
+        this.context = context;
+    }
+
+    public String getFirstAttachmentDataAsBase64(Document doc) {
+        Attachment att = doc.getAttachmentList().get(0);
+        return new String((char[]) org.apache.commons.codec.binary.Base64.encodeBase64(att.contentAsBytes));
+    }
+
+
+
+}
